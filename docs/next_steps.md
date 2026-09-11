@@ -4,7 +4,7 @@ The test comparison, 20-reply human/judge study and report are complete.
 
 1. Read `docs/submission_checklist.md` and resolve the annotation/runtime requirements.
 2. Verify local evidence with `py run.py verify-results`; read the report yourself.
-3. Use the curated submission archive for a repository; confirm reviewer access.
+3. Repository is published at https://github.com/Aawaizp/hiver-support-agent; confirm reviewer access.
 4. Submit the repo link and report through the assignment form.
 
 ## Development-only improvement candidates

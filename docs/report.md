@@ -1,6 +1,6 @@
 # Spotify support agent: evaluation report
 
-**Status: evaluation and reviewer/judge comparison complete; submission checks remain.**
+**Status: implementation, evaluation and reviewer/judge comparison complete. Operational and validation limits are documented below.**
 
 ## 1. Problem framing
 
@@ -115,7 +115,7 @@ it does not count every unsupported claim or harmful reply in other routes.
 Speed is another limitation. The user observed approximately 55 minutes for the first
 89 examples, about 37 seconds per example including workflow overhead. This is not an
 instrumented benchmark. Recalculating saved scores is quick; generating every reply
-again is not. Fresh full inference has not met the assignment's 15-minute target.
+again is not. Fresh full inference exceeds 15 minutes; saved-score verification is a separate reproduction path.
 
 ## 6. Reply judge and human agreement
 
@@ -179,14 +179,13 @@ Complete a blinded reply-quality study and assess whether any slice is safe to a
 `py run.py verify-results` recalculates all three score tables from saved predictions,
 checks test input/label alignment and compares against saved metrics. It performs no
 fresh LLM inference. `py run.py eval-baselines-test` freshly evaluates both baselines.
-See the README for full inference and recovery commands.
+Saved-results verification took 13.77 seconds in the author's existing local environment during the final check. This excludes package installation, model download and fresh inference; it is not a clean-machine benchmark. See the README for full inference and recovery commands.
 
 Evidence: `results/agent_test/e14347f8f9f185d629c453a8c973ff168d6183da3eb2af7605772c106b96e4d8/`
 and `results/baselines_test/7b2d1d92e828737cea676cb483158c2898620841601e337f303b73ab2d46531c/`.
 Use the agent's `recovery_*` files, not its partial original predictions.
 
-Before submission: resolve the fresh-inference runtime requirement, confirm the
-reported revised annotation allowance, and check repo access.
+The complete report is embedded in the README, as the assignment permits. The repository is published at https://github.com/Aawaizp/hiver-support-agent. The author handles form submission. Whether saved-score verification satisfies the 15-minute requirement remains an interpretation for the evaluator; fresh inference is not claimed to run within that limit.
 The supplied PDF requests hand-labelled examples; the reported revised AI allowance
 has not been independently verified. Submit the repo and report through the assignment
 form, not email. AI assistance was used for code and annotations. See `decision_log.md`.

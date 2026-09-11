@@ -15,14 +15,14 @@
    to the separate 20 reply-quality ratings. Describe the dataset as AI-assisted,
    manually reviewed and corrected. Keep the original drafting provenance; confirm
    that this method meets the reported revised assignment allowance.
-2. Fresh full agent inference exceeded 15 minutes on this computer. Saved-results
-   scoring is quick, but must not be described as fresh inference. Confirm the expected
-   reproduction scope or plan a genuinely faster independently measured setup.
-3. Publish the curated contents to a repository and confirm the reviewer can access it.
-   No repository or remote has been created by this workflow. Do not publish `.env`.
-4. Read the report yourself and be ready to explain/modify the code live. If exporting
-   the report, keep it within six pages; alternatively include it as a README section,
-   as permitted by the assignment. Current Markdown has not been paginated as a PDF.
+2. Saved-results verification passed in 13.77 seconds with dependencies installed.
+   Fresh full agent inference exceeds 15 minutes. The README distinguishes these paths;
+   acceptance of saved-score reproduction is not guaranteed. No clean-install timing is claimed.
+3. The repository is published at https://github.com/Aawaizp/hiver-support-agent.
+   The author should confirm reviewer access and submit the link. Never publish `.env`.
+4. The full report is now included as a README section, as permitted by the assignment.
+   Read it and be ready to explain/modify the code live. No PDF export is required for
+   this format; any optional PDF must respect the six-page limit.
 5. Submit the repo link and report through the assignment form; do not email it.
    Verify the form and submission deadline with the original invitation.
 
