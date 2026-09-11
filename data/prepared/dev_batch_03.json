@@ -1,0 +1,231 @@
+[
+  {
+    "conversation_id": "2485973",
+    "customer_tweet_id": "2485974",
+    "split": "dev",
+    "prior_context": [],
+    "linked_context_incomplete": false,
+    "customer_text": "@115888 I just wanted to thank the really nice employee that helped me out last night with the problems I had with my account. His/Her name was Alfeo M, and they seriously need a raise. Thank you!",
+    "intent": "praise_thanks",
+    "expected_action": "auto_handle",
+    "action_reason": "They thank a support employee for help already received.",
+    "required_reply_points": [
+      "Thank them for the feedback without claiming the employee will receive a raise."
+    ],
+    "forbidden_claims": [
+      "Claim we personally fixed the earlier problem",
+      "Promise the same outcome or response time in future"
+    ],
+    "uncertain": false,
+    "annotation_note": ""
+  },
+  {
+    "conversation_id": "1820350",
+    "customer_tweet_id": "1820351",
+    "split": "dev",
+    "prior_context": [],
+    "linked_context_incomplete": false,
+    "customer_text": "Is anyone else having this problem? @115888 https://t.co/FbngkK4QOh",
+    "intent": "other_unclear",
+    "expected_action": "auto_handle",
+    "action_reason": "The problem is not described outside a link.",
+    "required_reply_points": [
+      "Ask them to describe the problem and provide any visible error text."
+    ],
+    "forbidden_claims": [
+      "Guess the missing issue or linked content",
+      "Claim access to private messages or support case status"
+    ],
+    "uncertain": false,
+    "annotation_note": ""
+  },
+  {
+    "conversation_id": "1532329",
+    "customer_tweet_id": "1532330",
+    "split": "dev",
+    "prior_context": [
+      {
+        "tweet_id": "1532334",
+        "role": "customer",
+        "text": "@SpotifyCares Hello!\n\nFor this song: spotify:track:0kiYDq0MKIhDXLWPgUvrUr\nYou select the wrong Alan Walker!"
+      },
+      {
+        "tweet_id": "1532333",
+        "role": "customer",
+        "text": "@SpotifyCares Wrong: spotify:artist:3LJdcfPLUXngXgiOTkxMjn\nTrue: spotify:artist:7vk5e3vY1uw9plTHJAMwjN"
+      },
+      {
+        "tweet_id": "1532332",
+        "role": "support",
+        "text": "@475302 Thanks. We'll get this reported. Great detective work! https://t.co/LpsmyUtme0 /DF"
+      }
+    ],
+    "linked_context_incomplete": false,
+    "customer_text": "@SpotifyCares Thanks ^^",
+    "intent": "praise_thanks",
+    "expected_action": "auto_handle",
+    "action_reason": "They thank support after a catalog report was acknowledged.",
+    "required_reply_points": [
+      "Offer a brief thanks without claiming the catalog correction is complete."
+    ],
+    "forbidden_claims": [
+      "Claim we personally fixed the earlier problem",
+      "Promise the same outcome or response time in future"
+    ],
+    "uncertain": false,
+    "annotation_note": ""
+  },
+  {
+    "conversation_id": "1222449",
+    "customer_tweet_id": "1222450",
+    "split": "dev",
+    "prior_context": [],
+    "linked_context_incomplete": false,
+    "customer_text": "@SpotifyCares \nI’m confused, if I have premium.\nI know I don’t own, but I wanted to feel like it.\nWhat is the maximum &amp; why?\nThanks https://t.co/giMLpiIqN6",
+    "intent": "other_unclear",
+    "expected_action": "auto_handle",
+    "action_reason": "They ask about a maximum but do not say what is being limited.",
+    "required_reply_points": [
+      "Ask whether they mean downloads, saved songs, devices, or another limit."
+    ],
+    "forbidden_claims": [
+      "Guess the missing issue or linked content",
+      "Claim access to private messages or support case status"
+    ],
+    "uncertain": false,
+    "annotation_note": ""
+  },
+  {
+    "conversation_id": "689726",
+    "customer_tweet_id": "689727",
+    "split": "dev",
+    "prior_context": [],
+    "linked_context_incomplete": false,
+    "customer_text": "@115888 are you developing an app for Apple Watch Series 3 to use away from the phone?",
+    "intent": "product_feedback",
+    "expected_action": "auto_handle",
+    "action_reason": "They ask about a standalone Apple Watch app and development plans.",
+    "required_reply_points": [
+      "Acknowledge the request without claiming to know the product roadmap."
+    ],
+    "forbidden_claims": [
+      "Promise the suggestion will be built or forwarded",
+      "Claim knowledge of an unpublished product roadmap"
+    ],
+    "uncertain": false,
+    "annotation_note": ""
+  },
+  {
+    "conversation_id": "962318",
+    "customer_tweet_id": "962319",
+    "split": "dev",
+    "prior_context": [
+      {
+        "tweet_id": "962321",
+        "role": "customer",
+        "text": "@SpotifyCares Any clue when you’ll start supporting NUS student discounts again? My learning provider isn’t on UNiDAYS’ website"
+      },
+      {
+        "tweet_id": "962320",
+        "role": "support",
+        "text": "@348349 We're afraid NUS is currently unavailable as a discount option. We can't make any promises, but we'll pass this on to the right folks /TB"
+      }
+    ],
+    "linked_context_incomplete": false,
+    "customer_text": "@SpotifyCares Cheers TB, please do!",
+    "intent": "praise_thanks",
+    "expected_action": "auto_handle",
+    "action_reason": "They thank support after receiving a discount-policy answer.",
+    "required_reply_points": [
+      "Briefly acknowledge the thanks without confirming feedback was forwarded."
+    ],
+    "forbidden_claims": [
+      "Claim we personally fixed the earlier problem",
+      "Promise the same outcome or response time in future"
+    ],
+    "uncertain": false,
+    "annotation_note": ""
+  },
+  {
+    "conversation_id": "2707754",
+    "customer_tweet_id": "2707755",
+    "split": "dev",
+    "prior_context": [],
+    "linked_context_incomplete": false,
+    "customer_text": "@SpotifyCares Remove Facebook account from __email__",
+    "intent": "account_access_security",
+    "expected_action": "escalate",
+    "action_reason": "They ask us to change the link between Facebook and their account.",
+    "required_reply_points": [
+      "Recommend official account support because we cannot unlink accounts."
+    ],
+    "forbidden_claims": [
+      "Claim the account was checked or changed",
+      "Request passwords or account secrets",
+      "Claim a human handoff has already happened"
+    ],
+    "uncertain": false,
+    "annotation_note": ""
+  },
+  {
+    "conversation_id": "1517565",
+    "customer_tweet_id": "1517566",
+    "split": "dev",
+    "prior_context": [],
+    "linked_context_incomplete": false,
+    "customer_text": "@SpotifyCares Answer my DM! Urgent, thanks.",
+    "intent": "other_unclear",
+    "expected_action": "escalate",
+    "action_reason": "They want a private message checked, which this agent cannot access.",
+    "required_reply_points": [
+      "Explain that private messages cannot be checked here and recommend the existing support channel."
+    ],
+    "forbidden_claims": [
+      "Guess the missing issue or linked content",
+      "Claim access to private messages or support case status",
+      "Claim a human handoff has already happened"
+    ],
+    "uncertain": false,
+    "annotation_note": ""
+  },
+  {
+    "conversation_id": "516748",
+    "customer_tweet_id": "516749",
+    "split": "dev",
+    "prior_context": [],
+    "linked_context_incomplete": false,
+    "customer_text": "Why do you limit the albums that we save, understand the limit for downloaded ones, it really seems unnecessary when thinking about the price we pay monthly @115888",
+    "intent": "product_feedback",
+    "expected_action": "auto_handle",
+    "action_reason": "They object to the saved-album limit rather than reporting a failed payment.",
+    "required_reply_points": [
+      "Acknowledge the limit feedback without inventing a reason or promising a change."
+    ],
+    "forbidden_claims": [
+      "Promise the suggestion will be built or forwarded",
+      "Claim knowledge of an unpublished product roadmap"
+    ],
+    "uncertain": false,
+    "annotation_note": ""
+  },
+  {
+    "conversation_id": "488808",
+    "customer_tweet_id": "488809",
+    "split": "dev",
+    "prior_context": [],
+    "linked_context_incomplete": false,
+    "customer_text": "@SpotifyCares will we be getting a Top Songs of 2017 this year? 😇 https://t.co/7OsmYIA7Es",
+    "intent": "music_library_catalog",
+    "expected_action": "auto_handle",
+    "action_reason": "They ask about a year-end playlist's availability.",
+    "required_reply_points": [
+      "Acknowledge the Top Songs request without promising a release or access date."
+    ],
+    "forbidden_claims": [
+      "Invent a licensing reason, release date, or catalog correction",
+      "Claim to have opened a link or checked live availability"
+    ],
+    "uncertain": false,
+    "annotation_note": ""
+  }
+]

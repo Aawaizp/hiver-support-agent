@@ -1,0 +1,12 @@
+{
+  "flagged_pairs_reviewed": 52,
+  "generic_message_pairs_retained": 50,
+  "excluded_retrieval_conversations": {
+    "2863": "Duplicate promotional text also appears in test context.",
+    "2598638": "Near-duplicate album availability question appears in test."
+  },
+  "retrieval_conversations_remaining": 2998,
+  "evaluation_examples_changed": 0,
+  "decision": "Retain common acknowledgements. Conservatively exclude retrieval conversations with substantive text overlap.",
+  "limitation": "This lexical similarity check cannot rule out every semantic duplicate or other source of leakage."
+}

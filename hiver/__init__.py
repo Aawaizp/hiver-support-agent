@@ -1,0 +1,1 @@
+"""Spotify support assignment prototype."""

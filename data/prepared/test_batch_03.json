@@ -1,0 +1,534 @@
+[
+  {
+    "conversation_id": "718419",
+    "customer_tweet_id": "718424",
+    "split": "test",
+    "prior_context": [
+      {
+        "tweet_id": "718421",
+        "role": "customer",
+        "text": "Nothing irritates me more than buffering songs on @115888 playlist's of mine downloaded for offline listening 🙄 esp. when I pay monthly."
+      },
+      {
+        "tweet_id": "718419",
+        "role": "support",
+        "text": "@292012 Hey there! Help's arrived. Can you tell us when this started happening? Was it after an app update? /CH"
+      },
+      {
+        "tweet_id": "718420",
+        "role": "customer",
+        "text": "@SpotifyCares I noticed it here and there about a month ago. It's been a daily occurrence since 10/6, though."
+      },
+      {
+        "tweet_id": "718422",
+        "role": "support",
+        "text": "@292012 Can you let us know the device, operating system, and Spotify version that you're using? We'll see what we can suggest /CH"
+      }
+    ],
+    "linked_context_incomplete": false,
+    "customer_text": "@SpotifyCares An Samsung S8 Active as of Friday. Prior to that, the S6 Active. And I must say, great customer service and support, props to y'all!! https://t.co/JwYBvXSGQQ",
+    "intent": "playback_offline",
+    "expected_action": "auto_handle",
+    "action_reason": "They provide device details for offline buffering; the praise does not close the issue.",
+    "required_reply_points": [
+      "Acknowledge the device details and ask for the exact app and OS versions still missing."
+    ],
+    "forbidden_claims": [
+      "Guarantee a troubleshooting step will work",
+      "Claim a bug or outage is confirmed without evidence"
+    ],
+    "uncertain": false,
+    "annotation_note": ""
+  },
+  {
+    "conversation_id": "1688945",
+    "customer_tweet_id": "1688947",
+    "split": "test",
+    "prior_context": [],
+    "linked_context_incomplete": false,
+    "customer_text": "yo @SpotifyCares your web browser player isn't working on Chromebook after several tries, it just logs me out",
+    "intent": "account_access_security",
+    "expected_action": "auto_handle",
+    "action_reason": "The Chromebook player repeatedly logs them out, with no account investigation yet described.",
+    "required_reply_points": [
+      "Ask which browser and error they see and whether other sign-in methods work."
+    ],
+    "forbidden_claims": [
+      "Claim the account was checked or changed",
+      "Request passwords or account secrets"
+    ],
+    "uncertain": true,
+    "annotation_note": "Review this interpretation against the visible context."
+  },
+  {
+    "conversation_id": "1611854",
+    "customer_tweet_id": "1611855",
+    "split": "test",
+    "prior_context": [],
+    "linked_context_incomplete": false,
+    "customer_text": "please check your dm. thank you @SpotifyCares",
+    "intent": "other_unclear",
+    "expected_action": "escalate",
+    "action_reason": "They request a private-message check.",
+    "required_reply_points": [
+      "Explain that private messages cannot be read here and recommend the existing support channel."
+    ],
+    "forbidden_claims": [
+      "Guess the missing issue or linked content",
+      "Claim access to private messages or support case status",
+      "Claim a human handoff has already happened"
+    ],
+    "uncertain": false,
+    "annotation_note": ""
+  },
+  {
+    "conversation_id": "927650",
+    "customer_tweet_id": "927651",
+    "split": "test",
+    "prior_context": [],
+    "linked_context_incomplete": false,
+    "customer_text": "@SpotifyCares hiiii please look at my dm xx",
+    "intent": "other_unclear",
+    "expected_action": "escalate",
+    "action_reason": "They request a private-message check.",
+    "required_reply_points": [
+      "Acknowledge the request without claiming the message was read."
+    ],
+    "forbidden_claims": [
+      "Guess the missing issue or linked content",
+      "Claim access to private messages or support case status",
+      "Claim a human handoff has already happened"
+    ],
+    "uncertain": false,
+    "annotation_note": ""
+  },
+  {
+    "conversation_id": "2380932",
+    "customer_tweet_id": "2380933",
+    "split": "test",
+    "prior_context": [],
+    "linked_context_incomplete": false,
+    "customer_text": "@SpotifyCares @115888 Please release a new update to be compatible with iPhone X! Will this happen soon?",
+    "intent": "app_device_issues",
+    "expected_action": "auto_handle",
+    "action_reason": "They ask about an iPhone X compatibility update.",
+    "required_reply_points": [
+      "Ask what compatibility issue they see and avoid promising a release date."
+    ],
+    "forbidden_claims": [
+      "Claim a fix is available or give a release date without evidence",
+      "Claim to have inspected a linked screenshot"
+    ],
+    "uncertain": false,
+    "annotation_note": ""
+  },
+  {
+    "conversation_id": "1176568",
+    "customer_tweet_id": "1176569",
+    "split": "test",
+    "prior_context": [
+      {
+        "tweet_id": "1176576",
+        "role": "customer",
+        "text": "Yo @SpotifyCares y'all got the same version of \"Blessings\" listed as two different versions on Coloring Book by @167274"
+      },
+      {
+        "tweet_id": "1176575",
+        "role": "support",
+        "text": "@396759 Hey Matt, thanks for reporting about this! Can you send us the Spotify URIs of the tracks? We'll have a look /LO"
+      },
+      {
+        "tweet_id": "1176574",
+        "role": "customer",
+        "text": "@SpotifyCares This is the track that's wrong: spotify:track:2VQc9orzwE6a5qFfy54P6e \nOn the album, there are two different songs called \"Blessings\" - track 5 and 14. The system just has the second one (track 14, spotify:track:5IdQEHgtmj9th3OkfQKhf8 ) in both spots."
+      },
+      {
+        "tweet_id": "1176573",
+        "role": "support",
+        "text": "@396759 Thanks! Can you also let us know the country you're account is currently set to? /LO"
+      },
+      {
+        "tweet_id": "1176571",
+        "role": "customer",
+        "text": "@SpotifyCares 🇺🇸"
+      },
+      {
+        "tweet_id": "1176570",
+        "role": "support",
+        "text": "@396759 2: you try logging out, restarting your device, and logging back in? /LO"
+      }
+    ],
+    "linked_context_incomplete": false,
+    "customer_text": "@SpotifyCares I tried that. Track 5 is supposed to be a collaboration with @76687 , track 14 is a collaboration with Anderson Paak., Ty Dolla $ign, BJ The Chicago Kid, and Raury. They are two completely different tracks with different lyrics and music.",
+    "intent": "music_library_catalog",
+    "expected_action": "escalate",
+    "action_reason": "The customer identifies two different tracks that remain incorrectly mapped after troubleshooting.",
+    "required_reply_points": [
+      "Recommend catalog review using the track IDs already supplied."
+    ],
+    "forbidden_claims": [
+      "Invent a licensing reason, release date, or catalog correction",
+      "Claim to have opened a link or checked live availability",
+      "Claim a human handoff has already happened"
+    ],
+    "uncertain": false,
+    "annotation_note": ""
+  },
+  {
+    "conversation_id": "2498914",
+    "customer_tweet_id": "2498915",
+    "split": "test",
+    "prior_context": [],
+    "linked_context_incomplete": false,
+    "customer_text": "@SpotifyCares 😊 https://t.co/QNMkh7l5I7",
+    "intent": "other_unclear",
+    "expected_action": "auto_handle",
+    "action_reason": "An emoji and an unavailable link do not reveal a clear request.",
+    "required_reply_points": [
+      "Offer a brief friendly acknowledgement and ask whether they need help."
+    ],
+    "forbidden_claims": [
+      "Guess the missing issue or linked content",
+      "Claim access to private messages or support case status"
+    ],
+    "uncertain": true,
+    "annotation_note": "Review this interpretation against the visible context."
+  },
+  {
+    "conversation_id": "2438681",
+    "customer_tweet_id": "2438682",
+    "split": "test",
+    "prior_context": [],
+    "linked_context_incomplete": false,
+    "customer_text": "@spotifycares why have I been getting charged twice a month from you guys? :/",
+    "intent": "billing_payments",
+    "expected_action": "escalate",
+    "action_reason": "They report being charged twice each month.",
+    "required_reply_points": [
+      "Recommend official support to review the repeated charges."
+    ],
+    "forbidden_claims": [
+      "Promise a refund, discount, or successful payment",
+      "Request card details or gift-card codes",
+      "Claim a human handoff has already happened"
+    ],
+    "uncertain": false,
+    "annotation_note": ""
+  },
+  {
+    "conversation_id": "2311088",
+    "customer_tweet_id": "2311089",
+    "split": "test",
+    "prior_context": [
+      {
+        "tweet_id": "2311090",
+        "role": "customer",
+        "text": "Had to re-share. #TechHouse https://t.co/VRZTf9cZFc"
+      }
+    ],
+    "linked_context_incomplete": false,
+    "customer_text": "@115888 Would love to see this one uploaded.",
+    "intent": "music_library_catalog",
+    "expected_action": "auto_handle",
+    "action_reason": "They want the linked music added but have not identified it in text.",
+    "required_reply_points": [
+      "Ask for the title and artist without promising an upload."
+    ],
+    "forbidden_claims": [
+      "Invent a licensing reason, release date, or catalog correction",
+      "Claim to have opened a link or checked live availability"
+    ],
+    "uncertain": false,
+    "annotation_note": ""
+  },
+  {
+    "conversation_id": "385145",
+    "customer_tweet_id": "385146",
+    "split": "test",
+    "prior_context": [
+      {
+        "tweet_id": "385148",
+        "role": "customer",
+        "text": "Hi @SpotifyCares I am unable to add my family members to my Family account. Please help."
+      },
+      {
+        "tweet_id": "385147",
+        "role": "customer",
+        "text": "@207189 @SpotifyCares Looks like Spotify doesn't care after all"
+      }
+    ],
+    "linked_context_incomplete": false,
+    "customer_text": "@207190 @SpotifyCares Oh, I hope they do!!!!!",
+    "intent": "subscription_plans",
+    "expected_action": "escalate",
+    "action_reason": "The earlier context reports a failed Family invitation and an unanswered request.",
+    "required_reply_points": [
+      "Acknowledge the Family issue and recommend follow-up with account support."
+    ],
+    "forbidden_claims": [
+      "Claim the subscription was checked or changed",
+      "Promise eligibility, activation, or an unverified offer",
+      "Claim a human handoff has already happened"
+    ],
+    "uncertain": false,
+    "annotation_note": ""
+  },
+  {
+    "conversation_id": "2218928",
+    "customer_tweet_id": "2218929",
+    "split": "test",
+    "prior_context": [
+      {
+        "tweet_id": "2218930",
+        "role": "customer",
+        "text": "Hey @118797 @648197 @SpotifyCares @AskPlayStation @XboxSupport as a frequent consumer of subscription based entertainment may I offer you all the idea of a development that can significantly improve quality of life for myself and other subscription based consumers?"
+      }
+    ],
+    "linked_context_incomplete": false,
+    "customer_text": "@118797 @648197 @SpotifyCares @AskPlayStation @XboxSupport I suggest a “renew subscription” button that already subscribed consumers can fall back to when on a biweekly payment system, this can significantly improve the quality of life of over an estimated 65% or more of your targeted subscribers.",
+    "intent": "product_feedback",
+    "expected_action": "auto_handle",
+    "action_reason": "They suggest a renewal button for people paid every two weeks.",
+    "required_reply_points": [
+      "Acknowledge the renewal-button idea without endorsing the claimed percentage or promising implementation."
+    ],
+    "forbidden_claims": [
+      "Promise the suggestion will be built or forwarded",
+      "Claim knowledge of an unpublished product roadmap"
+    ],
+    "uncertain": false,
+    "annotation_note": ""
+  },
+  {
+    "conversation_id": "2289991",
+    "customer_tweet_id": "2289994",
+    "split": "test",
+    "prior_context": [],
+    "linked_context_incomplete": false,
+    "customer_text": "@115888 when is #Reputation going to be on the app?!",
+    "intent": "music_library_catalog",
+    "expected_action": "auto_handle",
+    "action_reason": "They ask when Reputation will become available.",
+    "required_reply_points": [
+      "Acknowledge the album request and avoid guessing a date."
+    ],
+    "forbidden_claims": [
+      "Invent a licensing reason, release date, or catalog correction",
+      "Claim to have opened a link or checked live availability"
+    ],
+    "uncertain": false,
+    "annotation_note": ""
+  },
+  {
+    "conversation_id": "763153",
+    "customer_tweet_id": "763154",
+    "split": "test",
+    "prior_context": [],
+    "linked_context_incomplete": false,
+    "customer_text": "@SpotifyCares I haven't been able to use the Share function for a few days. My Pixel just blips and goes back a screen.",
+    "intent": "app_device_issues",
+    "expected_action": "auto_handle",
+    "action_reason": "The Share function returns to the previous screen on a Pixel.",
+    "required_reply_points": [
+      "Ask for exact app and Android versions and whether sharing fails for every track."
+    ],
+    "forbidden_claims": [
+      "Claim a fix is available or give a release date without evidence",
+      "Claim to have inspected a linked screenshot"
+    ],
+    "uncertain": false,
+    "annotation_note": ""
+  },
+  {
+    "conversation_id": "2030790",
+    "customer_tweet_id": "2030791",
+    "split": "test",
+    "prior_context": [],
+    "linked_context_incomplete": false,
+    "customer_text": "@SpotifyCares @117153 already paid spotify premium payment,  but still not working (still free user). https://t.co/GmmVlCvlb9",
+    "intent": "subscription_plans",
+    "expected_action": "escalate",
+    "action_reason": "They report paying for Premium while the account remains Free.",
+    "required_reply_points": [
+      "Recommend a purchase and account entitlement review."
+    ],
+    "forbidden_claims": [
+      "Claim the subscription was checked or changed",
+      "Promise eligibility, activation, or an unverified offer",
+      "Claim a human handoff has already happened"
+    ],
+    "uncertain": false,
+    "annotation_note": ""
+  },
+  {
+    "conversation_id": "2588881",
+    "customer_tweet_id": "2588883",
+    "split": "test",
+    "prior_context": [
+      {
+        "tweet_id": "2588884",
+        "role": "customer",
+        "text": "@115888 Uhm, hello. I bought premium and I have done troubleshooting. Phone and desktop were not synced with correct acct. Please help! https://t.co/KwF2qCpoPl"
+      }
+    ],
+    "linked_context_incomplete": false,
+    "customer_text": "@115888 @SpotifyCares Help, please.",
+    "intent": "subscription_plans",
+    "expected_action": "escalate",
+    "action_reason": "Premium access is still inconsistent across devices after troubleshooting.",
+    "required_reply_points": [
+      "Recommend account support and acknowledge the phone and desktop mismatch."
+    ],
+    "forbidden_claims": [
+      "Claim the subscription was checked or changed",
+      "Promise eligibility, activation, or an unverified offer",
+      "Claim a human handoff has already happened"
+    ],
+    "uncertain": false,
+    "annotation_note": ""
+  },
+  {
+    "conversation_id": "1085653",
+    "customer_tweet_id": "1085654",
+    "split": "test",
+    "prior_context": [
+      {
+        "tweet_id": "1085655",
+        "role": "customer",
+        "text": "if someone doesn’t get the rest of aaliyah’s music on spotify i’m going to flip my shit😤"
+      }
+    ],
+    "linked_context_incomplete": false,
+    "customer_text": "i’ve waited TOO long. @115888 why? https://t.co/Va6UkTc7Sh",
+    "intent": "music_library_catalog",
+    "expected_action": "auto_handle",
+    "action_reason": "The earlier message identifies missing Aaliyah music.",
+    "required_reply_points": [
+      "Acknowledge the wait without inventing a rights dispute or release date."
+    ],
+    "forbidden_claims": [
+      "Invent a licensing reason, release date, or catalog correction",
+      "Claim to have opened a link or checked live availability"
+    ],
+    "uncertain": false,
+    "annotation_note": ""
+  },
+  {
+    "conversation_id": "721507",
+    "customer_tweet_id": "721508",
+    "split": "test",
+    "prior_context": [],
+    "linked_context_incomplete": false,
+    "customer_text": "Someone give the Spotify customer service people a raise. I've never had someone reply to me so fast and be so helpful before",
+    "intent": "praise_thanks",
+    "expected_action": "auto_handle",
+    "action_reason": "They praise the speed and usefulness of customer service.",
+    "required_reply_points": [
+      "Thank them without promising the same response time in future."
+    ],
+    "forbidden_claims": [
+      "Claim we personally fixed the earlier problem",
+      "Promise the same outcome or response time in future"
+    ],
+    "uncertain": false,
+    "annotation_note": ""
+  },
+  {
+    "conversation_id": "1889241",
+    "customer_tweet_id": "1889242",
+    "split": "test",
+    "prior_context": [],
+    "linked_context_incomplete": false,
+    "customer_text": "@SpotifyCares Hello, I'm not able to join back to a family plan. There's always an error showing up.",
+    "intent": "subscription_plans",
+    "expected_action": "escalate",
+    "action_reason": "Rejoining Family repeatedly produces an error.",
+    "required_reply_points": [
+      "Recommend official support to review the failed Family membership."
+    ],
+    "forbidden_claims": [
+      "Claim the subscription was checked or changed",
+      "Promise eligibility, activation, or an unverified offer",
+      "Claim a human handoff has already happened"
+    ],
+    "uncertain": false,
+    "annotation_note": ""
+  },
+  {
+    "conversation_id": "1718398",
+    "customer_tweet_id": "1718399",
+    "split": "test",
+    "prior_context": [
+      {
+        "tweet_id": "1718401",
+        "role": "customer",
+        "text": "@115888 do you guys plan on doing the 3 months for 0.99 again?"
+      },
+      {
+        "tweet_id": "1718400",
+        "role": "support",
+        "text": "@520303 Hey there! We don't have any info on this right now, but we'll let the right team know it's something you're looking forward to /AN"
+      }
+    ],
+    "linked_context_incomplete": false,
+    "customer_text": "@SpotifyCares Thank you",
+    "intent": "praise_thanks",
+    "expected_action": "auto_handle",
+    "action_reason": "They thank support after a promotion question was answered.",
+    "required_reply_points": [
+      "Briefly acknowledge the thanks without promising a promotion."
+    ],
+    "forbidden_claims": [
+      "Claim we personally fixed the earlier problem",
+      "Promise the same outcome or response time in future"
+    ],
+    "uncertain": false,
+    "annotation_note": ""
+  },
+  {
+    "conversation_id": "1194209",
+    "customer_tweet_id": "1194210",
+    "split": "test",
+    "prior_context": [
+      {
+        "tweet_id": "1194215",
+        "role": "customer",
+        "text": "@SpotifyCares restarting my phone doesn't work and when it stops playing I go back into the app and press play but this comes up... https://t.co/T51cHuLQVI"
+      },
+      {
+        "tweet_id": "1194214",
+        "role": "customer",
+        "text": "@SpotifyCares The ad plays but then the music doesn't. Eventually it plays it just takes a while I don't really mind but I'm curious as to why. https://t.co/7wb8vfjgaa"
+      },
+      {
+        "tweet_id": "1194213",
+        "role": "support",
+        "text": "@342991 2: Settings &gt; Battery &gt; three-dot icon at the top &gt; Battery optimisation &gt; tap the drop-down arrow &gt; All apps &gt; Spotify &gt; Don't optimize /MG"
+      },
+      {
+        "tweet_id": "1194212",
+        "role": "customer",
+        "text": "@SpotifyCares Thank you so much! I followed your instructions and I'll keep you posted! Sorry I'm in night mode https://t.co/QxrBxkNo26"
+      },
+      {
+        "tweet_id": "1194211",
+        "role": "support",
+        "text": "@342991 No worries! We'll keep an eye out for your update /RH"
+      }
+    ],
+    "linked_context_incomplete": false,
+    "customer_text": "@SpotifyCares It works! Yes! There's no more stopping! Thanks!",
+    "intent": "praise_thanks",
+    "expected_action": "auto_handle",
+    "action_reason": "They confirm that playback now works after the earlier instructions.",
+    "required_reply_points": [
+      "Acknowledge their success without guaranteeing the issue cannot return."
+    ],
+    "forbidden_claims": [
+      "Claim we personally fixed the earlier problem",
+      "Promise the same outcome or response time in future"
+    ],
+    "uncertain": false,
+    "annotation_note": ""
+  }
+]

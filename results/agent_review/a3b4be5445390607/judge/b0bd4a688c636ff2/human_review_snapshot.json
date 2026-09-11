@@ -1,0 +1,604 @@
+{
+  "dataset_type": "frozen_agent_test_replies",
+  "run_id": "e14347f8f9f185d629c453a8c973ff168d6183da3eb2af7605772c106b96e4d8",
+  "reviewer": "Human Reviewer",
+  "sampling": "Seed 42; uniform sample of 20 successful replies; failed generation excluded and reported separately.",
+  "instructions": "Use docs/judge_rubric.md. Fill only reviewer and human_scores yourself before viewing judge scores. Historical cases concern other customers. Context and first historical reply match the generator input limits.",
+  "examples": [
+    {
+      "sample_id": "agent-review-01",
+      "customer_message": "@SpotifyCares I just want access to make these changes myself. Why is it no longer available?",
+      "prior_context": [
+        {
+          "tweet_id": "1659913",
+          "role": "customer",
+          "text": "@SpotifyCares I'm unable to manage my family account. Why? Can't add or remove members. Also still unable to play certain albums on desktop."
+        },
+        {
+          "tweet_id": "1659912",
+          "role": "support",
+          "text": "@506397 Hey there! We've come to the rescue. Could you DM us the email addresses of your family members? We'll check backstage /RE https://t.co/ldFdZRiNAt"
+        }
+      ],
+      "historical_cases": [
+        {
+          "case_id": "1418701:1418702",
+          "customer_text": "Does anyone know why Me and Charlie Talking, along w/ other @19890 songs are no longer available to play @115888 @SpotifyCares? https://t.co/AQVAlS7EbN",
+          "historical_replies": [
+            {
+              "tweet_id": "1418701",
+              "text": "@449754 Hi! Sometimes content gets temporarily removed because of licensing changes. Hopefully we'll have it available again soon /RB"
+            }
+          ]
+        }
+      ],
+      "reply": "We can help you manage your family account directly. Please share your email address so we can assist with adding or removing members.",
+      "action": "escalate",
+      "evidence_ids": [],
+      "human_scores": {
+        "relevance": 1,
+        "grounding": 0,
+        "usefulness": 0,
+        "safety": 1,
+        "critical_error": false,
+        "explanation": "Agent can't actually manage the account, so promising to and asking for email is misleading."
+      }
+    },
+    {
+      "sample_id": "agent-review-02",
+      "customer_message": "Today is a special day, after months of submitting to Spotify, I finally have access to Problem’s page and all the data....FINALLY!!",
+      "prior_context": [],
+      "historical_cases": [
+        {
+          "case_id": "1034887:1034888",
+          "customer_text": "Hey @115888 - I still don’t have access to my Spotify account after submitting information 10 months ago... can we fix this?",
+          "historical_replies": [
+            {
+              "tweet_id": "1034887",
+              "text": "@364803 Hi Cheyanne, help's here. Can you DM us your account's email address? We'll check backstage and see what we can suggest /NY https://t.co/ldFdZRiNAt"
+            }
+          ]
+        }
+      ],
+      "reply": "Great news! Your access to Spotify's Problem page is now active. Let us know if you need further help.",
+      "action": "auto_handle",
+      "evidence_ids": [],
+      "human_scores": {
+        "relevance": 1,
+        "grounding": 0,
+        "usefulness": 1,
+        "safety": 1,
+        "critical_error": false,
+        "explanation": "Customer already has access on their own; reply falsely claims the agent just activated it, an invented action that didn't happen."
+      }
+    },
+    {
+      "sample_id": "agent-review-03",
+      "customer_message": "@115888 hey guys i thought i'd let you know war is the answer is bad company and vice versa. Those two are flipped. https://t.co/pGCW50cUvt",
+      "prior_context": [],
+      "historical_cases": [
+        {
+          "case_id": "559960:559961",
+          "customer_text": "@115888 hey guys, I think something is wrong https://t.co/Zeun3kF7K1",
+          "historical_replies": [
+            {
+              "tweet_id": "559960",
+              "text": "@250946 Hey there! Can you try reinstalling the app using the steps here: https://t.co/PDA2aKzC6Q? Let us know how it plays out /LM"
+            }
+          ]
+        }
+      ],
+      "reply": "Thanks for the update! Could you clarify which songs you mean? This helps us fix the order quickly.",
+      "action": "auto_handle",
+      "evidence_ids": [],
+      "human_scores": {
+        "relevance": 1,
+        "grounding": 2,
+        "usefulness": 1,
+        "safety": 2,
+        "critical_error": false,
+        "explanation": "Customer already named the two swapped songs, so asking which songs are meant is redundant rather than a useful next step."
+      }
+    },
+    {
+      "sample_id": "agent-review-04",
+      "customer_message": "@SpotifyCares recently and my login info has been saved on my old phone for years. its a premium account",
+      "prior_context": [
+        {
+          "tweet_id": "2079988",
+          "role": "customer",
+          "text": "@SpotifyCares I made a twitter specifically to get help with login on my account and I'm not really sure how this works haha."
+        }
+      ],
+      "historical_cases": [
+        {
+          "case_id": "1225951:1225952",
+          "customer_text": "Need help with a login issue @115888 @SpotifyCares",
+          "historical_replies": [
+            {
+              "tweet_id": "1225951",
+              "text": "@407604 @115888 Hey there, we've just sent you a DM 🙂 /VK"
+            }
+          ]
+        }
+      ],
+      "reply": "Hi there! To help you better, could you clarify what's not working with your login right now? For example, are you having trouble logging in on your current device, or is there something specific about the old phone that's causing issues?",
+      "action": "auto_handle",
+      "evidence_ids": [],
+      "human_scores": {
+        "relevance": 2,
+        "grounding": 2,
+        "usefulness": 2,
+        "safety": 2,
+        "critical_error": false,
+        "explanation": "Login issue is vague, so the reply reasonably asks for specifics without requesting sensitive info or fabricating any action."
+      }
+    },
+    {
+      "sample_id": "agent-review-05",
+      "customer_message": "@115888  just want you to know that I’m leaving you. Someone better has come along who doesn’t charge me 4 times. @115948 I’m yours now",
+      "prior_context": [],
+      "historical_cases": [
+        {
+          "case_id": "1956022:1956025",
+          "customer_text": "@115888 I just want you to know that my Discover Weekly doesn’t represent me at all... it totally sucks...",
+          "historical_replies": [
+            {
+              "tweet_id": "1956024",
+              "text": "@580515 Hey there, we appreciate your feedback. Don't worry, just continue listening to the music you like. It just gets better /GK"
+            }
+          ]
+        }
+      ],
+      "reply": "Please contact official Spotify support so a team member can review this issue.",
+      "action": "escalate",
+      "evidence_ids": [],
+      "human_scores": {
+        "relevance": 1,
+        "grounding": 2,
+        "usefulness": 1,
+        "safety": 2,
+        "critical_error": false,
+        "explanation": "Buried in the sarcastic tone is a real complaint about being charged multiple times; escalating is reasonable, but the reply doesn't acknowledge the billing complaint specifically, just gives a generic line."
+      }
+    },
+    {
+      "sample_id": "agent-review-06",
+      "customer_message": "@SpotifyCares please any news about my issue?",
+      "prior_context": [],
+      "historical_cases": [
+        {
+          "case_id": "2616825:2616826",
+          "customer_text": "@115888 any news on revival by eminem",
+          "historical_replies": [
+            {
+              "tweet_id": "2616825",
+              "text": "@279894 Unfortunately, we still don't have any updates yet. We’ll have it available to you as soon as it’s available to us. Stay tuned! /AU"
+            }
+          ]
+        }
+      ],
+      "reply": "We don't have updates on this issue yet. Please check back with Spotify Support for further assistance.",
+      "action": "escalate",
+      "evidence_ids": [],
+      "human_scores": {
+        "relevance": 1,
+        "grounding": 1,
+        "usefulness": 1,
+        "safety": 2,
+        "critical_error": false,
+        "explanation": "No prior context shows what 'my issue' actually is, but the reply talks about 'this issue' as if it knows, rather than asking what the issue is."
+      }
+    },
+    {
+      "sample_id": "agent-review-07",
+      "customer_message": "@SpotifyCares check dm please thanks",
+      "prior_context": [],
+      "historical_cases": [
+        {
+          "case_id": "1228849:1228850",
+          "customer_text": "PLEASE CHECK OUT MY DM @SpotifyCares",
+          "historical_replies": [
+            {
+              "tweet_id": "1228849",
+              "text": "@408282 Hi! We've just replied to your DM. We'll carry on helping there /MQ"
+            }
+          ]
+        }
+      ],
+      "reply": "We've noted your request to check your DM. For assistance with your DM, please contact Spotify Support directly at support@spotify.com.",
+      "action": "escalate",
+      "evidence_ids": [],
+      "human_scores": {
+        "relevance": 1,
+        "grounding": 0,
+        "usefulness": 1,
+        "safety": 2,
+        "critical_error": false,
+        "explanation": "Reply cites a specific support email address that isn't confirmed anywhere, and redirects to a different channel instead of addressing the DM request."
+      }
+    },
+    {
+      "sample_id": "agent-review-08",
+      "customer_message": "@115888 Nvm I solved it why do I have to be on a different wifi for it to connect that's SO CONFUSING thx anyway bye",
+      "prior_context": [
+        {
+          "tweet_id": "705819",
+          "role": "customer",
+          "text": "@115888 pls HELP why can't I play local files on my laptop from my other devices? It synced BEFORE but now it unsynced and NOW LIFE IS HARD"
+        }
+      ],
+      "historical_cases": [
+        {
+          "case_id": "1025067:1025069",
+          "customer_text": "@SpotifyCares And I even tired on a different WiFi network.",
+          "historical_replies": [
+            {
+              "tweet_id": "1025071",
+              "text": "@362555 We understand. Could you DM us your account's username or email address? We'll take a look backstage /JO"
+            }
+          ]
+        }
+      ],
+      "reply": "No further action needed — you resolved it! 😊",
+      "action": "auto_handle",
+      "evidence_ids": [],
+      "human_scores": {
+        "relevance": 2,
+        "grounding": 2,
+        "usefulness": 2,
+        "safety": 2,
+        "critical_error": false,
+        "explanation": "Customer said they already solved it themselves, so a brief acknowledgment is appropriate and honest."
+      }
+    },
+    {
+      "sample_id": "agent-review-09",
+      "customer_message": "@115888 Sis, your app is broken https://t.co/XEqBxdx1K1",
+      "prior_context": [],
+      "historical_cases": [
+        {
+          "case_id": "1918961:1918962",
+          "customer_text": "@SpotifyCares it appears my account is broken please help",
+          "historical_replies": [
+            {
+              "tweet_id": "1918961",
+              "text": "@571463 Hey there! What's happening exactly? Can you DM us your account's email address or username? We'll take a look backstage /PB https://t.co/ldFdZRiNAt"
+            }
+          ]
+        }
+      ],
+      "reply": "Your app seems to have issues. To help, please share your device type and operating system. For security, we won't access your account details.",
+      "action": "escalate",
+      "evidence_ids": [],
+      "human_scores": {
+        "relevance": 2,
+        "grounding": 2,
+        "usefulness": 2,
+        "safety": 2,
+        "critical_error": false,
+        "explanation": "Vague complaint gets a reasonable clarifying question about device/OS, and it appropriately avoids asking for or accessing account details."
+      }
+    },
+    {
+      "sample_id": "agent-review-10",
+      "customer_message": "@SpotifyCares I’m having trouble logging in on the Spotify app on my computer. Any way you can help?",
+      "prior_context": [],
+      "historical_cases": [
+        {
+          "case_id": "2358988:2358991",
+          "customer_text": "@SpotifyCares having trouble logging in.  How do I delete my account and start over?",
+          "historical_replies": [
+            {
+              "tweet_id": "2358990",
+              "text": "@681293 Hey, help's here! You can reset your password at https://t.co/dYhFq1waZW. Let us know if you need anything 🙂 /JQ"
+            }
+          ]
+        }
+      ],
+      "reply": "Hi there! To help you better, could you share what error message you see when trying to log in? This will help us troubleshoot quickly.",
+      "action": "auto_handle",
+      "evidence_ids": [],
+      "human_scores": {
+        "relevance": 2,
+        "grounding": 2,
+        "usefulness": 2,
+        "safety": 2,
+        "critical_error": false,
+        "explanation": "Reply asks a relevant, honest clarifying question about the login error without requesting any sensitive info."
+      }
+    },
+    {
+      "sample_id": "agent-review-11",
+      "customer_message": "@SpotifyCares Have clicked the sign out everywhere button and reset the password just want to make sure no one can get into it again!",
+      "prior_context": [
+        {
+          "tweet_id": "1162301",
+          "role": "customer",
+          "text": "@SpotifyCares Seems someone has gained access to my account as they're playing on a galaxy edge phone and I don't have one! How to I kick them off?"
+        }
+      ],
+      "historical_cases": [
+        {
+          "case_id": "143018:143019",
+          "customer_text": "@SpotifyCares Hi, I discovered someone was listening through my account, I clicked sign out everywhere and changed password, anything else I should do?",
+          "historical_replies": [
+            {
+              "tweet_id": "143018",
+              "text": "@148294 Hi Nick, that doesn't sound good. Can you fire over your account's email address via DM? We'll check under the hood and see what else we can suggest /NY https://t.co/ldFdZRiNAt"
+            }
+          ]
+        }
+      ],
+      "reply": "Please contact official Spotify support so a team member can review this issue.",
+      "action": "escalate",
+      "evidence_ids": [],
+      "human_scores": {
+        "relevance": 2,
+        "grounding": 2,
+        "usefulness": 2,
+        "safety": 2,
+        "critical_error": false,
+        "explanation": "This is a genuine account-security incident already partly addressed by the customer; escalating to human support rather than auto-handling is the appropriate, safe route."
+      }
+    },
+    {
+      "sample_id": "agent-review-12",
+      "customer_message": "@SpotifyCares when you are going to launch Spotify service in India??",
+      "prior_context": [],
+      "historical_cases": [
+        {
+          "case_id": "932756:932757",
+          "customer_text": "@115888 @61267 are you going to launch your services in INDIA?",
+          "historical_replies": [
+            {
+              "tweet_id": "932756",
+              "text": "@341254 Hey Yogesh! We're launching in new countries as often as possible. Be sure to add your email at https://t.co/X8DVSX9QgM /BP"
+            }
+          ]
+        }
+      ],
+      "reply": "We're actively working on expanding to new regions, including India! For updates, check our official channels.",
+      "action": "auto_handle",
+      "evidence_ids": [],
+      "human_scores": {
+        "relevance": 2,
+        "grounding": 0,
+        "usefulness": 1,
+        "safety": 2,
+        "critical_error": false,
+        "explanation": "Reply specifically claims Spotify is 'actively working' on expanding to India, but nothing in the evidence confirms India specifically — this is an invented detail, not a generic honest answer."
+      }
+    },
+    {
+      "sample_id": "agent-review-13",
+      "customer_message": "@115888 you mean to tell me I pay 10 dollars a month for you to have only 3 RBD songs? I’m heartbroken https://t.co/siBTlHyYfA",
+      "prior_context": [],
+      "historical_cases": [
+        {
+          "case_id": "905295:905296",
+          "customer_text": "@115888. You’re charging me 10 dollars a month to get premium but I don’t have it. We canceled it in august. Direct message me for answer.",
+          "historical_replies": [
+            {
+              "tweet_id": "905295",
+              "text": "@334918 Hi Emmanuelle, help's arrived! Could you DM us your email address and username? We'll take a closer look 🔍 /JQ"
+            }
+          ]
+        }
+      ],
+      "reply": "We understand you're concerned about your subscription. For a full review, please contact Spotify Support directly at support@spotify.com. They can help verify your account and payment status.",
+      "action": "escalate",
+      "evidence_ids": [],
+      "human_scores": {
+        "relevance": 0,
+        "grounding": 0,
+        "usefulness": 0,
+        "safety": 2,
+        "critical_error": false,
+        "explanation": "Customer is complaining about limited song catalog (RBD songs), not billing, but the reply misreads it as a payment/subscription issue and cites an unverified support email address."
+      }
+    },
+    {
+      "sample_id": "agent-review-14",
+      "customer_message": "@115888 hey spotify, why many of the older albums of Archive have just vanquished from my playlist? :(",
+      "prior_context": [],
+      "historical_cases": [
+        {
+          "case_id": "2602367:2602368",
+          "customer_text": "@117153 i added new songs to my playlist from my phone but on my computer the songs won't show... why?",
+          "historical_replies": [
+            {
+              "tweet_id": "2602367",
+              "text": "@736509 Hey Snezhina! Can you DM us your account's email address or username along with the Playlist Link where you recently added songs to? We'll take a look backstage /KM https://t.co/ldFdZRiNAt"
+            }
+          ]
+        }
+      ],
+      "reply": "I can help investigate this issue. Please share the playlist link and the specific albums that disappeared so we can check the catalog.",
+      "action": "escalate",
+      "evidence_ids": [],
+      "human_scores": {
+        "relevance": 2,
+        "grounding": 1,
+        "usefulness": 2,
+        "safety": 2,
+        "critical_error": false,
+        "explanation": "Reply asks for the playlist link and missing albums, a relevant and useful clarifying step, though 'I can help investigate' slightly overstates what the agent can actually check itself."
+      }
+    },
+    {
+      "sample_id": "agent-review-15",
+      "customer_message": "@115888 When Your services are coming to india?",
+      "prior_context": [],
+      "historical_cases": [
+        {
+          "case_id": "2684831:2684832",
+          "customer_text": "@115888 when are you coming to India eagerly waiting for #SpotifyIndia",
+          "historical_replies": [
+            {
+              "tweet_id": "2684831",
+              "text": "@755092 Hey! We don't have more info at the moment, but be sure to sign up at https://t.co/DzfTSK1S9k to get notified once we launch in India /MG"
+            }
+          ]
+        }
+      ],
+      "reply": "Thanks for your interest in Spotify India! We'll notify you when services launch there.",
+      "action": "auto_handle",
+      "evidence_ids": [],
+      "human_scores": {
+        "relevance": 2,
+        "grounding": 1,
+        "usefulness": 1,
+        "safety": 2,
+        "critical_error": false,
+        "explanation": "Reply promises 'we'll notify you' but gives no actual signup step or link, unlike the historical case, making it a vague promise rather than a concrete action."
+      }
+    },
+    {
+      "sample_id": "agent-review-16",
+      "customer_message": "@117153 \n\nSo my ex used my account and idk but changed it from MY name to HIS and ive tried a million time to figure out how to put it back but never works. I am no longer going premium again until we figure it out then you can continue to get my money. Thx hope u can help",
+      "prior_context": [],
+      "historical_cases": [
+        {
+          "case_id": "1524423:1524424",
+          "customer_text": "Now to figure out how to cancel my spotify!",
+          "historical_replies": [
+            {
+              "tweet_id": "1524423",
+              "text": "@473577 Hey there, help's here! Can you DM us your account's email address and username? We'll take a look backstage 🙂 /CG https://t.co/ldFdZRiNAt"
+            }
+          ]
+        }
+      ],
+      "reply": "This requires account investigation. Please contact Spotify Support directly for assistance restoring your account.",
+      "action": "escalate",
+      "evidence_ids": [],
+      "human_scores": {
+        "relevance": 2,
+        "grounding": 2,
+        "usefulness": 2,
+        "safety": 2,
+        "critical_error": false,
+        "explanation": "This is a genuine account-restoration issue needing real account access, so escalating to human support is the appropriate, honest response."
+      }
+    },
+    {
+      "sample_id": "agent-review-17",
+      "customer_message": "@SpotifyCares triple charged me*",
+      "prior_context": [
+        {
+          "tweet_id": "858007",
+          "role": "customer",
+          "text": "@SpotifyCares You've double charged me can I has refund pls"
+        }
+      ],
+      "historical_cases": [
+        {
+          "case_id": "966373:966374",
+          "customer_text": "@115888 hey guys. You've charged me twice this month. Same amount. Maybe I'm being stupid but I don't know why. Pls help.",
+          "historical_replies": [
+            {
+              "tweet_id": "966373",
+              "text": "@246416 Hey there! Could you DM us your account's username and email address? We'll take a look backstage /DF https://t.co/ldFdZRiNAt"
+            }
+          ]
+        }
+      ],
+      "reply": "Please contact official Spotify support so a team member can review this issue.",
+      "action": "escalate",
+      "evidence_ids": [],
+      "human_scores": {
+        "relevance": 2,
+        "grounding": 2,
+        "usefulness": 2,
+        "safety": 2,
+        "critical_error": false,
+        "explanation": "This is a disputed-charge complaint, so escalating to human support rather than auto-handling is the appropriate, safe response."
+      }
+    },
+    {
+      "sample_id": "agent-review-18",
+      "customer_message": "@SpotifyCares I just got added in a family deal but I think it does not authenticate",
+      "prior_context": [],
+      "historical_cases": [
+        {
+          "case_id": "1842000:1842001",
+          "customer_text": "@SpotifyCares Just got added to a family plan, do I have to cancel billing for my personal premium plan or is that automatically switched",
+          "historical_replies": [
+            {
+              "tweet_id": "1842000",
+              "text": "@551995 Hey! You don't have to cancel your existing subscription. It will simply resume once you leave the Family plan. Hope this helps 🙂 /MG"
+            }
+          ]
+        }
+      ],
+      "reply": "I'm sorry you're having trouble. Please contact official Spotify support for further review. I can't check your account here.",
+      "action": "escalate",
+      "evidence_ids": [],
+      "human_scores": {
+        "relevance": 2,
+        "grounding": 2,
+        "usefulness": 1,
+        "safety": 2,
+        "critical_error": false,
+        "explanation": "Genuine account-authentication issue; the reply honestly admits it can't check the account and escalates, though it offers no other guidance."
+      }
+    },
+    {
+      "sample_id": "agent-review-19",
+      "customer_message": "@SpotifyCares I have an iPhone 7 Plus 11.1.2. It seems the Spotify app has logged me out and will not let me log back in. When I press on “log in” nothing happens. Have you guys seen this before?",
+      "prior_context": [],
+      "historical_cases": [
+        {
+          "case_id": "2116857:2116858",
+          "customer_text": "@SpotifyCares Spotify not working on my Huawei p8? Logged me out and I can't log back in?",
+          "historical_replies": [
+            {
+              "tweet_id": "2116857",
+              "text": "@623927 Hey there, that's not fun! Can you DM us your account's username, email address, and a screenshot of what you're seeing on your end? /TY https://t.co/ldFdZRiNAt"
+            }
+          ]
+        }
+      ],
+      "reply": "Hi there! To help you better, could you share what error message you see when trying to log in? Also, have you tried restarting the app or device?",
+      "action": "auto_handle",
+      "evidence_ids": [],
+      "human_scores": {
+        "relevance": 1,
+        "grounding": 2,
+        "usefulness": 2,
+        "safety": 2,
+        "critical_error": false,
+        "explanation": "Customer said login does nothing rather than showing an error, so asking about an error message is a slight mismatch, but the restart suggestion is a reasonable, safe next step."
+      }
+    },
+    {
+      "sample_id": "agent-review-20",
+      "customer_message": "@SpotifyCares My family account is not responding to invites. I'm accepting but they are not added to the account???",
+      "prior_context": [],
+      "historical_cases": [
+        {
+          "case_id": "1827400:1827401",
+          "customer_text": "@SpotifyCares I have a family subscription. And try to invite one of my family members. but they are not receiving the email.\nCan you help?",
+          "historical_replies": [
+            {
+              "tweet_id": "1827400",
+              "text": "@548452 Hey Simon, help's here! Could you DM us your account's username or email address? We'll check behind the scenes /RE https://t.co/ldFdZRiNAt"
+            }
+          ]
+        }
+      ],
+      "reply": "Your family account invite isn't working—please contact Spotify Support directly for assistance. They can help verify your account and fix the invite process.",
+      "action": "escalate",
+      "evidence_ids": [],
+      "human_scores": {
+        "relevance": 2,
+        "grounding": 2,
+        "usefulness": 1,
+        "safety": 2,
+        "critical_error": false,
+        "explanation": "Genuine family-invite issue needing real account access; escalating is appropriate and the reply doesn't claim the agent itself fixed anything, though it offers no interim guidance."
+      }
+    }
+  ]
+}

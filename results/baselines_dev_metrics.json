@@ -1,0 +1,54 @@
+{
+  "evaluation": "Leave-one-conversation-out development evaluation",
+  "label_basis": "AI-drafted labels; independent human review not verified",
+  "limitations": [
+    "These are development results, not final test results.",
+    "Scores measure agreement with the supplied labels.",
+    "Unsafe auto-handle rate measures routing errors, not reply safety.",
+    "Reply quality is not evaluated by this script."
+  ],
+  "intent_counts": {
+    "music_library_catalog": 11,
+    "product_feedback": 6,
+    "billing_payments": 6,
+    "other_unclear": 6,
+    "account_access_security": 8,
+    "app_device_issues": 2,
+    "playback_offline": 4,
+    "subscription_plans": 4,
+    "praise_thanks": 3
+  },
+  "uncertain_labels_included": 4,
+  "metrics": {
+    "trivial": {
+      "examples": 50,
+      "intent_accuracy": 0.22,
+      "intent_macro_f1": 0.04007285974499089,
+      "action_accuracy": 0.34,
+      "escalation_recall": 1.0,
+      "auto_handle_coverage": 0.0,
+      "unsafe_auto_handle_rate": null,
+      "counts": {
+        "expected_escalations": 17,
+        "caught_escalations": 17,
+        "auto_handled": 0,
+        "unsafe_auto_handled": 0
+      }
+    },
+    "simple": {
+      "examples": 50,
+      "intent_accuracy": 0.42,
+      "intent_macro_f1": 0.33689104917175094,
+      "action_accuracy": 0.52,
+      "escalation_recall": 0.4117647058823529,
+      "auto_handle_coverage": 0.58,
+      "unsafe_auto_handle_rate": 0.3448275862068966,
+      "counts": {
+        "expected_escalations": 17,
+        "caught_escalations": 7,
+        "auto_handled": 29,
+        "unsafe_auto_handled": 10
+      }
+    }
+  }
+}

@@ -1,0 +1,455 @@
+[
+  {
+    "conversation_id": "2183121",
+    "customer_tweet_id": "2183124",
+    "split": "test",
+    "prior_context": [],
+    "linked_context_incomplete": false,
+    "customer_text": "quick #shoutout to @86440 and @125633 for their continuous support. These 2 are always there to answer all of my weird questions. haha",
+    "intent": "praise_thanks",
+    "expected_action": "auto_handle",
+    "action_reason": "They praise teams for answering their questions.",
+    "required_reply_points": [
+      "Thank them for the kind words without inventing details of earlier help."
+    ],
+    "forbidden_claims": [
+      "Claim we personally fixed the earlier problem",
+      "Promise the same outcome or response time in future"
+    ],
+    "uncertain": false,
+    "annotation_note": ""
+  },
+  {
+    "conversation_id": "1900608",
+    "customer_tweet_id": "1900609",
+    "split": "test",
+    "prior_context": [],
+    "linked_context_incomplete": false,
+    "customer_text": "@117153  \n\nI was charged the annual subscription but the premin does not work for me",
+    "intent": "subscription_plans",
+    "expected_action": "escalate",
+    "action_reason": "An annual charge reportedly has not activated Premium.",
+    "required_reply_points": [
+      "Recommend support to check the payment and subscription entitlement."
+    ],
+    "forbidden_claims": [
+      "Claim the subscription was checked or changed",
+      "Promise eligibility, activation, or an unverified offer",
+      "Claim a human handoff has already happened"
+    ],
+    "uncertain": false,
+    "annotation_note": ""
+  },
+  {
+    "conversation_id": "2022690",
+    "customer_tweet_id": "2022691",
+    "split": "test",
+    "prior_context": [],
+    "linked_context_incomplete": false,
+    "customer_text": "@SpotifyCares hey it's happening again @146177 has more listeners but @118062 is ranked ahead of him inspite of having less amount of listeners. Is there a problem at my end or is this what everyone is seeing??? #Spotify #WalkOnWater #Reputation https://t.co/S7o8GrRXXQ",
+    "intent": "music_library_catalog",
+    "expected_action": "auto_handle",
+    "action_reason": "They report an apparent mismatch between listener counts and artist rankings.",
+    "required_reply_points": [
+      "Explain that we cannot verify the ranking logic and ask which ranking page they mean."
+    ],
+    "forbidden_claims": [
+      "Invent a licensing reason, release date, or catalog correction",
+      "Claim to have opened a link or checked live availability"
+    ],
+    "uncertain": true,
+    "annotation_note": "Review this interpretation against the visible context."
+  },
+  {
+    "conversation_id": "1103028",
+    "customer_tweet_id": "1103029",
+    "split": "test",
+    "prior_context": [],
+    "linked_context_incomplete": false,
+    "customer_text": "Today is a special day, after months of submitting to Spotify, I finally have access to Problem’s page and all the data....FINALLY!!",
+    "intent": "praise_thanks",
+    "expected_action": "auto_handle",
+    "action_reason": "They celebrate finally getting artist-page access.",
+    "required_reply_points": [
+      "Acknowledge the successful access without claiming to have granted it."
+    ],
+    "forbidden_claims": [
+      "Claim we personally fixed the earlier problem",
+      "Promise the same outcome or response time in future"
+    ],
+    "uncertain": false,
+    "annotation_note": ""
+  },
+  {
+    "conversation_id": "2058597",
+    "customer_tweet_id": "2058598",
+    "split": "test",
+    "prior_context": [],
+    "linked_context_incomplete": false,
+    "customer_text": "@115888 When Your services are coming to india?",
+    "intent": "subscription_plans",
+    "expected_action": "auto_handle",
+    "action_reason": "They ask when service will launch in India.",
+    "required_reply_points": [
+      "Avoid giving a launch date that is not supported by verified information."
+    ],
+    "forbidden_claims": [
+      "Claim the subscription was checked or changed",
+      "Promise eligibility, activation, or an unverified offer"
+    ],
+    "uncertain": false,
+    "annotation_note": ""
+  },
+  {
+    "conversation_id": "65993",
+    "customer_tweet_id": "65994",
+    "split": "test",
+    "prior_context": [
+      {
+        "tweet_id": "65998",
+        "role": "customer",
+        "text": "@SpotifyCares I received an email from __email__ asking me to subscribe to Spotify and without thinking I added two of my credit card details to the link in the email instead of doing it directly on your website. Please verify it is legitimate."
+      },
+      {
+        "tweet_id": "65996",
+        "role": "support",
+        "text": "@131099 Hey Jorge! Can you DM us your account's username or email address? Also, a screenshot of the email you've received would be super handy. Just make sure to mask your private information if there's any. We'd like to take a closer look /MS https://t.co/ldFdZRiNAt"
+      },
+      {
+        "tweet_id": "65995",
+        "role": "customer",
+        "text": "@SpotifyCares  https://t.co/iLZuNEpki5"
+      }
+    ],
+    "linked_context_incomplete": false,
+    "customer_text": "@SpotifyCares What do you mean by “DM”?",
+    "intent": "account_access_security",
+    "expected_action": "escalate",
+    "action_reason": "The question about DM follows possible exposure of card details through an email link.",
+    "required_reply_points": [
+      "Explain that DM means direct message and recommend official security support for the suspicious email."
+    ],
+    "forbidden_claims": [
+      "Claim the account was checked or changed",
+      "Request passwords or account secrets",
+      "Claim a human handoff has already happened"
+    ],
+    "uncertain": false,
+    "annotation_note": ""
+  },
+  {
+    "conversation_id": "2426257",
+    "customer_tweet_id": "2426259",
+    "split": "test",
+    "prior_context": [],
+    "linked_context_incomplete": false,
+    "customer_text": "@115888 @SpotifyCares Dear Spotify. for this years Christmas i wish for some god damn in-app Lyrics. Thank you for all the good music Santa",
+    "intent": "product_feedback",
+    "expected_action": "auto_handle",
+    "action_reason": "They request in-app lyrics.",
+    "required_reply_points": [
+      "Acknowledge the lyrics request without promising the feature."
+    ],
+    "forbidden_claims": [
+      "Promise the suggestion will be built or forwarded",
+      "Claim knowledge of an unpublished product roadmap"
+    ],
+    "uncertain": false,
+    "annotation_note": ""
+  },
+  {
+    "conversation_id": "2564277",
+    "customer_tweet_id": "2564278",
+    "split": "test",
+    "prior_context": [],
+    "linked_context_incomplete": false,
+    "customer_text": "@SpotifyCares So I need to cancel my beloved account to disconnect it from Facebook, can I save/download my playlists somewhere so I can recreate them with my new account? Help 💔",
+    "intent": "account_access_security",
+    "expected_action": "escalate",
+    "action_reason": "They want to preserve playlists while separating an account from Facebook.",
+    "required_reply_points": [
+      "Recommend account support before deleting anything and do not assume cancellation is necessary."
+    ],
+    "forbidden_claims": [
+      "Claim the account was checked or changed",
+      "Request passwords or account secrets",
+      "Claim a human handoff has already happened"
+    ],
+    "uncertain": true,
+    "annotation_note": "Review this interpretation against the visible context."
+  },
+  {
+    "conversation_id": "563542",
+    "customer_tweet_id": "563543",
+    "split": "test",
+    "prior_context": [],
+    "linked_context_incomplete": false,
+    "customer_text": "@SpotifyCares I received an offer for a yearly membership, however, when I hit the button, nothing happened. And now I can find it.",
+    "intent": "subscription_plans",
+    "expected_action": "auto_handle",
+    "action_reason": "An annual-offer button failed and they cannot find the offer again.",
+    "required_reply_points": [
+      "Ask where the offer appeared and avoid promising its price or availability."
+    ],
+    "forbidden_claims": [
+      "Claim the subscription was checked or changed",
+      "Promise eligibility, activation, or an unverified offer"
+    ],
+    "uncertain": true,
+    "annotation_note": "Review this interpretation against the visible context."
+  },
+  {
+    "conversation_id": "2429647",
+    "customer_tweet_id": "2429648",
+    "split": "test",
+    "prior_context": [],
+    "linked_context_incomplete": false,
+    "customer_text": "@115888 why does it take someone so long to respond? I’ve had the same issue persist for over a month. WTF spotify.",
+    "intent": "other_unclear",
+    "expected_action": "escalate",
+    "action_reason": "They report a month-long unresolved issue and slow support.",
+    "required_reply_points": [
+      "Acknowledge the delay and recommend human follow-up on the case."
+    ],
+    "forbidden_claims": [
+      "Guess the missing issue or linked content",
+      "Claim access to private messages or support case status",
+      "Claim a human handoff has already happened"
+    ],
+    "uncertain": false,
+    "annotation_note": ""
+  },
+  {
+    "conversation_id": "2035567",
+    "customer_tweet_id": "2035568",
+    "split": "test",
+    "prior_context": [],
+    "linked_context_incomplete": false,
+    "customer_text": "@SpotifyCares My family account is not responding to invites. I'm accepting but they are not added to the account???",
+    "intent": "subscription_plans",
+    "expected_action": "escalate",
+    "action_reason": "Accepted Family invitations do not add the members.",
+    "required_reply_points": [
+      "Recommend support to review the failed memberships without collecting relatives' emails."
+    ],
+    "forbidden_claims": [
+      "Claim the subscription was checked or changed",
+      "Promise eligibility, activation, or an unverified offer",
+      "Claim a human handoff has already happened"
+    ],
+    "uncertain": false,
+    "annotation_note": ""
+  },
+  {
+    "conversation_id": "2647461",
+    "customer_tweet_id": "2647462",
+    "split": "test",
+    "prior_context": [],
+    "linked_context_incomplete": false,
+    "customer_text": "@148611 @115888 still no Perfect Velvet album by Red Velvet? 😔",
+    "intent": "music_library_catalog",
+    "expected_action": "auto_handle",
+    "action_reason": "They ask about a missing Red Velvet album.",
+    "required_reply_points": [
+      "Acknowledge the missing album without guessing an availability date."
+    ],
+    "forbidden_claims": [
+      "Invent a licensing reason, release date, or catalog correction",
+      "Claim to have opened a link or checked live availability"
+    ],
+    "uncertain": false,
+    "annotation_note": ""
+  },
+  {
+    "conversation_id": "1175724",
+    "customer_tweet_id": "1175725",
+    "split": "test",
+    "prior_context": [],
+    "linked_context_incomplete": false,
+    "customer_text": "@SpotifyCares I don't know what my email address is but i know my username and need to cancel a subscription",
+    "intent": "subscription_plans",
+    "expected_action": "escalate",
+    "action_reason": "They need cancellation help but cannot identify the email on the account.",
+    "required_reply_points": [
+      "Recommend official account support without asking them to publish identifying details."
+    ],
+    "forbidden_claims": [
+      "Claim the subscription was checked or changed",
+      "Promise eligibility, activation, or an unverified offer",
+      "Claim a human handoff has already happened"
+    ],
+    "uncertain": false,
+    "annotation_note": ""
+  },
+  {
+    "conversation_id": "2727198",
+    "customer_tweet_id": "2727199",
+    "split": "test",
+    "prior_context": [],
+    "linked_context_incomplete": false,
+    "customer_text": "@115888 I want to disconnect my account which was created via Facebook. Now I need to create a new account and loose all my music?",
+    "intent": "account_access_security",
+    "expected_action": "escalate",
+    "action_reason": "They want to separate a Facebook-created account while preserving music.",
+    "required_reply_points": [
+      "Recommend account support before creating or deleting accounts and do not promise a transfer."
+    ],
+    "forbidden_claims": [
+      "Claim the account was checked or changed",
+      "Request passwords or account secrets",
+      "Claim a human handoff has already happened"
+    ],
+    "uncertain": false,
+    "annotation_note": ""
+  },
+  {
+    "conversation_id": "2297990",
+    "customer_tweet_id": "2297992",
+    "split": "test",
+    "prior_context": [],
+    "linked_context_incomplete": false,
+    "customer_text": "@SpotifyCares Hi I changed my phone yesterday to an iPhone6 but I can’t get Premium even though I’m a premium subscriber, please rectify for me. Thanks",
+    "intent": "subscription_plans",
+    "expected_action": "auto_handle",
+    "action_reason": "Premium is missing on a new phone and no checks are described.",
+    "required_reply_points": [
+      "Suggest verifying the usual sign-in method without asking for credentials."
+    ],
+    "forbidden_claims": [
+      "Claim the subscription was checked or changed",
+      "Promise eligibility, activation, or an unverified offer"
+    ],
+    "uncertain": false,
+    "annotation_note": ""
+  },
+  {
+    "conversation_id": "1531534",
+    "customer_tweet_id": "1531535",
+    "split": "test",
+    "prior_context": [],
+    "linked_context_incomplete": false,
+    "customer_text": "@SpotifyCares I'm trying to have only my email to sign in to my account. Can't reset password because I deleted my Facebook account.",
+    "intent": "account_access_security",
+    "expected_action": "escalate",
+    "action_reason": "Deleting Facebook has left them unable to reset the Spotify password.",
+    "required_reply_points": [
+      "Recommend account recovery support without claiming the login can be converted here."
+    ],
+    "forbidden_claims": [
+      "Claim the account was checked or changed",
+      "Request passwords or account secrets",
+      "Claim a human handoff has already happened"
+    ],
+    "uncertain": false,
+    "annotation_note": ""
+  },
+  {
+    "conversation_id": "558624",
+    "customer_tweet_id": "558625",
+    "split": "test",
+    "prior_context": [],
+    "linked_context_incomplete": false,
+    "customer_text": "@SpotifyCares hi its quite a while ago, but i removed a song from my playlist a long time ago, and i cant remember the name of the song, so maybe you could get it back for me?\n\n- Unknown&lt;3",
+    "intent": "music_library_catalog",
+    "expected_action": "escalate",
+    "action_reason": "They ask us to recover a removed song from private playlist history.",
+    "required_reply_points": [
+      "Explain we cannot inspect that history and recommend official support without promising recovery."
+    ],
+    "forbidden_claims": [
+      "Invent a licensing reason, release date, or catalog correction",
+      "Claim to have opened a link or checked live availability",
+      "Claim a human handoff has already happened"
+    ],
+    "uncertain": false,
+    "annotation_note": ""
+  },
+  {
+    "conversation_id": "1280820",
+    "customer_tweet_id": "1280821",
+    "split": "test",
+    "prior_context": [
+      {
+        "tweet_id": "1280822",
+        "role": "customer",
+        "text": "yo @115888 why have a couple of the saved playlists been unsaved from my phone :("
+      },
+      {
+        "tweet_id": "1280820",
+        "role": "support",
+        "text": "@419681 Hey Ella, that's no fun. Just to check, was your music unsaved (removed from your library) or undownloaded (desynced)? /JE"
+      }
+    ],
+    "linked_context_incomplete": false,
+    "customer_text": "@SpotifyCares oh sorry, they were undownloaded",
+    "intent": "playback_offline",
+    "expected_action": "auto_handle",
+    "action_reason": "They clarify that playlists lost their downloads rather than disappearing from the library.",
+    "required_reply_points": [
+      "Acknowledge that distinction and ask when the downloads disappear and on which device."
+    ],
+    "forbidden_claims": [
+      "Guarantee a troubleshooting step will work",
+      "Claim a bug or outage is confirmed without evidence"
+    ],
+    "uncertain": false,
+    "annotation_note": ""
+  },
+  {
+    "conversation_id": "1841195",
+    "customer_tweet_id": "1841196",
+    "split": "test",
+    "prior_context": [],
+    "linked_context_incomplete": false,
+    "customer_text": "@115888 do I have to pay for Spotify to be on another phone ? 😑",
+    "intent": "subscription_plans",
+    "expected_action": "auto_handle",
+    "action_reason": "They ask about subscription access on a second phone.",
+    "required_reply_points": [
+      "Clarify whether they mean changing phones or simultaneous listening before giving plan guidance."
+    ],
+    "forbidden_claims": [
+      "Claim the subscription was checked or changed",
+      "Promise eligibility, activation, or an unverified offer"
+    ],
+    "uncertain": false,
+    "annotation_note": ""
+  },
+  {
+    "conversation_id": "700657",
+    "customer_tweet_id": "700658",
+    "split": "test",
+    "prior_context": [
+      {
+        "tweet_id": "700661",
+        "role": "customer",
+        "text": "Spotify's shuffle is rigged (or very broken). I've music i haven't heard in months yet only plays 15 songs. I'd prove it if i cared enough."
+      },
+      {
+        "tweet_id": "700660",
+        "role": "customer",
+        "text": "@SpotifyCares please fix Shuffle. I have enough music for Shuffle to not be this picky https://t.co/IaSYaZhgqt"
+      },
+      {
+        "tweet_id": "700659",
+        "role": "support",
+        "text": "@287225 Hey there! We’ve recently made some improvements to our shuffle algorithm. We’d love to hear your feedback here: https://t.co/T3vZnSL3od /GU"
+      }
+    ],
+    "linked_context_incomplete": false,
+    "customer_text": "A whole algorithm for a simple function that's existed since Discman days, and it's entirely useless. Amazing. @SpotifyCares https://t.co/TcScgZBLBX",
+    "intent": "playback_offline",
+    "expected_action": "escalate",
+    "action_reason": "They report persistent selective shuffle after earlier advice did not address it.",
+    "required_reply_points": [
+      "Acknowledge the repeated tracks and recommend technical follow-up without claiming the algorithm was fixed."
+    ],
+    "forbidden_claims": [
+      "Guarantee a troubleshooting step will work",
+      "Claim a bug or outage is confirmed without evidence",
+      "Claim a human handoff has already happened"
+    ],
+    "uncertain": true,
+    "annotation_note": "Review this interpretation against the visible context."
+  }
+]

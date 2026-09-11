@@ -1,0 +1,520 @@
+[
+  {
+    "conversation_id": "1648931",
+    "customer_tweet_id": "1648932",
+    "split": "test",
+    "prior_context": [],
+    "linked_context_incomplete": false,
+    "customer_text": "@SpotifyCares check dm please thanks",
+    "intent": "other_unclear",
+    "expected_action": "escalate",
+    "action_reason": "They ask support to read a private message.",
+    "required_reply_points": [
+      "Recommend continuing through the existing official private support conversation."
+    ],
+    "forbidden_claims": [
+      "Guess the missing issue or linked content",
+      "Claim access to private messages or support case status",
+      "Claim a human handoff has already happened"
+    ],
+    "uncertain": false,
+    "annotation_note": ""
+  },
+  {
+    "conversation_id": "2118792",
+    "customer_tweet_id": "2118793",
+    "split": "test",
+    "prior_context": [],
+    "linked_context_incomplete": false,
+    "customer_text": ":( Neglected Fields are not present in a @115888",
+    "intent": "music_library_catalog",
+    "expected_action": "auto_handle",
+    "action_reason": "They report that an artist's music is absent.",
+    "required_reply_points": [
+      "Acknowledge the missing Neglected Fields music without promising its addition."
+    ],
+    "forbidden_claims": [
+      "Invent a licensing reason, release date, or catalog correction",
+      "Claim to have opened a link or checked live availability"
+    ],
+    "uncertain": false,
+    "annotation_note": ""
+  },
+  {
+    "conversation_id": "858005",
+    "customer_tweet_id": "858006",
+    "split": "test",
+    "prior_context": [
+      {
+        "tweet_id": "858007",
+        "role": "customer",
+        "text": "@SpotifyCares You've double charged me can I has refund pls"
+      }
+    ],
+    "linked_context_incomplete": false,
+    "customer_text": "@SpotifyCares triple charged me*",
+    "intent": "billing_payments",
+    "expected_action": "escalate",
+    "action_reason": "They correct an earlier report from two charges to three.",
+    "required_reply_points": [
+      "Acknowledge the reported triple charge and recommend a billing review."
+    ],
+    "forbidden_claims": [
+      "Promise a refund, discount, or successful payment",
+      "Request card details or gift-card codes",
+      "Claim a human handoff has already happened"
+    ],
+    "uncertain": false,
+    "annotation_note": ""
+  },
+  {
+    "conversation_id": "2509467",
+    "customer_tweet_id": "2509469",
+    "split": "test",
+    "prior_context": [],
+    "linked_context_incomplete": false,
+    "customer_text": "@SpotifyCares Why does this happen https://t.co/A9wwFLJAze",
+    "intent": "other_unclear",
+    "expected_action": "auto_handle",
+    "action_reason": "The problem is only visible in an unavailable link.",
+    "required_reply_points": [
+      "Ask for a description and any error text."
+    ],
+    "forbidden_claims": [
+      "Guess the missing issue or linked content",
+      "Claim access to private messages or support case status"
+    ],
+    "uncertain": false,
+    "annotation_note": ""
+  },
+  {
+    "conversation_id": "377556",
+    "customer_tweet_id": "377557",
+    "split": "test",
+    "prior_context": [],
+    "linked_context_incomplete": false,
+    "customer_text": "@SpotifyCares Shuffling playlist and no Beatles songs ever come up in queue. Playlist is ~1/3 Beatles. Premium, all platforms. What gives?",
+    "intent": "playback_offline",
+    "expected_action": "auto_handle",
+    "action_reason": "Shuffle reportedly leaves out a large part of the playlist on several platforms.",
+    "required_reply_points": [
+      "Ask about the playlist and queue behavior without asserting that shuffle is fair or broken."
+    ],
+    "forbidden_claims": [
+      "Guarantee a troubleshooting step will work",
+      "Claim a bug or outage is confirmed without evidence"
+    ],
+    "uncertain": false,
+    "annotation_note": ""
+  },
+  {
+    "conversation_id": "232228",
+    "customer_tweet_id": "232229",
+    "split": "test",
+    "prior_context": [],
+    "linked_context_incomplete": false,
+    "customer_text": "@SpotifyCares is there a way to stop it going to the album art on the time cap. -using android",
+    "intent": "app_device_issues",
+    "expected_action": "auto_handle",
+    "action_reason": "The Android display question uses unclear wording about the time display.",
+    "required_reply_points": [
+      "Ask which screen they mean and what they want to stop appearing."
+    ],
+    "forbidden_claims": [
+      "Claim a fix is available or give a release date without evidence",
+      "Claim to have inspected a linked screenshot"
+    ],
+    "uncertain": true,
+    "annotation_note": "Review this interpretation against the visible context."
+  },
+  {
+    "conversation_id": "2347846",
+    "customer_tweet_id": "2347848",
+    "split": "test",
+    "prior_context": [
+      {
+        "tweet_id": "2347855",
+        "role": "customer",
+        "text": "@SpotifyCares why is my music stopping every time I get a Snapchat?!"
+      },
+      {
+        "tweet_id": "2347854",
+        "role": "support",
+        "text": "@678755 Hey there! Could you tell us the device/OS you're using? We'll see what we can suggest /DF"
+      }
+    ],
+    "linked_context_incomplete": false,
+    "customer_text": "@SpotifyCares iPhone 7 Plus and it’s the most updated version :)",
+    "intent": "playback_offline",
+    "expected_action": "auto_handle",
+    "action_reason": "They supply device details for music interrupted by Snapchat.",
+    "required_reply_points": [
+      "Use the iPhone detail and ask for exact software versions rather than asking for the device again."
+    ],
+    "forbidden_claims": [
+      "Guarantee a troubleshooting step will work",
+      "Claim a bug or outage is confirmed without evidence"
+    ],
+    "uncertain": false,
+    "annotation_note": ""
+  },
+  {
+    "conversation_id": "1021161",
+    "customer_tweet_id": "1021163",
+    "split": "test",
+    "prior_context": [],
+    "linked_context_incomplete": false,
+    "customer_text": "@SpotifyCares Whats the point to follow Artists, and to not get any notification when they are releasing new stuff (LP, EP, single..) ? Help",
+    "intent": "app_device_issues",
+    "expected_action": "auto_handle",
+    "action_reason": "They expect new-release notifications when following artists.",
+    "required_reply_points": [
+      "Ask about the device and notification settings without promising notifications for every release."
+    ],
+    "forbidden_claims": [
+      "Claim a fix is available or give a release date without evidence",
+      "Claim to have inspected a linked screenshot"
+    ],
+    "uncertain": false,
+    "annotation_note": ""
+  },
+  {
+    "conversation_id": "2743173",
+    "customer_tweet_id": "2743174",
+    "split": "test",
+    "prior_context": [],
+    "linked_context_incomplete": false,
+    "customer_text": "@SpotifyCares ?? https://t.co/M6jMfVVdbN",
+    "intent": "other_unclear",
+    "expected_action": "auto_handle",
+    "action_reason": "There is no usable problem description beyond punctuation and a link.",
+    "required_reply_points": [
+      "Ask what help they need and what the linked content shows."
+    ],
+    "forbidden_claims": [
+      "Guess the missing issue or linked content",
+      "Claim access to private messages or support case status"
+    ],
+    "uncertain": false,
+    "annotation_note": ""
+  },
+  {
+    "conversation_id": "1266594",
+    "customer_tweet_id": "1266596",
+    "split": "test",
+    "prior_context": [],
+    "linked_context_incomplete": false,
+    "customer_text": "@115888 Hi, are you having issues taking payments? Money in account, card details correct but getting messages to say it’s not working.",
+    "intent": "billing_payments",
+    "expected_action": "escalate",
+    "action_reason": "Payment still fails even though they say the details and balance are correct.",
+    "required_reply_points": [
+      "Recommend official billing support without confirming a service-wide payment outage."
+    ],
+    "forbidden_claims": [
+      "Promise a refund, discount, or successful payment",
+      "Request card details or gift-card codes",
+      "Claim a human handoff has already happened"
+    ],
+    "uncertain": false,
+    "annotation_note": ""
+  },
+  {
+    "conversation_id": "434749",
+    "customer_tweet_id": "434756",
+    "split": "test",
+    "prior_context": [
+      {
+        "tweet_id": "434752",
+        "role": "customer",
+        "text": "@SpotifyCares I have a premium account - for whatever reason every Bowie and Springsteen song is showing up as \"song is not available.\" HALP"
+      },
+      {
+        "tweet_id": "434749",
+        "role": "support",
+        "text": "@159292 We hear you! What device, operating system, and app version are you using? We'll take a closer look /RV"
+      },
+      {
+        "tweet_id": "434750",
+        "role": "customer",
+        "text": "@SpotifyCares OS X Yosemite 10.10.5 - to be clear."
+      },
+      {
+        "tweet_id": "434753",
+        "role": "support",
+        "text": "@159292 Got it! That's not cool. Does logging out &gt; restarting the device &gt; logging back in help? Keep us posted /RV"
+      },
+      {
+        "tweet_id": "434754",
+        "role": "customer",
+        "text": "@SpotifyCares I've logged out/logged in and restarted my computer. Nothing is working. https://t.co/1KoV5D2oLu"
+      },
+      {
+        "tweet_id": "434755",
+        "role": "support",
+        "text": "@159292 Hmm, that's odd. Best thing to try here is a reinstall. Just follow the steps at https://t.co/EqisDMwZAT. Let us know how it goes /RV"
+      }
+    ],
+    "linked_context_incomplete": false,
+    "customer_text": "@SpotifyCares Followed these directions and reinstalled. Still not working.",
+    "intent": "playback_offline",
+    "expected_action": "escalate",
+    "action_reason": "The unavailable-song error persists after restarting and reinstalling.",
+    "required_reply_points": [
+      "Acknowledge the failed steps and recommend further technical investigation."
+    ],
+    "forbidden_claims": [
+      "Guarantee a troubleshooting step will work",
+      "Claim a bug or outage is confirmed without evidence",
+      "Claim a human handoff has already happened"
+    ],
+    "uncertain": false,
+    "annotation_note": ""
+  },
+  {
+    "conversation_id": "2969658",
+    "customer_tweet_id": "2969659",
+    "split": "test",
+    "prior_context": [
+      {
+        "tweet_id": "2969660",
+        "role": "customer",
+        "text": "@SpotifyCares  my wife and I both have individual premium accounts.  How can I merge them into one premium family account?"
+      },
+      {
+        "tweet_id": "2969658",
+        "role": "support",
+        "text": "@596500 Hey Michael! We'll help out. Can you DM us your account's email address, as well as your wife's? We'll take a look under the hood /AN https://t.co/ldFdZRiNAt"
+      }
+    ],
+    "linked_context_incomplete": false,
+    "customer_text": "@SpotifyCares Done.  Thanks in advance!",
+    "intent": "subscription_plans",
+    "expected_action": "escalate",
+    "action_reason": "They have sent private details about combining individual plans into Family.",
+    "required_reply_points": [
+      "Recommend continuing with that support case without claiming the private details arrived."
+    ],
+    "forbidden_claims": [
+      "Claim the subscription was checked or changed",
+      "Promise eligibility, activation, or an unverified offer",
+      "Claim a human handoff has already happened"
+    ],
+    "uncertain": false,
+    "annotation_note": ""
+  },
+  {
+    "conversation_id": "1033680",
+    "customer_tweet_id": "1033681",
+    "split": "test",
+    "prior_context": [],
+    "linked_context_incomplete": false,
+    "customer_text": "@SpotifyCares Hey I am idle with the Spotify window open, but someone/something is using a web player on my behalf! I'm using FB login..",
+    "intent": "account_access_security",
+    "expected_action": "escalate",
+    "action_reason": "They report playback through a web player they did not authorize.",
+    "required_reply_points": [
+      "Recommend account security support and do not assume Facebook itself was compromised."
+    ],
+    "forbidden_claims": [
+      "Claim the account was checked or changed",
+      "Request passwords or account secrets",
+      "Claim a human handoff has already happened"
+    ],
+    "uncertain": false,
+    "annotation_note": ""
+  },
+  {
+    "conversation_id": "511814",
+    "customer_tweet_id": "511815",
+    "split": "test",
+    "prior_context": [],
+    "linked_context_incomplete": false,
+    "customer_text": "@SpotifyCares why won't my Hulu account work? I reverified that I'm still a student today but the Hulu App continues to ask me if I want to (re)subscribe? I JUST WANT TO WATCH GREAT NEWS WHILE I PROCRASTINATE FINALS WEEK *sobs*\nhelp https://t.co/WLYf1Wcjrz",
+    "intent": "subscription_plans",
+    "expected_action": "escalate",
+    "action_reason": "Hulu access still asks for a subscription after student reverification.",
+    "required_reply_points": [
+      "Recommend a bundle entitlement review without telling them to pay again."
+    ],
+    "forbidden_claims": [
+      "Claim the subscription was checked or changed",
+      "Promise eligibility, activation, or an unverified offer",
+      "Claim a human handoff has already happened"
+    ],
+    "uncertain": false,
+    "annotation_note": ""
+  },
+  {
+    "conversation_id": "1722597",
+    "customer_tweet_id": "1722598",
+    "split": "test",
+    "prior_context": [],
+    "linked_context_incomplete": false,
+    "customer_text": "@SpotifyCares not easy to fixes issues , been trying to get a problem fixed since sat morning",
+    "intent": "other_unclear",
+    "expected_action": "escalate",
+    "action_reason": "They are following up on an unresolved support problem.",
+    "required_reply_points": [
+      "Acknowledge the delay and recommend following up on the existing case."
+    ],
+    "forbidden_claims": [
+      "Guess the missing issue or linked content",
+      "Claim access to private messages or support case status",
+      "Claim a human handoff has already happened"
+    ],
+    "uncertain": false,
+    "annotation_note": ""
+  },
+  {
+    "conversation_id": "1222456",
+    "customer_tweet_id": "1222457",
+    "split": "test",
+    "prior_context": [
+      {
+        "tweet_id": "1222458",
+        "role": "customer",
+        "text": "Is anyone else getting a 504 Gateway Time-Out error on Spotify? @SpotifyCares"
+      },
+      {
+        "tweet_id": "1222456",
+        "role": "support",
+        "text": "@196278 Hey, help's here! Can you let us know the device, OS, and Spotify version you're using? We'll see what we can suggest /RV"
+      }
+    ],
+    "linked_context_incomplete": false,
+    "customer_text": "@SpotifyCares It's working, now. Thank you, though.",
+    "intent": "praise_thanks",
+    "expected_action": "auto_handle",
+    "action_reason": "They explicitly say the timeout problem is fixed and thank support.",
+    "required_reply_points": [
+      "Acknowledge the reported recovery without claiming to have fixed an outage."
+    ],
+    "forbidden_claims": [
+      "Claim we personally fixed the earlier problem",
+      "Promise the same outcome or response time in future"
+    ],
+    "uncertain": false,
+    "annotation_note": ""
+  },
+  {
+    "conversation_id": "1872864",
+    "customer_tweet_id": "1872865",
+    "split": "test",
+    "prior_context": [],
+    "linked_context_incomplete": false,
+    "customer_text": "@115888 I would appreciate it if things like Dark Horse didn’t play when I hit shuffle on Harry Styles’ album. Thank you.",
+    "intent": "playback_offline",
+    "expected_action": "auto_handle",
+    "action_reason": "Album shuffle reportedly plays music outside the selected album.",
+    "required_reply_points": [
+      "Ask about the device and plan to distinguish playback settings from a fault."
+    ],
+    "forbidden_claims": [
+      "Guarantee a troubleshooting step will work",
+      "Claim a bug or outage is confirmed without evidence"
+    ],
+    "uncertain": false,
+    "annotation_note": ""
+  },
+  {
+    "conversation_id": "2291113",
+    "customer_tweet_id": "2291114",
+    "split": "test",
+    "prior_context": [
+      {
+        "tweet_id": "2291123",
+        "role": "customer",
+        "text": "Bless the people running the  @SpotifyCares account. 👌"
+      },
+      {
+        "tweet_id": "2291115",
+        "role": "customer",
+        "text": "@661811 @SpotifyCares Maybe if they had done anything to fix the problem I've been reporting for a year and a half."
+      },
+      {
+        "tweet_id": "2291113",
+        "role": "support",
+        "text": "@507853 Hey! The devs have been hard at work and have tweaked some things backstage. Have you had any recent issues with your tunes desyncing? /J"
+      }
+    ],
+    "linked_context_incomplete": false,
+    "customer_text": "@SpotifyCares Yes",
+    "intent": "playback_offline",
+    "expected_action": "escalate",
+    "action_reason": "Yes confirms that the long-running download desync problem still happens.",
+    "required_reply_points": [
+      "Acknowledge that the issue persists and recommend technical follow-up."
+    ],
+    "forbidden_claims": [
+      "Guarantee a troubleshooting step will work",
+      "Claim a bug or outage is confirmed without evidence",
+      "Claim a human handoff has already happened"
+    ],
+    "uncertain": false,
+    "annotation_note": ""
+  },
+  {
+    "conversation_id": "2917824",
+    "customer_tweet_id": "2917825",
+    "split": "test",
+    "prior_context": [
+      {
+        "tweet_id": "2917827",
+        "role": "customer",
+        "text": "Why won’t my @115888 app work today?"
+      },
+      {
+        "tweet_id": "2917826",
+        "role": "support",
+        "text": "@596181 Hey, thanks for the report! We had a little hiccup earlier, but everything should be running just fine now /JS"
+      }
+    ],
+    "linked_context_incomplete": false,
+    "customer_text": "@SpotifyCares God bless",
+    "intent": "praise_thanks",
+    "expected_action": "auto_handle",
+    "action_reason": "They respond positively to support's earlier update.",
+    "required_reply_points": [
+      "Briefly acknowledge their response without independently confirming service status."
+    ],
+    "forbidden_claims": [
+      "Claim we personally fixed the earlier problem",
+      "Promise the same outcome or response time in future"
+    ],
+    "uncertain": false,
+    "annotation_note": ""
+  },
+  {
+    "conversation_id": "1659909",
+    "customer_tweet_id": "1659910",
+    "split": "test",
+    "prior_context": [
+      {
+        "tweet_id": "1659913",
+        "role": "customer",
+        "text": "@SpotifyCares I'm unable to manage my family account. Why? Can't add or remove members. Also still unable to play certain albums on desktop."
+      },
+      {
+        "tweet_id": "1659912",
+        "role": "support",
+        "text": "@506397 Hey there! We've come to the rescue. Could you DM us the email addresses of your family members? We'll check backstage /RE https://t.co/ldFdZRiNAt"
+      }
+    ],
+    "linked_context_incomplete": false,
+    "customer_text": "@SpotifyCares I just want access to make these changes myself. Why is it no longer available?",
+    "intent": "subscription_plans",
+    "expected_action": "escalate",
+    "action_reason": "They still cannot manage Family membership themselves.",
+    "required_reply_points": [
+      "Address missing Family controls and recommend an account review rather than collecting member emails."
+    ],
+    "forbidden_claims": [
+      "Claim the subscription was checked or changed",
+      "Promise eligibility, activation, or an unverified offer",
+      "Claim a human handoff has already happened"
+    ],
+    "uncertain": false,
+    "annotation_note": ""
+  }
+]

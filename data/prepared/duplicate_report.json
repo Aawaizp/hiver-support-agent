@@ -1,0 +1,852 @@
+{
+  "summary": {
+    "examples": {
+      "dev": 50,
+      "test": 150
+    },
+    "customer_texts_checked": 5369,
+    "similarity_threshold": 0.9,
+    "flagged_pairs": 52,
+    "pairs_by_split": {
+      "dev / retrieval": 16,
+      "dev / test": 1,
+      "retrieval / test": 35
+    },
+    "affected_evaluation_conversations": 6,
+    "affected_retrieval_conversations": 35
+  },
+  "matches": [
+    {
+      "match_type": "normalized_exact",
+      "similarity": 1.0,
+      "left": {
+        "split": "dev",
+        "conversation_id": "1532329",
+        "tweet_id": "1532330",
+        "text": "@SpotifyCares Thanks ^^"
+      },
+      "right": {
+        "split": "retrieval",
+        "conversation_id": "95831",
+        "tweet_id": "95832",
+        "text": "@SpotifyCares Thanks"
+      }
+    },
+    {
+      "match_type": "normalized_exact",
+      "similarity": 1.0,
+      "left": {
+        "split": "dev",
+        "conversation_id": "1532329",
+        "tweet_id": "1532330",
+        "text": "@SpotifyCares Thanks ^^"
+      },
+      "right": {
+        "split": "retrieval",
+        "conversation_id": "2580672",
+        "tweet_id": "2580673",
+        "text": "@SpotifyCares thanks!"
+      }
+    },
+    {
+      "match_type": "normalized_exact",
+      "similarity": 1.0,
+      "left": {
+        "split": "dev",
+        "conversation_id": "1532329",
+        "tweet_id": "1532330",
+        "text": "@SpotifyCares Thanks ^^"
+      },
+      "right": {
+        "split": "retrieval",
+        "conversation_id": "2963363",
+        "tweet_id": "2963364",
+        "text": "@SpotifyCares Thanks!"
+      }
+    },
+    {
+      "match_type": "normalized_exact",
+      "similarity": 1.0,
+      "left": {
+        "split": "dev",
+        "conversation_id": "1532329",
+        "tweet_id": "1532330",
+        "text": "@SpotifyCares Thanks ^^"
+      },
+      "right": {
+        "split": "retrieval",
+        "conversation_id": "431729",
+        "tweet_id": "431733",
+        "text": "@SpotifyCares Thanks!"
+      }
+    },
+    {
+      "match_type": "normalized_exact",
+      "similarity": 1.0,
+      "left": {
+        "split": "dev",
+        "conversation_id": "1532329",
+        "tweet_id": "1532330",
+        "text": "@SpotifyCares Thanks ^^"
+      },
+      "right": {
+        "split": "retrieval",
+        "conversation_id": "2523574",
+        "tweet_id": "2523575",
+        "text": "@SpotifyCares thanks!"
+      }
+    },
+    {
+      "match_type": "normalized_exact",
+      "similarity": 1.0,
+      "left": {
+        "split": "dev",
+        "conversation_id": "1532329",
+        "tweet_id": "1532330",
+        "text": "@SpotifyCares Thanks ^^"
+      },
+      "right": {
+        "split": "retrieval",
+        "conversation_id": "284964",
+        "tweet_id": "284965",
+        "text": "@SpotifyCares Thanks!!"
+      }
+    },
+    {
+      "match_type": "normalized_exact",
+      "similarity": 1.0,
+      "left": {
+        "split": "dev",
+        "conversation_id": "1532329",
+        "tweet_id": "1532330",
+        "text": "@SpotifyCares Thanks ^^"
+      },
+      "right": {
+        "split": "retrieval",
+        "conversation_id": "399540",
+        "tweet_id": "399546",
+        "text": "@SpotifyCares thanks!"
+      }
+    },
+    {
+      "match_type": "normalized_exact",
+      "similarity": 1.0,
+      "left": {
+        "split": "dev",
+        "conversation_id": "1532329",
+        "tweet_id": "1532330",
+        "text": "@SpotifyCares Thanks ^^"
+      },
+      "right": {
+        "split": "retrieval",
+        "conversation_id": "1760777",
+        "tweet_id": "1760778",
+        "text": "@SpotifyCares Thanks"
+      }
+    },
+    {
+      "match_type": "normalized_exact",
+      "similarity": 1.0,
+      "left": {
+        "split": "dev",
+        "conversation_id": "1532329",
+        "tweet_id": "1532330",
+        "text": "@SpotifyCares Thanks ^^"
+      },
+      "right": {
+        "split": "retrieval",
+        "conversation_id": "255596",
+        "tweet_id": "255597",
+        "text": "@SpotifyCares Thanks!!"
+      }
+    },
+    {
+      "match_type": "normalized_exact",
+      "similarity": 1.0,
+      "left": {
+        "split": "dev",
+        "conversation_id": "1532329",
+        "tweet_id": "1532330",
+        "text": "@SpotifyCares Thanks ^^"
+      },
+      "right": {
+        "split": "retrieval",
+        "conversation_id": "844340",
+        "tweet_id": "844344",
+        "text": "@SpotifyCares Thanks"
+      }
+    },
+    {
+      "match_type": "normalized_exact",
+      "similarity": 1.0,
+      "left": {
+        "split": "dev",
+        "conversation_id": "1532329",
+        "tweet_id": "1532330",
+        "text": "@SpotifyCares Thanks ^^"
+      },
+      "right": {
+        "split": "retrieval",
+        "conversation_id": "39744",
+        "tweet_id": "39747",
+        "text": "@SpotifyCares Thanks"
+      }
+    },
+    {
+      "match_type": "normalized_exact",
+      "similarity": 1.0,
+      "left": {
+        "split": "dev",
+        "conversation_id": "1532329",
+        "tweet_id": "1532330",
+        "text": "@SpotifyCares Thanks ^^"
+      },
+      "right": {
+        "split": "retrieval",
+        "conversation_id": "2804488",
+        "tweet_id": "2804489",
+        "text": "@SpotifyCares Thanks!"
+      }
+    },
+    {
+      "match_type": "normalized_exact",
+      "similarity": 1.0,
+      "left": {
+        "split": "dev",
+        "conversation_id": "1532329",
+        "tweet_id": "1532330",
+        "text": "@SpotifyCares Thanks ^^"
+      },
+      "right": {
+        "split": "retrieval",
+        "conversation_id": "2219818",
+        "tweet_id": "2219822",
+        "text": "@SpotifyCares Thanks"
+      }
+    },
+    {
+      "match_type": "normalized_exact",
+      "similarity": 1.0,
+      "left": {
+        "split": "dev",
+        "conversation_id": "1532329",
+        "tweet_id": "1532330",
+        "text": "@SpotifyCares Thanks ^^"
+      },
+      "right": {
+        "split": "retrieval",
+        "conversation_id": "1769704",
+        "tweet_id": "1769710",
+        "text": "@SpotifyCares Thanks!"
+      }
+    },
+    {
+      "match_type": "normalized_exact",
+      "similarity": 1.0,
+      "left": {
+        "split": "dev",
+        "conversation_id": "1532329",
+        "tweet_id": "1532330",
+        "text": "@SpotifyCares Thanks ^^"
+      },
+      "right": {
+        "split": "retrieval",
+        "conversation_id": "1964242",
+        "tweet_id": "1964246",
+        "text": "@SpotifyCares Thanks!"
+      }
+    },
+    {
+      "match_type": "normalized_exact",
+      "similarity": 1.0,
+      "left": {
+        "split": "dev",
+        "conversation_id": "1532329",
+        "tweet_id": "1532330",
+        "text": "@SpotifyCares Thanks ^^"
+      },
+      "right": {
+        "split": "retrieval",
+        "conversation_id": "2400662",
+        "tweet_id": "2400663",
+        "text": "@SpotifyCares thanks"
+      }
+    },
+    {
+      "match_type": "normalized_exact",
+      "similarity": 1.0,
+      "left": {
+        "split": "dev",
+        "conversation_id": "1532329",
+        "tweet_id": "1532330",
+        "text": "@SpotifyCares Thanks ^^"
+      },
+      "right": {
+        "split": "test",
+        "conversation_id": "2304464",
+        "tweet_id": "2304468",
+        "text": "@SpotifyCares Thanks https://t.co/3UO1otuQi6"
+      }
+    },
+    {
+      "match_type": "normalized_exact",
+      "similarity": 1.0,
+      "left": {
+        "split": "test",
+        "conversation_id": "2291113",
+        "tweet_id": "2291114",
+        "text": "@SpotifyCares Yes"
+      },
+      "right": {
+        "split": "retrieval",
+        "conversation_id": "1949748",
+        "tweet_id": "1949754",
+        "text": "@SpotifyCares Yes!"
+      }
+    },
+    {
+      "match_type": "normalized_exact",
+      "similarity": 1.0,
+      "left": {
+        "split": "test",
+        "conversation_id": "1718398",
+        "tweet_id": "1718399",
+        "text": "@SpotifyCares Thank you"
+      },
+      "right": {
+        "split": "retrieval",
+        "conversation_id": "2218885",
+        "tweet_id": "2218886",
+        "text": "@SpotifyCares thank you!!"
+      }
+    },
+    {
+      "match_type": "normalized_exact",
+      "similarity": 1.0,
+      "left": {
+        "split": "test",
+        "conversation_id": "1718398",
+        "tweet_id": "1718399",
+        "text": "@SpotifyCares Thank you"
+      },
+      "right": {
+        "split": "retrieval",
+        "conversation_id": "1346900",
+        "tweet_id": "1346901",
+        "text": "@SpotifyCares Thank you!!"
+      }
+    },
+    {
+      "match_type": "normalized_exact",
+      "similarity": 1.0,
+      "left": {
+        "split": "test",
+        "conversation_id": "1718398",
+        "tweet_id": "1718399",
+        "text": "@SpotifyCares Thank you"
+      },
+      "right": {
+        "split": "retrieval",
+        "conversation_id": "1450219",
+        "tweet_id": "1450229",
+        "text": "@SpotifyCares Thank you."
+      }
+    },
+    {
+      "match_type": "normalized_exact",
+      "similarity": 1.0,
+      "left": {
+        "split": "test",
+        "conversation_id": "1718398",
+        "tweet_id": "1718399",
+        "text": "@SpotifyCares Thank you"
+      },
+      "right": {
+        "split": "retrieval",
+        "conversation_id": "2198197",
+        "tweet_id": "2198198",
+        "text": "@SpotifyCares Thank you!"
+      }
+    },
+    {
+      "match_type": "normalized_exact",
+      "similarity": 1.0,
+      "left": {
+        "split": "test",
+        "conversation_id": "1718398",
+        "tweet_id": "1718399",
+        "text": "@SpotifyCares Thank you"
+      },
+      "right": {
+        "split": "retrieval",
+        "conversation_id": "1267514",
+        "tweet_id": "1267522",
+        "text": "@SpotifyCares Thank you"
+      }
+    },
+    {
+      "match_type": "normalized_exact",
+      "similarity": 1.0,
+      "left": {
+        "split": "test",
+        "conversation_id": "1718398",
+        "tweet_id": "1718399",
+        "text": "@SpotifyCares Thank you"
+      },
+      "right": {
+        "split": "retrieval",
+        "conversation_id": "1624628",
+        "tweet_id": "1624629",
+        "text": "@SpotifyCares Thank you 💚"
+      }
+    },
+    {
+      "match_type": "normalized_exact",
+      "similarity": 1.0,
+      "left": {
+        "split": "test",
+        "conversation_id": "1718398",
+        "tweet_id": "1718399",
+        "text": "@SpotifyCares Thank you"
+      },
+      "right": {
+        "split": "retrieval",
+        "conversation_id": "1962693",
+        "tweet_id": "1962694",
+        "text": "@SpotifyCares Thank you!"
+      }
+    },
+    {
+      "match_type": "normalized_exact",
+      "similarity": 1.0,
+      "left": {
+        "split": "test",
+        "conversation_id": "1718398",
+        "tweet_id": "1718399",
+        "text": "@SpotifyCares Thank you"
+      },
+      "right": {
+        "split": "retrieval",
+        "conversation_id": "653559",
+        "tweet_id": "653560",
+        "text": "@SpotifyCares Thank you 😊"
+      }
+    },
+    {
+      "match_type": "normalized_exact",
+      "similarity": 1.0,
+      "left": {
+        "split": "test",
+        "conversation_id": "1718398",
+        "tweet_id": "1718399",
+        "text": "@SpotifyCares Thank you"
+      },
+      "right": {
+        "split": "retrieval",
+        "conversation_id": "1977077",
+        "tweet_id": "1977078",
+        "text": "@SpotifyCares Thank you https://t.co/R9xLJzQSkr"
+      }
+    },
+    {
+      "match_type": "normalized_exact",
+      "similarity": 1.0,
+      "left": {
+        "split": "test",
+        "conversation_id": "1718398",
+        "tweet_id": "1718399",
+        "text": "@SpotifyCares Thank you"
+      },
+      "right": {
+        "split": "retrieval",
+        "conversation_id": "2165583",
+        "tweet_id": "2165584",
+        "text": "@SpotifyCares Thank you!"
+      }
+    },
+    {
+      "match_type": "normalized_exact",
+      "similarity": 1.0,
+      "left": {
+        "split": "test",
+        "conversation_id": "1718398",
+        "tweet_id": "1718399",
+        "text": "@SpotifyCares Thank you"
+      },
+      "right": {
+        "split": "retrieval",
+        "conversation_id": "1116672",
+        "tweet_id": "1116676",
+        "text": "@SpotifyCares Thank you 🌸"
+      }
+    },
+    {
+      "match_type": "normalized_exact",
+      "similarity": 1.0,
+      "left": {
+        "split": "test",
+        "conversation_id": "1718398",
+        "tweet_id": "1718399",
+        "text": "@SpotifyCares Thank you"
+      },
+      "right": {
+        "split": "retrieval",
+        "conversation_id": "1547936",
+        "tweet_id": "1547937",
+        "text": "@SpotifyCares Thank you 🙌🏼❤️"
+      }
+    },
+    {
+      "match_type": "normalized_exact",
+      "similarity": 1.0,
+      "left": {
+        "split": "test",
+        "conversation_id": "1718398",
+        "tweet_id": "1718399",
+        "text": "@SpotifyCares Thank you"
+      },
+      "right": {
+        "split": "retrieval",
+        "conversation_id": "1116493",
+        "tweet_id": "1116494",
+        "text": "@SpotifyCares Thank you!"
+      }
+    },
+    {
+      "match_type": "normalized_exact",
+      "similarity": 1.0,
+      "left": {
+        "split": "test",
+        "conversation_id": "1718398",
+        "tweet_id": "1718399",
+        "text": "@SpotifyCares Thank you"
+      },
+      "right": {
+        "split": "retrieval",
+        "conversation_id": "1774162",
+        "tweet_id": "1774166",
+        "text": "@SpotifyCares Thank you !"
+      }
+    },
+    {
+      "match_type": "normalized_exact",
+      "similarity": 1.0,
+      "left": {
+        "split": "test",
+        "conversation_id": "1718398",
+        "tweet_id": "1718399",
+        "text": "@SpotifyCares Thank you"
+      },
+      "right": {
+        "split": "retrieval",
+        "conversation_id": "2692967",
+        "tweet_id": "2692968",
+        "text": "@SpotifyCares thank you!!!"
+      }
+    },
+    {
+      "match_type": "normalized_exact",
+      "similarity": 1.0,
+      "left": {
+        "split": "test",
+        "conversation_id": "1718398",
+        "tweet_id": "1718399",
+        "text": "@SpotifyCares Thank you"
+      },
+      "right": {
+        "split": "retrieval",
+        "conversation_id": "1607058",
+        "tweet_id": "1607060",
+        "text": "@SpotifyCares Thank you 😤💕"
+      }
+    },
+    {
+      "match_type": "normalized_exact",
+      "similarity": 1.0,
+      "left": {
+        "split": "test",
+        "conversation_id": "2304464",
+        "tweet_id": "2304468",
+        "text": "@SpotifyCares Thanks https://t.co/3UO1otuQi6"
+      },
+      "right": {
+        "split": "retrieval",
+        "conversation_id": "95831",
+        "tweet_id": "95832",
+        "text": "@SpotifyCares Thanks"
+      }
+    },
+    {
+      "match_type": "normalized_exact",
+      "similarity": 1.0,
+      "left": {
+        "split": "test",
+        "conversation_id": "2304464",
+        "tweet_id": "2304468",
+        "text": "@SpotifyCares Thanks https://t.co/3UO1otuQi6"
+      },
+      "right": {
+        "split": "retrieval",
+        "conversation_id": "2580672",
+        "tweet_id": "2580673",
+        "text": "@SpotifyCares thanks!"
+      }
+    },
+    {
+      "match_type": "normalized_exact",
+      "similarity": 1.0,
+      "left": {
+        "split": "test",
+        "conversation_id": "2304464",
+        "tweet_id": "2304468",
+        "text": "@SpotifyCares Thanks https://t.co/3UO1otuQi6"
+      },
+      "right": {
+        "split": "retrieval",
+        "conversation_id": "2963363",
+        "tweet_id": "2963364",
+        "text": "@SpotifyCares Thanks!"
+      }
+    },
+    {
+      "match_type": "normalized_exact",
+      "similarity": 1.0,
+      "left": {
+        "split": "test",
+        "conversation_id": "2304464",
+        "tweet_id": "2304468",
+        "text": "@SpotifyCares Thanks https://t.co/3UO1otuQi6"
+      },
+      "right": {
+        "split": "retrieval",
+        "conversation_id": "431729",
+        "tweet_id": "431733",
+        "text": "@SpotifyCares Thanks!"
+      }
+    },
+    {
+      "match_type": "normalized_exact",
+      "similarity": 1.0,
+      "left": {
+        "split": "test",
+        "conversation_id": "2304464",
+        "tweet_id": "2304468",
+        "text": "@SpotifyCares Thanks https://t.co/3UO1otuQi6"
+      },
+      "right": {
+        "split": "retrieval",
+        "conversation_id": "2523574",
+        "tweet_id": "2523575",
+        "text": "@SpotifyCares thanks!"
+      }
+    },
+    {
+      "match_type": "normalized_exact",
+      "similarity": 1.0,
+      "left": {
+        "split": "test",
+        "conversation_id": "2304464",
+        "tweet_id": "2304468",
+        "text": "@SpotifyCares Thanks https://t.co/3UO1otuQi6"
+      },
+      "right": {
+        "split": "retrieval",
+        "conversation_id": "284964",
+        "tweet_id": "284965",
+        "text": "@SpotifyCares Thanks!!"
+      }
+    },
+    {
+      "match_type": "normalized_exact",
+      "similarity": 1.0,
+      "left": {
+        "split": "test",
+        "conversation_id": "2304464",
+        "tweet_id": "2304468",
+        "text": "@SpotifyCares Thanks https://t.co/3UO1otuQi6"
+      },
+      "right": {
+        "split": "retrieval",
+        "conversation_id": "399540",
+        "tweet_id": "399546",
+        "text": "@SpotifyCares thanks!"
+      }
+    },
+    {
+      "match_type": "normalized_exact",
+      "similarity": 1.0,
+      "left": {
+        "split": "test",
+        "conversation_id": "2304464",
+        "tweet_id": "2304468",
+        "text": "@SpotifyCares Thanks https://t.co/3UO1otuQi6"
+      },
+      "right": {
+        "split": "retrieval",
+        "conversation_id": "1760777",
+        "tweet_id": "1760778",
+        "text": "@SpotifyCares Thanks"
+      }
+    },
+    {
+      "match_type": "normalized_exact",
+      "similarity": 1.0,
+      "left": {
+        "split": "test",
+        "conversation_id": "2304464",
+        "tweet_id": "2304468",
+        "text": "@SpotifyCares Thanks https://t.co/3UO1otuQi6"
+      },
+      "right": {
+        "split": "retrieval",
+        "conversation_id": "255596",
+        "tweet_id": "255597",
+        "text": "@SpotifyCares Thanks!!"
+      }
+    },
+    {
+      "match_type": "normalized_exact",
+      "similarity": 1.0,
+      "left": {
+        "split": "test",
+        "conversation_id": "2304464",
+        "tweet_id": "2304468",
+        "text": "@SpotifyCares Thanks https://t.co/3UO1otuQi6"
+      },
+      "right": {
+        "split": "retrieval",
+        "conversation_id": "844340",
+        "tweet_id": "844344",
+        "text": "@SpotifyCares Thanks"
+      }
+    },
+    {
+      "match_type": "normalized_exact",
+      "similarity": 1.0,
+      "left": {
+        "split": "test",
+        "conversation_id": "2304464",
+        "tweet_id": "2304468",
+        "text": "@SpotifyCares Thanks https://t.co/3UO1otuQi6"
+      },
+      "right": {
+        "split": "retrieval",
+        "conversation_id": "39744",
+        "tweet_id": "39747",
+        "text": "@SpotifyCares Thanks"
+      }
+    },
+    {
+      "match_type": "normalized_exact",
+      "similarity": 1.0,
+      "left": {
+        "split": "test",
+        "conversation_id": "2304464",
+        "tweet_id": "2304468",
+        "text": "@SpotifyCares Thanks https://t.co/3UO1otuQi6"
+      },
+      "right": {
+        "split": "retrieval",
+        "conversation_id": "2804488",
+        "tweet_id": "2804489",
+        "text": "@SpotifyCares Thanks!"
+      }
+    },
+    {
+      "match_type": "normalized_exact",
+      "similarity": 1.0,
+      "left": {
+        "split": "test",
+        "conversation_id": "2304464",
+        "tweet_id": "2304468",
+        "text": "@SpotifyCares Thanks https://t.co/3UO1otuQi6"
+      },
+      "right": {
+        "split": "retrieval",
+        "conversation_id": "2219818",
+        "tweet_id": "2219822",
+        "text": "@SpotifyCares Thanks"
+      }
+    },
+    {
+      "match_type": "normalized_exact",
+      "similarity": 1.0,
+      "left": {
+        "split": "test",
+        "conversation_id": "2304464",
+        "tweet_id": "2304468",
+        "text": "@SpotifyCares Thanks https://t.co/3UO1otuQi6"
+      },
+      "right": {
+        "split": "retrieval",
+        "conversation_id": "1769704",
+        "tweet_id": "1769710",
+        "text": "@SpotifyCares Thanks!"
+      }
+    },
+    {
+      "match_type": "normalized_exact",
+      "similarity": 1.0,
+      "left": {
+        "split": "test",
+        "conversation_id": "2304464",
+        "tweet_id": "2304468",
+        "text": "@SpotifyCares Thanks https://t.co/3UO1otuQi6"
+      },
+      "right": {
+        "split": "retrieval",
+        "conversation_id": "1964242",
+        "tweet_id": "1964246",
+        "text": "@SpotifyCares Thanks!"
+      }
+    },
+    {
+      "match_type": "normalized_exact",
+      "similarity": 1.0,
+      "left": {
+        "split": "test",
+        "conversation_id": "2304464",
+        "tweet_id": "2304468",
+        "text": "@SpotifyCares Thanks https://t.co/3UO1otuQi6"
+      },
+      "right": {
+        "split": "retrieval",
+        "conversation_id": "2400662",
+        "tweet_id": "2400663",
+        "text": "@SpotifyCares thanks"
+      }
+    },
+    {
+      "match_type": "normalized_exact",
+      "similarity": 1.0,
+      "left": {
+        "split": "test",
+        "conversation_id": "482483",
+        "tweet_id": "482485",
+        "text": "3 months of Premium is just RM2. Play music offline wherever you go. https://t.co/u7NXG4XmFT"
+      },
+      "right": {
+        "split": "retrieval",
+        "conversation_id": "2863",
+        "tweet_id": "2865",
+        "text": "3 months of Premium is just RM2. Play music offline wherever you go. https://t.co/nr8m1VIWk4"
+      }
+    },
+    {
+      "match_type": "near",
+      "similarity": 0.9048,
+      "left": {
+        "split": "test",
+        "conversation_id": "2289991",
+        "tweet_id": "2289994",
+        "text": "@115888 when is #Reputation going to be on the app?!"
+      },
+      "right": {
+        "split": "retrieval",
+        "conversation_id": "2598638",
+        "tweet_id": "2598643",
+        "text": "WHEN IS REPUTATION GOING TO BE ON SPOTIFY?????"
+      }
+    }
+  ]
+}

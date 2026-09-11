@@ -1,0 +1,28 @@
+{
+  "run_id": "e14347f8f9f185d629c453a8c973ff168d6183da3eb2af7605772c106b96e4d8",
+  "complete": true,
+  "examples": 150,
+  "generation_failures": 1,
+  "generation_failure_rate": 0.006666666666666667,
+  "metrics": {
+    "examples": 150,
+    "intent_accuracy": 0.58,
+    "intent_macro_f1": 0.579622643438433,
+    "action_accuracy": 0.6666666666666666,
+    "escalation_recall": 0.7916666666666666,
+    "auto_handle_coverage": 0.48,
+    "unsafe_auto_handle_rate": 0.1388888888888889,
+    "counts": {
+      "expected_escalations": 48,
+      "caught_escalations": 38,
+      "auto_handled": 72,
+      "unsafe_auto_handled": 10
+    }
+  },
+  "label_basis": "AI-drafted labels; human review not verified",
+  "failure_policy": "Invalid outputs count as incorrect intent and action; they are neither auto-handled nor successfully escalated.",
+  "limitations": [
+    "Routing metrics do not measure reply safety.",
+    "Previous failed attempts are not included in the failure count."
+  ]
+}

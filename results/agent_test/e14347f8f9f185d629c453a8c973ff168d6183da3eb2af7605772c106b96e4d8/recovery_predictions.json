@@ -1,0 +1,3866 @@
+[
+  {
+    "customer_tweet_id": "1722253",
+    "conversation_id": "1722252",
+    "customer_text": "@115888 is disappointing me 😖 why don't they have more GOT7 songs?! Fix it please!! 🙏",
+    "expected_intent": "music_library_catalog",
+    "expected_action": "auto_handle",
+    "label_uncertain": false,
+    "prediction": {
+      "status": "ok",
+      "intent": "music_library_catalog",
+      "action": "escalate",
+      "reason": "Customer is requesting catalog corrections for missing GOT7 songs. Historical cases show similar requests but no resolution. Catalog corrections require human investigation, not automated handling.",
+      "proposed_handling": "human_required",
+      "reply": "I can help investigate this catalog issue. Please share which Spotify account you're using and the specific songs you're missing.",
+      "evidence_ids": [],
+      "routing_checks": [],
+      "model": "qwen3:4b",
+      "retrieved_cases": [
+        {
+          "case_id": "2577780:2577782",
+          "similarity": 0.2293
+        }
+      ]
+    }
+  },
+  {
+    "customer_tweet_id": "500953",
+    "conversation_id": "500952",
+    "customer_text": "@SpotifyCares Hi can't update payment info with new payment method. Tried canceling account and that didn't work either. HELP!",
+    "expected_intent": "billing_payments",
+    "expected_action": "escalate",
+    "label_uncertain": false,
+    "prediction": {
+      "status": "ok",
+      "intent": "billing_payments",
+      "action": "escalate",
+      "reason": "Customer tried canceling account but it didn't work, and needs to update payment method. This requires account investigation as payment method updates need verification. Historical case shows similar issue but this customer's attempt to cancel didn't resolve it, so human review is needed. General login/payment questions don't automatically need human help, but this involves failed account cancellation and payment method update which requires security verification.",
+      "proposed_handling": "human_required",
+      "reply": "We'll need to verify your account details to update your payment method. Please send a DM with your account's email address or username for assistance.",
+      "evidence_ids": [
+        "2042891:2042892"
+      ],
+      "routing_checks": [],
+      "model": "qwen3:4b",
+      "retrieved_cases": [
+        {
+          "case_id": "2042891:2042892",
+          "similarity": 0.2511
+        }
+      ]
+    }
+  },
+  {
+    "customer_tweet_id": "1639591",
+    "conversation_id": "1639590",
+    "customer_text": "@117153 \nj'ai payer mon abonnement et je suis toujours a la version gratuite, j'ai suivie toute les recommendation mais fonctionne pa",
+    "expected_intent": "subscription_plans",
+    "expected_action": "escalate",
+    "label_uncertain": false,
+    "prediction": {
+      "status": "ok",
+      "intent": "account_access_security",
+      "action": "escalate",
+      "reason": "Customer claims paid subscription but still on free tier despite following recommendations. Historical case shows similar issue requiring username/email for investigation. No account access or security concerns resolved yet. Must verify account status without claiming access.",
+      "proposed_handling": "human_required",
+      "reply": "We need your account email or username to check subscription status. Please share via DM.",
+      "evidence_ids": [],
+      "routing_checks": [],
+      "model": "qwen3:4b",
+      "retrieved_cases": [
+        {
+          "case_id": "1838001:1838002",
+          "similarity": 0.1249
+        }
+      ]
+    }
+  },
+  {
+    "customer_tweet_id": "2946129",
+    "conversation_id": "2946128",
+    "customer_text": "@SpotifyCares  https://t.co/wIxvrZ4p9O",
+    "expected_intent": "music_library_catalog",
+    "expected_action": "auto_handle",
+    "label_uncertain": true,
+    "prediction": {
+      "status": "ok",
+      "intent": "music_library_catalog",
+      "action": "auto_handle",
+      "reason": "Customer is asking about changing playlist cover image, but previous support suggested desktop app. Current message is a link without clear issue description.",
+      "proposed_handling": "clarification",
+      "reply": "I see you're trying to change a playlist cover image. Could you clarify which platform you're using? The desktop app is recommended for this feature.",
+      "evidence_ids": [],
+      "routing_checks": [],
+      "model": "qwen3:4b",
+      "retrieved_cases": [
+        {
+          "case_id": "1248469:1248470",
+          "similarity": 0.3744
+        }
+      ]
+    }
+  },
+  {
+    "customer_tweet_id": "1552007",
+    "conversation_id": "1552006",
+    "customer_text": "@115888 Sis, your app is broken https://t.co/XEqBxdx1K1",
+    "expected_intent": "app_device_issues",
+    "expected_action": "auto_handle",
+    "label_uncertain": false,
+    "prediction": {
+      "status": "ok",
+      "intent": "app_device_issues",
+      "action": "escalate",
+      "reason": "Customer reports app is broken with no specific details, historical case shows account access issue but this customer's current issue is different (app broken), and no troubleshooting steps were attempted. Spotify support requires account email/username for login issues but this customer says app is broken without providing account details. This is a human_required case as it involves app functionality without clear resolution path.",
+      "proposed_handling": "human_required",
+      "reply": "Your app seems to have issues. To help, please share your device type and operating system. For security, we won't access your account details.",
+      "evidence_ids": [],
+      "routing_checks": [],
+      "model": "qwen3:4b",
+      "retrieved_cases": [
+        {
+          "case_id": "1918961:1918962",
+          "similarity": 0.2854
+        }
+      ]
+    }
+  },
+  {
+    "customer_tweet_id": "2210891",
+    "conversation_id": "2210890",
+    "customer_text": "@SpotifyCares None of that worked, but it was fixed this morning when i woke up!",
+    "expected_intent": "app_device_issues",
+    "expected_action": "auto_handle",
+    "label_uncertain": false,
+    "prediction": {
+      "status": "ok",
+      "intent": "account_access_security",
+      "action": "escalate",
+      "reason": "Earlier troubleshooting has failed.",
+      "proposed_handling": "human_required",
+      "reply": "Please contact official Spotify support so a team member can review this issue.",
+      "evidence_ids": [],
+      "routing_checks": [
+        "Earlier troubleshooting has failed."
+      ],
+      "model": "qwen3:4b",
+      "retrieved_cases": [
+        {
+          "case_id": "854634:854637",
+          "similarity": 0.2257
+        }
+      ]
+    }
+  },
+  {
+    "customer_tweet_id": "1162404",
+    "conversation_id": "1162402",
+    "customer_text": "@SpotifyCares otherwise...I love the podcasts!",
+    "expected_intent": "product_feedback",
+    "expected_action": "auto_handle",
+    "label_uncertain": true,
+    "prediction": {
+      "status": "ok",
+      "intent": "praise_thanks",
+      "action": "auto_handle",
+      "reason": "Customer expresses appreciation for podcasts without unresolved issues",
+      "proposed_handling": "acknowledgement",
+      "reply": "You're welcome! 😊 We're glad you enjoy the podcasts.",
+      "evidence_ids": [],
+      "routing_checks": [],
+      "model": "qwen3:4b",
+      "retrieved_cases": [
+        {
+          "case_id": "2363281:2363282",
+          "similarity": 0.2048
+        }
+      ]
+    }
+  },
+  {
+    "customer_tweet_id": "2853007",
+    "conversation_id": "2853005",
+    "customer_text": "@115888 Spotify client to LG webOS 3.5, please!!!",
+    "expected_intent": "product_feedback",
+    "expected_action": "auto_handle",
+    "label_uncertain": false,
+    "prediction": {
+      "status": "ok",
+      "intent": "app_device_issues",
+      "action": "auto_handle",
+      "reason": "Customer mentions Spotify client installation issue on LG webOS 3.5 but doesn't specify exact problem. Historical case shows libssl mismatch issue, but this customer's message is different (no libssl details). Need to clarify what's broken.",
+      "proposed_handling": "clarification",
+      "reply": "Hi there! Could you share what specifically isn't working with the Spotify client on your LG webOS 3.5? For example, is it failing to install, crashing after install, or something else?",
+      "evidence_ids": [],
+      "routing_checks": [],
+      "model": "qwen3:4b",
+      "retrieved_cases": [
+        {
+          "case_id": "637646:637647",
+          "similarity": 0.1713
+        }
+      ]
+    }
+  },
+  {
+    "customer_tweet_id": "223010",
+    "conversation_id": "223009",
+    "customer_text": "@115888 hey guys i thought i'd let you know war is the answer is bad company and vice versa. Those two are flipped. https://t.co/pGCW50cUvt",
+    "expected_intent": "music_library_catalog",
+    "expected_action": "escalate",
+    "label_uncertain": false,
+    "prediction": {
+      "status": "ok",
+      "intent": "music_library_catalog",
+      "action": "auto_handle",
+      "reason": "Customer mentions two songs are flipped in their library, indicating a catalog issue. Historical case shows previous attempt to fix via app reinstall, but current message specifies catalog order problem without details on what's wrong.",
+      "proposed_handling": "clarification",
+      "reply": "Thanks for the update! Could you clarify which songs you mean? This helps us fix the order quickly.",
+      "evidence_ids": [],
+      "routing_checks": [],
+      "model": "qwen3:4b",
+      "retrieved_cases": [
+        {
+          "case_id": "559960:559961",
+          "similarity": 0.1473
+        }
+      ]
+    }
+  },
+  {
+    "customer_tweet_id": "2591023",
+    "conversation_id": "2591022",
+    "customer_text": "@SpotifyCares I cant download ANY song, whats going on?",
+    "expected_intent": "playback_offline",
+    "expected_action": "auto_handle",
+    "label_uncertain": false,
+    "prediction": {
+      "status": "ok",
+      "intent": "playback_offline",
+      "action": "auto_handle",
+      "reason": "Customer mentions inability to download songs but doesn't specify device, OS, or error details. Historical case shows past customer tried syncing local files, but this is a different customer with no shared context. Need to clarify device and error to troubleshoot.",
+      "proposed_handling": "clarification",
+      "reply": "Hi there! To help fix this, could you tell me which device you're using and if you see any error messages when trying to download?",
+      "evidence_ids": [],
+      "routing_checks": [],
+      "model": "qwen3:4b",
+      "retrieved_cases": [
+        {
+          "case_id": "2298899:2298901",
+          "similarity": 0.2392
+        }
+      ]
+    }
+  },
+  {
+    "customer_tweet_id": "1883969",
+    "conversation_id": "1883968",
+    "customer_text": "@117153 I paid the premium Spotify account using Itunes, and my account is still free.",
+    "expected_intent": "subscription_plans",
+    "expected_action": "escalate",
+    "label_uncertain": false,
+    "prediction": {
+      "status": "ok",
+      "intent": "account_access_security",
+      "action": "escalate",
+      "reason": "Customer paid for premium via iTunes but account remains free. Historical case shows similar issue with student premium payment not activating. Requires account verification and payment processing check. Spotify's official support must handle payment activation and account status confirmation.",
+      "proposed_handling": "human_required",
+      "reply": "Your Spotify account payment hasn't activated yet. To resolve this, please contact Spotify support directly for account verification and payment processing confirmation.",
+      "evidence_ids": [
+        "1174989:1174990"
+      ],
+      "routing_checks": [],
+      "model": "qwen3:4b",
+      "retrieved_cases": [
+        {
+          "case_id": "1174989:1174990",
+          "similarity": 0.2769
+        }
+      ]
+    }
+  },
+  {
+    "customer_tweet_id": "2034375",
+    "conversation_id": "2034374",
+    "customer_text": "@115888 hey spotify, why many of the older albums of Archive have just vanquished from my playlist? :(",
+    "expected_intent": "music_library_catalog",
+    "expected_action": "auto_handle",
+    "label_uncertain": false,
+    "prediction": {
+      "status": "ok",
+      "intent": "music_library_catalog",
+      "action": "escalate",
+      "reason": "Customer reports missing older albums from their playlist, which is a catalog issue. Historical cases show similar issues but belong to other customers. No account access or security concerns here. Catalog corrections require human investigation.",
+      "proposed_handling": "human_required",
+      "reply": "I can help investigate this issue. Please share the playlist link and the specific albums that disappeared so we can check the catalog.",
+      "evidence_ids": [],
+      "routing_checks": [],
+      "model": "qwen3:4b",
+      "retrieved_cases": [
+        {
+          "case_id": "2602367:2602368",
+          "similarity": 0.1278
+        }
+      ]
+    }
+  },
+  {
+    "customer_tweet_id": "585131",
+    "conversation_id": "585130",
+    "customer_text": "@115888 how do you add someone to a family premium?",
+    "expected_intent": "subscription_plans",
+    "expected_action": "auto_handle",
+    "label_uncertain": false,
+    "prediction": {
+      "status": "ok",
+      "intent": "subscription_plans",
+      "action": "escalate",
+      "reason": "Family-plan invite problems are subscription_plans. The customer is asking about adding someone to a family premium, which requires account access and verification. Historical cases show this is a common issue needing manual review.",
+      "proposed_handling": "human_required",
+      "reply": "To add someone to your family plan, you'll need to invite them through your Spotify account settings. Since this requires verification, please contact Spotify Support directly for assistance.",
+      "evidence_ids": [],
+      "routing_checks": [],
+      "model": "qwen3:4b",
+      "retrieved_cases": [
+        {
+          "case_id": "1964120:1964121",
+          "similarity": 0.2977
+        }
+      ]
+    }
+  },
+  {
+    "customer_tweet_id": "1715187",
+    "conversation_id": "1715186",
+    "customer_text": "@115888 what’s the story with you guys not having this on your system? @519456 not happy about it either. https://t.co/TeavpJI8pE",
+    "expected_intent": "music_library_catalog",
+    "expected_action": "auto_handle",
+    "label_uncertain": false,
+    "prediction": {
+      "status": "ok",
+      "intent": "account_access_security",
+      "action": "escalate",
+      "reason": "Customer mentions payment issues and loading pages, which indicates potential account access or security concerns. Historical cases show similar payment-related issues that require human investigation.",
+      "proposed_handling": "human_required",
+      "reply": "This issue requires Spotify support to investigate. Please contact Spotify support directly for assistance with your payment updates.",
+      "evidence_ids": [],
+      "routing_checks": [],
+      "model": "qwen3:4b",
+      "retrieved_cases": [
+        {
+          "case_id": "2857440:2857442",
+          "similarity": 0.1853
+        }
+      ]
+    }
+  },
+  {
+    "customer_tweet_id": "429226",
+    "conversation_id": "429225",
+    "customer_text": "psa: spotify doesnt actually care enough to give you a proper response to your issue. https://t.co/dM9VmqJPTc",
+    "expected_intent": "other_unclear",
+    "expected_action": "escalate",
+    "label_uncertain": false,
+    "prediction": {
+      "status": "ok",
+      "intent": "other_unclear",
+      "action": "escalate",
+      "reason": "Unanswered reply/DM requests are human_required, never praise_thanks, even when the customer says 'thanks'. The customer's message is a complaint about Spotify's response, but no specific issue is resolved. Historical cases belong to other customers and don't apply here. This requires official Spotify support.",
+      "proposed_handling": "human_required",
+      "reply": "We appreciate your feedback. For further assistance, please contact Spotify Support directly at support@spotify.com.",
+      "evidence_ids": [],
+      "routing_checks": [],
+      "model": "qwen3:4b",
+      "retrieved_cases": [
+        {
+          "case_id": "1237726:1237727",
+          "similarity": 0.216
+        }
+      ]
+    }
+  },
+  {
+    "customer_tweet_id": "2056895",
+    "conversation_id": "2056894",
+    "customer_text": "@SpotifyCares why Please honor my language settings get rid of geolocation. Browser, System and Account has language settings you ignore!!!",
+    "expected_intent": "app_device_issues",
+    "expected_action": "auto_handle",
+    "label_uncertain": false,
+    "prediction": {
+      "status": "ok",
+      "intent": "account_access_security",
+      "action": "auto_handle",
+      "reason": "Customer mentions language settings and geolocation but doesn't specify the exact issue or what they want to change. They seem frustrated about Spotify ignoring their language settings across browser, system, and account. This requires clarification on what specific language setting they're trying to change and how it's being ignored.",
+      "proposed_handling": "clarification",
+      "reply": "I see you're having trouble with language settings across your account. Could you clarify which language setting you're trying to change and how it's being ignored? This will help me assist you better.",
+      "evidence_ids": [],
+      "routing_checks": [],
+      "model": "qwen3:4b",
+      "retrieved_cases": [
+        {
+          "case_id": "1411754:1411755",
+          "similarity": 0.2802
+        }
+      ]
+    }
+  },
+  {
+    "customer_tweet_id": "1280120",
+    "conversation_id": "1280119",
+    "customer_text": "@125633 cheers for the follow guys!\nLove Spotify!\nIs there an app at all for the artists side!?\nI do majority of my stuff on here :)",
+    "expected_intent": "other_unclear",
+    "expected_action": "auto_handle",
+    "label_uncertain": false,
+    "prediction": {
+      "status": "ok",
+      "intent": "product_feedback",
+      "action": "auto_handle",
+      "reason": "Customer asks about artist app but doesn't specify which app or what they need",
+      "proposed_handling": "clarification",
+      "reply": "Hi there! Could you clarify what kind of app you're looking for? Spotify has a Musician app for artists, but it's not the same as the regular Spotify app.",
+      "evidence_ids": [],
+      "routing_checks": [],
+      "model": "qwen3:4b",
+      "retrieved_cases": [
+        {
+          "case_id": "1694931:1694932",
+          "similarity": 0.2147
+        }
+      ]
+    }
+  },
+  {
+    "customer_tweet_id": "2913914",
+    "conversation_id": "2913913",
+    "customer_text": "WHOOOOOOOO IS HANDLING AMBIENCE AFROBEATS &amp; AFROPOP ON @115888 @SpotifyCares WHY YA HAVEN’T UPDATED IT SINCE NOV 10TH?????!!!!",
+    "expected_intent": "music_library_catalog",
+    "expected_action": "auto_handle",
+    "label_uncertain": false,
+    "prediction": {
+      "status": "ok",
+      "intent": "other_unclear",
+      "action": "auto_handle",
+      "reason": "Customer message is unclear and lacks specific issue details. The request mentions 'AMBIENCE AFROBEATS & AFROPOP' but does not specify a problem with playback, catalog, or account access. The historical case shows a different issue (login problems) but this customer's current message has no clear issue to resolve. No actionable steps can be taken without clarification on what is broken or missing.",
+      "proposed_handling": "clarification",
+      "reply": "I'm sorry, but I'm not sure what issue you're having with Spotify. Could you clarify what's not working? For example, are songs not playing, or is there a problem with your account?",
+      "evidence_ids": [],
+      "routing_checks": [],
+      "model": "qwen3:4b",
+      "retrieved_cases": [
+        {
+          "case_id": "2835020:2835021",
+          "similarity": 0.1481
+        }
+      ]
+    }
+  },
+  {
+    "customer_tweet_id": "2279791",
+    "conversation_id": "2279790",
+    "customer_text": "@SpotifyCares so I went to try out the student discount for Hulu but they charged me even thought I didn’t sign up for it after all what’s going on??",
+    "expected_intent": "billing_payments",
+    "expected_action": "escalate",
+    "label_uncertain": false,
+    "prediction": {
+      "status": "ok",
+      "intent": "billing_payments",
+      "action": "escalate",
+      "reason": "Customer mentions being charged for a student discount they didn't sign up for, indicating a billing issue that requires investigation. Historical cases are unrelated to this customer's issue.",
+      "proposed_handling": "human_required",
+      "reply": "This sounds like a billing error. I recommend contacting Spotify Support directly for assistance with disputed charges.",
+      "evidence_ids": [
+        "2298899:2298901"
+      ],
+      "routing_checks": [],
+      "model": "qwen3:4b",
+      "retrieved_cases": [
+        {
+          "case_id": "2298899:2298901",
+          "similarity": 0.2205
+        }
+      ]
+    }
+  },
+  {
+    "customer_tweet_id": "2251335",
+    "conversation_id": "2251332",
+    "customer_text": "can I sort my own playlist by \"Recently Added\"? @SpotifyCares",
+    "expected_intent": "music_library_catalog",
+    "expected_action": "auto_handle",
+    "label_uncertain": false,
+    "prediction": {
+      "status": "ok",
+      "intent": "music_library_catalog",
+      "action": "escalate",
+      "reason": "Customer asks about sorting playlists by 'Recently Added' which is a catalog feature. Historical case shows similar query with Spotify's guidance on sorting playlists. No human intervention needed as Spotify provides clear instructions for this action.",
+      "proposed_handling": "general_guidance",
+      "reply": "I'm sorry you're having trouble. Please contact official Spotify support for further review. I can't check your account here.",
+      "evidence_ids": [],
+      "routing_checks": [
+        "The proposed guidance has no cited evidence."
+      ],
+      "model": "qwen3:4b",
+      "retrieved_cases": [
+        {
+          "case_id": "2412382:2412383",
+          "similarity": 0.1914
+        }
+      ]
+    }
+  },
+  {
+    "customer_tweet_id": "1648932",
+    "conversation_id": "1648931",
+    "customer_text": "@SpotifyCares check dm please thanks",
+    "expected_intent": "other_unclear",
+    "expected_action": "escalate",
+    "label_uncertain": false,
+    "prediction": {
+      "status": "ok",
+      "intent": "other_unclear",
+      "action": "escalate",
+      "reason": "Unanswered reply/DM requests are human_required, even when the customer says 'thanks'. The customer's request to check their DM is unanswered and requires official Spotify support.",
+      "proposed_handling": "human_required",
+      "reply": "We've noted your request to check your DM. For assistance with your DM, please contact Spotify Support directly at support@spotify.com.",
+      "evidence_ids": [],
+      "routing_checks": [],
+      "model": "qwen3:4b",
+      "retrieved_cases": [
+        {
+          "case_id": "1228849:1228850",
+          "similarity": 0.3261
+        }
+      ]
+    }
+  },
+  {
+    "customer_tweet_id": "2118793",
+    "conversation_id": "2118792",
+    "customer_text": ":( Neglected Fields are not present in a @115888",
+    "expected_intent": "music_library_catalog",
+    "expected_action": "auto_handle",
+    "label_uncertain": false,
+    "prediction": {
+      "status": "ok",
+      "intent": "music_library_catalog",
+      "action": "escalate",
+      "reason": "Customer mentions 'Neglected Fields' not present in a Spotify catalog entry (case ID @11588:1800552:1800553), which requires catalog correction. Historical cases show similar catalog issues needing human review. No unresolved facts in current message to clarify.",
+      "proposed_handling": "human_required",
+      "reply": "This issue requires Spotify's catalog team to verify and correct the missing fields. Please contact Spotify Support directly for assistance.",
+      "evidence_ids": [
+        "1800552:1800553"
+      ],
+      "routing_checks": [],
+      "model": "qwen3:4b",
+      "retrieved_cases": [
+        {
+          "case_id": "1800552:1800553",
+          "similarity": 0.2413
+        }
+      ]
+    }
+  },
+  {
+    "customer_tweet_id": "858006",
+    "conversation_id": "858005",
+    "customer_text": "@SpotifyCares triple charged me*",
+    "expected_intent": "billing_payments",
+    "expected_action": "escalate",
+    "label_uncertain": false,
+    "prediction": {
+      "status": "ok",
+      "intent": "billing_payments",
+      "action": "escalate",
+      "reason": "Billing issue needs account-level investigation.",
+      "proposed_handling": "human_required",
+      "reply": "Please contact official Spotify support so a team member can review this issue.",
+      "evidence_ids": [],
+      "routing_checks": [
+        "Billing issue needs account-level investigation."
+      ],
+      "model": "qwen3:4b",
+      "retrieved_cases": [
+        {
+          "case_id": "966373:966374",
+          "similarity": 0.2493
+        }
+      ]
+    }
+  },
+  {
+    "customer_tweet_id": "2509469",
+    "conversation_id": "2509467",
+    "customer_text": "@SpotifyCares Why does this happen https://t.co/A9wwFLJAze",
+    "expected_intent": "other_unclear",
+    "expected_action": "auto_handle",
+    "label_uncertain": false,
+    "prediction": {
+      "status": "ok",
+      "intent": "other_unclear",
+      "action": "auto_handle",
+      "reason": "Customer message is unclear without context. The link https://t.co/A9wwFLJAze is a Twitter link that may be a reference to a specific feature or issue, but the customer hasn't provided enough detail about what they mean by 'this happen'. The historical case shows a past customer asking to make something happen, but this is a different request. No clear issue is specified here.",
+      "proposed_handling": "clarification",
+      "reply": "I'm not sure what you mean by 'this happen'. Could you clarify what issue you're experiencing?",
+      "evidence_ids": [],
+      "routing_checks": [],
+      "model": "qwen3:4b",
+      "retrieved_cases": [
+        {
+          "case_id": "653559:653562",
+          "similarity": 0.3971
+        }
+      ]
+    }
+  },
+  {
+    "customer_tweet_id": "377557",
+    "conversation_id": "377556",
+    "customer_text": "@SpotifyCares Shuffling playlist and no Beatles songs ever come up in queue. Playlist is ~1/3 Beatles. Premium, all platforms. What gives?",
+    "expected_intent": "playback_offline",
+    "expected_action": "auto_handle",
+    "label_uncertain": false,
+    "prediction": {
+      "status": "ok",
+      "intent": "playback_offline",
+      "action": "auto_handle",
+      "reason": "Customer mentions shuffling issues with specific playlist content (Beatles songs not appearing), but no details about shuffle settings or device/platform. Historical case shows Spotify improved shuffle algorithm but doesn’t resolve current issue. Need to clarify if shuffle is enabled, playlist shuffle setting, or device-specific behavior.",
+      "proposed_handling": "clarification",
+      "reply": "Hi there! Could you confirm if shuffle is enabled in your playlist settings? This helps us troubleshoot the issue with Beatles songs not appearing in the queue.",
+      "evidence_ids": [],
+      "routing_checks": [],
+      "model": "qwen3:4b",
+      "retrieved_cases": [
+        {
+          "case_id": "664772:664773",
+          "similarity": 0.1824
+        }
+      ]
+    }
+  },
+  {
+    "customer_tweet_id": "232229",
+    "conversation_id": "232228",
+    "customer_text": "@SpotifyCares is there a way to stop it going to the album art on the time cap. -using android",
+    "expected_intent": "app_device_issues",
+    "expected_action": "auto_handle",
+    "label_uncertain": true,
+    "prediction": {
+      "status": "ok",
+      "intent": "playback_offline",
+      "action": "auto_handle",
+      "reason": "Customer mentions album art on time cap but doesn't specify if it's a playback issue or related to offline listening. No details about the time cap feature or album art behavior provided. Historical cases are for other customers and don't apply here.",
+      "proposed_handling": "clarification",
+      "reply": "Could you clarify what you mean by 'time cap'? Are you referring to a specific playback feature or a time limit on album art display?",
+      "evidence_ids": [],
+      "routing_checks": [],
+      "model": "qwen3:4b",
+      "retrieved_cases": [
+        {
+          "case_id": "2081957:2081958",
+          "similarity": 0.1903
+        }
+      ]
+    }
+  },
+  {
+    "customer_tweet_id": "2347848",
+    "conversation_id": "2347846",
+    "customer_text": "@SpotifyCares iPhone 7 Plus and it’s the most updated version :)",
+    "expected_intent": "playback_offline",
+    "expected_action": "auto_handle",
+    "label_uncertain": false,
+    "prediction": {
+      "status": "ok",
+      "intent": "app_device_issues",
+      "action": "auto_handle",
+      "reason": "Customer mentions device but doesn't specify login issues or error messages",
+      "proposed_handling": "clarification",
+      "reply": "Thanks for sharing! Could you tell us if you're experiencing login errors or specific error messages when using Spotify?",
+      "evidence_ids": [],
+      "routing_checks": [],
+      "model": "qwen3:4b",
+      "retrieved_cases": [
+        {
+          "case_id": "2305873:2305874",
+          "similarity": 0.254
+        }
+      ]
+    }
+  },
+  {
+    "customer_tweet_id": "1021163",
+    "conversation_id": "1021161",
+    "customer_text": "@SpotifyCares Whats the point to follow Artists, and to not get any notification when they are releasing new stuff (LP, EP, single..) ? Help",
+    "expected_intent": "app_device_issues",
+    "expected_action": "auto_handle",
+    "label_uncertain": false,
+    "prediction": {
+      "status": "ok",
+      "intent": "music_library_catalog",
+      "action": "auto_handle",
+      "reason": "Customer asks about artist notifications but doesn't specify if they're missing notifications for new releases or if they're getting notifications but not seeing them. The historical case shows a different issue (expired premium) but doesn't relate to this query. No prior context provided, so need to clarify what's not working.",
+      "proposed_handling": "clarification",
+      "reply": "Hi there! To better help, could you clarify if you're not receiving notifications for new artist releases or if you're getting notifications but not seeing them? This helps us fix the issue faster.",
+      "evidence_ids": [],
+      "routing_checks": [],
+      "model": "qwen3:4b",
+      "retrieved_cases": [
+        {
+          "case_id": "1401594:1401595",
+          "similarity": 0.1515
+        }
+      ]
+    }
+  },
+  {
+    "customer_tweet_id": "2743174",
+    "conversation_id": "2743173",
+    "customer_text": "@SpotifyCares ?? https://t.co/M6jMfVVdbN",
+    "expected_intent": "other_unclear",
+    "expected_action": "auto_handle",
+    "label_uncertain": false,
+    "prediction": {
+      "status": "ok",
+      "intent": "other_unclear",
+      "action": "auto_handle",
+      "reason": "Customer message is unclear and lacks specific issue details. The link provided is a Twitter short URL that may not be accessible or relevant. No actionable issue is specified in the message.",
+      "proposed_handling": "acknowledgement",
+      "reply": "We noticed your message but need more details to help. Could you clarify what issue you're facing?",
+      "evidence_ids": [],
+      "routing_checks": [],
+      "model": "qwen3:4b",
+      "retrieved_cases": []
+    }
+  },
+  {
+    "customer_tweet_id": "1266596",
+    "conversation_id": "1266594",
+    "customer_text": "@115888 Hi, are you having issues taking payments? Money in account, card details correct but getting messages to say it’s not working.",
+    "expected_intent": "billing_payments",
+    "expected_action": "escalate",
+    "label_uncertain": false,
+    "prediction": {
+      "status": "ok",
+      "intent": "billing_payments",
+      "action": "escalate",
+      "reason": "Customer mentions payment issues despite having money in account and correct card details, but no specific error message or device details provided. Historical case shows past customer had similar issue but no resolution. General login/payment questions don’t automatically need human help, but this case requires investigation due to payment failure despite correct details.",
+      "proposed_handling": "human_required",
+      "reply": "We can help investigate your payment issue. Could you share the exact error message you receive when trying to pay?",
+      "evidence_ids": [
+        "104559:104565"
+      ],
+      "routing_checks": [],
+      "model": "qwen3:4b",
+      "retrieved_cases": [
+        {
+          "case_id": "104559:104565",
+          "similarity": 0.1588
+        }
+      ]
+    }
+  },
+  {
+    "customer_tweet_id": "434756",
+    "conversation_id": "434749",
+    "customer_text": "@SpotifyCares Followed these directions and reinstalled. Still not working.",
+    "expected_intent": "playback_offline",
+    "expected_action": "escalate",
+    "label_uncertain": false,
+    "prediction": {
+      "status": "ok",
+      "intent": "app_device_issues",
+      "action": "escalate",
+      "reason": "Earlier troubleshooting has failed.",
+      "proposed_handling": "human_required",
+      "reply": "Please contact official Spotify support so a team member can review this issue.",
+      "evidence_ids": [],
+      "routing_checks": [
+        "Earlier troubleshooting has already failed.",
+        "Earlier troubleshooting has failed."
+      ],
+      "model": "qwen3:4b",
+      "retrieved_cases": [
+        {
+          "case_id": "104559:104565",
+          "similarity": 0.2467
+        }
+      ]
+    }
+  },
+  {
+    "customer_tweet_id": "2969659",
+    "conversation_id": "2969658",
+    "customer_text": "@SpotifyCares Done.  Thanks in advance!",
+    "expected_intent": "subscription_plans",
+    "expected_action": "escalate",
+    "label_uncertain": false,
+    "prediction": {
+      "status": "ok",
+      "intent": "praise_thanks",
+      "action": "auto_handle",
+      "reason": "Customer explicitly thanked us with 'Thanks in advance!' after a support interaction",
+      "proposed_handling": "acknowledgement",
+      "reply": "You're welcome! Let us know if you need further help.",
+      "evidence_ids": [],
+      "routing_checks": [],
+      "model": "qwen3:4b",
+      "retrieved_cases": [
+        {
+          "case_id": "661779:661780",
+          "similarity": 0.2487
+        }
+      ]
+    }
+  },
+  {
+    "customer_tweet_id": "1033681",
+    "conversation_id": "1033680",
+    "customer_text": "@SpotifyCares Hey I am idle with the Spotify window open, but someone/something is using a web player on my behalf! I'm using FB login..",
+    "expected_intent": "account_access_security",
+    "expected_action": "escalate",
+    "label_uncertain": false,
+    "prediction": {
+      "status": "ok",
+      "intent": "account_access_security",
+      "action": "escalate",
+      "reason": "Customer reports unauthorized web player usage with Facebook login, indicating potential account security issue. Historical case shows similar web player issues but no resolution. This requires account investigation as it involves unauthorized access.",
+      "proposed_handling": "human_required",
+      "reply": "We've detected unauthorized activity on your account. Please contact Spotify Support directly for security verification.",
+      "evidence_ids": [],
+      "routing_checks": [
+        "An unresolved account security concern exists."
+      ],
+      "model": "qwen3:4b",
+      "retrieved_cases": [
+        {
+          "case_id": "1346916:1346923",
+          "similarity": 0.1925
+        }
+      ]
+    }
+  },
+  {
+    "customer_tweet_id": "511815",
+    "conversation_id": "511814",
+    "customer_text": "@SpotifyCares why won't my Hulu account work? I reverified that I'm still a student today but the Hulu App continues to ask me if I want to (re)subscribe? I JUST WANT TO WATCH GREAT NEWS WHILE I PROCRASTINATE FINALS WEEK *sobs*\nhelp https://t.co/WLYf1Wcjrz",
+    "expected_intent": "subscription_plans",
+    "expected_action": "escalate",
+    "label_uncertain": false,
+    "prediction": {
+      "status": "ok",
+      "intent": "other_unclear",
+      "action": "auto_handle",
+      "reason": "Customer mentions Hulu account issues but Spotify doesn't handle Hulu subscriptions. Spotify's role is limited to its own services. The customer is confused about why Hulu is asking for re-subscription despite being a student, which is unrelated to Spotify. No Spotify-specific issue is described here.",
+      "proposed_handling": "clarification",
+      "reply": "I'm sorry, but Spotify doesn't handle Hulu accounts. This seems to be a Hulu-specific issue. Could you clarify what you're trying to do with Spotify?",
+      "evidence_ids": [],
+      "routing_checks": [],
+      "model": "qwen3:4b",
+      "retrieved_cases": [
+        {
+          "case_id": "1928108:1928109",
+          "similarity": 0.1666
+        }
+      ]
+    }
+  },
+  {
+    "customer_tweet_id": "1722598",
+    "conversation_id": "1722597",
+    "customer_text": "@SpotifyCares not easy to fixes issues , been trying to get a problem fixed since sat morning",
+    "expected_intent": "other_unclear",
+    "expected_action": "escalate",
+    "label_uncertain": false,
+    "prediction": {
+      "status": "ok",
+      "intent": "praise_thanks",
+      "action": "auto_handle",
+      "reason": "Customer says 'thanks' after issue was fixed, no unresolved request",
+      "proposed_handling": "acknowledgement",
+      "reply": "You're welcome! Let us know if you need further help.",
+      "evidence_ids": [],
+      "routing_checks": [],
+      "model": "qwen3:4b",
+      "retrieved_cases": [
+        {
+          "case_id": "374850:374851",
+          "similarity": 0.1626
+        }
+      ]
+    }
+  },
+  {
+    "customer_tweet_id": "1222457",
+    "conversation_id": "1222456",
+    "customer_text": "@SpotifyCares It's working, now. Thank you, though.",
+    "expected_intent": "praise_thanks",
+    "expected_action": "auto_handle",
+    "label_uncertain": false,
+    "prediction": {
+      "status": "ok",
+      "intent": "praise_thanks",
+      "action": "auto_handle",
+      "reason": "Customer explicitly states issue is resolved and thanks support",
+      "proposed_handling": "acknowledgement",
+      "reply": "You're welcome! Glad to hear it's working now.",
+      "evidence_ids": [],
+      "routing_checks": [],
+      "model": "qwen3:4b",
+      "retrieved_cases": [
+        {
+          "case_id": "2912452:2912453",
+          "similarity": 0.2174
+        }
+      ]
+    }
+  },
+  {
+    "customer_tweet_id": "1872865",
+    "conversation_id": "1872864",
+    "customer_text": "@115888 I would appreciate it if things like Dark Horse didn’t play when I hit shuffle on Harry Styles’ album. Thank you.",
+    "expected_intent": "playback_offline",
+    "expected_action": "auto_handle",
+    "label_uncertain": false,
+    "prediction": {
+      "status": "ok",
+      "intent": "playback_offline",
+      "action": "auto_handle",
+      "reason": "Customer mentions shuffle playing Dark Horse when they expect Harry Styles' album, but no specific device or playback context is provided. Need to confirm if this is a device-specific issue or a catalog mismatch.",
+      "proposed_handling": "clarification",
+      "reply": "Could you clarify which device or app you're using? This helps us check if it's a device-specific issue or a catalog mismatch.",
+      "evidence_ids": [],
+      "routing_checks": [],
+      "model": "qwen3:4b",
+      "retrieved_cases": [
+        {
+          "case_id": "1901786:1901787",
+          "similarity": 0.2107
+        }
+      ]
+    }
+  },
+  {
+    "customer_tweet_id": "2291114",
+    "conversation_id": "2291113",
+    "customer_text": "@SpotifyCares Yes",
+    "expected_intent": "playback_offline",
+    "expected_action": "escalate",
+    "label_uncertain": false,
+    "prediction": {
+      "status": "ok",
+      "intent": "billing_payments",
+      "action": "escalate",
+      "reason": "Customer mentions being charged for a year with 'free' subscription, indicating disputed charges. Historical case shows Spotify requested email/username for investigation, but customer hasn't provided it. This requires account verification and payment dispute resolution, which needs human support.",
+      "proposed_handling": "human_required",
+      "reply": "We've noticed you've been charged for a year with a 'free' subscription. To resolve this, we'll need your account email and username for verification. Please share these details via DM for further assistance.",
+      "evidence_ids": [
+        "2513045:2513046"
+      ],
+      "routing_checks": [],
+      "model": "qwen3:4b",
+      "retrieved_cases": [
+        {
+          "case_id": "2513045:2513046",
+          "similarity": 0.1265
+        }
+      ]
+    }
+  },
+  {
+    "customer_tweet_id": "2917825",
+    "conversation_id": "2917824",
+    "customer_text": "@SpotifyCares God bless",
+    "expected_intent": "praise_thanks",
+    "expected_action": "auto_handle",
+    "label_uncertain": false,
+    "prediction": {
+      "status": "ok",
+      "intent": "praise_thanks",
+      "action": "auto_handle",
+      "reason": "Customer expressed gratitude with 'God bless' and positive sentiment",
+      "proposed_handling": "acknowledgement",
+      "reply": "You're welcome! 😊 We're here to help anytime.",
+      "evidence_ids": [],
+      "routing_checks": [],
+      "model": "qwen3:4b",
+      "retrieved_cases": [
+        {
+          "case_id": "1749025:1749026",
+          "similarity": 0.5265
+        }
+      ]
+    }
+  },
+  {
+    "customer_tweet_id": "1659910",
+    "conversation_id": "1659909",
+    "customer_text": "@SpotifyCares I just want access to make these changes myself. Why is it no longer available?",
+    "expected_intent": "subscription_plans",
+    "expected_action": "escalate",
+    "label_uncertain": false,
+    "prediction": {
+      "status": "ok",
+      "intent": "account_access_security",
+      "action": "escalate",
+      "reason": "Customer is unable to manage family account and access changes, but historical cases show content availability issues. This requires account investigation as family account management is not resolved.",
+      "proposed_handling": "human_required",
+      "reply": "We can help you manage your family account directly. Please share your email address so we can assist with adding or removing members.",
+      "evidence_ids": [],
+      "routing_checks": [
+        "Account-specific investigation is needed."
+      ],
+      "model": "qwen3:4b",
+      "retrieved_cases": [
+        {
+          "case_id": "1418701:1418702",
+          "similarity": 0.1739
+        }
+      ]
+    }
+  },
+  {
+    "customer_tweet_id": "718424",
+    "conversation_id": "718419",
+    "customer_text": "@SpotifyCares An Samsung S8 Active as of Friday. Prior to that, the S6 Active. And I must say, great customer service and support, props to y'all!! https://t.co/JwYBvXSGQQ",
+    "expected_intent": "playback_offline",
+    "expected_action": "auto_handle",
+    "label_uncertain": false,
+    "prediction": {
+      "status": "ok",
+      "intent": "playback_offline",
+      "action": "auto_handle",
+      "reason": "Customer mentions buffering songs on offline playlists, but this is a past issue from their own history. Current message is a thank you with no unresolved issue.",
+      "proposed_handling": "acknowledgement",
+      "reply": "Thanks for the kind words! We appreciate your support.",
+      "evidence_ids": [],
+      "routing_checks": [],
+      "model": "qwen3:4b",
+      "retrieved_cases": [
+        {
+          "case_id": "1220126:1220127",
+          "similarity": 0.1279
+        }
+      ]
+    }
+  },
+  {
+    "customer_tweet_id": "1688947",
+    "conversation_id": "1688945",
+    "customer_text": "yo @SpotifyCares your web browser player isn't working on Chromebook after several tries, it just logs me out",
+    "expected_intent": "account_access_security",
+    "expected_action": "auto_handle",
+    "label_uncertain": true,
+    "prediction": {
+      "status": "ok",
+      "intent": "app_device_issues",
+      "action": "auto_handle",
+      "reason": "Customer mentions browser player not working on Chromebook but doesn't specify exact error or steps taken beyond 'several tries'. No details on Chromebook model, browser version, or error messages provided. Historical cases belong to other customers and don: t apply here.",
+      "proposed_handling": "clarification",
+      "reply": "Hi there! Could you share what error message you see when trying to log in? Also, which Chromebook model and browser version are you using?",
+      "evidence_ids": [],
+      "routing_checks": [],
+      "model": "qwen3:4b",
+      "retrieved_cases": [
+        {
+          "case_id": "1850866:1850867",
+          "similarity": 0.4531
+        }
+      ]
+    }
+  },
+  {
+    "customer_tweet_id": "1611855",
+    "conversation_id": "1611854",
+    "customer_text": "please check your dm. thank you @SpotifyCares",
+    "expected_intent": "other_unclear",
+    "expected_action": "escalate",
+    "label_uncertain": false,
+    "prediction": {
+      "status": "ok",
+      "intent": "praise_thanks",
+      "action": "auto_handle",
+      "reason": "Customer explicitly thanked us and mentioned DM, which we've already handled in past interaction",
+      "proposed_handling": "acknowledgement",
+      "reply": "You're welcome! Let me know if you need further assistance.",
+      "evidence_ids": [],
+      "routing_checks": [],
+      "model": "qwen3:4b",
+      "retrieved_cases": [
+        {
+          "case_id": "689582:689583",
+          "similarity": 0.5007
+        }
+      ]
+    }
+  },
+  {
+    "customer_tweet_id": "927651",
+    "conversation_id": "927650",
+    "customer_text": "@SpotifyCares hiiii please look at my dm xx",
+    "expected_intent": "other_unclear",
+    "expected_action": "escalate",
+    "label_uncertain": false,
+    "prediction": {
+      "status": "ok",
+      "intent": "other_unclear",
+      "action": "escalate",
+      "reason": "Unanswered DM request from customer without specific issue details",
+      "proposed_handling": "human_required",
+      "reply": "We've sent a DM to your Spotify account. Please check your messages for further assistance.",
+      "evidence_ids": [],
+      "routing_checks": [],
+      "model": "qwen3:4b",
+      "retrieved_cases": [
+        {
+          "case_id": "79403:79409",
+          "similarity": 0.2454
+        }
+      ]
+    }
+  },
+  {
+    "customer_tweet_id": "2380933",
+    "conversation_id": "2380932",
+    "customer_text": "@SpotifyCares @115888 Please release a new update to be compatible with iPhone X! Will this happen soon?",
+    "expected_intent": "app_device_issues",
+    "expected_action": "auto_handle",
+    "label_uncertain": false,
+    "prediction": {
+      "status": "ok",
+      "intent": "product_feedback",
+      "action": "auto_handle",
+      "reason": "Customer asks for iPhone X compatibility update, but Spotify's past response indicates this isn't possible. No specific issue is resolved here, so general guidance on feature requests is appropriate.",
+      "proposed_handling": "general_guidance",
+      "reply": "We appreciate your feedback! For iPhone X compatibility updates, you can show support here: https://t.co/MBwzAVFBjM",
+      "evidence_ids": [
+        "653559:653562"
+      ],
+      "routing_checks": [],
+      "model": "qwen3:4b",
+      "retrieved_cases": [
+        {
+          "case_id": "653559:653562",
+          "similarity": 0.2389
+        }
+      ]
+    }
+  },
+  {
+    "customer_tweet_id": "1176569",
+    "conversation_id": "1176568",
+    "customer_text": "@SpotifyCares I tried that. Track 5 is supposed to be a collaboration with @76687 , track 14 is a collaboration with Anderson Paak., Ty Dolla $ign, BJ The Chicago Kid, and Raury. They are two completely different tracks with different lyrics and music.",
+    "expected_intent": "music_library_catalog",
+    "expected_action": "escalate",
+    "label_uncertain": false,
+    "prediction": {
+      "status": "ok",
+      "intent": "music_library_catalog",
+      "action": "escalate",
+      "reason": "The customer is reporting that track 5 and track 14 on an album have incorrect metadata (collaborations listed as the same track). This requires catalog correction, which Spotify support handles manually. Historical cases show similar issues were resolved by human support (e.g., case 1411751:1411752). The customer has already tried troubleshooting steps (logging out/restarting device), but the issue persists with incorrect track metadata. Catalog corrections cannot be handled by the prototype.",
+      "proposed_handling": "human_required",
+      "reply": "This issue requires manual catalog correction. Please contact Spotify Support directly for assistance.",
+      "evidence_ids": [
+        "1411751:1411752"
+      ],
+      "routing_checks": [],
+      "model": "qwen3:4b",
+      "retrieved_cases": [
+        {
+          "case_id": "1411751:1411752",
+          "similarity": 0.1634
+        }
+      ]
+    }
+  },
+  {
+    "customer_tweet_id": "2498915",
+    "conversation_id": "2498914",
+    "customer_text": "@SpotifyCares 😊 https://t.co/QNMkh7l5I7",
+    "expected_intent": "other_unclear",
+    "expected_action": "auto_handle",
+    "label_uncertain": true,
+    "prediction": {
+      "status": "ok",
+      "intent": "other_unclear",
+      "action": "auto_handle",
+      "reason": "Customer shared a link but no specific issue is described. No actionable issue identified in the message.",
+      "proposed_handling": "acknowledgement",
+      "reply": "Thanks for reaching out! I see you shared a link — could you clarify what you'd like help with?",
+      "evidence_ids": [],
+      "routing_checks": [],
+      "model": "qwen3:4b",
+      "retrieved_cases": []
+    }
+  },
+  {
+    "customer_tweet_id": "2438682",
+    "conversation_id": "2438681",
+    "customer_text": "@spotifycares why have I been getting charged twice a month from you guys? :/",
+    "expected_intent": "billing_payments",
+    "expected_action": "escalate",
+    "label_uncertain": false,
+    "prediction": {
+      "status": "ok",
+      "intent": "billing_payments",
+      "action": "escalate",
+      "reason": "Billing issue needs account-level investigation.",
+      "proposed_handling": "human_required",
+      "reply": "Please contact official Spotify support so a team member can review this issue.",
+      "evidence_ids": [],
+      "routing_checks": [
+        "Account-specific investigation is needed.",
+        "Billing issue needs account-level investigation."
+      ],
+      "model": "qwen3:4b",
+      "retrieved_cases": [
+        {
+          "case_id": "2513045:2513046",
+          "similarity": 0.3504
+        }
+      ]
+    }
+  },
+  {
+    "customer_tweet_id": "2311089",
+    "conversation_id": "2311088",
+    "customer_text": "@115888 Would love to see this one uploaded.",
+    "expected_intent": "music_library_catalog",
+    "expected_action": "auto_handle",
+    "label_uncertain": false,
+    "prediction": {
+      "status": "ok",
+      "intent": "product_feedback",
+      "action": "auto_handle",
+      "reason": "Customer mentions wanting to see a specific upload (likely a song or content) but doesn't specify an issue. Historical cases show previous interaction with Spotify support, but this is a new request for content. No unresolved issue here—just a positive feedback or request for content. Since the customer is asking for something to be uploaded, it's a feature request or feedback, not an unresolved issue. The historical cases belong to other customers, so we don't treat them as this customer's history. The customer is expressing a desire for content, so it's a product feedback request. We don: t'",
+      "proposed_handling": "acknowledgement",
+      "reply": "Thanks for the feedback! We'll make sure to add this to our queue for review.",
+      "evidence_ids": [],
+      "routing_checks": [],
+      "model": "qwen3:4b",
+      "retrieved_cases": [
+        {
+          "case_id": "430245:430246",
+          "similarity": 0.221
+        }
+      ]
+    }
+  },
+  {
+    "customer_tweet_id": "385146",
+    "conversation_id": "385145",
+    "customer_text": "@207190 @SpotifyCares Oh, I hope they do!!!!!",
+    "expected_intent": "subscription_plans",
+    "expected_action": "escalate",
+    "label_uncertain": false,
+    "prediction": {
+      "status": "ok",
+      "intent": "subscription_plans",
+      "action": "escalate",
+      "reason": "Family-plan invite problems are subscription_plans. The customer has previously mentioned inability to add family members to their Family account, and historical cases show Spotify requesting email addresses for investigation. This requires human intervention to resolve family plan access issues.",
+      "proposed_handling": "human_required",
+      "reply": "We've noticed you're having trouble adding family members to your Spotify Family account. For security, we'll need your account email to investigate this further. Please reply with your email address so we can assist.",
+      "evidence_ids": [],
+      "routing_checks": [],
+      "model": "qwen3:4b",
+      "retrieved_cases": [
+        {
+          "case_id": "2144225:2144226",
+          "similarity": 0.237
+        }
+      ]
+    }
+  },
+  {
+    "customer_tweet_id": "2218929",
+    "conversation_id": "2218928",
+    "customer_text": "@118797 @648197 @SpotifyCares @AskPlayStation @XboxSupport I suggest a “renew subscription” button that already subscribed consumers can fall back to when on a biweekly payment system, this can significantly improve the quality of life of over an estimated 65% or more of your targeted subscribers.",
+    "expected_intent": "product_feedback",
+    "expected_action": "auto_handle",
+    "label_uncertain": false,
+    "prediction": {
+      "status": "ok",
+      "intent": "product_feedback",
+      "action": "escalate",
+      "reason": "Customer suggests a feature improvement for subscription management in biweekly payment systems. Historical cases show Spotify has addressed audio quality issues with a link, but this is a new feature request unrelated to past cases. No unresolved facts require human help as the customer is proposing a solution, not reporting an issue.",
+      "proposed_handling": "general_guidance",
+      "reply": "I'm sorry you're having trouble. Please contact official Spotify support for further review. I can't check your account here.",
+      "evidence_ids": [],
+      "routing_checks": [
+        "The proposed guidance has no cited evidence."
+      ],
+      "model": "qwen3:4b",
+      "retrieved_cases": [
+        {
+          "case_id": "1099879:1099882",
+          "similarity": 0.1107
+        }
+      ]
+    }
+  },
+  {
+    "customer_tweet_id": "2289994",
+    "conversation_id": "2289991",
+    "customer_text": "@115888 when is #Reputation going to be on the app?!",
+    "expected_intent": "music_library_catalog",
+    "expected_action": "auto_handle",
+    "label_uncertain": false,
+    "prediction": {
+      "status": "ok",
+      "intent": "music_library_catalog",
+      "action": "escalate",
+      "reason": "Customer asks about album availability on Spotify. Historical case shows past customer asked similar question and Spotify replied it's not available yet with singles link. Current question is about same album's availability. Spotify's response in historical case indicates it's not available yet, so general guidance is to inform customer it's not available now but singles are available.",
+      "proposed_handling": "general_guidance",
+      "reply": "I'm sorry you're having trouble. Please contact official Spotify support for further review. I can't check your account here.",
+      "evidence_ids": [],
+      "routing_checks": [
+        "The proposed guidance has no cited evidence."
+      ],
+      "model": "qwen3:4b",
+      "retrieved_cases": [
+        {
+          "case_id": "2218885:2218887",
+          "similarity": 0.6105
+        }
+      ]
+    }
+  },
+  {
+    "customer_tweet_id": "763154",
+    "conversation_id": "763153",
+    "customer_text": "@SpotifyCares I haven't been able to use the Share function for a few days. My Pixel just blips and goes back a screen.",
+    "expected_intent": "app_device_issues",
+    "expected_action": "auto_handle",
+    "label_uncertain": false,
+    "prediction": {
+      "status": "ok",
+      "intent": "app_device_issues",
+      "action": "auto_handle",
+      "reason": "Customer mentions Pixel device behavior but doesn't specify if it's a device crash, app crash, or specific Share function error. Need to confirm if the issue is with the app, device, or Share feature itself.",
+      "proposed_handling": "clarification",
+      "reply": "Can you clarify if the Share function is failing on the Spotify app or your Pixel device? This helps us troubleshoot the issue.",
+      "evidence_ids": [],
+      "routing_checks": [],
+      "model": "qwen3:4b",
+      "retrieved_cases": [
+        {
+          "case_id": "753328:753331",
+          "similarity": 0.2577
+        }
+      ]
+    }
+  },
+  {
+    "customer_tweet_id": "2030791",
+    "conversation_id": "2030790",
+    "customer_text": "@SpotifyCares @117153 already paid spotify premium payment,  but still not working (still free user). https://t.co/GmmVlCvlb9",
+    "expected_intent": "subscription_plans",
+    "expected_action": "escalate",
+    "label_uncertain": false,
+    "prediction": {
+      "status": "ok",
+      "intent": "account_access_security",
+      "action": "escalate",
+      "reason": "Earlier troubleshooting has failed.",
+      "proposed_handling": "human_required",
+      "reply": "Please contact official Spotify support so a team member can review this issue.",
+      "evidence_ids": [
+        "8223:8234"
+      ],
+      "routing_checks": [
+        "Account-specific investigation is needed.",
+        "Earlier troubleshooting has failed."
+      ],
+      "model": "qwen3:4b",
+      "retrieved_cases": [
+        {
+          "case_id": "8223:8234",
+          "similarity": 0.296
+        }
+      ]
+    }
+  },
+  {
+    "customer_tweet_id": "2588883",
+    "conversation_id": "2588881",
+    "customer_text": "@115888 @SpotifyCares Help, please.",
+    "expected_intent": "subscription_plans",
+    "expected_action": "escalate",
+    "label_uncertain": false,
+    "prediction": {
+      "status": "ok",
+      "intent": "account_access_security",
+      "action": "escalate",
+      "reason": "Customer mentions account sync issues after troubleshooting, indicating potential account access problems. Historical cases show similar account sync issues requiring human investigation. No resolved issue found in current context.",
+      "proposed_handling": "human_required",
+      "reply": "We'll need to check your account access securely. Please share your Spotify account email for verification.",
+      "evidence_ids": [],
+      "routing_checks": [
+        "Account-specific investigation is needed."
+      ],
+      "model": "qwen3:4b",
+      "retrieved_cases": [
+        {
+          "case_id": "1719028:1719032",
+          "similarity": 0.4652
+        }
+      ]
+    }
+  },
+  {
+    "customer_tweet_id": "1085654",
+    "conversation_id": "1085653",
+    "customer_text": "i’ve waited TOO long. @115888 why? https://t.co/Va6UkTc7Sh",
+    "expected_intent": "music_library_catalog",
+    "expected_action": "auto_handle",
+    "label_uncertain": false,
+    "prediction": {
+      "status": "ok",
+      "intent": "music_library_catalog",
+      "action": "escalate",
+      "reason": "Customer mentions waiting for music catalog content (Aaliyah's discography) and references a case where Spotify provided a link to content info but the customer is still waiting. Historical cases show Spotify has info about content but customer hasn't received it yet. This requires human investigation to resolve catalog availability.",
+      "proposed_handling": "human_required",
+      "reply": "We see you're waiting for Aali: 115888's music catalog to be fully available. This issue requires human review to resolve. Please contact Spotify Support directly for assistance.",
+      "evidence_ids": [
+        "2605032:2605033"
+      ],
+      "routing_checks": [],
+      "model": "qwen3:4b",
+      "retrieved_cases": [
+        {
+          "case_id": "2605032:2605033",
+          "similarity": 0.2084
+        }
+      ]
+    }
+  },
+  {
+    "customer_tweet_id": "721508",
+    "conversation_id": "721507",
+    "customer_text": "Someone give the Spotify customer service people a raise. I've never had someone reply to me so fast and be so helpful before",
+    "expected_intent": "praise_thanks",
+    "expected_action": "auto_handle",
+    "label_uncertain": false,
+    "prediction": {
+      "status": "ok",
+      "intent": "praise_thanks",
+      "action": "auto_handle",
+      "reason": "Customer expresses appreciation for fast and helpful support without unresolved issues",
+      "proposed_handling": "acknowledgement",
+      "reply": "You're welcome! We're glad you had a positive experience with our support team.",
+      "evidence_ids": [],
+      "routing_checks": [],
+      "model": "qwen3:4b",
+      "retrieved_cases": [
+        {
+          "case_id": "980316:980317",
+          "similarity": 0.1979
+        }
+      ]
+    }
+  },
+  {
+    "customer_tweet_id": "1889242",
+    "conversation_id": "1889241",
+    "customer_text": "@SpotifyCares Hello, I'm not able to join back to a family plan. There's always an error showing up.",
+    "expected_intent": "subscription_plans",
+    "expected_action": "escalate",
+    "label_uncertain": false,
+    "prediction": {
+      "status": "ok",
+      "intent": "subscription_plans",
+      "action": "escalate",
+      "reason": "Family-plan invite problems are subscription_plans. The customer is unable to join back to a family plan with an error, which requires account investigation. Historical cases show similar issues but belong to other customers, so no resolution can be inferred. No troubleshooting steps have been repeated, so human support is needed to verify account access and resolve the family plan invite issue without claiming account access or sending messages.",
+      "proposed_handling": "human_required",
+      "reply": "We can help investigate your family plan invite issue. Please share your email address or username so we can check access.",
+      "evidence_ids": [],
+      "routing_checks": [
+        "Account-specific investigation is needed."
+      ],
+      "model": "qwen3:4b",
+      "retrieved_cases": [
+        {
+          "case_id": "2071638:2071639",
+          "similarity": 0.316
+        }
+      ]
+    }
+  },
+  {
+    "customer_tweet_id": "1718399",
+    "conversation_id": "1718398",
+    "customer_text": "@SpotifyCares Thank you",
+    "expected_intent": "praise_thanks",
+    "expected_action": "auto_handle",
+    "label_uncertain": false,
+    "prediction": {
+      "status": "ok",
+      "intent": "praise_thanks",
+      "action": "auto_handle",
+      "reason": "Customer explicitly thanked us, no unresolved issue",
+      "proposed_handling": "acknowledgement",
+      "reply": "You're welcome! Let us know if you need help with anything else.",
+      "evidence_ids": [],
+      "routing_checks": [],
+      "model": "qwen3:4b",
+      "retrieved_cases": [
+        {
+          "case_id": "2692967:2692968",
+          "similarity": 0.3361
+        }
+      ]
+    }
+  },
+  {
+    "customer_tweet_id": "1194210",
+    "conversation_id": "1194209",
+    "customer_text": "@SpotifyCares It works! Yes! There's no more stopping! Thanks!",
+    "expected_intent": "praise_thanks",
+    "expected_action": "auto_handle",
+    "label_uncertain": false,
+    "prediction": {
+      "status": "ok",
+      "intent": "praise_thanks",
+      "action": "auto_handle",
+      "reason": "Customer explicitly thanked Spotify for resolving their issue with ad playback and music loading, confirming it now works after following previous guidance. No unresolved issues remain in this conversation.",
+      "proposed_handling": "acknowledgement",
+      "reply": "You're welcome! Glad to hear it's working now. Enjoy your music!",
+      "evidence_ids": [],
+      "routing_checks": [],
+      "model": "qwen3:4b",
+      "retrieved_cases": [
+        {
+          "case_id": "2844583:2844584",
+          "similarity": 0.1489
+        }
+      ]
+    }
+  },
+  {
+    "customer_tweet_id": "2295642",
+    "conversation_id": "2295641",
+    "customer_text": "@SpotifyCares Nothing changed, so we’ll call it an early Christmas miracle and wash our hands of it. Strange as hell, tho.",
+    "expected_intent": "other_unclear",
+    "expected_action": "auto_handle",
+    "label_uncertain": true,
+    "prediction": {
+      "status": "ok",
+      "intent": "praise_thanks",
+      "action": "auto_handle",
+      "reason": "Customer expresses satisfaction with the situation and closes the conversation with no unresolved request",
+      "proposed_handling": "acknowledgement",
+      "reply": "Glad you're feeling better! Wishing you a joyful holiday season.",
+      "evidence_ids": [],
+      "routing_checks": [],
+      "model": "qwen3:4b",
+      "retrieved_cases": [
+        {
+          "case_id": "2063742:2063746",
+          "similarity": 0.1214
+        }
+      ]
+    }
+  },
+  {
+    "customer_tweet_id": "2456272",
+    "conversation_id": "2456271",
+    "customer_text": "@117168 why won’t you take my money and just accept my card info 😭",
+    "expected_intent": "billing_payments",
+    "expected_action": "auto_handle",
+    "label_uncertain": false,
+    "prediction": {
+      "status": "ok",
+      "intent": "billing_payments",
+      "action": "escalate",
+      "reason": "Customer is asking for card info acceptance without providing payment details, which requires official Spotify support for security reasons. Historical case shows past customer was asked for email/username but didn't resolve the issue. This customer's message is unclear but indicates payment issues needing human verification.",
+      "proposed_handling": "human_required",
+      "reply": "We can't accept card details directly. Please contact Spotify Support for payment assistance.",
+      "evidence_ids": [],
+      "routing_checks": [],
+      "model": "qwen3:4b",
+      "retrieved_cases": [
+        {
+          "case_id": "1967860:1967861",
+          "similarity": 0.3155
+        }
+      ]
+    }
+  },
+  {
+    "customer_tweet_id": "2064047",
+    "conversation_id": "2064046",
+    "customer_text": "@115888 You didn’t think PV Middle Schools #1 Gn’R fanwould notice?? Tried to smoke one past the wrong guy.",
+    "expected_intent": "music_library_catalog",
+    "expected_action": "auto_handle",
+    "label_uncertain": false,
+    "prediction": {
+      "status": "ok",
+      "intent": "other_unclear",
+      "action": "auto_handle",
+      "reason": "Customer mentions a tweet about missing song 'Yesterdays' but the message is unclear and seems to be a joke or reference. No clear issue with Spotify services is specified. Historical cases show previous interaction with chat team but this message doesn't indicate a current problem with Spotify.",
+      "proposed_handling": "clarification",
+      "reply": "I'm not sure I understand your message. Could you clarify what you're trying to say about Spotify?",
+      "evidence_ids": [],
+      "routing_checks": [],
+      "model": "qwen3:4b",
+      "retrieved_cases": [
+        {
+          "case_id": "347198:347202",
+          "similarity": 0.1404
+        }
+      ]
+    }
+  },
+  {
+    "customer_tweet_id": "975190",
+    "conversation_id": "975189",
+    "customer_text": "I got a new phone and my premium does not transfer over @SpotifyCares",
+    "expected_intent": "subscription_plans",
+    "expected_action": "auto_handle",
+    "label_uncertain": false,
+    "prediction": {
+      "status": "ok",
+      "intent": "account_access_security",
+      "action": "escalate",
+      "reason": "New phone with premium not transferring over requires account investigation. Historical case shows previous login issue but this is a new phone scenario. No account access can be claimed without verification.",
+      "proposed_handling": "human_required",
+      "reply": "We can help investigate your account transfer issue. Please share your Spotify account email for verification.",
+      "evidence_ids": [],
+      "routing_checks": [
+        "Account-specific investigation is needed."
+      ],
+      "model": "qwen3:4b",
+      "retrieved_cases": [
+        {
+          "case_id": "2699554:2699555",
+          "similarity": 0.3267
+        }
+      ]
+    }
+  },
+  {
+    "customer_tweet_id": "2440998",
+    "conversation_id": "2440996",
+    "customer_text": "Yo @115888 why is there a download limit!? I pay y’all every month and should be able to download as much music as my phones storage allows.. #FIXTHIS",
+    "expected_intent": "playback_offline",
+    "expected_action": "auto_handle",
+    "label_uncertain": false,
+    "prediction": {
+      "status": "ok",
+      "intent": "playback_offline",
+      "action": "auto_handle",
+      "reason": "Customer mentions download limit but doesn't specify which device or how many tracks they've downloaded. Historical case shows similar question but no resolution for this customer.",
+      "proposed_handling": "clarification",
+      "reply": "Hi there! To help fix this, could you tell me which device you're using and how many tracks you've downloaded recently? This will help us check if you're within the 3,333-track limit per device.",
+      "evidence_ids": [],
+      "routing_checks": [],
+      "model": "qwen3:4b",
+      "retrieved_cases": [
+        {
+          "case_id": "2057085:2057086",
+          "similarity": 0.183
+        }
+      ]
+    }
+  },
+  {
+    "customer_tweet_id": "1465427",
+    "conversation_id": "1465426",
+    "customer_text": "@SpotifyCares Doesn't go back far enough and is device specific which is even more frustrating",
+    "expected_intent": "product_feedback",
+    "expected_action": "auto_handle",
+    "label_uncertain": false,
+    "prediction": {
+      "status": "ok",
+      "intent": "playback_offline",
+      "action": "auto_handle",
+      "reason": "Customer mentions 'doesn't go back far enough' and 'device specific' regarding playback history, but doesn't specify exact issue or device type",
+      "proposed_handling": "clarification",
+      "reply": "Can you share which device you're using and how far back you'd like to go in your playback history?",
+      "evidence_ids": [],
+      "routing_checks": [],
+      "model": "qwen3:4b",
+      "retrieved_cases": [
+        {
+          "case_id": "2036132:2036133",
+          "similarity": 0.0972
+        }
+      ]
+    }
+  },
+  {
+    "customer_tweet_id": "2929794",
+    "conversation_id": "2929793",
+    "customer_text": "@SpotifyCares Hi, i’m using an IMac (mid 2011 version) with macOS High Sierra and Spotify version 1.0.68.407.g6864aaaf",
+    "expected_intent": "playback_offline",
+    "expected_action": "auto_handle",
+    "label_uncertain": false,
+    "prediction": {
+      "status": "ok",
+      "intent": "music_library_catalog",
+      "action": "auto_handle",
+      "reason": "Customer mentions songs showing 'NaN' and stopping playback, which is a catalog issue. Historical case shows similar issue with macOS beta, but current customer uses stable macOS High Sierra and Spotify version. Need to confirm if this is a catalog problem or playback issue.",
+      "proposed_handling": "clarification",
+      "reply": "Hi there! To help troubleshoot, could you confirm if this issue happens with specific songs or across your entire library? This might be related to catalog metadata or playback settings.",
+      "evidence_ids": [],
+      "routing_checks": [],
+      "model": "qwen3:4b",
+      "retrieved_cases": [
+        {
+          "case_id": "566275:566276",
+          "similarity": 0.2715
+        }
+      ]
+    }
+  },
+  {
+    "customer_tweet_id": "2725157",
+    "conversation_id": "2725156",
+    "customer_text": "@SpotifyCares Its a Window10 PC, I've tried everything, forums, the lot, now considering ditching my subscription",
+    "expected_intent": "playback_offline",
+    "expected_action": "escalate",
+    "label_uncertain": false,
+    "prediction": {
+      "status": "ok",
+      "intent": "app_device_issues",
+      "action": "escalate",
+      "reason": "Customer mentions Windows 10 PC with repeated playback issues despite extensive troubleshooting (reinstalling, disabling hardware acceleration, high quality streaming), and is considering canceling subscription. Historical cases show similar device issues but no resolution. Spotify support has asked for device details and versions, but customer hasn't provided them. This requires account investigation for persistent playback problems on Windows 10.",
+      "proposed_handling": "human_required",
+      "reply": "We understand you've tried multiple solutions for playback issues on Windows 10. For best results, please share your device model and Spotify version. This helps us investigate further without affecting your subscription.",
+      "evidence_ids": [
+        "79403:2637115"
+      ],
+      "routing_checks": [
+        "Earlier troubleshooting has already failed."
+      ],
+      "model": "qwen3:4b",
+      "retrieved_cases": [
+        {
+          "case_id": "79403:2637115",
+          "similarity": 0.1612
+        }
+      ]
+    }
+  },
+  {
+    "customer_tweet_id": "2751293",
+    "conversation_id": "2751292",
+    "customer_text": "@SpotifyCares I have an iPhone 7 Plus 11.1.2. It seems the Spotify app has logged me out and will not let me log back in. When I press on “log in” nothing happens. Have you guys seen this before?",
+    "expected_intent": "app_device_issues",
+    "expected_action": "auto_handle",
+    "label_uncertain": false,
+    "prediction": {
+      "status": "ok",
+      "intent": "app_device_issues",
+      "action": "auto_handle",
+      "reason": "Customer reports login issues on iPhone 7 Plus with specific OS version, but no details about error messages or steps taken to troubleshoot. Historical case involves different device (Huawei) with similar symptom but requires username/email/screenshot which customer hasn't provided. Current issue lacks sufficient details for troubleshooting.",
+      "proposed_handling": "clarification",
+      "reply": "Hi there! To help you better, could you share what error message you see when trying to log in? Also, have you tried restarting the app or device?",
+      "evidence_ids": [],
+      "routing_checks": [],
+      "model": "qwen3:4b",
+      "retrieved_cases": [
+        {
+          "case_id": "2116857:2116858",
+          "similarity": 0.2651
+        }
+      ]
+    }
+  },
+  {
+    "customer_tweet_id": "302343",
+    "conversation_id": "302342",
+    "customer_text": "@ spotify see u in court sweaty :)",
+    "expected_intent": "other_unclear",
+    "expected_action": "escalate",
+    "label_uncertain": true,
+    "prediction": {
+      "status": "ok",
+      "intent": "other_unclear",
+      "action": "auto_handle",
+      "reason": "Customer message is unclear and lacks context for a specific issue. No actionable issue identified in the message.",
+      "proposed_handling": "acknowledgement",
+      "reply": "We noticed your message but it's a bit unclear. Could you clarify what you need help with?",
+      "evidence_ids": [],
+      "routing_checks": [],
+      "model": "qwen3:4b",
+      "retrieved_cases": [
+        {
+          "case_id": "2963381:2963382",
+          "similarity": 0.2089
+        }
+      ]
+    }
+  },
+  {
+    "customer_tweet_id": "1023907",
+    "conversation_id": "1023906",
+    "customer_text": "@115888 Why don't you have a UWP app yet?  As a Premium member, I think it's the least you can do.",
+    "expected_intent": "product_feedback",
+    "expected_action": "auto_handle",
+    "label_uncertain": false,
+    "prediction": {
+      "status": "ok",
+      "intent": "product_feedback",
+      "action": "escalate",
+      "reason": "Customer is asking about the absence of a UWP app for Spotify Premium, which is a feature request. Historical cases show a different issue (missing song) but are unrelated. No specific troubleshooting steps are needed here since the customer is making a feature request, not reporting a problem with the app or playback.",
+      "proposed_handling": "general_guidance",
+      "reply": "I'm sorry you're having trouble. Please contact official Spotify support for further review. I can't check your account here.",
+      "evidence_ids": [],
+      "routing_checks": [
+        "The proposed guidance has no cited evidence."
+      ],
+      "model": "qwen3:4b",
+      "retrieved_cases": [
+        {
+          "case_id": "2620035:2620036",
+          "similarity": 0.1836
+        }
+      ]
+    }
+  },
+  {
+    "customer_tweet_id": "2899859",
+    "conversation_id": "2899858",
+    "customer_text": ".@115888 can you make shuffle stop sucking? thanks boo 😗",
+    "expected_intent": "playback_offline",
+    "expected_action": "auto_handle",
+    "label_uncertain": false,
+    "prediction": {
+      "status": "ok",
+      "intent": "playback_offline",
+      "action": "auto_handle",
+      "reason": "Customer mentions shuffle not working but doesn't specify if it's about offline playback or general shuffle behavior. Need to clarify if they mean shuffle not working when playing offline songs or if it's a general issue with shuffle functionality.",
+      "proposed_handling": "clarification",
+      "reply": "Hi there! Could you clarify if the shuffle issue is specifically with offline songs or general playback? This helps us address it better.",
+      "evidence_ids": [],
+      "routing_checks": [],
+      "model": "qwen3:4b",
+      "retrieved_cases": [
+        {
+          "case_id": "2862785:2862787",
+          "similarity": 0.2677
+        }
+      ]
+    }
+  },
+  {
+    "customer_tweet_id": "160553",
+    "conversation_id": "160552",
+    "customer_text": "@115888 you mean to tell me I pay 10 dollars a month for you to have only 3 RBD songs? I’m heartbroken https://t.co/siBTlHyYfA",
+    "expected_intent": "music_library_catalog",
+    "expected_action": "auto_handle",
+    "label_uncertain": false,
+    "prediction": {
+      "status": "ok",
+      "intent": "billing_payments",
+      "action": "escalate",
+      "reason": "Customer claims payment for premium but canceled subscription in August, with no active account access. Historical case shows prior payment dispute but no resolution. Requires official support for account verification and payment correction.",
+      "proposed_handling": "human_required",
+      "reply": "We understand you're concerned about your subscription. For a full review, please contact Spotify Support directly at support@spotify.com. They can help verify your account and payment status.",
+      "evidence_ids": [],
+      "routing_checks": [],
+      "model": "qwen3:4b",
+      "retrieved_cases": [
+        {
+          "case_id": "905295:905296",
+          "similarity": 0.2018
+        }
+      ]
+    }
+  },
+  {
+    "customer_tweet_id": "2844576",
+    "conversation_id": "2844575",
+    "customer_text": "@SpotifyCares hi! I haven’t had an email reminder about Spotify charging my student account the full £9.99 and they have, help I can’t afford it",
+    "expected_intent": "billing_payments",
+    "expected_action": "escalate",
+    "label_uncertain": false,
+    "prediction": {
+      "status": "ok",
+      "intent": "billing_payments",
+      "action": "escalate",
+      "reason": "Customer mentions being charged £9.99 for student account without email reminder, indicates financial difficulty. Historical case shows similar issue but requires email for investigation. Current issue involves disputed charge and affordability concern, which requires account verification and manual review by Spotify support. No prior context provided, so cannot resolve without human intervention.",
+      "proposed_handling": "human_required",
+      "reply": "We understand you're concerned about the charge. To help resolve this, please share your account email address so we can investigate the charge details. This will allow us to check if it's a student discount issue or a billing error.",
+      "evidence_ids": [],
+      "routing_checks": [],
+      "model": "qwen3:4b",
+      "retrieved_cases": [
+        {
+          "case_id": "67670:67671",
+          "similarity": 0.1623
+        }
+      ]
+    }
+  },
+  {
+    "customer_tweet_id": "1413934",
+    "conversation_id": "1413932",
+    "customer_text": "@SpotifyCares Thanks, but I changed the pw three more times and it finally worked.",
+    "expected_intent": "praise_thanks",
+    "expected_action": "auto_handle",
+    "label_uncertain": false,
+    "prediction": {
+      "status": "ok",
+      "intent": "praise_thanks",
+      "action": "auto_handle",
+      "reason": "Customer explicitly thanked and confirmed issue resolved",
+      "proposed_handling": "acknowledgement",
+      "reply": "You're welcome! Glad to hear it worked out.",
+      "evidence_ids": [],
+      "routing_checks": [],
+      "model": "qwen3:4b",
+      "retrieved_cases": [
+        {
+          "case_id": "1867389:1867391",
+          "similarity": 0.1423
+        }
+      ]
+    }
+  },
+  {
+    "customer_tweet_id": "1788490",
+    "conversation_id": "1788489",
+    "customer_text": "@SpotifyCares Got 60-day post-groove trial started today. What happens if we want to switch to a family plan?",
+    "expected_intent": "subscription_plans",
+    "expected_action": "auto_handle",
+    "label_uncertain": false,
+    "prediction": {
+      "status": "ok",
+      "intent": "subscription_plans",
+      "action": "escalate",
+      "reason": "Customer asks about switching from Groove Pass to Spotify Premium Family plan and trial duration. Historical case shows similar question about trial period for family plan, but this customer is asking about post-Groove trial. Spotify's policy on family plans and trial periods is relevant here. No human intervention needed as this is a standard subscription question.",
+      "proposed_handling": "general_guidance",
+      "reply": "I'm sorry you're having trouble. Please contact official Spotify support for further review. I can't check your account here.",
+      "evidence_ids": [],
+      "routing_checks": [
+        "The proposed guidance has no cited evidence."
+      ],
+      "model": "qwen3:4b",
+      "retrieved_cases": [
+        {
+          "case_id": "184045:184046",
+          "similarity": 0.1958
+        }
+      ]
+    }
+  },
+  {
+    "customer_tweet_id": "1182765",
+    "conversation_id": "1182764",
+    "customer_text": "@SpotifyCares I’d love to know how my email is sensitive information.",
+    "expected_intent": "account_access_security",
+    "expected_action": "auto_handle",
+    "label_uncertain": false,
+    "prediction": {
+      "status": "ok",
+      "intent": "account_access_security",
+      "action": "auto_handle",
+      "reason": "Customer mentions email as sensitive info but doesn't specify what they want to do with it. Need to clarify their concern about email sensitivity without assuming their action.",
+      "proposed_handling": "clarification",
+      "reply": "Hi there! Could you clarify what you'd like to know about your email sensitivity? For example, are you concerned about how Spotify handles your email or if it's being used for security purposes?",
+      "evidence_ids": [],
+      "routing_checks": [],
+      "model": "qwen3:4b",
+      "retrieved_cases": [
+        {
+          "case_id": "1908669:1908670",
+          "similarity": 0.1527
+        }
+      ]
+    }
+  },
+  {
+    "customer_tweet_id": "363463",
+    "conversation_id": "363462",
+    "customer_text": "@115888 Say, my Samsung TV, my chrome cast audio, my shield TV. As I have a large house w multiple devices. My neighbors would thank u 4 lower vol 😂",
+    "expected_intent": "product_feedback",
+    "expected_action": "auto_handle",
+    "label_uncertain": false,
+    "prediction": {
+      "status": "ok",
+      "intent": "playback_offline",
+      "action": "auto_handle",
+      "reason": "Customer mentions multiple devices (Samsung TV, Chrome Cast, Shield TV) but doesn't specify playback issues. Historical case shows past resolution for similar request, but current message is a joke about neighbors and volume. No unresolved issue described here.",
+      "proposed_handling": "clarification",
+      "reply": "Thanks for the laugh! Could you clarify if you're having trouble with specific devices playing music at the same time?",
+      "evidence_ids": [],
+      "routing_checks": [],
+      "model": "qwen3:4b",
+      "retrieved_cases": [
+        {
+          "case_id": "2373416:2373417",
+          "similarity": 0.1504
+        }
+      ]
+    }
+  },
+  {
+    "customer_tweet_id": "937558",
+    "conversation_id": "937556",
+    "customer_text": "@SpotifyCares more locks screen options on Samsung Gs8. Like a full screen album art and controls being the first thing when awake phone.",
+    "expected_intent": "product_feedback",
+    "expected_action": "auto_handle",
+    "label_uncertain": false,
+    "prediction": {
+      "status": "ok",
+      "intent": "playback_offline",
+      "action": "auto_handle",
+      "reason": "Customer mentions 'more locks screen options' and 'full screen album art' but doesn't specify if this is about playback, screen locks, or a feature request. Historical case shows similar request for album art enlargement, but current message is about screen locks and full screen display when phone wakes. Need to clarify if this is a playback issue or a feature request for screen lock behavior.",
+      "proposed_handling": "clarification",
+      "reply": "Could you clarify if you're asking about screen lock settings or playback features? Your historical case mentioned album art enlargement, but this sounds like a different request.",
+      "evidence_ids": [],
+      "routing_checks": [],
+      "model": "qwen3:4b",
+      "retrieved_cases": [
+        {
+          "case_id": "1221303:1221304",
+          "similarity": 0.1735
+        }
+      ]
+    }
+  },
+  {
+    "customer_tweet_id": "2079987",
+    "conversation_id": "2079986",
+    "customer_text": "@SpotifyCares recently and my login info has been saved on my old phone for years. its a premium account",
+    "expected_intent": "account_access_security",
+    "expected_action": "auto_handle",
+    "label_uncertain": false,
+    "prediction": {
+      "status": "ok",
+      "intent": "account_access_security",
+      "action": "auto_handle",
+      "reason": "Customer mentions login info saved on old phone but doesn't specify current issue. Historical cases show login issues but are from other customers. Need to clarify what's broken now (e.g., login failure, device sync).",
+      "proposed_handling": "clarification",
+      "reply": "Hi there! To help you better, could you clarify what's not working with your login right now? For example, are you having trouble logging in on your current device, or is there something specific about the old phone that's causing issues?",
+      "evidence_ids": [],
+      "routing_checks": [],
+      "model": "qwen3:4b",
+      "retrieved_cases": [
+        {
+          "case_id": "1225951:1225952",
+          "similarity": 0.1887
+        }
+      ]
+    }
+  },
+  {
+    "customer_tweet_id": "2555550",
+    "conversation_id": "2555549",
+    "customer_text": "@SpotifyCares  I am having issues logging on.",
+    "expected_intent": "account_access_security",
+    "expected_action": "auto_handle",
+    "label_uncertain": false,
+    "prediction": {
+      "status": "ok",
+      "intent": "account_access_security",
+      "action": "auto_handle",
+      "reason": "Customer mentions login issues but doesn't specify details. Historical cases show similar login issues but no resolution. Need to clarify what's not working (e.g., password, device, account status).",
+      "proposed_handling": "clarification",
+      "reply": "Hi there! To help you better, could you share what's not working when you try to log in? For example, is it your password, device, or account status?",
+      "evidence_ids": [],
+      "routing_checks": [],
+      "model": "qwen3:4b",
+      "retrieved_cases": [
+        {
+          "case_id": "2401575:2401576",
+          "similarity": 0.5943
+        }
+      ]
+    }
+  },
+  {
+    "customer_tweet_id": "1409888",
+    "conversation_id": "1409886",
+    "customer_text": ".@SpotifyCares Not having feature to restore accidentally removed songs from playlists is just pure laziness. Subscription canceled!",
+    "expected_intent": "product_feedback",
+    "expected_action": "auto_handle",
+    "label_uncertain": false,
+    "prediction": {
+      "status": "ok",
+      "intent": "product_feedback",
+      "action": "auto_handle",
+      "reason": "Customer explicitly states subscription canceled after expressing frustration about missing feature. No unresolved issue remains in current conversation.",
+      "proposed_handling": "acknowledgement",
+      "reply": "We appreciate your feedback! Since your subscription has been canceled, we can’t restore songs from playlists. For future features, you can suggest ideas here: https://www.spotify.com/feedback/",
+      "evidence_ids": [],
+      "routing_checks": [],
+      "model": "qwen3:4b",
+      "retrieved_cases": [
+        {
+          "case_id": "1980720:1980721",
+          "similarity": 0.1202
+        }
+      ]
+    }
+  },
+  {
+    "customer_tweet_id": "948048",
+    "conversation_id": "948047",
+    "customer_text": "@SpotifyCares Autoplay is not available on OSX, correct?",
+    "expected_intent": "app_device_issues",
+    "expected_action": "auto_handle",
+    "label_uncertain": false,
+    "prediction": {
+      "status": "ok",
+      "intent": "playback_offline",
+      "action": "auto_handle",
+      "reason": "Customer asks if autoplay is available on OSX, but doesn't specify if they're experiencing an issue or just confirming availability. No prior context to confirm this is a problem.",
+      "proposed_handling": "clarification",
+      "reply": "Could you clarify if you're having trouble with autoplay on your Mac? This feature is available in the Spotify app for macOS.",
+      "evidence_ids": [],
+      "routing_checks": [],
+      "model": "qwen3:4b",
+      "retrieved_cases": [
+        {
+          "case_id": "608249:608250",
+          "similarity": 0.2034
+        }
+      ]
+    }
+  },
+  {
+    "customer_tweet_id": "2322457",
+    "conversation_id": "2322455",
+    "customer_text": "@115888 hey I’m just trying to sign up for Spotify premium using my student nus card but i can only find the option for uni days? Help🙈",
+    "expected_intent": "subscription_plans",
+    "expected_action": "auto_handle",
+    "label_uncertain": false,
+    "prediction": {
+      "status": "ok",
+      "intent": "account_access_security",
+      "action": "auto_handle",
+      "reason": "Customer mentions trying to sign up for Spotify Premium using a student NUS card but only finds the UNiDAYS option. This is a login/identity question but requires clarification on the specific issue (e.g., where they're seeing the option, what they mean by 'sign up'). Historical cases show NUS is unavailable as a discount, so this is a new issue needing context.",
+      "proposed_handling": "clarification",
+      "reply": "Hi there! It sounds like you're trying to use your NUS student card for Spotify Premium. Could you clarify where you're seeing the UNiDAYS option? This helps us guide you better.",
+      "evidence_ids": [],
+      "routing_checks": [],
+      "model": "qwen3:4b",
+      "retrieved_cases": [
+        {
+          "case_id": "1856622:1856625",
+          "similarity": 0.1839
+        }
+      ]
+    }
+  },
+  {
+    "customer_tweet_id": "1959706",
+    "conversation_id": "1959705",
+    "customer_text": "@115888 are we ever going to get hi fi quality lossless audio like @1122 gives you #Flac",
+    "expected_intent": "product_feedback",
+    "expected_action": "auto_handle",
+    "label_uncertain": false,
+    "prediction": {
+      "status": "ok",
+      "intent": "product_feedback",
+      "action": "escalate",
+      "reason": "Customer is asking about hi-res audio (FLAC) availability, which is a feature request. Historical cases show past feedback about scrobbling from Xbox One, but this is a new request about audio quality. Spotify does not currently offer lossless audio to all users, but the customer is comparing to another user (@1122) who might have access. This is a product feedback request, not an unresolved issue requiring human help.",
+      "proposed_handling": "general_guidance",
+      "reply": "I'm sorry you're having trouble. Please contact official Spotify support for further review. I can't check your account here.",
+      "evidence_ids": [],
+      "routing_checks": [
+        "The proposed guidance has no cited evidence."
+      ],
+      "model": "qwen3:4b",
+      "retrieved_cases": [
+        {
+          "case_id": "1797273:1797274",
+          "similarity": 0.3471
+        }
+      ]
+    }
+  },
+  {
+    "customer_tweet_id": "1780055",
+    "conversation_id": "1780054",
+    "customer_text": "i’ve logged out of spotify which i pay for and i don’t know my password FFS",
+    "expected_intent": "account_access_security",
+    "expected_action": "auto_handle",
+    "label_uncertain": false,
+    "prediction": {
+      "status": "ok",
+      "intent": "account_access_security",
+      "action": "escalate",
+      "reason": "Customer has logged out of Spotify and doesn't know their password. Historical case shows past customer was logged out and had Facebook connection issues, but this is a new customer with different context. No password recovery process can be initiated without email/username, and security concerns require official support.",
+      "proposed_handling": "human_required",
+      "reply": "We can help you recover your password securely. Please share your email address or username associated with your Spotify account.",
+      "evidence_ids": [
+        "1814585:1814586"
+      ],
+      "routing_checks": [
+        "Account-specific investigation is needed.",
+        "An unresolved account security concern exists."
+      ],
+      "model": "qwen3:4b",
+      "retrieved_cases": [
+        {
+          "case_id": "1814585:1814586",
+          "similarity": 0.2208
+        }
+      ]
+    }
+  },
+  {
+    "customer_tweet_id": "2304468",
+    "conversation_id": "2304464",
+    "customer_text": "@SpotifyCares Thanks https://t.co/3UO1otuQi6",
+    "expected_intent": "praise_thanks",
+    "expected_action": "auto_handle",
+    "label_uncertain": false,
+    "prediction": {
+      "status": "ok",
+      "intent": "praise_thanks",
+      "action": "escalate",
+      "reason": "Account security or access problem needs human review.",
+      "proposed_handling": "human_required",
+      "reply": "Please contact official Spotify support so a team member can review this issue.",
+      "evidence_ids": [
+        "255596:255597"
+      ],
+      "routing_checks": [
+        "Account security or access problem needs human review."
+      ],
+      "model": "qwen3:4b",
+      "retrieved_cases": [
+        {
+          "case_id": "255596:255597",
+          "similarity": 0.2966
+        }
+      ]
+    }
+  },
+  {
+    "customer_tweet_id": "1883269",
+    "conversation_id": "1883268",
+    "customer_text": "@115888 Hey! I'm trying to add a family member to my account, but it's giving me an error: \"600 - Oops something went wrong.\" Can you help?",
+    "expected_intent": "subscription_plans",
+    "expected_action": "auto_handle",
+    "label_uncertain": false,
+    "prediction": {
+      "status": "ok",
+      "intent": "subscription_plans",
+      "action": "escalate",
+      "reason": "Family-plan invite problems are subscription_plans. The error message '60: Oops something went wrong' indicates a technical issue with family account setup that requires account investigation. Historical cases show similar errors but do not resolve this customer's current issue. No troubleshooting steps have been attempted here, so human support is needed to investigate the account and resolve the error.",
+      "proposed_handling": "human_required",
+      "reply": "I'm sorry you're encountering this error. To help fix it, please share your Spotify account username or email address with us directly through Spotify Support.",
+      "evidence_ids": [
+        "1916087:1916088"
+      ],
+      "routing_checks": [],
+      "model": "qwen3:4b",
+      "retrieved_cases": [
+        {
+          "case_id": "1916087:1916088",
+          "similarity": 0.3938
+        }
+      ]
+    }
+  },
+  {
+    "customer_tweet_id": "649925",
+    "conversation_id": "649924",
+    "customer_text": "@SpotifyCares I am trying to add information to my account. But when I press save changes, it gives me a warning that my email is already in use and doesn't save the changes.",
+    "expected_intent": "account_access_security",
+    "expected_action": "escalate",
+    "label_uncertain": false,
+    "prediction": {
+      "status": "ok",
+      "intent": "account_access_security",
+      "action": "escalate",
+      "reason": "Customer is unable to save account changes due to email conflict, which requires account investigation. Historical cases show similar issues needing email/username verification, but this customer hasn't provided credentials yet. No prior context to resolve this without human intervention.",
+      "proposed_handling": "human_required",
+      "reply": "We can help investigate your account conflict. Please share your email and username for verification.",
+      "evidence_ids": [],
+      "routing_checks": [
+        "Account-specific investigation is needed."
+      ],
+      "model": "qwen3:4b",
+      "retrieved_cases": [
+        {
+          "case_id": "1898604:1898605",
+          "similarity": 0.172
+        }
+      ]
+    }
+  },
+  {
+    "customer_tweet_id": "1163234",
+    "conversation_id": "1163233",
+    "customer_text": "@SpotifyCares https://t.co/RnZG0F0uyK",
+    "expected_intent": "other_unclear",
+    "expected_action": "auto_handle",
+    "label_uncertain": false,
+    "prediction": {
+      "status": "generation_failure",
+      "intent": "__generation_failure__",
+      "action": "__generation_failure__",
+      "reply": "",
+      "evidence_ids": [],
+      "error_type": "ValidationError"
+    }
+  },
+  {
+    "customer_tweet_id": "637771",
+    "conversation_id": "637770",
+    "customer_text": "Querido diário, nesta tarde minha conta do Spotify foi roubada, eu fiquei desesperado, achei um link que me levou a um chat com o suporte e lá ele me ajudou a recuperar a conta. Agora está tudo de volta ao normal e eu tenho que trabalhar.",
+    "expected_intent": "praise_thanks",
+    "expected_action": "auto_handle",
+    "label_uncertain": false,
+    "prediction": {
+      "status": "ok",
+      "intent": "account_access_security",
+      "action": "auto_handle",
+      "reason": "Customer reports account was compromised but successfully recovered via support chat. No unresolved issue exists as they state account is now secure and working.",
+      "proposed_handling": "acknowledgement",
+      "reply": "Your account is now secure and working! Thanks for letting us know — we're glad you got it back quickly.",
+      "evidence_ids": [],
+      "routing_checks": [],
+      "model": "qwen3:4b",
+      "retrieved_cases": [
+        {
+          "case_id": "1075711:1075712",
+          "similarity": 0.103
+        }
+      ]
+    }
+  },
+  {
+    "customer_tweet_id": "1093717",
+    "conversation_id": "1093716",
+    "customer_text": "Yo @115888 is there a way of searching for albums by genre and release date? I.e all “indie” records released in 2000 @SpotifyCares",
+    "expected_intent": "music_library_catalog",
+    "expected_action": "auto_handle",
+    "label_uncertain": false,
+    "prediction": {
+      "status": "ok",
+      "intent": "product_feedback",
+      "action": "auto_handle",
+      "reason": "Customer asks about album search by genre and release date but doesn't specify if they want to search within Spotify or offline library. Historical case shows past customer asked about feature requests but this is a different request.",
+      "proposed_handling": "clarification",
+      "reply": "Hi there! To help you better, could you clarify if you're looking to search for albums by genre and release date within Spotify's app or in your offline library?",
+      "evidence_ids": [],
+      "routing_checks": [],
+      "model": "qwen3:4b",
+      "retrieved_cases": [
+        {
+          "case_id": "1980720:1980721",
+          "similarity": 0.1594
+        }
+      ]
+    }
+  },
+  {
+    "customer_tweet_id": "2629104",
+    "conversation_id": "2629098",
+    "customer_text": "Anyone know if there's a way to see on @115888 the exact date an album was released? All I can find is the year.",
+    "expected_intent": "music_library_catalog",
+    "expected_action": "auto_handle",
+    "label_uncertain": false,
+    "prediction": {
+      "status": "ok",
+      "intent": "music_library_catalog",
+      "action": "auto_handle",
+      "reason": "Customer asks about album release dates but only finds the year. No specific details provided about the album or account to clarify.",
+      "proposed_handling": "clarification",
+      "reply": "To see the exact release date for an album, you can check the album's details in the Spotify app. Could you share the album name or artist so I can help you find it?",
+      "evidence_ids": [],
+      "routing_checks": [],
+      "model": "qwen3:4b",
+      "retrieved_cases": [
+        {
+          "case_id": "1828821:1828822",
+          "similarity": 0.2494
+        }
+      ]
+    }
+  },
+  {
+    "customer_tweet_id": "2070361",
+    "conversation_id": "2070359",
+    "customer_text": "@160408 any reason why I can't login with my FB credentials anymore? Haven't changed anything but I can't get in! #plshelp",
+    "expected_intent": "account_access_security",
+    "expected_action": "auto_handle",
+    "label_uncertain": false,
+    "prediction": {
+      "status": "ok",
+      "intent": "account_access_security",
+      "action": "escalate",
+      "reason": "Account security or access problem needs human review.",
+      "proposed_handling": "human_required",
+      "reply": "Please contact official Spotify support so a team member can review this issue.",
+      "evidence_ids": [],
+      "routing_checks": [
+        "Account-specific investigation is needed.",
+        "Account security or access problem needs human review."
+      ],
+      "model": "qwen3:4b",
+      "retrieved_cases": [
+        {
+          "case_id": "2298543:2298544",
+          "similarity": 0.2137
+        }
+      ]
+    }
+  },
+  {
+    "customer_tweet_id": "2037695",
+    "conversation_id": "2037694",
+    "customer_text": "@115888  just want you to know that I’m leaving you. Someone better has come along who doesn’t charge me 4 times. @115948 I’m yours now",
+    "expected_intent": "billing_payments",
+    "expected_action": "escalate",
+    "label_uncertain": false,
+    "prediction": {
+      "status": "ok",
+      "intent": "praise_thanks",
+      "action": "escalate",
+      "reason": "Earlier troubleshooting has failed.",
+      "proposed_handling": "human_required",
+      "reply": "Please contact official Spotify support so a team member can review this issue.",
+      "evidence_ids": [],
+      "routing_checks": [
+        "Earlier troubleshooting has failed."
+      ],
+      "model": "qwen3:4b",
+      "retrieved_cases": [
+        {
+          "case_id": "1956022:1956025",
+          "similarity": 0.3048
+        }
+      ]
+    }
+  },
+  {
+    "customer_tweet_id": "1161831",
+    "conversation_id": "1161830",
+    "customer_text": "@SpotifyCares when you are going to launch Spotify service in India??",
+    "expected_intent": "subscription_plans",
+    "expected_action": "auto_handle",
+    "label_uncertain": false,
+    "prediction": {
+      "status": "ok",
+      "intent": "other_unclear",
+      "action": "auto_handle",
+      "reason": "Customer asks about Spotify launch in India but no specific issue is resolved. Historical cases show previous questions about India launch, but this customer's message is a new inquiry without unresolved action. No account access, security, billing, or other clear issue is present. The question is about future service launch, not a current problem.",
+      "proposed_handling": "acknowledgement",
+      "reply": "We're actively working on expanding to new regions, including India! For updates, check our official channels.",
+      "evidence_ids": [],
+      "routing_checks": [],
+      "model": "qwen3:4b",
+      "retrieved_cases": [
+        {
+          "case_id": "932756:932757",
+          "similarity": 0.3879
+        }
+      ]
+    }
+  },
+  {
+    "customer_tweet_id": "2637106",
+    "conversation_id": "2637105",
+    "customer_text": "@115888 why when I try to update my payment method it freezes. If I lose my music I’m gonna be pissed.",
+    "expected_intent": "billing_payments",
+    "expected_action": "auto_handle",
+    "label_uncertain": false,
+    "prediction": {
+      "status": "ok",
+      "intent": "billing_payments",
+      "action": "escalate",
+      "reason": "The customer is experiencing payment method update freezing, which requires account investigation. Historical cases show similar issues needing username/email for resolution. General login/payment questions don't automatically need human help, but this specific freeze indicates a technical issue requiring official support.",
+      "proposed_handling": "human_required",
+      "reply": "Your payment method update is freezing—this requires our team to investigate. Please contact Spotify Support directly for assistance.",
+      "evidence_ids": [],
+      "routing_checks": [],
+      "model": "qwen3:4b",
+      "retrieved_cases": [
+        {
+          "case_id": "2587563:2587564",
+          "similarity": 0.2603
+        }
+      ]
+    }
+  },
+  {
+    "customer_tweet_id": "2141801",
+    "conversation_id": "2141800",
+    "customer_text": "@SpotifyCares I just received a confirmation request for an account. I did not sign up for Spotify. My email is __email__.",
+    "expected_intent": "account_access_security",
+    "expected_action": "escalate",
+    "label_uncertain": false,
+    "prediction": {
+      "status": "ok",
+      "intent": "account_access_security",
+      "action": "escalate",
+      "reason": "Customer received confirmation request for account they didn't sign up for, email provided but no account access confirmed. Historical case shows similar signup issue but different context (browser cache). This requires account investigation as it's unauthorized access attempt.",
+      "proposed_handling": "human_required",
+      "reply": "We've received a confirmation request for an account you didn't sign up for. To investigate this securely, please contact Spotify Support directly at support@spotify.com with your email address and a brief description of the issue.",
+      "evidence_ids": [
+        "224111:224116"
+      ],
+      "routing_checks": [
+        "An unresolved account security concern exists."
+      ],
+      "model": "qwen3:4b",
+      "retrieved_cases": [
+        {
+          "case_id": "224111:224116",
+          "similarity": 0.1946
+        }
+      ]
+    }
+  },
+  {
+    "customer_tweet_id": "1830851",
+    "conversation_id": "1830850",
+    "customer_text": "@SpotifyCares is there seriously no apple watch app? Is it in the works??",
+    "expected_intent": "product_feedback",
+    "expected_action": "auto_handle",
+    "label_uncertain": false,
+    "prediction": {
+      "status": "ok",
+      "intent": "product_feedback",
+      "action": "auto_handle",
+      "reason": "Customer asks about Apple Watch app availability and development status. Historical case shows past customer requested similar feature and Spotify provided a link to vote on the idea. This is a feature request with existing guidance on how to participate in the feedback process.",
+      "proposed_handling": "general_guidance",
+      "reply": "We're actively gathering feedback on this feature! You can vote here to help prioritize it: https://t.co/SEK4E:4gi22",
+      "evidence_ids": [
+        "1980407:1980408"
+      ],
+      "routing_checks": [],
+      "model": "qwen3:4b",
+      "retrieved_cases": [
+        {
+          "case_id": "1980407:1980408",
+          "similarity": 0.3217
+        }
+      ]
+    }
+  },
+  {
+    "customer_tweet_id": "2139048",
+    "conversation_id": "2139047",
+    "customer_text": "@SpotifyCares No. It happened again. Taking ages to load and finally my computer seized up. I am removing your win 10 app. There is something wrong with it.",
+    "expected_intent": "app_device_issues",
+    "expected_action": "escalate",
+    "label_uncertain": false,
+    "prediction": {
+      "status": "ok",
+      "intent": "app_device_issues",
+      "action": "escalate",
+      "reason": "Customer reports repeated app crashes and slow loading on Windows 10, with no resolution after previous troubleshooting. Historical cases show similar issues but no resolution. This requires account investigation or Spotify support escalation.",
+      "proposed_handling": "human_required",
+      "reply": "We've seen this issue before. For faster resolution, please contact Spotify Support directly for device-specific help.",
+      "evidence_ids": [
+        "131815:131816"
+      ],
+      "routing_checks": [
+        "Earlier troubleshooting has already failed."
+      ],
+      "model": "qwen3:4b",
+      "retrieved_cases": [
+        {
+          "case_id": "131815:131816",
+          "similarity": 0.2087
+        }
+      ]
+    }
+  },
+  {
+    "customer_tweet_id": "1786832",
+    "conversation_id": "1786831",
+    "customer_text": "@SpotifyCares I’m trying activate my Hulu account, but every time I load the page I’m given a “page not found”message",
+    "expected_intent": "subscription_plans",
+    "expected_action": "auto_handle",
+    "label_uncertain": false,
+    "prediction": {
+      "status": "ok",
+      "intent": "other_unclear",
+      "action": "auto_handle",
+      "reason": "Customer mentions trying to activate Hulu account but Spotify is not involved in Hulu activation. Spotify's role is limited to music services, not streaming service activation. No Spotify-specific issue described here.",
+      "proposed_handling": "clarification",
+      "reply": "I'm sorry, but Spotify doesn't handle Hulu account activation. You might want to check with Hulu's support team directly for help with their service.",
+      "evidence_ids": [],
+      "routing_checks": [],
+      "model": "qwen3:4b",
+      "retrieved_cases": [
+        {
+          "case_id": "2335103:2335104",
+          "similarity": 0.2061
+        }
+      ]
+    }
+  },
+  {
+    "customer_tweet_id": "1649308",
+    "conversation_id": "1649307",
+    "customer_text": "Why is Motty Steinmetz' music not avalible? Get in contact with his team and work to fix that @115888 @SpotifyCares",
+    "expected_intent": "music_library_catalog",
+    "expected_action": "auto_handle",
+    "label_uncertain": false,
+    "prediction": {
+      "status": "ok",
+      "intent": "music_library_catalog",
+      "action": "escalate",
+      "reason": "Customer requests catalog correction for Motty Steinmet: music not available. Catalog corrections require human investigation. Historical cases show no relevant resolution for this issue.",
+      "proposed_handling": "human_required",
+      "reply": "I can't directly fix catalog availability. Please contact Spotify Support for catalog corrections.",
+      "evidence_ids": [
+        "1093737:1093738"
+      ],
+      "routing_checks": [],
+      "model": "qwen3:4b",
+      "retrieved_cases": [
+        {
+          "case_id": "1093737:1093738",
+          "similarity": 0.2571
+        }
+      ]
+    }
+  },
+  {
+    "customer_tweet_id": "974209",
+    "conversation_id": "974207",
+    "customer_text": "@115888 Instead you have do weird workarounds using phone, web browser tab casting, and/or Spotify Connect.",
+    "expected_intent": "product_feedback",
+    "expected_action": "auto_handle",
+    "label_uncertain": false,
+    "prediction": {
+      "status": "ok",
+      "intent": "app_device_issues",
+      "action": "auto_handle",
+      "reason": "Customer mentions using phone, web browser tab casting, and Spotify Connect as workarounds for Chromecast issues, but doesn't specify the exact problem with Chromecast. Historical case shows browser app issues, but current message focuses on workarounds for Chromecast, so need to clarify what's broken with Chromecast specifically.",
+      "proposed_handling": "clarification",
+      "reply": "Can you clarify what's not working with Chromecast? For example, is it the casting itself, the audio, or something else?",
+      "evidence_ids": [],
+      "routing_checks": [],
+      "model": "qwen3:4b",
+      "retrieved_cases": [
+        {
+          "case_id": "181541:181546",
+          "similarity": 0.1842
+        }
+      ]
+    }
+  },
+  {
+    "customer_tweet_id": "634361",
+    "conversation_id": "634360",
+    "customer_text": "CAN SOMEONE FROM @SpotifyCares PLEASE HELP ME GET MY ACCOUNT BACK I CAN'T DEAL WITH THIS BAD SERVICE",
+    "expected_intent": "account_access_security",
+    "expected_action": "escalate",
+    "label_uncertain": false,
+    "prediction": {
+      "status": "ok",
+      "intent": "account_access_security",
+      "action": "escalate",
+      "reason": "Customer is requesting account access restoration with security concerns, but this requires official Spotify support investigation. Historical cases show similar payment issues but are unrelated to current account access request. No troubleshooting steps have been attempted here.",
+      "proposed_handling": "human_required",
+      "reply": "We've noticed your account access request. For security reasons, we recommend contacting Spotify Support directly to resolve this. You can reach them at support@spotify.com or through the Spotify app.",
+      "evidence_ids": [],
+      "routing_checks": [
+        "Account-specific investigation is needed.",
+        "An unresolved account security concern exists."
+      ],
+      "model": "qwen3:4b",
+      "retrieved_cases": [
+        {
+          "case_id": "1087968:1087969",
+          "similarity": 0.2127
+        }
+      ]
+    }
+  },
+  {
+    "customer_tweet_id": "1977957",
+    "conversation_id": "1977956",
+    "customer_text": "@SpotifyCares i can't seem to access my hulu account with the spotify + hulu student bundle",
+    "expected_intent": "subscription_plans",
+    "expected_action": "auto_handle",
+    "label_uncertain": false,
+    "prediction": {
+      "status": "ok",
+      "intent": "account_access_security",
+      "action": "escalate",
+      "reason": "Customer mentions inability to access Hulu account via Spotify Student Bundle. Historical case shows past customer requested email for investigation. Current issue involves account access security with no resolved facts. Spotify requires email for account verification, but customer hasn't provided it. This is a security concern requiring human investigation.",
+      "proposed_handling": "human_required",
+      "reply": "We need your email address to help access your account securely. Please share it with us for further assistance.",
+      "evidence_ids": [],
+      "routing_checks": [
+        "Account-specific investigation is needed.",
+        "An unresolved account security concern exists."
+      ],
+      "model": "qwen3:4b",
+      "retrieved_cases": [
+        {
+          "case_id": "2306934:2306935",
+          "similarity": 0.3331
+        }
+      ]
+    }
+  },
+  {
+    "customer_tweet_id": "1943045",
+    "conversation_id": "1943044",
+    "customer_text": "@SpotifyCares how do I change my credit card info?  We had to cancel my original one due to fraudulent activity",
+    "expected_intent": "billing_payments",
+    "expected_action": "auto_handle",
+    "label_uncertain": false,
+    "prediction": {
+      "status": "ok",
+      "intent": "billing_payments",
+      "action": "auto_handle",
+      "reason": "Customer wants to change credit card info after canceling due to fraud. This is a billing payment question that doesn't require immediate human intervention since Spotify allows updating payment methods through the app. No prior context or historical cases indicate unresolved issues here.",
+      "proposed_handling": "general_guidance",
+      "reply": "You can update your payment method in the Spotify app under Settings > Payment Methods. This process is secure and doesn't require additional verification.",
+      "evidence_ids": [
+        "1248469:1248470"
+      ],
+      "routing_checks": [],
+      "model": "qwen3:4b",
+      "retrieved_cases": [
+        {
+          "case_id": "1248469:1248470",
+          "similarity": 0.309
+        }
+      ]
+    }
+  },
+  {
+    "customer_tweet_id": "2880950",
+    "conversation_id": "482483",
+    "customer_text": "@SpotifyCares Ayy cutie it's okie.. You guys need to reward us subscribers too ay cause we've been paying RM15/month lol",
+    "expected_intent": "product_feedback",
+    "expected_action": "auto_handle",
+    "label_uncertain": false,
+    "prediction": {
+      "status": "ok",
+      "intent": "subscription_plans",
+      "action": "escalate",
+      "reason": "Customer mentions paying RM15/month for Premium and requests reward for subscribers. Historical cases show Spotify's offer is for new subscribers only, per support reply. This is a subscription_plans issue with clear guidance from Spotify's past communication.",
+      "proposed_handling": "general_guidance",
+      "reply": "I'm sorry you're having trouble. Please contact official Spotify support for further review. I can't check your account here.",
+      "evidence_ids": [],
+      "routing_checks": [
+        "The proposed guidance has no cited evidence."
+      ],
+      "model": "qwen3:4b",
+      "retrieved_cases": [
+        {
+          "case_id": "1253054:1253055",
+          "similarity": 0.1707
+        }
+      ]
+    }
+  },
+  {
+    "customer_tweet_id": "2673475",
+    "conversation_id": "2673474",
+    "customer_text": "@116130 @115888 @SpotifyCares the lack of Britney Spears in your Easy 90s and Easy 00s playlists hurts me! 😔",
+    "expected_intent": "product_feedback",
+    "expected_action": "auto_handle",
+    "label_uncertain": false,
+    "prediction": {
+      "status": "ok",
+      "intent": "music_library_catalog",
+      "action": "escalate",
+      "reason": "Customer reports missing music in playlists, which requires catalog correction. Historical cases show no resolution for similar issues, and catalog corrections need human investigation.",
+      "proposed_handling": "human_required",
+      "reply": "I understand you're missing Britney Spears in those playlists. For catalog corrections, please contact Spotify Support directly for assistance.",
+      "evidence_ids": [],
+      "routing_checks": [],
+      "model": "qwen3:4b",
+      "retrieved_cases": [
+        {
+          "case_id": "2059188:2059189",
+          "similarity": 0.1828
+        }
+      ]
+    }
+  },
+  {
+    "customer_tweet_id": "243372",
+    "conversation_id": "243366",
+    "customer_text": "@SpotifyCares Spotify for Desktop 1.0.64.399 on OS X El Capitan 10.11.6",
+    "expected_intent": "playback_offline",
+    "expected_action": "auto_handle",
+    "label_uncertain": false,
+    "prediction": {
+      "status": "ok",
+      "intent": "app_device_issues",
+      "action": "auto_handle",
+      "reason": "Customer mentions Spotify Desktop version and OS but doesn't specify the exact issue with the app. Historical cases show similar device/OS combos but no clear issue resolution. Need to clarify what's broken to provide targeted help.",
+      "proposed_handling": "clarification",
+      "reply": "Hi there! Could you clarify what's not working with Spotify Desktop? For example, are you having trouble with crashes, playback, or something else?",
+      "evidence_ids": [],
+      "routing_checks": [],
+      "model": "qwen3:4b",
+      "retrieved_cases": [
+        {
+          "case_id": "266143:266148",
+          "similarity": 0.2673
+        }
+      ]
+    }
+  },
+  {
+    "customer_tweet_id": "554130",
+    "conversation_id": "554129",
+    "customer_text": "@117153 \n\nSo my ex used my account and idk but changed it from MY name to HIS and ive tried a million time to figure out how to put it back but never works. I am no longer going premium again until we figure it out then you can continue to get my money. Thx hope u can help",
+    "expected_intent": "account_access_security",
+    "expected_action": "escalate",
+    "label_uncertain": false,
+    "prediction": {
+      "status": "ok",
+      "intent": "account_access_security",
+      "action": "escalate",
+      "reason": "Customer claims ex changed account name and needs help restoring access. This requires account investigation, not automated troubleshooting. Historical cases show similar login issues but this customer's specific account compromise needs human review. General login questions don't automatically need human help but this involves unauthorized account changes which is security-sensitive. No prior context provided so cannot confirm if this is a repeat issue. Must avoid claiming account access or security fixes.",
+      "proposed_handling": "human_required",
+      "reply": "This requires account investigation. Please contact Spotify Support directly for assistance restoring your account.",
+      "evidence_ids": [],
+      "routing_checks": [
+        "Account-specific investigation is needed.",
+        "An unresolved account security concern exists."
+      ],
+      "model": "qwen3:4b",
+      "retrieved_cases": [
+        {
+          "case_id": "1524423:1524424",
+          "similarity": 0.2446
+        }
+      ]
+    }
+  },
+  {
+    "customer_tweet_id": "681214",
+    "conversation_id": "681213",
+    "customer_text": "@SpotifyCares yes! Got it. Thank you :)",
+    "expected_intent": "praise_thanks",
+    "expected_action": "auto_handle",
+    "label_uncertain": false,
+    "prediction": {
+      "status": "ok",
+      "intent": "praise_thanks",
+      "action": "auto_handle",
+      "reason": "Customer explicitly thanked us with 'thank you :)' after support provided a link for playlist access",
+      "proposed_handling": "acknowledgement",
+      "reply": "You're welcome! If you need any further help, just let us know. 😊",
+      "evidence_ids": [],
+      "routing_checks": [],
+      "model": "qwen3:4b",
+      "retrieved_cases": [
+        {
+          "case_id": "2025891:2025892",
+          "similarity": 0.2282
+        }
+      ]
+    }
+  },
+  {
+    "customer_tweet_id": "2276269",
+    "conversation_id": "2276268",
+    "customer_text": "@SpotifyCares can you unlink my account from all devices?",
+    "expected_intent": "account_access_security",
+    "expected_action": "auto_handle",
+    "label_uncertain": false,
+    "prediction": {
+      "status": "ok",
+      "intent": "account_access_security",
+      "action": "escalate",
+      "reason": "Customer wants to unlink account from all devices, but historical cases show Spotify requires email or Facebook link for such actions. Current request lacks necessary details for safe handling.",
+      "proposed_handling": "human_required",
+      "reply": "To unlink your account from all devices, we'll need your email address or a link to your Facebook page. Could you share this with us?",
+      "evidence_ids": [],
+      "routing_checks": [],
+      "model": "qwen3:4b",
+      "retrieved_cases": [
+        {
+          "case_id": "2729368:2729369",
+          "similarity": 0.2241
+        }
+      ]
+    }
+  },
+  {
+    "customer_tweet_id": "705818",
+    "conversation_id": "705817",
+    "customer_text": "@115888 Nvm I solved it why do I have to be on a different wifi for it to connect that's SO CONFUSING thx anyway bye",
+    "expected_intent": "praise_thanks",
+    "expected_action": "auto_handle",
+    "label_uncertain": true,
+    "prediction": {
+      "status": "ok",
+      "intent": "playback_offline",
+      "action": "auto_handle",
+      "reason": "Customer resolved issue with 'Nvm I solved it' and provided positive closure with 'thx anyway bye'",
+      "proposed_handling": "acknowledgement",
+      "reply": "No further action needed — you resolved it! 😊",
+      "evidence_ids": [],
+      "routing_checks": [],
+      "model": "qwen3:4b",
+      "retrieved_cases": [
+        {
+          "case_id": "1025067:1025069",
+          "similarity": 0.1776
+        }
+      ]
+    }
+  },
+  {
+    "customer_tweet_id": "2795559",
+    "conversation_id": "2795558",
+    "customer_text": "@SpotifyCares I’m having trouble logging in on the Spotify app on my computer. Any way you can help?",
+    "expected_intent": "account_access_security",
+    "expected_action": "auto_handle",
+    "label_uncertain": false,
+    "prediction": {
+      "status": "ok",
+      "intent": "account_access_security",
+      "action": "auto_handle",
+      "reason": "Customer mentions login trouble but doesn't specify if it's password-related, device-specific, or other factors. Historical case shows another customer had password reset needs but this customer's issue isn: 'trouble logging in' without details.",
+      "proposed_handling": "clarification",
+      "reply": "Hi there! To help you better, could you share what error message you see when trying to log in? This will help us troubleshoot quickly.",
+      "evidence_ids": [],
+      "routing_checks": [],
+      "model": "qwen3:4b",
+      "retrieved_cases": [
+        {
+          "case_id": "2358988:2358991",
+          "similarity": 0.3078
+        }
+      ]
+    }
+  },
+  {
+    "customer_tweet_id": "2426277",
+    "conversation_id": "2426276",
+    "customer_text": "Been a customer for years, I need my music and its not taking my payment at all @115888 @SpotifyCares .. PLEASE help, I need my music..",
+    "expected_intent": "billing_payments",
+    "expected_action": "escalate",
+    "label_uncertain": false,
+    "prediction": {
+      "status": "ok",
+      "intent": "account_access_security",
+      "action": "escalate",
+      "reason": "Customer mentions payment not processing and music not loading, indicating potential account access or security issue. Historical case shows previous payment-related issue requiring email for resolution. Current message includes @mentions for SpotifyCares, indicating urgency. No resolved issue in current conversation, and payment issues typically require human investigation.",
+      "proposed_handling": "human_required",
+      "reply": "We've noticed your payment isn't processing and music isn't loading. For security, we'll need your email to investigate this. Please send a DM with your account email.",
+      "evidence_ids": [
+        "1101306:1101307"
+      ],
+      "routing_checks": [
+        "Account-specific investigation is needed."
+      ],
+      "model": "qwen3:4b",
+      "retrieved_cases": [
+        {
+          "case_id": "1101306:1101307",
+          "similarity": 0.2358
+        }
+      ]
+    }
+  },
+  {
+    "customer_tweet_id": "1818441",
+    "conversation_id": "1818440",
+    "customer_text": "@SpotifyCares on your UK website, the renewal date is using US formatting https://t.co/aqfk1Kci9m",
+    "expected_intent": "app_device_issues",
+    "expected_action": "auto_handle",
+    "label_uncertain": false,
+    "prediction": {
+      "status": "ok",
+      "intent": "account_access_security",
+      "action": "escalate",
+      "reason": "Customer mentions renewal date formatting issue on UK website, which is a potential account access/security concern. Historical case shows previous customer had subscription cancellation and refund request, but this is a different customer. The issue involves website formatting which may indicate account access problems. Since the customer is asking about renewal date formatting on UK website, this requires official Spotify support to investigate. No troubleshooting steps can be provided without more details. This is a human_required case as it involves account access/security and requires a专员",
+      "proposed_handling": "human_required",
+      "reply": "This issue requires our team to investigate. Please contact Spotify Support directly for assistance with your account renewal date formatting.",
+      "evidence_ids": [],
+      "routing_checks": [],
+      "model": "qwen3:4b",
+      "retrieved_cases": [
+        {
+          "case_id": "1827199:1827200",
+          "similarity": 0.3138
+        }
+      ]
+    }
+  },
+  {
+    "customer_tweet_id": "2183184",
+    "conversation_id": "2183183",
+    "customer_text": "@115888 my 2 week premium has expired and it won’t let me upgrade to premium again how can resolve this problem ?",
+    "expected_intent": "subscription_plans",
+    "expected_action": "auto_handle",
+    "label_uncertain": false,
+    "prediction": {
+      "status": "ok",
+      "intent": "subscription_plans",
+      "action": "escalate",
+      "reason": "Customer's 2-week premium expired and cannot upgrade, which requires account investigation. Historical case shows previous attempt to resolve via email/username request but no resolution. This is a subscription_plans issue needing human review for account access and payment status.",
+      "proposed_handling": "human_required",
+      "reply": "Your premium subscription has expired and we can't help with upgrades without account verification. Please contact Spotify Support directly for assistance.",
+      "evidence_ids": [
+        "2056651:2056652"
+      ],
+      "routing_checks": [],
+      "model": "qwen3:4b",
+      "retrieved_cases": [
+        {
+          "case_id": "2056651:2056652",
+          "similarity": 0.268
+        }
+      ]
+    }
+  },
+  {
+    "customer_tweet_id": "343538",
+    "conversation_id": "343533",
+    "customer_text": "@SpotifyCares Any ideas why when I open the mac app it keeps downloading the installer but on the second try it opens the app fine? 🤕",
+    "expected_intent": "app_device_issues",
+    "expected_action": "auto_handle",
+    "label_uncertain": false,
+    "prediction": {
+      "status": "ok",
+      "intent": "app_device_issues",
+      "action": "escalate",
+      "reason": "The customer reports a recurring issue with the Spotify Mac app installer downloads, which is a device-specific problem. Historical cases show similar issues but belong to other customers. This requires account investigation as it involves app installation behavior that may be tied to account security or device configuration. Spotify's support guidelines indicate that repeated installation failures need human review for security and account integrity.",
+      "proposed_handling": "human_required",
+      "reply": "This issue requires our team to investigate your account and device setup. Please contact Spotify Support directly for assistance.",
+      "evidence_ids": [],
+      "routing_checks": [],
+      "model": "qwen3:4b",
+      "retrieved_cases": [
+        {
+          "case_id": "2794524:2794525",
+          "similarity": 0.145
+        }
+      ]
+    }
+  },
+  {
+    "customer_tweet_id": "1742008",
+    "conversation_id": "1742007",
+    "customer_text": "@SpotifyCares please any news about my issue?",
+    "expected_intent": "other_unclear",
+    "expected_action": "escalate",
+    "label_uncertain": false,
+    "prediction": {
+      "status": "ok",
+      "intent": "music_library_catalog",
+      "action": "escalate",
+      "reason": "Unanswered reply/DM requests are human_required",
+      "proposed_handling": "human_required",
+      "reply": "We don't have updates on this issue yet. Please check back with Spotify Support for further assistance.",
+      "evidence_ids": [],
+      "routing_checks": [],
+      "model": "qwen3:4b",
+      "retrieved_cases": [
+        {
+          "case_id": "2616825:2616826",
+          "similarity": 0.2777
+        }
+      ]
+    }
+  },
+  {
+    "customer_tweet_id": "1728117",
+    "conversation_id": "1728114",
+    "customer_text": "@115888 Hi! I recieved a gift card, but somehow I can't redeem it. #help",
+    "expected_intent": "billing_payments",
+    "expected_action": "auto_handle",
+    "label_uncertain": false,
+    "prediction": {
+      "status": "ok",
+      "intent": "billing_payments",
+      "action": "escalate",
+      "reason": "Gift card redemption issues require account investigation. Historical case shows past customer used gift card but it says 'free' still, indicating potential account or payment method conflict. Spotify's policy requires manual verification for gift card redemptions, especially when the balance shows as 'free' which suggests an unverified transaction. Since the customer can't redeem the gift card, this falls under human_required as it involves account security and payment verification.",
+      "proposed_handling": "human_required",
+      "reply": "We've noticed your gift card isn't redeeming properly. For security, we'll need to investigate this with a Spotify support agent. Please reply to this message with your gift card code for further assistance.",
+      "evidence_ids": [],
+      "routing_checks": [],
+      "model": "qwen3:4b",
+      "retrieved_cases": [
+        {
+          "case_id": "2334620:2334622",
+          "similarity": 0.2882
+        }
+      ]
+    }
+  },
+  {
+    "customer_tweet_id": "2183124",
+    "conversation_id": "2183121",
+    "customer_text": "quick #shoutout to @86440 and @125633 for their continuous support. These 2 are always there to answer all of my weird questions. haha",
+    "expected_intent": "praise_thanks",
+    "expected_action": "auto_handle",
+    "label_uncertain": false,
+    "prediction": {
+      "status": "ok",
+      "intent": "praise_thanks",
+      "action": "auto_handle",
+      "reason": "Customer expresses gratitude for support without unresolved requests",
+      "proposed_handling": "acknowledgement",
+      "reply": "Thanks for the kind words! We appreciate your support community.",
+      "evidence_ids": [],
+      "routing_checks": [],
+      "model": "qwen3:4b",
+      "retrieved_cases": [
+        {
+          "case_id": "2360624:2360625",
+          "similarity": 0.1283
+        }
+      ]
+    }
+  },
+  {
+    "customer_tweet_id": "1900609",
+    "conversation_id": "1900608",
+    "customer_text": "@117153  \n\nI was charged the annual subscription but the premin does not work for me",
+    "expected_intent": "subscription_plans",
+    "expected_action": "escalate",
+    "label_uncertain": false,
+    "prediction": {
+      "status": "ok",
+      "intent": "billing_payments",
+      "action": "escalate",
+      "reason": "Customer mentions being charged for annual subscription but premium features don't work. This indicates a billing issue with subscription activation or functionality. Historical case shows similar issue with customer being charged but premium not working. Since the customer is reporting a problem with their subscription payment and functionality, this requires human investigation to resolve billing and subscription status. Spotify support handles such cases through official channels without claiming account access or payment details.",
+      "proposed_handling": "human_required",
+      "reply": "We've noticed your subscription charge but premium features aren't working. For security, we'll need to verify your account details through official Spotify support. Please contact Spotify Support directly for assistance with this billing issue.",
+      "evidence_ids": [],
+      "routing_checks": [],
+      "model": "qwen3:4b",
+      "retrieved_cases": [
+        {
+          "case_id": "1139895:1139896",
+          "similarity": 0.6964
+        }
+      ]
+    }
+  },
+  {
+    "customer_tweet_id": "2022691",
+    "conversation_id": "2022690",
+    "customer_text": "@SpotifyCares hey it's happening again @146177 has more listeners but @118062 is ranked ahead of him inspite of having less amount of listeners. Is there a problem at my end or is this what everyone is seeing??? #Spotify #WalkOnWater #Reputation https://t.co/S7o8GrRXXQ",
+    "expected_intent": "music_library_catalog",
+    "expected_action": "auto_handle",
+    "label_uncertain": true,
+    "prediction": {
+      "status": "ok",
+      "intent": "music_library_catalog",
+      "action": "escalate",
+      "reason": "Customer reports inconsistent ranking of artists with different listener counts, which suggests a catalog or ranking issue. Historical cases show similar confusion but this is a new customer query. Catalog corrections require human investigation.",
+      "proposed_handling": "human_required",
+      "reply": "This ranking discrepancy may require Spotify's team to review. For best results, contact Spotify Support directly for catalog corrections.",
+      "evidence_ids": [],
+      "routing_checks": [],
+      "model": "qwen3:4b",
+      "retrieved_cases": [
+        {
+          "case_id": "1874175:1874182",
+          "similarity": 0.1387
+        }
+      ]
+    }
+  },
+  {
+    "customer_tweet_id": "1103029",
+    "conversation_id": "1103028",
+    "customer_text": "Today is a special day, after months of submitting to Spotify, I finally have access to Problem’s page and all the data....FINALLY!!",
+    "expected_intent": "praise_thanks",
+    "expected_action": "auto_handle",
+    "label_uncertain": false,
+    "prediction": {
+      "status": "ok",
+      "intent": "account_access_security",
+      "action": "auto_handle",
+      "reason": "Customer confirms access to Spotify's Problem's page after months of submission, indicating resolved access issue. Historical case shows past customer had access problems but this customer now has access, so no further action needed.",
+      "proposed_handling": "acknowledgement",
+      "reply": "Great news! Your access to Spotify's Problem page is now active. Let us know if you need further help.",
+      "evidence_ids": [],
+      "routing_checks": [],
+      "model": "qwen3:4b",
+      "retrieved_cases": [
+        {
+          "case_id": "1034887:1034888",
+          "similarity": 0.2152
+        }
+      ]
+    }
+  },
+  {
+    "customer_tweet_id": "2058598",
+    "conversation_id": "2058597",
+    "customer_text": "@115888 When Your services are coming to india?",
+    "expected_intent": "subscription_plans",
+    "expected_action": "auto_handle",
+    "label_uncertain": false,
+    "prediction": {
+      "status": "ok",
+      "intent": "other_unclear",
+      "action": "auto_handle",
+      "reason": "Customer asks about Spotify services in India but historical cases show no active issue. The customer's message is a follow-up to a previous Spotify notification about India launch, not a new unresolved issue. No action needed beyond acknowledging the query.",
+      "proposed_handling": "acknowledgement",
+      "reply": "Thanks for your interest in Spotify India! We'll notify you when services launch there.",
+      "evidence_ids": [],
+      "routing_checks": [],
+      "model": "qwen3:4b",
+      "retrieved_cases": [
+        {
+          "case_id": "2684831:2684832",
+          "similarity": 0.3735
+        }
+      ]
+    }
+  },
+  {
+    "customer_tweet_id": "65994",
+    "conversation_id": "65993",
+    "customer_text": "@SpotifyCares What do you mean by “DM”?",
+    "expected_intent": "account_access_security",
+    "expected_action": "escalate",
+    "label_uncertain": false,
+    "prediction": {
+      "status": "ok",
+      "intent": "other_unclear",
+      "action": "auto_handle",
+      "reason": "Customer asks about 'DM' without context; historical cases show previous DM requests for account verification but no current issue resolution",
+      "proposed_handling": "clarification",
+      "reply": "DM means direct message. Could you clarify what you'd like to do with it?",
+      "evidence_ids": [],
+      "routing_checks": [],
+      "model": "qwen3:4b",
+      "retrieved_cases": [
+        {
+          "case_id": "93904:2890051",
+          "similarity": 0.2271
+        }
+      ]
+    }
+  },
+  {
+    "customer_tweet_id": "2426259",
+    "conversation_id": "2426257",
+    "customer_text": "@115888 @SpotifyCares Dear Spotify. for this years Christmas i wish for some god damn in-app Lyrics. Thank you for all the good music Santa",
+    "expected_intent": "product_feedback",
+    "expected_action": "auto_handle",
+    "label_uncertain": false,
+    "prediction": {
+      "status": "ok",
+      "intent": "product_feedback",
+      "action": "auto_handle",
+      "reason": "Customer expresses a wish for in-app lyrics for Christmas, which is a feature request. Historical case shows past positive feedback about music suggestions, but this is a new request for lyrics. No unresolved issues or security concerns detected in current message.",
+      "proposed_handling": "acknowledgement",
+      "reply": "Thanks for your kind wish! We appreciate your feedback on the lyrics feature and will consider it for future updates.",
+      "evidence_ids": [],
+      "routing_checks": [],
+      "model": "qwen3:4b",
+      "retrieved_cases": [
+        {
+          "case_id": "483970:483971",
+          "similarity": 0.1687
+        }
+      ]
+    }
+  },
+  {
+    "customer_tweet_id": "2564278",
+    "conversation_id": "2564277",
+    "customer_text": "@SpotifyCares So I need to cancel my beloved account to disconnect it from Facebook, can I save/download my playlists somewhere so I can recreate them with my new account? Help 💔",
+    "expected_intent": "account_access_security",
+    "expected_action": "escalate",
+    "label_uncertain": true,
+    "prediction": {
+      "status": "ok",
+      "intent": "subscription_plans",
+      "action": "escalate",
+      "reason": "Customer wants to cancel account linked to Facebook and save playlists. Historical case shows past customer had similar issue but requires email for account access. Current customer's request for playlist saves is not possible without account access. Spotify's policy requires email for account verification. No technical solution exists for saving playlists without active account. This requires human investigation to handle account cancellation and data transfer.",
+      "proposed_handling": "human_required",
+      "reply": "We can't save your playlists without account access. To cancel and transfer your music, please contact Spotify Support directly for help with your Facebook-linked account. They'll guide you through the process.",
+      "evidence_ids": [],
+      "routing_checks": [
+        "Account-specific investigation is needed."
+      ],
+      "model": "qwen3:4b",
+      "retrieved_cases": [
+        {
+          "case_id": "1448185:1448187",
+          "similarity": 0.1529
+        }
+      ]
+    }
+  },
+  {
+    "customer_tweet_id": "563543",
+    "conversation_id": "563542",
+    "customer_text": "@SpotifyCares I received an offer for a yearly membership, however, when I hit the button, nothing happened. And now I can find it.",
+    "expected_intent": "subscription_plans",
+    "expected_action": "auto_handle",
+    "label_uncertain": true,
+    "prediction": {
+      "status": "ok",
+      "intent": "subscription_plans",
+      "action": "escalate",
+      "reason": "Customer received a yearly membership offer but the button didn't work. This is a subscription_plans issue. Historical cases are for other customers, so no relevant guidance from there. The customer needs guidance on how to accept the offer.",
+      "proposed_handling": "general_guidance",
+      "reply": "I'm sorry you're having trouble. Please contact official Spotify support for further review. I can't check your account here.",
+      "evidence_ids": [],
+      "routing_checks": [
+        "The proposed guidance has no cited evidence."
+      ],
+      "model": "qwen3:4b",
+      "retrieved_cases": [
+        {
+          "case_id": "2924851:2924853",
+          "similarity": 0.1616
+        }
+      ]
+    }
+  },
+  {
+    "customer_tweet_id": "2429648",
+    "conversation_id": "2429647",
+    "customer_text": "@115888 why does it take someone so long to respond? I’ve had the same issue persist for over a month. WTF spotify.",
+    "expected_intent": "other_unclear",
+    "expected_action": "escalate",
+    "label_uncertain": false,
+    "prediction": {
+      "status": "ok",
+      "intent": "other_unclear",
+      "action": "escalate",
+      "reason": "Customer expresses frustration about slow response time without specifying a current issue. Historical cases belong to other customers and do not resolve this customer's problem. No actionable issue identified in current message beyond general complaint about response time.",
+      "proposed_handling": "human_required",
+      "reply": "I understand you're frustrated with response times. For faster assistance, please contact Spotify Support directly through their official channels.",
+      "evidence_ids": [],
+      "routing_checks": [],
+      "model": "qwen3:4b",
+      "retrieved_cases": [
+        {
+          "case_id": "244330:244333",
+          "similarity": 0.2259
+        }
+      ]
+    }
+  },
+  {
+    "customer_tweet_id": "2035568",
+    "conversation_id": "2035567",
+    "customer_text": "@SpotifyCares My family account is not responding to invites. I'm accepting but they are not added to the account???",
+    "expected_intent": "subscription_plans",
+    "expected_action": "escalate",
+    "label_uncertain": false,
+    "prediction": {
+      "status": "ok",
+      "intent": "subscription_plans",
+      "action": "escalate",
+      "reason": "Family-plan invite problems are subscription_plans. The customer's issue involves family account invites not working, which requires account investigation. Historical cases show similar issues but belong to other customers, so no resolution can be inferred. No troubleshooting steps have been repeated, so human support is needed to verify account status and invite functionality.",
+      "proposed_handling": "human_required",
+      "reply": "Your family account invite isn't working—please contact Spotify Support directly for assistance. They can help verify your account and fix the invite process.",
+      "evidence_ids": [],
+      "routing_checks": [],
+      "model": "qwen3:4b",
+      "retrieved_cases": [
+        {
+          "case_id": "1827400:1827401",
+          "similarity": 0.2615
+        }
+      ]
+    }
+  },
+  {
+    "customer_tweet_id": "2647462",
+    "conversation_id": "2647461",
+    "customer_text": "@148611 @115888 still no Perfect Velvet album by Red Velvet? 😔",
+    "expected_intent": "music_library_catalog",
+    "expected_action": "auto_handle",
+    "label_uncertain": false,
+    "prediction": {
+      "status": "ok",
+      "intent": "music_library_catalog",
+      "action": "escalate",
+      "reason": "Customer reports missing album in catalog, historical case shows similar issue with no resolution. Catalog corrections require human investigation.",
+      "proposed_handling": "human_required",
+      "reply": "This album isn't available in your library yet. For catalog corrections, please contact Spotify Support directly.",
+      "evidence_ids": [
+        "2627885:2627887"
+      ],
+      "routing_checks": [],
+      "model": "qwen3:4b",
+      "retrieved_cases": [
+        {
+          "case_id": "2627885:2627887",
+          "similarity": 0.6434
+        }
+      ]
+    }
+  },
+  {
+    "customer_tweet_id": "1175725",
+    "conversation_id": "1175724",
+    "customer_text": "@SpotifyCares I don't know what my email address is but i know my username and need to cancel a subscription",
+    "expected_intent": "subscription_plans",
+    "expected_action": "escalate",
+    "label_uncertain": false,
+    "prediction": {
+      "status": "ok",
+      "intent": "account_access_security",
+      "action": "auto_handle",
+      "reason": "Customer doesn't know their email but knows username and wants to cancel subscription. Need to clarify how they want to cancel (e.g., via email, username, or other method).",
+      "proposed_handling": "clarification",
+      "reply": "To cancel your subscription, we'll need to verify your identity. Could you share your username and a recent payment method? This helps us securely process your cancellation.",
+      "evidence_ids": [],
+      "routing_checks": [],
+      "model": "qwen3:4b",
+      "retrieved_cases": [
+        {
+          "case_id": "863668:863671",
+          "similarity": 0.2222
+        }
+      ]
+    }
+  },
+  {
+    "customer_tweet_id": "2727199",
+    "conversation_id": "2727198",
+    "customer_text": "@115888 I want to disconnect my account which was created via Facebook. Now I need to create a new account and loose all my music?",
+    "expected_intent": "account_access_security",
+    "expected_action": "escalate",
+    "label_uncertain": false,
+    "prediction": {
+      "status": "ok",
+      "intent": "account_access_security",
+      "action": "escalate",
+      "reason": "Customer wants to disconnect Facebook-linked account and create new account without losing music. Historical case shows past customer tried merging accounts after FB deletion but requires email addresses for investigation. Current issue involves account access security (login/identity) with unresolved music loss concern. No prior context for this customer, so human investigation needed for account security and music transfer. Spotify cannot handle account disconnection without email verification. Must recommend official support without claiming action.",
+      "proposed_handling": "human_required",
+      "reply": "To help you disconnect your Facebook-linked account and keep your music, we'll need to investigate your account security. Please contact Spotify Support directly for assistance.",
+      "evidence_ids": [],
+      "routing_checks": [
+        "An unresolved account security concern exists."
+      ],
+      "model": "qwen3:4b",
+      "retrieved_cases": [
+        {
+          "case_id": "2859038:2859039",
+          "similarity": 0.2002
+        }
+      ]
+    }
+  },
+  {
+    "customer_tweet_id": "2297992",
+    "conversation_id": "2297990",
+    "customer_text": "@SpotifyCares Hi I changed my phone yesterday to an iPhone6 but I can’t get Premium even though I’m a premium subscriber, please rectify for me. Thanks",
+    "expected_intent": "subscription_plans",
+    "expected_action": "auto_handle",
+    "label_uncertain": false,
+    "prediction": {
+      "status": "ok",
+      "intent": "account_access_security",
+      "action": "escalate",
+      "reason": "Customer changed phone to iPhone6 but can't access Premium despite being a premium subscriber. This requires account investigation as phone change may affect login security. Historical cases show similar issues but belong to other customers. No account access or security concerns are resolved without human verification.",
+      "proposed_handling": "human_required",
+      "reply": "We'll need to check your account security after your phone change. Please reply with your email address for verification.",
+      "evidence_ids": [],
+      "routing_checks": [
+        "Account-specific investigation is needed.",
+        "An unresolved account security concern exists."
+      ],
+      "model": "qwen3:4b",
+      "retrieved_cases": [
+        {
+          "case_id": "2165583:2165586",
+          "similarity": 0.1571
+        }
+      ]
+    }
+  },
+  {
+    "customer_tweet_id": "1531535",
+    "conversation_id": "1531534",
+    "customer_text": "@SpotifyCares I'm trying to have only my email to sign in to my account. Can't reset password because I deleted my Facebook account.",
+    "expected_intent": "account_access_security",
+    "expected_action": "escalate",
+    "label_uncertain": false,
+    "prediction": {
+      "status": "ok",
+      "intent": "account_access_security",
+      "action": "escalate",
+      "reason": "Account security or access problem needs human review.",
+      "proposed_handling": "human_required",
+      "reply": "Please contact official Spotify support so a team member can review this issue.",
+      "evidence_ids": [],
+      "routing_checks": [
+        "Account security or access problem needs human review."
+      ],
+      "model": "qwen3:4b",
+      "retrieved_cases": [
+        {
+          "case_id": "371252:371253",
+          "similarity": 0.2375
+        }
+      ]
+    }
+  },
+  {
+    "customer_tweet_id": "558625",
+    "conversation_id": "558624",
+    "customer_text": "@SpotifyCares hi its quite a while ago, but i removed a song from my playlist a long time ago, and i cant remember the name of the song, so maybe you could get it back for me?\n\n- Unknown&lt;3",
+    "expected_intent": "music_library_catalog",
+    "expected_action": "escalate",
+    "label_uncertain": false,
+    "prediction": {
+      "status": "ok",
+      "intent": "music_library_catalog",
+      "action": "escalate",
+      "reason": "Customer wants to recover a song from a playlist they removed long ago. Spotify's catalog doesn't retain deleted playlist items for historical access without account context. This requires account investigation to verify identity and access historical data, which is beyond automated tools. Historical cases show no relevant resolution path for this specific request.",
+      "proposed_handling": "human_required",
+      "reply": "We can help you recover songs from playlists, but we need to verify your account first. Could you share your Spotify username or email address? (Note: This is for security purposes only)",
+      "evidence_ids": [],
+      "routing_checks": [
+        "Account-specific investigation is needed."
+      ],
+      "model": "qwen3:4b",
+      "retrieved_cases": [
+        {
+          "case_id": "622826:622827",
+          "similarity": 0.2241
+        }
+      ]
+    }
+  },
+  {
+    "customer_tweet_id": "1280821",
+    "conversation_id": "1280820",
+    "customer_text": "@SpotifyCares oh sorry, they were undownloaded",
+    "expected_intent": "playback_offline",
+    "expected_action": "auto_handle",
+    "label_uncertain": false,
+    "prediction": {
+      "status": "ok",
+      "intent": "playback_offline",
+      "action": "auto_handle",
+      "reason": "Customer mentions 'undownloaded' but needs clarification on whether it's a library issue or playlist issue",
+      "proposed_handling": "clarification",
+      "reply": "Can you confirm if the songs are missing from your Spotify library or just from specific playlists?",
+      "evidence_ids": [],
+      "routing_checks": [],
+      "model": "qwen3:4b",
+      "retrieved_cases": [
+        {
+          "case_id": "2308403:2308405",
+          "similarity": 0.1578
+        }
+      ]
+    }
+  },
+  {
+    "customer_tweet_id": "1841196",
+    "conversation_id": "1841195",
+    "customer_text": "@115888 do I have to pay for Spotify to be on another phone ? 😑",
+    "expected_intent": "subscription_plans",
+    "expected_action": "auto_handle",
+    "label_uncertain": false,
+    "prediction": {
+      "status": "ok",
+      "intent": "billing_payments",
+      "action": "escalate",
+      "reason": "Customer asks if they need to pay for Spotify on another phone, referencing gift card payment limitations from historical case. Historical case shows gift card not accepted for yearly plans, but current question is about multi-device payment. No specific payment method issue here.",
+      "proposed_handling": "general_guidance",
+      "reply": "I'm sorry you're having trouble. Please contact official Spotify support for further review. I can't check your account here.",
+      "evidence_ids": [],
+      "routing_checks": [
+        "The proposed guidance has no cited evidence."
+      ],
+      "model": "qwen3:4b",
+      "retrieved_cases": [
+        {
+          "case_id": "588862:588864",
+          "similarity": 0.2513
+        }
+      ]
+    }
+  },
+  {
+    "customer_tweet_id": "700658",
+    "conversation_id": "700657",
+    "customer_text": "A whole algorithm for a simple function that's existed since Discman days, and it's entirely useless. Amazing. @SpotifyCares https://t.co/TcScgZBLBX",
+    "expected_intent": "playback_offline",
+    "expected_action": "escalate",
+    "label_uncertain": true,
+    "prediction": {
+      "status": "ok",
+      "intent": "playback_offline",
+      "action": "auto_handle",
+      "reason": "Customer mentions shuffle algorithm issues but doesn't specify if it's about offline playback or general shuffle behavior. Historical cases show previous shuffle complaints, but current message focuses on 'algorithm' for a 'simple function' that's 'useless'—likely referring to shuffle behavior, not offline playback. No clear issue with offline playback is stated here.",
+      "proposed_handling": "clarification",
+      "reply": "I see you're concerned about shuffle behavior. Could you clarify if this is about offline playback or general shuffle functionality?",
+      "evidence_ids": [],
+      "routing_checks": [],
+      "model": "qwen3:4b",
+      "retrieved_cases": [
+        {
+          "case_id": "1253054:1253055",
+          "similarity": 0.1315
+        }
+      ]
+    }
+  },
+  {
+    "customer_tweet_id": "1873227",
+    "conversation_id": "1873226",
+    "customer_text": "@116130 @SpotifyCares  I've got download using cellular data off. However it still downloads music using my data. Please help.",
+    "expected_intent": "playback_offline",
+    "expected_action": "auto_handle",
+    "label_uncertain": false,
+    "prediction": {
+      "status": "ok",
+      "intent": "playback_offline",
+      "action": "auto_handle",
+      "reason": "Customer mentions download using cellular data but still downloads music using data. Need to clarify if they mean downloads are happening via cellular data (which is normal) or if they're concerned about data usage. The customer's message is unclear about the specific issue.",
+      "proposed_handling": "clarification",
+      "reply": "Can you clarify what you mean by 'downloads using cellular data'? Are you seeing unexpected data usage for music downloads?",
+      "evidence_ids": [],
+      "routing_checks": [],
+      "model": "qwen3:4b",
+      "retrieved_cases": [
+        {
+          "case_id": "1719028:1719032",
+          "similarity": 0.2038
+        }
+      ]
+    }
+  },
+  {
+    "customer_tweet_id": "29034",
+    "conversation_id": "29033",
+    "customer_text": "I WILL AS SOON AS MY SPOTIFY IS FIXED BUT NO ANSWER ]: https://t.co/w4as3XSf7T",
+    "expected_intent": "other_unclear",
+    "expected_action": "escalate",
+    "label_uncertain": false,
+    "prediction": {
+      "status": "ok",
+      "intent": "other_unclear",
+      "action": "auto_handle",
+      "reason": "Customer mentions Spotify being fixed but no answer, with a link to a tweet. No specific issue is resolved or clarified. Historical cases show past customer had a DM but Spotify replied to their DM. This customer's message is unclear and lacks actionable details for resolution.",
+      "proposed_handling": "acknowledgement",
+      "reply": "We've noted your message about Spotify being fixed but no answer. Please share more details about what's not working so we can help.",
+      "evidence_ids": [],
+      "routing_checks": [],
+      "model": "qwen3:4b",
+      "retrieved_cases": [
+        {
+          "case_id": "962717:962718",
+          "similarity": 0.2633
+        }
+      ]
+    }
+  },
+  {
+    "customer_tweet_id": "2570297",
+    "conversation_id": "2570296",
+    "customer_text": "@115888 Can I request a contact number for your Brand Manager?",
+    "expected_intent": "other_unclear",
+    "expected_action": "auto_handle",
+    "label_uncertain": false,
+    "prediction": {
+      "status": "ok",
+      "intent": "product_feedback",
+      "action": "escalate",
+      "reason": "Customer is asking for a contact number for the Brand Manager, which requires official Spotify support. This is not a resolvable issue through automated means.",
+      "proposed_handling": "human_required",
+      "reply": "I'm sorry, but I can't provide contact numbers for Spotify's Brand Manager. For official inquiries, please reach out to Spotify Support directly.",
+      "evidence_ids": [],
+      "routing_checks": [],
+      "model": "qwen3:4b",
+      "retrieved_cases": [
+        {
+          "case_id": "2426274:2426275",
+          "similarity": 0.194
+        }
+      ]
+    }
+  },
+  {
+    "customer_tweet_id": "2558882",
+    "conversation_id": "2558881",
+    "customer_text": "Why did @115888 make the first button the thumbs down? I've either hit it or almost hit it on so many songs I actually like.\n\nAlso is there a way to undo a thumbs down? https://t.co/aCtbJiwfwM",
+    "expected_intent": "app_device_issues",
+    "expected_action": "auto_handle",
+    "label_uncertain": false,
+    "prediction": {
+      "status": "ok",
+      "intent": "playback_offline",
+      "action": "auto_handle",
+      "reason": "Customer mentions thumbs down button and undoing it, which relates to playback offline features. Historical case shows past customer asked about downloads but this is a different issue. No prior context to reference, so need clarification on what 'thumbs down' means here.",
+      "proposed_handling": "clarification",
+      "reply": "It sounds like you're referring to the 'skip' or 'dislike' button in Spotify. Could you clarify if this is about skipping songs or marking songs as disliked? Also, to undo a thumbs down, you can try re-adding the song to your library or using the 'Remove from library' option if it's marked as disliked.",
+      "evidence_ids": [],
+      "routing_checks": [],
+      "model": "qwen3:4b",
+      "retrieved_cases": [
+        {
+          "case_id": "1977011:1977012",
+          "similarity": 0.2298
+        }
+      ]
+    }
+  },
+  {
+    "customer_tweet_id": "1162300",
+    "conversation_id": "1162299",
+    "customer_text": "@SpotifyCares Have clicked the sign out everywhere button and reset the password just want to make sure no one can get into it again!",
+    "expected_intent": "account_access_security",
+    "expected_action": "escalate",
+    "label_uncertain": false,
+    "prediction": {
+      "status": "ok",
+      "intent": "account_access_security",
+      "action": "escalate",
+      "reason": "Account security or access problem needs human review.",
+      "proposed_handling": "human_required",
+      "reply": "Please contact official Spotify support so a team member can review this issue.",
+      "evidence_ids": [],
+      "routing_checks": [
+        "An unresolved account security concern exists.",
+        "Account security or access problem needs human review."
+      ],
+      "model": "qwen3:4b",
+      "retrieved_cases": [
+        {
+          "case_id": "143018:143019",
+          "similarity": 0.1882
+        }
+      ]
+    }
+  },
+  {
+    "customer_tweet_id": "1961804",
+    "conversation_id": "1961803",
+    "customer_text": "@SpotifyCares I just got added in a family deal but I think it does not authenticate",
+    "expected_intent": "subscription_plans",
+    "expected_action": "auto_handle",
+    "label_uncertain": false,
+    "prediction": {
+      "status": "ok",
+      "intent": "subscription_plans",
+      "action": "escalate",
+      "reason": "Customer mentions family plan addition but doesn't specify authentication issue. Historical case shows family plan transition without cancellation needed. Current issue is unclear authentication, but no details provided. Spotify's guidance on family plans indicates no cancellation required, so this is a general guidance case.",
+      "proposed_handling": "general_guidance",
+      "reply": "I'm sorry you're having trouble. Please contact official Spotify support for further review. I can't check your account here.",
+      "evidence_ids": [],
+      "routing_checks": [
+        "The proposed guidance has no cited evidence."
+      ],
+      "model": "qwen3:4b",
+      "retrieved_cases": [
+        {
+          "case_id": "1842000:1842001",
+          "similarity": 0.1982
+        }
+      ]
+    }
+  },
+  {
+    "customer_tweet_id": "2705872",
+    "conversation_id": "2705871",
+    "customer_text": "Yo @115888 wtf is wrong with your app? All my downloaded songs keep undownloading. Why am I paying you guys? Sort it out",
+    "expected_intent": "playback_offline",
+    "expected_action": "auto_handle",
+    "label_uncertain": false,
+    "prediction": {
+      "status": "ok",
+      "intent": "playback_offline",
+      "action": "escalate",
+      "reason": "Customer reports downloaded songs undownloading despite paying for Spotify. Historical case shows similar issue with no resolution. This requires account investigation as it involves payment and playback functionality.",
+      "proposed_handling": "human_required",
+      "reply": "Your downloaded songs might be temporarily unavailable due to a technical issue. For a full resolution, please contact Spotify Support directly as this requires account verification and payment review.",
+      "evidence_ids": [],
+      "routing_checks": [],
+      "model": "qwen3:4b",
+      "retrieved_cases": [
+        {
+          "case_id": "1963692:1963693",
+          "similarity": 0.3163
+        }
+      ]
+    }
+  },
+  {
+    "customer_tweet_id": "1021653",
+    "conversation_id": "801192",
+    "customer_text": "@SpotifyCares personal - the vamps",
+    "expected_intent": "music_library_catalog",
+    "expected_action": "auto_handle",
+    "label_uncertain": false,
+    "prediction": {
+      "status": "ok",
+      "intent": "account_access_security",
+      "action": "auto_handle",
+      "reason": "Customer mentions 'the vamps' but doesn't specify if it's a track, artist, or account issue. Previous support asked for artist/track, but customer hasn't provided details. No account access or security concerns are confirmed yet.",
+      "proposed_handling": "clarification",
+      "reply": "Hi there! Could you clarify if you're looking for the artist 'The Vamps' or a specific track? This will help us assist you better.",
+      "evidence_ids": [],
+      "routing_checks": [],
+      "model": "qwen3:4b",
+      "retrieved_cases": [
+        {
+          "case_id": "44305:44314",
+          "similarity": 0.2999
+        }
+      ]
+    }
+  },
+  {
+    "customer_tweet_id": "1973841",
+    "conversation_id": "1973840",
+    "customer_text": "@SpotifyCares hi! paid for premium, shows up on site, logged out &amp; back in on everything, definitely same account. still getting ads. help?",
+    "expected_intent": "subscription_plans",
+    "expected_action": "escalate",
+    "label_uncertain": false,
+    "prediction": {
+      "status": "ok",
+      "intent": "account_access_security",
+      "action": "escalate",
+      "reason": "Customer reports paid premium but still getting ads after logging out and back in. This indicates a potential security or account access issue. Historical cases show similar issues where Spotify requested email addresses for investigation, but the current customer has not provided credentials. Since the customer has confirmed it's the same account and ads persist, this requires human investigation to verify account status and security without requesting private credentials.",
+      "proposed_handling": "human_required",
+      "reply": "We can help investigate your account security. Please share your email address for verification.",
+      "evidence_ids": [],
+      "routing_checks": [
+        "Account-specific investigation is needed.",
+        "An unresolved account security concern exists."
+      ],
+      "model": "qwen3:4b",
+      "retrieved_cases": [
+        {
+          "case_id": "147392:147393",
+          "similarity": 0.2603
+        }
+      ]
+    }
+  },
+  {
+    "customer_tweet_id": "539217",
+    "conversation_id": "539216",
+    "customer_text": "@115888 could you please bring back the lyric button",
+    "expected_intent": "product_feedback",
+    "expected_action": "auto_handle",
+    "label_uncertain": false,
+    "prediction": {
+      "status": "ok",
+      "intent": "music_library_catalog",
+      "action": "auto_handle",
+      "reason": "Customer mentions 'lyric button' but doesn't specify if it's missing from their library, app, or playback. Historical case shows past customer requested 'RBD' content, which may be related but not identical. Need to confirm what's missing to provide accurate help.",
+      "proposed_handling": "clarification",
+      "reply": "Could you clarify if the lyric button is missing from your Spotify app, library, or when playing music? This will help me assist you better.",
+      "evidence_ids": [],
+      "routing_checks": [],
+      "model": "qwen3:4b",
+      "retrieved_cases": [
+        {
+          "case_id": "2389015:2389016",
+          "similarity": 0.4204
+        }
+      ]
+    }
+  }
+]

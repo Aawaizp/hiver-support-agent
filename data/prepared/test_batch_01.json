@@ -1,0 +1,456 @@
+[
+  {
+    "conversation_id": "1722252",
+    "customer_tweet_id": "1722253",
+    "split": "test",
+    "prior_context": [],
+    "linked_context_incomplete": false,
+    "customer_text": "@115888 is disappointing me 😖 why don't they have more GOT7 songs?! Fix it please!! 🙏",
+    "intent": "music_library_catalog",
+    "expected_action": "auto_handle",
+    "action_reason": "They want more songs from a particular artist.",
+    "required_reply_points": [
+      "Acknowledge the missing GOT7 music without claiming to add it."
+    ],
+    "forbidden_claims": [
+      "Invent a licensing reason, release date, or catalog correction",
+      "Claim to have opened a link or checked live availability"
+    ],
+    "uncertain": false,
+    "annotation_note": ""
+  },
+  {
+    "conversation_id": "500952",
+    "customer_tweet_id": "500953",
+    "split": "test",
+    "prior_context": [],
+    "linked_context_incomplete": false,
+    "customer_text": "@SpotifyCares Hi can't update payment info with new payment method. Tried canceling account and that didn't work either. HELP!",
+    "intent": "billing_payments",
+    "expected_action": "escalate",
+    "action_reason": "Both a payment update and an attempted cancellation have failed.",
+    "required_reply_points": [
+      "Recommend official billing support and mention both failed actions."
+    ],
+    "forbidden_claims": [
+      "Promise a refund, discount, or successful payment",
+      "Request card details or gift-card codes",
+      "Claim a human handoff has already happened"
+    ],
+    "uncertain": false,
+    "annotation_note": ""
+  },
+  {
+    "conversation_id": "1639590",
+    "customer_tweet_id": "1639591",
+    "split": "test",
+    "prior_context": [],
+    "linked_context_incomplete": false,
+    "customer_text": "@117153 \nj'ai payer mon abonnement et je suis toujours a la version gratuite, j'ai suivie toute les recommendation mais fonctionne pa",
+    "intent": "subscription_plans",
+    "expected_action": "escalate",
+    "action_reason": "They say in French that they paid but still have Free after trying the recommendations.",
+    "required_reply_points": [
+      "Acknowledge in French that paid access has not activated and recommend an account review."
+    ],
+    "forbidden_claims": [
+      "Claim the subscription was checked or changed",
+      "Promise eligibility, activation, or an unverified offer",
+      "Claim a human handoff has already happened"
+    ],
+    "uncertain": false,
+    "annotation_note": ""
+  },
+  {
+    "conversation_id": "2946128",
+    "customer_tweet_id": "2946129",
+    "split": "test",
+    "prior_context": [
+      {
+        "tweet_id": "2946131",
+        "role": "customer",
+        "text": "@SpotifyCares hi, how do i change the cover image of a playlist?"
+      },
+      {
+        "tweet_id": "2946130",
+        "role": "support",
+        "text": "@813773 Hi there! You'll need to use the desktop app in order to change your playlist image. For more info, click here: https://t.co/RdBx6bgO3d /AU"
+      }
+    ],
+    "linked_context_incomplete": false,
+    "customer_text": "@SpotifyCares  https://t.co/wIxvrZ4p9O",
+    "intent": "music_library_catalog",
+    "expected_action": "auto_handle",
+    "action_reason": "The link follows instructions for changing playlist artwork, but its contents are unavailable.",
+    "required_reply_points": [
+      "Ask whether the artwork change worked or what problem the image shows."
+    ],
+    "forbidden_claims": [
+      "Invent a licensing reason, release date, or catalog correction",
+      "Claim to have opened a link or checked live availability"
+    ],
+    "uncertain": true,
+    "annotation_note": "Review this interpretation against the visible context."
+  },
+  {
+    "conversation_id": "1552006",
+    "customer_tweet_id": "1552007",
+    "split": "test",
+    "prior_context": [],
+    "linked_context_incomplete": false,
+    "customer_text": "@115888 Sis, your app is broken https://t.co/XEqBxdx1K1",
+    "intent": "app_device_issues",
+    "expected_action": "auto_handle",
+    "action_reason": "They say the app is broken without describing the symptom.",
+    "required_reply_points": [
+      "Ask what happens in the app and what device they are using."
+    ],
+    "forbidden_claims": [
+      "Claim a fix is available or give a release date without evidence",
+      "Claim to have inspected a linked screenshot"
+    ],
+    "uncertain": false,
+    "annotation_note": ""
+  },
+  {
+    "conversation_id": "2210890",
+    "customer_tweet_id": "2210891",
+    "split": "test",
+    "prior_context": [
+      {
+        "tweet_id": "2210895",
+        "role": "customer",
+        "text": "@SpotifyCares I opened spotify on my Android and It looks like this: Never been zoomed in so much before https://t.co/fzRpeHuQUU"
+      },
+      {
+        "tweet_id": "2210894",
+        "role": "support",
+        "text": "@646209 Hey Cole! Can you let us know your device and the exact operating system and Spotify versions you're running? We'll look into it /GS"
+      },
+      {
+        "tweet_id": "2210892",
+        "role": "customer",
+        "text": "@SpotifyCares Samsung Galaxg Note 5 Running Android 7.0 Spotify  is version 8.4.26.770 armV7"
+      },
+      {
+        "tweet_id": "2210890",
+        "role": "support",
+        "text": "@646209 Thanks! Does logging out &gt; restarting your device &gt; logging back in make any difference? /GS"
+      }
+    ],
+    "linked_context_incomplete": false,
+    "customer_text": "@SpotifyCares None of that worked, but it was fixed this morning when i woke up!",
+    "intent": "app_device_issues",
+    "expected_action": "auto_handle",
+    "action_reason": "They report the display problem has gone away on its own.",
+    "required_reply_points": [
+      "Acknowledge that it now works without crediting the failed troubleshooting steps."
+    ],
+    "forbidden_claims": [
+      "Claim a fix is available or give a release date without evidence",
+      "Claim to have inspected a linked screenshot"
+    ],
+    "uncertain": false,
+    "annotation_note": ""
+  },
+  {
+    "conversation_id": "1162402",
+    "customer_tweet_id": "1162404",
+    "split": "test",
+    "prior_context": [
+      {
+        "tweet_id": "1162408",
+        "role": "customer",
+        "text": "I pay for multiple premium @115888 accounts so why do I get commercials while I listen to their podcasts? #musicstreaming"
+      },
+      {
+        "tweet_id": "1162407",
+        "role": "support",
+        "text": "@393504 Hey Janet! Some podcasts have advertisements as part of their content. Let us know if you have any questions 🙂 /KL"
+      },
+      {
+        "tweet_id": "1162406",
+        "role": "customer",
+        "text": "@SpotifyCares it's just a bummer to listen to the same commercial over and over again when you're just trying to get the news and you PAY..   :("
+      }
+    ],
+    "linked_context_incomplete": false,
+    "customer_text": "@SpotifyCares otherwise...I love the podcasts!",
+    "intent": "product_feedback",
+    "expected_action": "auto_handle",
+    "action_reason": "They like the podcasts but still object to repeated ads in the earlier context.",
+    "required_reply_points": [
+      "Acknowledge both their enjoyment and the ad feedback without claiming to remove ads."
+    ],
+    "forbidden_claims": [
+      "Promise the suggestion will be built or forwarded",
+      "Claim knowledge of an unpublished product roadmap"
+    ],
+    "uncertain": true,
+    "annotation_note": "Review this interpretation against the visible context."
+  },
+  {
+    "conversation_id": "2853005",
+    "customer_tweet_id": "2853007",
+    "split": "test",
+    "prior_context": [],
+    "linked_context_incomplete": false,
+    "customer_text": "@115888 Spotify client to LG webOS 3.5, please!!!",
+    "intent": "product_feedback",
+    "expected_action": "auto_handle",
+    "action_reason": "They request a client for LG webOS.",
+    "required_reply_points": [
+      "Acknowledge the app request without promising availability."
+    ],
+    "forbidden_claims": [
+      "Promise the suggestion will be built or forwarded",
+      "Claim knowledge of an unpublished product roadmap"
+    ],
+    "uncertain": false,
+    "annotation_note": ""
+  },
+  {
+    "conversation_id": "223009",
+    "customer_tweet_id": "223010",
+    "split": "test",
+    "prior_context": [],
+    "linked_context_incomplete": false,
+    "customer_text": "@115888 hey guys i thought i'd let you know war is the answer is bad company and vice versa. Those two are flipped. https://t.co/pGCW50cUvt",
+    "intent": "music_library_catalog",
+    "expected_action": "escalate",
+    "action_reason": "Two songs are reportedly assigned each other's titles.",
+    "required_reply_points": [
+      "Recommend a catalog review of the swapped tracks without claiming the link was inspected."
+    ],
+    "forbidden_claims": [
+      "Invent a licensing reason, release date, or catalog correction",
+      "Claim to have opened a link or checked live availability",
+      "Claim a human handoff has already happened"
+    ],
+    "uncertain": false,
+    "annotation_note": ""
+  },
+  {
+    "conversation_id": "2591022",
+    "customer_tweet_id": "2591023",
+    "split": "test",
+    "prior_context": [],
+    "linked_context_incomplete": false,
+    "customer_text": "@SpotifyCares I cant download ANY song, whats going on?",
+    "intent": "playback_offline",
+    "expected_action": "auto_handle",
+    "action_reason": "They cannot download songs and have provided no troubleshooting details.",
+    "required_reply_points": [
+      "Ask for the device, app version, and any download error."
+    ],
+    "forbidden_claims": [
+      "Guarantee a troubleshooting step will work",
+      "Claim a bug or outage is confirmed without evidence"
+    ],
+    "uncertain": false,
+    "annotation_note": ""
+  },
+  {
+    "conversation_id": "1883968",
+    "customer_tweet_id": "1883969",
+    "split": "test",
+    "prior_context": [],
+    "linked_context_incomplete": false,
+    "customer_text": "@117153 I paid the premium Spotify account using Itunes, and my account is still free.",
+    "intent": "subscription_plans",
+    "expected_action": "escalate",
+    "action_reason": "A reported iTunes payment has not activated Premium.",
+    "required_reply_points": [
+      "Recommend official support to check the purchase and account entitlement."
+    ],
+    "forbidden_claims": [
+      "Claim the subscription was checked or changed",
+      "Promise eligibility, activation, or an unverified offer",
+      "Claim a human handoff has already happened"
+    ],
+    "uncertain": false,
+    "annotation_note": ""
+  },
+  {
+    "conversation_id": "2034374",
+    "customer_tweet_id": "2034375",
+    "split": "test",
+    "prior_context": [],
+    "linked_context_incomplete": false,
+    "customer_text": "@115888 hey spotify, why many of the older albums of Archive have just vanquished from my playlist? :(",
+    "intent": "music_library_catalog",
+    "expected_action": "auto_handle",
+    "action_reason": "They report albums disappearing from a playlist.",
+    "required_reply_points": [
+      "Ask whether the tracks are missing from the playlist or unavailable to play."
+    ],
+    "forbidden_claims": [
+      "Invent a licensing reason, release date, or catalog correction",
+      "Claim to have opened a link or checked live availability"
+    ],
+    "uncertain": false,
+    "annotation_note": ""
+  },
+  {
+    "conversation_id": "585130",
+    "customer_tweet_id": "585131",
+    "split": "test",
+    "prior_context": [],
+    "linked_context_incomplete": false,
+    "customer_text": "@115888 how do you add someone to a family premium?",
+    "intent": "subscription_plans",
+    "expected_action": "auto_handle",
+    "action_reason": "They ask how to invite someone to Family.",
+    "required_reply_points": [
+      "Offer guidance from verified Family-plan instructions without requesting another person's details."
+    ],
+    "forbidden_claims": [
+      "Claim the subscription was checked or changed",
+      "Promise eligibility, activation, or an unverified offer"
+    ],
+    "uncertain": false,
+    "annotation_note": ""
+  },
+  {
+    "conversation_id": "1715186",
+    "customer_tweet_id": "1715187",
+    "split": "test",
+    "prior_context": [],
+    "linked_context_incomplete": false,
+    "customer_text": "@115888 what’s the story with you guys not having this on your system? @519456 not happy about it either. https://t.co/TeavpJI8pE",
+    "intent": "music_library_catalog",
+    "expected_action": "auto_handle",
+    "action_reason": "They ask about missing content shown only in a link.",
+    "required_reply_points": [
+      "Ask for the artist or title before explaining availability limits."
+    ],
+    "forbidden_claims": [
+      "Invent a licensing reason, release date, or catalog correction",
+      "Claim to have opened a link or checked live availability"
+    ],
+    "uncertain": false,
+    "annotation_note": ""
+  },
+  {
+    "conversation_id": "429225",
+    "customer_tweet_id": "429226",
+    "split": "test",
+    "prior_context": [],
+    "linked_context_incomplete": false,
+    "customer_text": "psa: spotify doesnt actually care enough to give you a proper response to your issue. https://t.co/dM9VmqJPTc",
+    "intent": "other_unclear",
+    "expected_action": "escalate",
+    "action_reason": "They complain that support has not properly addressed an existing issue.",
+    "required_reply_points": [
+      "Acknowledge the poor support experience and recommend follow-up on the existing case."
+    ],
+    "forbidden_claims": [
+      "Guess the missing issue or linked content",
+      "Claim access to private messages or support case status",
+      "Claim a human handoff has already happened"
+    ],
+    "uncertain": false,
+    "annotation_note": ""
+  },
+  {
+    "conversation_id": "2056894",
+    "customer_tweet_id": "2056895",
+    "split": "test",
+    "prior_context": [],
+    "linked_context_incomplete": false,
+    "customer_text": "@SpotifyCares why Please honor my language settings get rid of geolocation. Browser, System and Account has language settings you ignore!!!",
+    "intent": "app_device_issues",
+    "expected_action": "auto_handle",
+    "action_reason": "The service reportedly ignores their selected language settings.",
+    "required_reply_points": [
+      "Ask which app or page shows the wrong language and what language is selected."
+    ],
+    "forbidden_claims": [
+      "Claim a fix is available or give a release date without evidence",
+      "Claim to have inspected a linked screenshot"
+    ],
+    "uncertain": false,
+    "annotation_note": ""
+  },
+  {
+    "conversation_id": "1280119",
+    "customer_tweet_id": "1280120",
+    "split": "test",
+    "prior_context": [],
+    "linked_context_incomplete": false,
+    "customer_text": "@125633 cheers for the follow guys!\nLove Spotify!\nIs there an app at all for the artists side!?\nI do majority of my stuff on here :)",
+    "intent": "other_unclear",
+    "expected_action": "auto_handle",
+    "action_reason": "They ask about an artist-management app rather than a listener account issue.",
+    "required_reply_points": [
+      "Direct the question to official artist resources without claiming current app availability."
+    ],
+    "forbidden_claims": [
+      "Guess the missing issue or linked content",
+      "Claim access to private messages or support case status"
+    ],
+    "uncertain": false,
+    "annotation_note": ""
+  },
+  {
+    "conversation_id": "2913913",
+    "customer_tweet_id": "2913914",
+    "split": "test",
+    "prior_context": [],
+    "linked_context_incomplete": false,
+    "customer_text": "WHOOOOOOOO IS HANDLING AMBIENCE AFROBEATS &amp; AFROPOP ON @115888 @SpotifyCares WHY YA HAVEN’T UPDATED IT SINCE NOV 10TH?????!!!!",
+    "intent": "music_library_catalog",
+    "expected_action": "auto_handle",
+    "action_reason": "They complain that an editorial playlist has not been updated.",
+    "required_reply_points": [
+      "Acknowledge the playlist concern without inventing an update schedule or curator identity."
+    ],
+    "forbidden_claims": [
+      "Invent a licensing reason, release date, or catalog correction",
+      "Claim to have opened a link or checked live availability"
+    ],
+    "uncertain": false,
+    "annotation_note": ""
+  },
+  {
+    "conversation_id": "2279790",
+    "customer_tweet_id": "2279791",
+    "split": "test",
+    "prior_context": [],
+    "linked_context_incomplete": false,
+    "customer_text": "@SpotifyCares so I went to try out the student discount for Hulu but they charged me even thought I didn’t sign up for it after all what’s going on??",
+    "intent": "billing_payments",
+    "expected_action": "escalate",
+    "action_reason": "They report a charge despite not completing the student bundle signup.",
+    "required_reply_points": [
+      "Recommend an account-specific review of the unexpected charge."
+    ],
+    "forbidden_claims": [
+      "Promise a refund, discount, or successful payment",
+      "Request card details or gift-card codes",
+      "Claim a human handoff has already happened"
+    ],
+    "uncertain": false,
+    "annotation_note": ""
+  },
+  {
+    "conversation_id": "2251332",
+    "customer_tweet_id": "2251335",
+    "split": "test",
+    "prior_context": [],
+    "linked_context_incomplete": false,
+    "customer_text": "can I sort my own playlist by \"Recently Added\"? @SpotifyCares",
+    "intent": "music_library_catalog",
+    "expected_action": "auto_handle",
+    "action_reason": "They ask how to sort a playlist by recently added songs.",
+    "required_reply_points": [
+      "Ask which device or app they use so any sorting instructions match it."
+    ],
+    "forbidden_claims": [
+      "Invent a licensing reason, release date, or catalog correction",
+      "Claim to have opened a link or checked live availability"
+    ],
+    "uncertain": false,
+    "annotation_note": ""
+  }
+]

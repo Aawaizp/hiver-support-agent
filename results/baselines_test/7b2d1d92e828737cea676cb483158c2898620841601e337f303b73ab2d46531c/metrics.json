@@ -1,0 +1,43 @@
+{
+  "complete": true,
+  "evaluation": "Held-out test; both baselines trained on 50 development examples",
+  "examples": 150,
+  "label_basis": "AI-assisted annotations",
+  "elapsed_seconds": 0.254,
+  "metrics": {
+    "trivial": {
+      "examples": 150,
+      "intent_accuracy": 0.14,
+      "intent_macro_f1": 0.02729044834307992,
+      "action_accuracy": 0.32,
+      "escalation_recall": 1.0,
+      "auto_handle_coverage": 0.0,
+      "unsafe_auto_handle_rate": null,
+      "counts": {
+        "expected_escalations": 48,
+        "caught_escalations": 48,
+        "auto_handled": 0,
+        "unsafe_auto_handled": 0
+      }
+    },
+    "simple": {
+      "examples": 150,
+      "intent_accuracy": 0.32,
+      "intent_macro_f1": 0.2793738182627072,
+      "action_accuracy": 0.64,
+      "escalation_recall": 0.625,
+      "auto_handle_coverage": 0.56,
+      "unsafe_auto_handle_rate": 0.21428571428571427,
+      "counts": {
+        "expected_escalations": 48,
+        "caught_escalations": 30,
+        "auto_handled": 84,
+        "unsafe_auto_handled": 18
+      }
+    }
+  },
+  "limitations": [
+    "Agreement with supplied labels, not verified real-world accuracy.",
+    "Routing metrics do not evaluate reply quality."
+  ]
+}

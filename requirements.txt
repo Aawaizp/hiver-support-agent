@@ -1,0 +1,8 @@
+numpy
+pandas
+scikit-learn
+google-genai
+groq
+pydantic>=2
+python-dotenv
+ollama

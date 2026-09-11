@@ -1,0 +1,492 @@
+[
+  {
+    "conversation_id": "2295015",
+    "customer_tweet_id": "2295016",
+    "split": "dev",
+    "prior_context": [],
+    "linked_context_incomplete": false,
+    "customer_text": "@115888 hey so this is a crisis, why do you have all of the @118062 reputation singles on Spotify but not the album? it’s an emergency, more than a want, a NEED. please. give me this album!!!!!! help a girl out, Spotify! I need you! I need this ☹️",
+    "intent": "music_library_catalog",
+    "expected_action": "auto_handle",
+    "action_reason": "They want a missing album, not emergency help.",
+    "required_reply_points": [
+      "Acknowledge the missing Reputation album without guessing a release date."
+    ],
+    "forbidden_claims": [
+      "Invent a licensing reason, release date, or catalog correction",
+      "Claim to have opened a link or checked live availability"
+    ],
+    "uncertain": false,
+    "annotation_note": ""
+  },
+  {
+    "conversation_id": "558602",
+    "customer_tweet_id": "558603",
+    "split": "dev",
+    "prior_context": [
+      {
+        "tweet_id": "558606",
+        "role": "customer",
+        "text": "@SpotifyCares hi, I've been logged out of my premium account on both my iPhone &amp; laptop. Trying to log back in but says my info is incorrect &amp; when I try to reset password it says \"CSFR token invalid.\" Pls help I'm stressed !!!!!!!!"
+      },
+      {
+        "tweet_id": "558604",
+        "role": "customer",
+        "text": "@SpotifyCares Going to switch to Apple Music if you don't get back to my within the day. 😤"
+      },
+      {
+        "tweet_id": "558602",
+        "role": "support",
+        "text": "@250520 Hi! We've replied to your DM. Check your inbox /LM"
+      }
+    ],
+    "linked_context_incomplete": false,
+    "customer_text": "@SpotifyCares No you didn't but it's fine because I figured it out on my own 🙄",
+    "intent": "product_feedback",
+    "expected_action": "auto_handle",
+    "action_reason": "They solved the login problem but are unhappy with the support response.",
+    "required_reply_points": [
+      "Acknowledge that they fixed it themselves and the frustrating wait."
+    ],
+    "forbidden_claims": [
+      "Promise the suggestion will be built or forwarded",
+      "Claim knowledge of an unpublished product roadmap"
+    ],
+    "uncertain": false,
+    "annotation_note": ""
+  },
+  {
+    "conversation_id": "129758",
+    "customer_tweet_id": "129759",
+    "split": "dev",
+    "prior_context": [
+      {
+        "tweet_id": "129760",
+        "role": "customer",
+        "text": "@115888 why do you not stream the Zoey 101 theme song?!????!!! This is an outrage"
+      }
+    ],
+    "linked_context_incomplete": false,
+    "customer_text": "@115888 @7460 please fix this",
+    "intent": "music_library_catalog",
+    "expected_action": "auto_handle",
+    "action_reason": "The earlier message identifies a missing theme song.",
+    "required_reply_points": [
+      "Acknowledge the request for the Zoey 101 theme song."
+    ],
+    "forbidden_claims": [
+      "Invent a licensing reason, release date, or catalog correction",
+      "Claim to have opened a link or checked live availability"
+    ],
+    "uncertain": false,
+    "annotation_note": ""
+  },
+  {
+    "conversation_id": "2621322",
+    "customer_tweet_id": "2621323",
+    "split": "dev",
+    "prior_context": [],
+    "linked_context_incomplete": false,
+    "customer_text": "@SpotifyCares my account is about to be discontinued and I can’t update my payment plan. It won’t continue through.",
+    "intent": "billing_payments",
+    "expected_action": "escalate",
+    "action_reason": "The payment update will not complete and may interrupt the subscription.",
+    "required_reply_points": [
+      "Recommend official support to check the failed payment update."
+    ],
+    "forbidden_claims": [
+      "Promise a refund, discount, or successful payment",
+      "Request card details or gift-card codes",
+      "Claim a human handoff has already happened"
+    ],
+    "uncertain": false,
+    "annotation_note": ""
+  },
+  {
+    "conversation_id": "1214634",
+    "customer_tweet_id": "1214635",
+    "split": "dev",
+    "prior_context": [],
+    "linked_context_incomplete": false,
+    "customer_text": "@SpotifyCares hey, this is keep happening https://t.co/L5La6b6eNR",
+    "intent": "other_unclear",
+    "expected_action": "auto_handle",
+    "action_reason": "The issue is only shown in a link we cannot inspect.",
+    "required_reply_points": [
+      "Ask them to describe what keeps happening and any error text."
+    ],
+    "forbidden_claims": [
+      "Guess the missing issue or linked content",
+      "Claim access to private messages or support case status"
+    ],
+    "uncertain": false,
+    "annotation_note": ""
+  },
+  {
+    "conversation_id": "1086258",
+    "customer_tweet_id": "1086259",
+    "split": "dev",
+    "prior_context": [],
+    "linked_context_incomplete": false,
+    "customer_text": "@SpotifyCares we all need Spotify in South Africa before 2018 starts!! 😒💁🏽‍♂️",
+    "intent": "product_feedback",
+    "expected_action": "auto_handle",
+    "action_reason": "They are requesting a launch in South Africa.",
+    "required_reply_points": [
+      "Acknowledge the launch request without promising a date."
+    ],
+    "forbidden_claims": [
+      "Promise the suggestion will be built or forwarded",
+      "Claim knowledge of an unpublished product roadmap"
+    ],
+    "uncertain": false,
+    "annotation_note": ""
+  },
+  {
+    "conversation_id": "994546",
+    "customer_tweet_id": "994547",
+    "split": "dev",
+    "prior_context": [],
+    "linked_context_incomplete": false,
+    "customer_text": "Ooh.. Kindly correct the artist of this album. It should be\n@355579 \n@115888 @SpotifyCares https://t.co/4TiBqmP2wB",
+    "intent": "music_library_catalog",
+    "expected_action": "escalate",
+    "action_reason": "Correcting an album's artist credit needs a catalog review.",
+    "required_reply_points": [
+      "Acknowledge the reported artist mismatch and recommend a catalog report through official support."
+    ],
+    "forbidden_claims": [
+      "Invent a licensing reason, release date, or catalog correction",
+      "Claim to have opened a link or checked live availability",
+      "Claim a human handoff has already happened"
+    ],
+    "uncertain": false,
+    "annotation_note": ""
+  },
+  {
+    "conversation_id": "637763",
+    "customer_tweet_id": "637764",
+    "split": "dev",
+    "prior_context": [],
+    "linked_context_incomplete": false,
+    "customer_text": "@188 Hey! @28762 is a great creditable, spotify verified artist who isn't verified on Facebook yet! How can you guys change this??!",
+    "intent": "other_unclear",
+    "expected_action": "auto_handle",
+    "action_reason": "They want Facebook artist verification, which is outside Spotify account support.",
+    "required_reply_points": [
+      "Explain that Facebook verification needs the relevant platform's official process."
+    ],
+    "forbidden_claims": [
+      "Guess the missing issue or linked content",
+      "Claim access to private messages or support case status"
+    ],
+    "uncertain": false,
+    "annotation_note": ""
+  },
+  {
+    "conversation_id": "2609439",
+    "customer_tweet_id": "2609440",
+    "split": "dev",
+    "prior_context": [
+      {
+        "tweet_id": "2609441",
+        "role": "customer",
+        "text": "Where is red velvet's peekaboo album @115888 ???"
+      },
+      {
+        "tweet_id": "2609439",
+        "role": "support",
+        "text": "@738040 Hey there! We’ll have it available to you as soon as it’s available to us. More info about content at https://t.co/0i8GpimuDa /MU"
+      }
+    ],
+    "linked_context_incomplete": false,
+    "customer_text": "@SpotifyCares Alright. (:",
+    "intent": "music_library_catalog",
+    "expected_action": "auto_handle",
+    "action_reason": "They acknowledge the earlier album availability answer without adding a new request.",
+    "required_reply_points": [
+      "Briefly acknowledge their response without adding a promise about the album."
+    ],
+    "forbidden_claims": [
+      "Invent a licensing reason, release date, or catalog correction",
+      "Claim to have opened a link or checked live availability"
+    ],
+    "uncertain": true,
+    "annotation_note": "Review this interpretation against the visible context."
+  },
+  {
+    "conversation_id": "521808",
+    "customer_tweet_id": "521809",
+    "split": "dev",
+    "prior_context": [
+      {
+        "tweet_id": "521811",
+        "role": "customer",
+        "text": "@115888 Hi, Aimee Mann's \"Nothing is Good Enough - Instrumental\" from the Magnolia soundtrack is the vocal version. Any chance you can make the genuine instrumental version available?"
+      },
+      {
+        "tweet_id": "521810",
+        "role": "support",
+        "text": "@240484 Hey Josephine! Can you send us the Song Link? Just go the song &gt; tap the three dots &gt; Share &gt; Copy Link. We'll be on the lookout for your reply /MT"
+      }
+    ],
+    "linked_context_incomplete": false,
+    "customer_text": "@SpotifyCares https://t.co/tx6dxazoeF",
+    "intent": "music_library_catalog",
+    "expected_action": "escalate",
+    "action_reason": "The link continues a report that the instrumental track is actually the vocal version.",
+    "required_reply_points": [
+      "Refer the track-version mismatch for catalog review without claiming to have opened the link."
+    ],
+    "forbidden_claims": [
+      "Invent a licensing reason, release date, or catalog correction",
+      "Claim to have opened a link or checked live availability",
+      "Claim a human handoff has already happened"
+    ],
+    "uncertain": false,
+    "annotation_note": ""
+  },
+  {
+    "conversation_id": "2407026",
+    "customer_tweet_id": "2407027",
+    "split": "dev",
+    "prior_context": [],
+    "linked_context_incomplete": false,
+    "customer_text": "@SpotifyCares my account with username pandusetiagama can not access...",
+    "intent": "account_access_security",
+    "expected_action": "auto_handle",
+    "action_reason": "They report a login problem but have not described the failure.",
+    "required_reply_points": [
+      "Ask what error appears and whether they are using their usual sign-in method."
+    ],
+    "forbidden_claims": [
+      "Claim the account was checked or changed",
+      "Request passwords or account secrets"
+    ],
+    "uncertain": false,
+    "annotation_note": ""
+  },
+  {
+    "conversation_id": "2618569",
+    "customer_tweet_id": "2618570",
+    "split": "dev",
+    "prior_context": [],
+    "linked_context_incomplete": false,
+    "customer_text": "@115888 Yo Spotify y’all tried charging my card and it didn’t go through. I have $9.27 and some pocket lint will that suffice for this month",
+    "intent": "billing_payments",
+    "expected_action": "auto_handle",
+    "action_reason": "They ask whether a smaller payment can cover a failed subscription charge.",
+    "required_reply_points": [
+      "Explain that we cannot approve a reduced payment and suggest checking official billing options."
+    ],
+    "forbidden_claims": [
+      "Promise a refund, discount, or successful payment",
+      "Request card details or gift-card codes"
+    ],
+    "uncertain": true,
+    "annotation_note": "Review this interpretation against the visible context."
+  },
+  {
+    "conversation_id": "2045209",
+    "customer_tweet_id": "2045210",
+    "split": "dev",
+    "prior_context": [
+      {
+        "tweet_id": "2045211",
+        "role": "customer",
+        "text": "Students now get access to Hulu with Spotify Premium. And it’s still just $4.99/month.  https://t.co/vblgVTP7it"
+      }
+    ],
+    "linked_context_incomplete": false,
+    "customer_text": "@115888 I'm a student but yet I'm still being charged $10 and some change a month just for Spotify premium? Yikes. Get it together.",
+    "intent": "billing_payments",
+    "expected_action": "escalate",
+    "action_reason": "They report paying the regular price while expecting the student rate.",
+    "required_reply_points": [
+      "Recommend an account-specific check of the charge and discount eligibility."
+    ],
+    "forbidden_claims": [
+      "Promise a refund, discount, or successful payment",
+      "Request card details or gift-card codes",
+      "Claim a human handoff has already happened"
+    ],
+    "uncertain": false,
+    "annotation_note": ""
+  },
+  {
+    "conversation_id": "466061",
+    "customer_tweet_id": "466062",
+    "split": "dev",
+    "prior_context": [
+      {
+        "tweet_id": "466063",
+        "role": "customer",
+        "text": "@SpotifyCares someone is hacking into our spotify account and changing the password right after we do and it keeps kicking us out. Please help!"
+      },
+      {
+        "tweet_id": "466061",
+        "role": "support",
+        "text": "@225886 Hey! We're sorry to hear that. Check out https://t.co/iVpg60w61i for what to do next /JQ"
+      }
+    ],
+    "linked_context_incomplete": false,
+    "customer_text": "@SpotifyCares Not helpful. I found this twitter handle on the website. Whoever is getting in ie changing the password before we can. Changed email PW. Need more support or to stop paying for premium.",
+    "intent": "account_access_security",
+    "expected_action": "escalate",
+    "action_reason": "They report repeated unauthorized password changes after earlier advice failed.",
+    "required_reply_points": [
+      "Recommend human account recovery support without repeating the failed help link as the only answer."
+    ],
+    "forbidden_claims": [
+      "Claim the account was checked or changed",
+      "Request passwords or account secrets",
+      "Claim a human handoff has already happened"
+    ],
+    "uncertain": false,
+    "annotation_note": ""
+  },
+  {
+    "conversation_id": "2165519",
+    "customer_tweet_id": "2165520",
+    "split": "dev",
+    "prior_context": [],
+    "linked_context_incomplete": false,
+    "customer_text": "@115888 five times now ihve requested a new password, you've not emailed once. Yet happily take a monthly premium from me, on your website it seems to be a very common issue.",
+    "intent": "account_access_security",
+    "expected_action": "escalate",
+    "action_reason": "Repeated password reset requests have produced no email.",
+    "required_reply_points": [
+      "Recommend account recovery support and acknowledge the repeated failed attempts."
+    ],
+    "forbidden_claims": [
+      "Claim the account was checked or changed",
+      "Request passwords or account secrets",
+      "Claim a human handoff has already happened"
+    ],
+    "uncertain": false,
+    "annotation_note": ""
+  },
+  {
+    "conversation_id": "1818095",
+    "customer_tweet_id": "1818096",
+    "split": "dev",
+    "prior_context": [],
+    "linked_context_incomplete": false,
+    "customer_text": "@115888 please contact me. I can't sign into on account and can't find any way of contacting you directly for help!",
+    "intent": "account_access_security",
+    "expected_action": "auto_handle",
+    "action_reason": "The login issue has no error details yet.",
+    "required_reply_points": [
+      "Ask for the sign-in error and suggest official recovery support if they cannot regain access."
+    ],
+    "forbidden_claims": [
+      "Claim the account was checked or changed",
+      "Request passwords or account secrets"
+    ],
+    "uncertain": false,
+    "annotation_note": ""
+  },
+  {
+    "conversation_id": "160518",
+    "customer_tweet_id": "160520",
+    "split": "dev",
+    "prior_context": [
+      {
+        "tweet_id": "160530",
+        "role": "customer",
+        "text": "@115888 why does my keyboard play/pause/next/back never work anymore with your app? Coworkers have the same issues so I know it's not isolated to my hardware."
+      },
+      {
+        "tweet_id": "160528",
+        "role": "support",
+        "text": "@152980 Hi Ryan! That's not cool. Can you let us know the device, OS, and Spotify version you're using? We'll see what we can suggest /JI"
+      },
+      {
+        "tweet_id": "160527",
+        "role": "customer",
+        "text": "@SpotifyCares Sure. Both my macbook pro and mac desktop experience the same issue with that. \n\nHigh Sierra 10.13.1"
+      },
+      {
+        "tweet_id": "160526",
+        "role": "support",
+        "text": "@152980 Thanks for that info. Does logging out, restarting your device, and logging back into Spotify help? Keep us posted /JI"
+      }
+    ],
+    "linked_context_incomplete": false,
+    "customer_text": "@SpotifyCares No. It has been this way for the past month if not a little longer.",
+    "intent": "app_device_issues",
+    "expected_action": "escalate",
+    "action_reason": "The keyboard controls still fail after the suggested restart and sign-in steps.",
+    "required_reply_points": [
+      "Acknowledge the failed steps and recommend technical support using the device details already given."
+    ],
+    "forbidden_claims": [
+      "Claim a fix is available or give a release date without evidence",
+      "Claim to have inspected a linked screenshot",
+      "Claim a human handoff has already happened"
+    ],
+    "uncertain": false,
+    "annotation_note": ""
+  },
+  {
+    "conversation_id": "152229",
+    "customer_tweet_id": "152230",
+    "split": "dev",
+    "prior_context": [],
+    "linked_context_incomplete": false,
+    "customer_text": "@spotifycares why do i have a 3333 offline song limit on my spotify?",
+    "intent": "playback_offline",
+    "expected_action": "auto_handle",
+    "action_reason": "They ask about an offline download limit, not an account change.",
+    "required_reply_points": [
+      "Explain that limits need verified documentation and do not confirm an old number as current policy."
+    ],
+    "forbidden_claims": [
+      "Guarantee a troubleshooting step will work",
+      "Claim a bug or outage is confirmed without evidence"
+    ],
+    "uncertain": false,
+    "annotation_note": ""
+  },
+  {
+    "conversation_id": "492397",
+    "customer_tweet_id": "492399",
+    "split": "dev",
+    "prior_context": [],
+    "linked_context_incomplete": false,
+    "customer_text": "@SpotifyCares hi I forgot my Spotify password and I have went to reset it a couple of times I did 2 earlier at midday and 1 a couple of minutes ago and none of the emails I'm supposed to get are not coming through",
+    "intent": "account_access_security",
+    "expected_action": "escalate",
+    "action_reason": "Several password reset emails have not arrived.",
+    "required_reply_points": [
+      "Recommend official recovery support without asking them to post account credentials."
+    ],
+    "forbidden_claims": [
+      "Claim the account was checked or changed",
+      "Request passwords or account secrets",
+      "Claim a human handoff has already happened"
+    ],
+    "uncertain": false,
+    "annotation_note": ""
+  },
+  {
+    "conversation_id": "970838",
+    "customer_tweet_id": "970840",
+    "split": "dev",
+    "prior_context": [],
+    "linked_context_incomplete": false,
+    "customer_text": "@115888 you know what would be a cool addition? Actually being able to read the old liner notes somehow #wink #dooeet",
+    "intent": "product_feedback",
+    "expected_action": "auto_handle",
+    "action_reason": "They suggest adding liner notes.",
+    "required_reply_points": [
+      "Acknowledge the liner-notes suggestion without promising it will be built."
+    ],
+    "forbidden_claims": [
+      "Promise the suggestion will be built or forwarded",
+      "Claim knowledge of an unpublished product roadmap"
+    ],
+    "uncertain": false,
+    "annotation_note": ""
+  }
+]

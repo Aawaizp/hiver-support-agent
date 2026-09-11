@@ -1,0 +1,31 @@
+{
+  "run_id": "e14347f8f9f185d629c453a8c973ff168d6183da3eb2af7605772c106b96e4d8",
+  "model": "qwen3:4b",
+  "evaluation": "test evaluation",
+  "label_basis": "AI-drafted labels; human review not verified",
+  "completed": 89,
+  "total": 150,
+  "complete": false,
+  "stopped_error_type": "ValidationError",
+  "metrics": {
+    "examples": 89,
+    "intent_accuracy": 0.6067415730337079,
+    "intent_macro_f1": 0.6049954904181584,
+    "action_accuracy": 0.7078651685393258,
+    "escalation_recall": 0.7857142857142857,
+    "auto_handle_coverage": 0.5280898876404494,
+    "unsafe_auto_handle_rate": 0.1276595744680851,
+    "counts": {
+      "expected_escalations": 28,
+      "caught_escalations": 22,
+      "auto_handled": 47,
+      "unsafe_auto_handled": 6
+    }
+  },
+  "limitations": [
+    "Partial results are not comparable with full baseline results.",
+    "Metrics measure agreement with supplied labels.",
+    "Reply quality and human judge agreement are not measured here.",
+    "Failed calls are recorded as incomplete, not successful predictions."
+  ]
+}

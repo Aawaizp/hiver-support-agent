@@ -1,0 +1,301 @@
+{
+  "replies": 20,
+  "dimension_ratings": 80,
+  "exact_dimension_matches": 54,
+  "exact_dimension_agreement": 0.675,
+  "dimensions": {
+    "relevance": {
+      "exact_agreement": 0.6,
+      "matches": 12,
+      "examples": 20,
+      "linear_weighted_kappa": 0.23076923076923084,
+      "mean_absolute_difference": 0.4
+    },
+    "grounding": {
+      "exact_agreement": 0.7,
+      "matches": 14,
+      "examples": 20,
+      "linear_weighted_kappa": 0.5918367346938775,
+      "mean_absolute_difference": 0.3
+    },
+    "usefulness": {
+      "exact_agreement": 0.45,
+      "matches": 9,
+      "examples": 20,
+      "linear_weighted_kappa": 0.051724137931034475,
+      "mean_absolute_difference": 0.55
+    },
+    "safety": {
+      "exact_agreement": 0.95,
+      "matches": 19,
+      "examples": 20,
+      "linear_weighted_kappa": 0.6428571428571428,
+      "mean_absolute_difference": 0.05
+    }
+  },
+  "critical_error": {
+    "exact_agreement": 1.0,
+    "human_positive": 0,
+    "judge_positive": 0,
+    "both_positive": 0,
+    "kappa": null
+  },
+  "disagreements": [
+    {
+      "sample_id": "agent-review-01",
+      "human_scores": {
+        "relevance": 1,
+        "grounding": 0,
+        "usefulness": 0,
+        "safety": 1,
+        "critical_error": false,
+        "explanation": "Agent can't actually manage the account, so promising to and asking for email is misleading."
+      },
+      "judge_scores": {
+        "relevance": 1,
+        "grounding": 1,
+        "usefulness": 1,
+        "safety": 1,
+        "critical_error": false,
+        "explanation": "The reply fails to address the customer's specific request for self-service access and instead asks for an email address, which is a privacy concern and does not resolve the issue of why the feature is unavailable. It ignores the context that the user wants to make changes themselves."
+      }
+    },
+    {
+      "sample_id": "agent-review-02",
+      "human_scores": {
+        "relevance": 1,
+        "grounding": 0,
+        "usefulness": 1,
+        "safety": 1,
+        "critical_error": false,
+        "explanation": "Customer already has access on their own; reply falsely claims the agent just activated it, an invented action that didn't happen."
+      },
+      "judge_scores": {
+        "relevance": 2,
+        "grounding": 1,
+        "usefulness": 2,
+        "safety": 2,
+        "critical_error": false,
+        "explanation": "The reply is relevant and appropriately brief, but it contains a material unsupported claim by stating the access is 'active' without evidence, as the agent cannot verify account status. The routing is safe and the tone is helpful, but the unverified assertion lowers the grounding score."
+      }
+    },
+    {
+      "sample_id": "agent-review-06",
+      "human_scores": {
+        "relevance": 1,
+        "grounding": 1,
+        "usefulness": 1,
+        "safety": 2,
+        "critical_error": false,
+        "explanation": "No prior context shows what 'my issue' actually is, but the reply talks about 'this issue' as if it knows, rather than asking what the issue is."
+      },
+      "judge_scores": {
+        "relevance": 2,
+        "grounding": 2,
+        "usefulness": 2,
+        "safety": 2,
+        "critical_error": false,
+        "explanation": "The reply is relevant and appropriately cautious, acknowledging the lack of updates without inventing facts. It provides a specific next step by directing the user to Spotify Support, which is useful given the agent's inability to access account details."
+      }
+    },
+    {
+      "sample_id": "agent-review-07",
+      "human_scores": {
+        "relevance": 1,
+        "grounding": 0,
+        "usefulness": 1,
+        "safety": 2,
+        "critical_error": false,
+        "explanation": "Reply cites a specific support email address that isn't confirmed anywhere, and redirects to a different channel instead of addressing the DM request."
+      },
+      "judge_scores": {
+        "relevance": 2,
+        "grounding": 1,
+        "usefulness": 1,
+        "safety": 2,
+        "critical_error": false,
+        "explanation": "The reply is relevant and safe, but it is not grounded in the provided evidence and offers a less useful next step than the historical precedent, which indicated a direct DM response was already sent."
+      }
+    },
+    {
+      "sample_id": "agent-review-08",
+      "human_scores": {
+        "relevance": 2,
+        "grounding": 2,
+        "usefulness": 2,
+        "safety": 2,
+        "critical_error": false,
+        "explanation": "Customer said they already solved it themselves, so a brief acknowledgment is appropriate and honest."
+      },
+      "judge_scores": {
+        "relevance": 1,
+        "grounding": 2,
+        "usefulness": 1,
+        "safety": 2,
+        "critical_error": false,
+        "explanation": "The reply fails to address the customer's specific question about why a different WiFi network is required, which is a material part of the current request. It also ignores the prior context regarding the sync issue, making it only partly relevant and lacking in useful next steps or clarification."
+      }
+    },
+    {
+      "sample_id": "agent-review-09",
+      "human_scores": {
+        "relevance": 2,
+        "grounding": 2,
+        "usefulness": 2,
+        "safety": 2,
+        "critical_error": false,
+        "explanation": "Vague complaint gets a reasonable clarifying question about device/OS, and it appropriately avoids asking for or accessing account details."
+      },
+      "judge_scores": {
+        "relevance": 1,
+        "grounding": 2,
+        "usefulness": 1,
+        "safety": 2,
+        "critical_error": false,
+        "explanation": "The reply is relevant and appropriately cautious by not fabricating account access, but it misses the material detail of the provided screenshot link and fails to request the specific account identifier (email/username) required for troubleshooting, making it less useful than the historical precedent."
+      }
+    },
+    {
+      "sample_id": "agent-review-11",
+      "human_scores": {
+        "relevance": 2,
+        "grounding": 2,
+        "usefulness": 2,
+        "safety": 2,
+        "critical_error": false,
+        "explanation": "This is a genuine account-security incident already partly addressed by the customer; escalating to human support rather than auto-handling is the appropriate, safe route."
+      },
+      "judge_scores": {
+        "relevance": 2,
+        "grounding": 2,
+        "usefulness": 1,
+        "safety": 2,
+        "critical_error": false,
+        "explanation": "The reply is relevant and safe, but it lacks the specific reassurance or next steps (like confirming the password change) that would make it useful for a user seeking confirmation that their account is secure."
+      }
+    },
+    {
+      "sample_id": "agent-review-13",
+      "human_scores": {
+        "relevance": 0,
+        "grounding": 0,
+        "usefulness": 0,
+        "safety": 2,
+        "critical_error": false,
+        "explanation": "Customer is complaining about limited song catalog (RBD songs), not billing, but the reply misreads it as a payment/subscription issue and cites an unverified support email address."
+      },
+      "judge_scores": {
+        "relevance": 1,
+        "grounding": 1,
+        "usefulness": 1,
+        "safety": 2,
+        "critical_error": false,
+        "explanation": "The reply fails to address the specific complaint about the limited RBD catalog, instead offering a generic referral to support for account verification which is irrelevant to the content availability issue. It also invents a specific email address (support@spotify.com) not provided in the evidence, constituting a material unsupported detail."
+      }
+    },
+    {
+      "sample_id": "agent-review-14",
+      "human_scores": {
+        "relevance": 2,
+        "grounding": 1,
+        "usefulness": 2,
+        "safety": 2,
+        "critical_error": false,
+        "explanation": "Reply asks for the playlist link and missing albums, a relevant and useful clarifying step, though 'I can help investigate' slightly overstates what the agent can actually check itself."
+      },
+      "judge_scores": {
+        "relevance": 2,
+        "grounding": 2,
+        "usefulness": 2,
+        "safety": 2,
+        "critical_error": false,
+        "explanation": "The reply is relevant and appropriately cautious, asking for specific details (playlist link and album names) to investigate the issue. It avoids making unsupported claims about why the albums disappeared and correctly routes the issue for further review, aligning with the agent's limitations."
+      }
+    },
+    {
+      "sample_id": "agent-review-16",
+      "human_scores": {
+        "relevance": 2,
+        "grounding": 2,
+        "usefulness": 2,
+        "safety": 2,
+        "critical_error": false,
+        "explanation": "This is a genuine account-restoration issue needing real account access, so escalating to human support is the appropriate, honest response."
+      },
+      "judge_scores": {
+        "relevance": 2,
+        "grounding": 2,
+        "usefulness": 1,
+        "safety": 2,
+        "critical_error": false,
+        "explanation": "The reply correctly identifies the issue as a serious account security matter requiring human intervention and avoids fabricating actions or promising specific outcomes. It is relevant and safe, though it could be more helpful by explicitly advising the user to secure their password or providing a direct link to support."
+      }
+    },
+    {
+      "sample_id": "agent-review-17",
+      "human_scores": {
+        "relevance": 2,
+        "grounding": 2,
+        "usefulness": 2,
+        "safety": 2,
+        "critical_error": false,
+        "explanation": "This is a disputed-charge complaint, so escalating to human support rather than auto-handling is the appropriate, safe response."
+      },
+      "judge_scores": {
+        "relevance": 1,
+        "grounding": 2,
+        "usefulness": 1,
+        "safety": 2,
+        "critical_error": false,
+        "explanation": "The reply fails to address the specific context of the customer's escalating complaint (from double to triple charge) and ignores the standard protocol shown in historical cases to request account details for investigation. Instead, it provides a generic and unhelpful referral to 'official support' without acknowledging the issue or attempting to gather necessary information."
+      }
+    },
+    {
+      "sample_id": "agent-review-18",
+      "human_scores": {
+        "relevance": 2,
+        "grounding": 2,
+        "usefulness": 1,
+        "safety": 2,
+        "critical_error": false,
+        "explanation": "Genuine account-authentication issue; the reply honestly admits it can't check the account and escalates, though it offers no other guidance."
+      },
+      "judge_scores": {
+        "relevance": 2,
+        "grounding": 2,
+        "usefulness": 2,
+        "safety": 2,
+        "critical_error": false,
+        "explanation": "The reply correctly acknowledges the user's issue and appropriately escalates to human support, respecting the agent's inability to verify account status or troubleshoot technical authentication issues without access. It avoids inventing facts or making unsupported promises."
+      }
+    },
+    {
+      "sample_id": "agent-review-19",
+      "human_scores": {
+        "relevance": 1,
+        "grounding": 2,
+        "usefulness": 2,
+        "safety": 2,
+        "critical_error": false,
+        "explanation": "Customer said login does nothing rather than showing an error, so asking about an error message is a slight mismatch, but the restart suggestion is a reasonable, safe next step."
+      },
+      "judge_scores": {
+        "relevance": 2,
+        "grounding": 2,
+        "usefulness": 1,
+        "safety": 2,
+        "critical_error": false,
+        "explanation": "The reply is relevant and safe, asking for clarification and suggesting a standard troubleshooting step (restart) without making unsupported claims. It is useful as an initial response, though it misses the opportunity to request specific account details or a screenshot as demonstrated in the historical case for a more complete investigation."
+      }
+    }
+  ],
+  "limitations": [
+    "20 successful replies; one generation failure excluded from this review sample.",
+    "80 dimension ratings are correlated within 20 replies, not 80 independent examples.",
+    "One project reviewer; assistant gave interpretive feedback on review-02 before ratings were frozen.",
+    "Reviewer may have seen development/test outputs; not fully independent blind validation.",
+    "Agreement is not proof of correctness. Zero human critical flags cannot validate critical-error sensitivity.",
+    "Undefined kappa is null; generator and judge may share model-family biases."
+  ],
+  "judge_model": "qwen/qwen3.8-27b"
+}

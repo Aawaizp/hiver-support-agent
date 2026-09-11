@@ -1,0 +1,456 @@
+[
+  {
+    "conversation_id": "1786831",
+    "customer_tweet_id": "1786832",
+    "split": "test",
+    "prior_context": [],
+    "linked_context_incomplete": false,
+    "customer_text": "@SpotifyCares I’m trying activate my Hulu account, but every time I load the page I’m given a “page not found”message",
+    "intent": "subscription_plans",
+    "expected_action": "auto_handle",
+    "action_reason": "The Hulu activation page returns page not found.",
+    "required_reply_points": [
+      "Ask which activation route they used and recommend official bundle support if it persists."
+    ],
+    "forbidden_claims": [
+      "Claim the subscription was checked or changed",
+      "Promise eligibility, activation, or an unverified offer"
+    ],
+    "uncertain": false,
+    "annotation_note": ""
+  },
+  {
+    "conversation_id": "1649307",
+    "customer_tweet_id": "1649308",
+    "split": "test",
+    "prior_context": [],
+    "linked_context_incomplete": false,
+    "customer_text": "Why is Motty Steinmetz' music not avalible? Get in contact with his team and work to fix that @115888 @SpotifyCares",
+    "intent": "music_library_catalog",
+    "expected_action": "auto_handle",
+    "action_reason": "They ask for an artist's music to be made available.",
+    "required_reply_points": [
+      "Acknowledge the missing music without claiming to contact the artist's team."
+    ],
+    "forbidden_claims": [
+      "Invent a licensing reason, release date, or catalog correction",
+      "Claim to have opened a link or checked live availability"
+    ],
+    "uncertain": false,
+    "annotation_note": ""
+  },
+  {
+    "conversation_id": "974207",
+    "customer_tweet_id": "974209",
+    "split": "test",
+    "prior_context": [
+      {
+        "tweet_id": "974208",
+        "role": "customer",
+        "text": "@115888 I realize they're sort of a competitor, but your terrible support for Chromecast is making me use the service less and less."
+      }
+    ],
+    "linked_context_incomplete": false,
+    "customer_text": "@115888 Instead you have do weird workarounds using phone, web browser tab casting, and/or Spotify Connect.",
+    "intent": "product_feedback",
+    "expected_action": "auto_handle",
+    "action_reason": "They criticize casting support and the need for workarounds.",
+    "required_reply_points": [
+      "Acknowledge the casting experience without defending or promising a change to it."
+    ],
+    "forbidden_claims": [
+      "Promise the suggestion will be built or forwarded",
+      "Claim knowledge of an unpublished product roadmap"
+    ],
+    "uncertain": false,
+    "annotation_note": ""
+  },
+  {
+    "conversation_id": "634360",
+    "customer_tweet_id": "634361",
+    "split": "test",
+    "prior_context": [],
+    "linked_context_incomplete": false,
+    "customer_text": "CAN SOMEONE FROM @SpotifyCares PLEASE HELP ME GET MY ACCOUNT BACK I CAN'T DEAL WITH THIS BAD SERVICE",
+    "intent": "account_access_security",
+    "expected_action": "escalate",
+    "action_reason": "They explicitly ask for account recovery and report poor support.",
+    "required_reply_points": [
+      "Recommend human recovery support without promising access will be restored."
+    ],
+    "forbidden_claims": [
+      "Claim the account was checked or changed",
+      "Request passwords or account secrets",
+      "Claim a human handoff has already happened"
+    ],
+    "uncertain": false,
+    "annotation_note": ""
+  },
+  {
+    "conversation_id": "1977956",
+    "customer_tweet_id": "1977957",
+    "split": "test",
+    "prior_context": [],
+    "linked_context_incomplete": false,
+    "customer_text": "@SpotifyCares i can't seem to access my hulu account with the spotify + hulu student bundle",
+    "intent": "subscription_plans",
+    "expected_action": "auto_handle",
+    "action_reason": "They cannot access Hulu through the bundle but give no failure details.",
+    "required_reply_points": [
+      "Ask what happens during access and recommend entitlement support if needed."
+    ],
+    "forbidden_claims": [
+      "Claim the subscription was checked or changed",
+      "Promise eligibility, activation, or an unverified offer"
+    ],
+    "uncertain": false,
+    "annotation_note": ""
+  },
+  {
+    "conversation_id": "1943044",
+    "customer_tweet_id": "1943045",
+    "split": "test",
+    "prior_context": [],
+    "linked_context_incomplete": false,
+    "customer_text": "@SpotifyCares how do I change my credit card info?  We had to cancel my original one due to fraudulent activity",
+    "intent": "billing_payments",
+    "expected_action": "auto_handle",
+    "action_reason": "They ask how to replace a cancelled card, not to investigate an active Spotify charge.",
+    "required_reply_points": [
+      "Direct them to official payment settings without asking for card numbers."
+    ],
+    "forbidden_claims": [
+      "Promise a refund, discount, or successful payment",
+      "Request card details or gift-card codes"
+    ],
+    "uncertain": false,
+    "annotation_note": ""
+  },
+  {
+    "conversation_id": "482483",
+    "customer_tweet_id": "2880950",
+    "split": "test",
+    "prior_context": [
+      {
+        "tweet_id": "482485",
+        "role": "customer",
+        "text": "3 months of Premium is just RM2. Play music offline wherever you go. https://t.co/u7NXG4XmFT"
+      },
+      {
+        "tweet_id": "482488",
+        "role": "customer",
+        "text": "@115888 Hey Spotify cutie, I'm currently a premium user. Can I have this discount as well?"
+      },
+      {
+        "tweet_id": "2880949",
+        "role": "support",
+        "text": "@799425 Hey Cecilia! Right now, this offer's for new subscribers only. Stay tuned for more deals for existing Premium subscribers, though 🙂 /AY"
+      }
+    ],
+    "linked_context_incomplete": false,
+    "customer_text": "@SpotifyCares Ayy cutie it's okie.. You guys need to reward us subscribers too ay cause we've been paying RM15/month lol",
+    "intent": "product_feedback",
+    "expected_action": "auto_handle",
+    "action_reason": "They accept the offer answer and suggest rewarding existing subscribers.",
+    "required_reply_points": [
+      "Acknowledge the loyalty suggestion without promising a discount."
+    ],
+    "forbidden_claims": [
+      "Promise the suggestion will be built or forwarded",
+      "Claim knowledge of an unpublished product roadmap"
+    ],
+    "uncertain": false,
+    "annotation_note": ""
+  },
+  {
+    "conversation_id": "2673474",
+    "customer_tweet_id": "2673475",
+    "split": "test",
+    "prior_context": [],
+    "linked_context_incomplete": false,
+    "customer_text": "@116130 @115888 @SpotifyCares the lack of Britney Spears in your Easy 90s and Easy 00s playlists hurts me! 😔",
+    "intent": "product_feedback",
+    "expected_action": "auto_handle",
+    "action_reason": "They want a particular artist included in editorial playlists.",
+    "required_reply_points": [
+      "Acknowledge the playlist suggestion without claiming it will reach a curator."
+    ],
+    "forbidden_claims": [
+      "Promise the suggestion will be built or forwarded",
+      "Claim knowledge of an unpublished product roadmap"
+    ],
+    "uncertain": false,
+    "annotation_note": ""
+  },
+  {
+    "conversation_id": "243366",
+    "customer_tweet_id": "243372",
+    "split": "test",
+    "prior_context": [
+      {
+        "tweet_id": "243374",
+        "role": "customer",
+        "text": "So my @115888 player arbitrarily unpauses – in the middle of the night. WTF. Are you guys trying to kill me?"
+      },
+      {
+        "tweet_id": "243373",
+        "role": "support",
+        "text": "@173799 Hey! That's odd. What device, operating system, and Spotify version are you using? Also, how long has this been happening for? /CB"
+      }
+    ],
+    "linked_context_incomplete": false,
+    "customer_text": "@SpotifyCares Spotify for Desktop 1.0.64.399 on OS X El Capitan 10.11.6",
+    "intent": "playback_offline",
+    "expected_action": "auto_handle",
+    "action_reason": "They provide system details for playback restarting unexpectedly.",
+    "required_reply_points": [
+      "Use the supplied versions and ask whether another device is controlling playback."
+    ],
+    "forbidden_claims": [
+      "Guarantee a troubleshooting step will work",
+      "Claim a bug or outage is confirmed without evidence"
+    ],
+    "uncertain": false,
+    "annotation_note": ""
+  },
+  {
+    "conversation_id": "554129",
+    "customer_tweet_id": "554130",
+    "split": "test",
+    "prior_context": [],
+    "linked_context_incomplete": false,
+    "customer_text": "@117153 \n\nSo my ex used my account and idk but changed it from MY name to HIS and ive tried a million time to figure out how to put it back but never works. I am no longer going premium again until we figure it out then you can continue to get my money. Thx hope u can help",
+    "intent": "account_access_security",
+    "expected_action": "escalate",
+    "action_reason": "They report unwanted account-name changes by another person and failed attempts to undo them.",
+    "required_reply_points": [
+      "Recommend account support without claiming we can change the name or verify ownership."
+    ],
+    "forbidden_claims": [
+      "Claim the account was checked or changed",
+      "Request passwords or account secrets",
+      "Claim a human handoff has already happened"
+    ],
+    "uncertain": false,
+    "annotation_note": ""
+  },
+  {
+    "conversation_id": "681213",
+    "customer_tweet_id": "681214",
+    "split": "test",
+    "prior_context": [
+      {
+        "tweet_id": "681215",
+        "role": "customer",
+        "text": "@115888 is there any way I can access the @116130 throwback Thursday playlist from my US based account?"
+      },
+      {
+        "tweet_id": "681213",
+        "role": "support",
+        "text": "@130645 Hey Claire! You should be able to access it. Can you click on this link: https://t.co/6Ql1fcPWWX? /NG"
+      }
+    ],
+    "linked_context_incomplete": false,
+    "customer_text": "@SpotifyCares yes! Got it. Thank you :)",
+    "intent": "praise_thanks",
+    "expected_action": "auto_handle",
+    "action_reason": "They confirm the playlist link worked and thank support.",
+    "required_reply_points": [
+      "Acknowledge that they can access the playlist now."
+    ],
+    "forbidden_claims": [
+      "Claim we personally fixed the earlier problem",
+      "Promise the same outcome or response time in future"
+    ],
+    "uncertain": false,
+    "annotation_note": ""
+  },
+  {
+    "conversation_id": "2276268",
+    "customer_tweet_id": "2276269",
+    "split": "test",
+    "prior_context": [],
+    "linked_context_incomplete": false,
+    "customer_text": "@SpotifyCares can you unlink my account from all devices?",
+    "intent": "account_access_security",
+    "expected_action": "auto_handle",
+    "action_reason": "They ask to sign out devices but do not report compromise.",
+    "required_reply_points": [
+      "Explain we cannot do it for them and direct them to official sign-out guidance."
+    ],
+    "forbidden_claims": [
+      "Claim the account was checked or changed",
+      "Request passwords or account secrets"
+    ],
+    "uncertain": false,
+    "annotation_note": ""
+  },
+  {
+    "conversation_id": "705817",
+    "customer_tweet_id": "705818",
+    "split": "test",
+    "prior_context": [
+      {
+        "tweet_id": "705819",
+        "role": "customer",
+        "text": "@115888 pls HELP why can't I play local files on my laptop from my other devices? It synced BEFORE but now it unsynced and NOW LIFE IS HARD"
+      }
+    ],
+    "linked_context_incomplete": false,
+    "customer_text": "@115888 Nvm I solved it why do I have to be on a different wifi for it to connect that's SO CONFUSING thx anyway bye",
+    "intent": "praise_thanks",
+    "expected_action": "auto_handle",
+    "action_reason": "They say the local-file issue is solved, though they remain confused about Wi-Fi.",
+    "required_reply_points": [
+      "Acknowledge the reported fix without presenting their Wi-Fi observation as a general rule."
+    ],
+    "forbidden_claims": [
+      "Claim we personally fixed the earlier problem",
+      "Promise the same outcome or response time in future"
+    ],
+    "uncertain": true,
+    "annotation_note": "Review this interpretation against the visible context."
+  },
+  {
+    "conversation_id": "2795558",
+    "customer_tweet_id": "2795559",
+    "split": "test",
+    "prior_context": [],
+    "linked_context_incomplete": false,
+    "customer_text": "@SpotifyCares I’m having trouble logging in on the Spotify app on my computer. Any way you can help?",
+    "intent": "account_access_security",
+    "expected_action": "auto_handle",
+    "action_reason": "They report desktop login trouble without describing the error.",
+    "required_reply_points": [
+      "Ask what happens when signing in and which desktop app version they use."
+    ],
+    "forbidden_claims": [
+      "Claim the account was checked or changed",
+      "Request passwords or account secrets"
+    ],
+    "uncertain": false,
+    "annotation_note": ""
+  },
+  {
+    "conversation_id": "2426276",
+    "customer_tweet_id": "2426277",
+    "split": "test",
+    "prior_context": [],
+    "linked_context_incomplete": false,
+    "customer_text": "Been a customer for years, I need my music and its not taking my payment at all @115888 @SpotifyCares .. PLEASE help, I need my music..",
+    "intent": "billing_payments",
+    "expected_action": "escalate",
+    "action_reason": "They report persistent failed payments and request help.",
+    "required_reply_points": [
+      "Recommend official billing support without guaranteeing payment acceptance."
+    ],
+    "forbidden_claims": [
+      "Promise a refund, discount, or successful payment",
+      "Request card details or gift-card codes",
+      "Claim a human handoff has already happened"
+    ],
+    "uncertain": false,
+    "annotation_note": ""
+  },
+  {
+    "conversation_id": "1818440",
+    "customer_tweet_id": "1818441",
+    "split": "test",
+    "prior_context": [],
+    "linked_context_incomplete": false,
+    "customer_text": "@SpotifyCares on your UK website, the renewal date is using US formatting https://t.co/aqfk1Kci9m",
+    "intent": "app_device_issues",
+    "expected_action": "auto_handle",
+    "action_reason": "They report the wrong date format on the UK website.",
+    "required_reply_points": [
+      "Acknowledge the display issue and ask for the date in text without assuming a wrong charge."
+    ],
+    "forbidden_claims": [
+      "Claim a fix is available or give a release date without evidence",
+      "Claim to have inspected a linked screenshot"
+    ],
+    "uncertain": false,
+    "annotation_note": ""
+  },
+  {
+    "conversation_id": "2183183",
+    "customer_tweet_id": "2183184",
+    "split": "test",
+    "prior_context": [],
+    "linked_context_incomplete": false,
+    "customer_text": "@115888 my 2 week premium has expired and it won’t let me upgrade to premium again how can resolve this problem ?",
+    "intent": "subscription_plans",
+    "expected_action": "auto_handle",
+    "action_reason": "They cannot upgrade after a trial but give no error details.",
+    "required_reply_points": [
+      "Ask what error appears during the upgrade and use verified plan guidance."
+    ],
+    "forbidden_claims": [
+      "Claim the subscription was checked or changed",
+      "Promise eligibility, activation, or an unverified offer"
+    ],
+    "uncertain": false,
+    "annotation_note": ""
+  },
+  {
+    "conversation_id": "343533",
+    "customer_tweet_id": "343538",
+    "split": "test",
+    "prior_context": [],
+    "linked_context_incomplete": false,
+    "customer_text": "@SpotifyCares Any ideas why when I open the mac app it keeps downloading the installer but on the second try it opens the app fine? 🤕",
+    "intent": "app_device_issues",
+    "expected_action": "auto_handle",
+    "action_reason": "Opening the Mac app repeatedly launches the installer first.",
+    "required_reply_points": [
+      "Ask how the app is being opened and which app version is installed."
+    ],
+    "forbidden_claims": [
+      "Claim a fix is available or give a release date without evidence",
+      "Claim to have inspected a linked screenshot"
+    ],
+    "uncertain": false,
+    "annotation_note": ""
+  },
+  {
+    "conversation_id": "1742007",
+    "customer_tweet_id": "1742008",
+    "split": "test",
+    "prior_context": [],
+    "linked_context_incomplete": false,
+    "customer_text": "@SpotifyCares please any news about my issue?",
+    "intent": "other_unclear",
+    "expected_action": "escalate",
+    "action_reason": "They ask for an update on an existing issue we cannot inspect.",
+    "required_reply_points": [
+      "Recommend a follow-up through the existing support case without inventing its status."
+    ],
+    "forbidden_claims": [
+      "Guess the missing issue or linked content",
+      "Claim access to private messages or support case status",
+      "Claim a human handoff has already happened"
+    ],
+    "uncertain": false,
+    "annotation_note": ""
+  },
+  {
+    "conversation_id": "1728114",
+    "customer_tweet_id": "1728117",
+    "split": "test",
+    "prior_context": [],
+    "linked_context_incomplete": false,
+    "customer_text": "@115888 Hi! I recieved a gift card, but somehow I can't redeem it. #help",
+    "intent": "billing_payments",
+    "expected_action": "auto_handle",
+    "action_reason": "Gift-card redemption fails with no error details.",
+    "required_reply_points": [
+      "Ask for the error text without requesting the gift-card code."
+    ],
+    "forbidden_claims": [
+      "Promise a refund, discount, or successful payment",
+      "Request card details or gift-card codes"
+    ],
+    "uncertain": false,
+    "annotation_note": ""
+  }
+]

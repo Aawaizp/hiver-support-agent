@@ -1,0 +1,51 @@
+{
+  "method": "AI-generated draft annotations based on customer messages and visible prior context.",
+  "human_review_status": "Not yet reviewed by a human.",
+  "permission_basis": "User reports revised assignment wording: students can use AI for all tasks. Not independently verified.",
+  "original_batch_sha256": {
+    "dev_batch_01.json": "423f078d5e1212e8651ff888bcd5f0c436b5488f9926cbfdcc9b5890a82dedb9",
+    "dev_batch_02.json": "973d72224f3fdf7dd0ba43bab6c7dfbe992b741baea768d608890f54c76d26a0",
+    "dev_batch_03.json": "18be6bb4014083bf78c0a22de052d094685886564b5f74cb125a82fd539f5975",
+    "test_batch_01.json": "e631e13bd2cb5e400ab9e30eedd8ae274cad38e266b64b3ff7a485942b6ad55d",
+    "test_batch_02.json": "debb7bfa2d0d5267c1ff65c25c3d2f9ab1c66fd1ba6958b9d00bdef3583ee0a2",
+    "test_batch_03.json": "f81c58cd4a2fe26cfb8ab93e6c6dbf290dc690a0c9a419dff7885e46bd7b841a",
+    "test_batch_04.json": "985d440babcb447577eab76e966298c8a267c37c0c0550fc69abded0caa445dc",
+    "test_batch_05.json": "4125c866a86a11b704eb890cd8c8004fa0e1abe2d75fa1bce712bb24f50ff1f8",
+    "test_batch_06.json": "0d00a27c5e82cd05a2055b7fd14924907ddd1162908f54e9653eeacb2c6651be",
+    "test_batch_07.json": "eae91dc3a0b912a06cbce5ac2b47a71d3ba4ec2abbfba228ba1a08419091da0a",
+    "test_batch_08.json": "fee69c4e642f298ca699b68a06ad349821bc7ed33426a3650844cf9d59bdce89"
+  },
+  "backup_directory": "C:\\Users\\talib\\OneDrive\\Desktop\\Hiver\\data\\prepared\\annotation_backup_20260909T155052Z",
+  "summary": {
+    "examples": 200,
+    "batch_files": 11,
+    "intents": {
+      "music_library_catalog": 32,
+      "product_feedback": 21,
+      "billing_payments": 18,
+      "other_unclear": 22,
+      "account_access_security": 26,
+      "app_device_issues": 15,
+      "playback_offline": 20,
+      "subscription_plans": 31,
+      "praise_thanks": 15
+    },
+    "actions": {
+      "auto_handle": 135,
+      "escalate": 65
+    },
+    "uncertain": 16
+  },
+  "evaluation_limit": "These labels are not independent human ground truth. Do not report AI-versus-AI agreement as human agreement. Test examples were seen during annotation; avoid tuning the system on them.",
+  "label_policy": [
+    "Label the current request using visible ancestors; do not infer future replies or private messages.",
+    "Retain an unresolved issue when the latest turn supplies details or says yes.",
+    "Use praise_thanks for thanks or explicit successful closure; complaint-only closure stays with the complaint category.",
+    "Account access includes identity settings and account privacy. Plans includes entitlement, geographic access, and plan how-to.",
+    "Music library includes catalog, metadata, playlist management, and local-file syncing. Playback includes offline downloads and shuffle faults.",
+    "Auto-handle means a safe response or clarification is possible, not that the problem is solved.",
+    "Escalate for security concerns, disputed charges, inaccessible support cases, account investigation, catalog corrections, or repeated failed troubleshooting.",
+    "Use historical material as evidence of past support, not current prices, feature availability, launch dates, or live service status.",
+    "French and Portuguese examples are retained; multilingual judgments need human review."
+  ]
+}

@@ -1,0 +1,222 @@
+[
+  {
+    "conversation_id": "1873226",
+    "customer_tweet_id": "1873227",
+    "split": "test",
+    "prior_context": [],
+    "linked_context_incomplete": false,
+    "customer_text": "@116130 @SpotifyCares  I've got download using cellular data off. However it still downloads music using my data. Please help.",
+    "intent": "playback_offline",
+    "expected_action": "auto_handle",
+    "action_reason": "Downloads reportedly use mobile data despite the cellular setting being off.",
+    "required_reply_points": [
+      "Acknowledge the unwanted data use and ask for the device, app version, and exact setting."
+    ],
+    "forbidden_claims": [
+      "Guarantee a troubleshooting step will work",
+      "Claim a bug or outage is confirmed without evidence"
+    ],
+    "uncertain": false,
+    "annotation_note": ""
+  },
+  {
+    "conversation_id": "29033",
+    "customer_tweet_id": "29034",
+    "split": "test",
+    "prior_context": [],
+    "linked_context_incomplete": false,
+    "customer_text": "I WILL AS SOON AS MY SPOTIFY IS FIXED BUT NO ANSWER ]: https://t.co/w4as3XSf7T",
+    "intent": "other_unclear",
+    "expected_action": "escalate",
+    "action_reason": "They say the issue is unresolved and support has not answered.",
+    "required_reply_points": [
+      "Recommend following up on the existing support case without inferring the issue from the link."
+    ],
+    "forbidden_claims": [
+      "Guess the missing issue or linked content",
+      "Claim access to private messages or support case status",
+      "Claim a human handoff has already happened"
+    ],
+    "uncertain": false,
+    "annotation_note": ""
+  },
+  {
+    "conversation_id": "2570296",
+    "customer_tweet_id": "2570297",
+    "split": "test",
+    "prior_context": [],
+    "linked_context_incomplete": false,
+    "customer_text": "@115888 Can I request a contact number for your Brand Manager?",
+    "intent": "other_unclear",
+    "expected_action": "auto_handle",
+    "action_reason": "They ask for a brand manager's contact number, outside normal account support.",
+    "required_reply_points": [
+      "Direct them to official business contact resources without inventing or sharing a person's number."
+    ],
+    "forbidden_claims": [
+      "Guess the missing issue or linked content",
+      "Claim access to private messages or support case status"
+    ],
+    "uncertain": false,
+    "annotation_note": ""
+  },
+  {
+    "conversation_id": "2558881",
+    "customer_tweet_id": "2558882",
+    "split": "test",
+    "prior_context": [],
+    "linked_context_incomplete": false,
+    "customer_text": "Why did @115888 make the first button the thumbs down? I've either hit it or almost hit it on so many songs I actually like.\n\nAlso is there a way to undo a thumbs down? https://t.co/aCtbJiwfwM",
+    "intent": "app_device_issues",
+    "expected_action": "auto_handle",
+    "action_reason": "They ask how to undo an accidental thumbs-down and criticize the button position.",
+    "required_reply_points": [
+      "Acknowledge both concerns and ask which screen or feature they are using."
+    ],
+    "forbidden_claims": [
+      "Claim a fix is available or give a release date without evidence",
+      "Claim to have inspected a linked screenshot"
+    ],
+    "uncertain": false,
+    "annotation_note": ""
+  },
+  {
+    "conversation_id": "1162299",
+    "customer_tweet_id": "1162300",
+    "split": "test",
+    "prior_context": [
+      {
+        "tweet_id": "1162301",
+        "role": "customer",
+        "text": "@SpotifyCares Seems someone has gained access to my account as they're playing on a galaxy edge phone and I don't have one! How to I kick them off?"
+      }
+    ],
+    "linked_context_incomplete": false,
+    "customer_text": "@SpotifyCares Have clicked the sign out everywhere button and reset the password just want to make sure no one can get into it again!",
+    "intent": "account_access_security",
+    "expected_action": "escalate",
+    "action_reason": "They report suspected unauthorized access and want assurance after changing the password.",
+    "required_reply_points": [
+      "Recommend security follow-up and do not guarantee that nobody can regain access."
+    ],
+    "forbidden_claims": [
+      "Claim the account was checked or changed",
+      "Request passwords or account secrets",
+      "Claim a human handoff has already happened"
+    ],
+    "uncertain": false,
+    "annotation_note": ""
+  },
+  {
+    "conversation_id": "1961803",
+    "customer_tweet_id": "1961804",
+    "split": "test",
+    "prior_context": [],
+    "linked_context_incomplete": false,
+    "customer_text": "@SpotifyCares I just got added in a family deal but I think it does not authenticate",
+    "intent": "subscription_plans",
+    "expected_action": "auto_handle",
+    "action_reason": "They report a vague Family authentication problem.",
+    "required_reply_points": [
+      "Ask for the exact error and where it appears before assuming an eligibility problem."
+    ],
+    "forbidden_claims": [
+      "Claim the subscription was checked or changed",
+      "Promise eligibility, activation, or an unverified offer"
+    ],
+    "uncertain": false,
+    "annotation_note": ""
+  },
+  {
+    "conversation_id": "2705871",
+    "customer_tweet_id": "2705872",
+    "split": "test",
+    "prior_context": [],
+    "linked_context_incomplete": false,
+    "customer_text": "Yo @115888 wtf is wrong with your app? All my downloaded songs keep undownloading. Why am I paying you guys? Sort it out",
+    "intent": "playback_offline",
+    "expected_action": "auto_handle",
+    "action_reason": "Downloaded songs repeatedly disappear from offline storage.",
+    "required_reply_points": [
+      "Ask about the device, storage, and when downloads disappear without blaming the customer."
+    ],
+    "forbidden_claims": [
+      "Guarantee a troubleshooting step will work",
+      "Claim a bug or outage is confirmed without evidence"
+    ],
+    "uncertain": false,
+    "annotation_note": ""
+  },
+  {
+    "conversation_id": "801192",
+    "customer_tweet_id": "1021653",
+    "split": "test",
+    "prior_context": [
+      {
+        "tweet_id": "801193",
+        "role": "customer",
+        "text": "gUSTO KO NA PAKINGGAN WALA PA BA SA SPOTIFY"
+      },
+      {
+        "tweet_id": "801194",
+        "role": "support",
+        "text": "@310916 2: Can you let us know the artist or track that you're looking for? We'll check on this from our end 🙂 /GN"
+      }
+    ],
+    "linked_context_incomplete": false,
+    "customer_text": "@SpotifyCares personal - the vamps",
+    "intent": "music_library_catalog",
+    "expected_action": "auto_handle",
+    "action_reason": "They identify the missing song after support asks for its title.",
+    "required_reply_points": [
+      "Acknowledge Personal by The Vamps without claiming to have checked its availability."
+    ],
+    "forbidden_claims": [
+      "Invent a licensing reason, release date, or catalog correction",
+      "Claim to have opened a link or checked live availability"
+    ],
+    "uncertain": false,
+    "annotation_note": ""
+  },
+  {
+    "conversation_id": "1973840",
+    "customer_tweet_id": "1973841",
+    "split": "test",
+    "prior_context": [],
+    "linked_context_incomplete": false,
+    "customer_text": "@SpotifyCares hi! paid for premium, shows up on site, logged out &amp; back in on everything, definitely same account. still getting ads. help?",
+    "intent": "subscription_plans",
+    "expected_action": "escalate",
+    "action_reason": "Ads persist despite Premium showing on the site and repeated checks of the same account.",
+    "required_reply_points": [
+      "Recommend an entitlement review and ask whether the ads occur in music or podcasts."
+    ],
+    "forbidden_claims": [
+      "Claim the subscription was checked or changed",
+      "Promise eligibility, activation, or an unverified offer",
+      "Claim a human handoff has already happened"
+    ],
+    "uncertain": false,
+    "annotation_note": ""
+  },
+  {
+    "conversation_id": "539216",
+    "customer_tweet_id": "539217",
+    "split": "test",
+    "prior_context": [],
+    "linked_context_incomplete": false,
+    "customer_text": "@115888 could you please bring back the lyric button",
+    "intent": "product_feedback",
+    "expected_action": "auto_handle",
+    "action_reason": "They request the return of a lyrics button.",
+    "required_reply_points": [
+      "Acknowledge the lyrics-button request without promising a restoration."
+    ],
+    "forbidden_claims": [
+      "Promise the suggestion will be built or forwarded",
+      "Claim knowledge of an unpublished product roadmap"
+    ],
+    "uncertain": false,
+    "annotation_note": ""
+  }
+]

@@ -1,0 +1,18 @@
+{
+  "seed": 42,
+  "brand": "SpotifyCares",
+  "eligible_conversations": 28171,
+  "exploration_groups_excluded": 50,
+  "development_examples": 50,
+  "test_examples": 150,
+  "retrieval_conversations": 3000,
+  "sampling": "Uniform conversation sampling, then one random eligible customer message per selected conversation.",
+  "split_method": "Random conversation split; not a temporal split.",
+  "language_filter": "None; record unsupported languages during annotation.",
+  "limitations": [
+    "Only conversations with a direct Spotify response are eligible.",
+    "Private messages and linked images are unavailable.",
+    "Historical replies are not proof of successful resolution.",
+    "Near-duplicate text across splits still needs checking."
+  ]
+}

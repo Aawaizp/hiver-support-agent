@@ -1,0 +1,952 @@
+[
+  {
+    "customer_tweet_id": "2295016",
+    "conversation_id": "2295015",
+    "customer_text": "@115888 hey so this is a crisis, why do you have all of the @118062 reputation singles on Spotify but not the album? it’s an emergency, more than a want, a NEED. please. give me this album!!!!!! help a girl out, Spotify! I need you! I need this ☹️",
+    "expected_intent": "music_library_catalog",
+    "expected_action": "auto_handle",
+    "label_uncertain": false,
+    "prediction": {
+      "status": "ok",
+      "system": "simple",
+      "intent": "music_library_catalog",
+      "action": "auto_handle",
+      "reason": "Use the intent and action of the nearest training example.",
+      "reply": "Which song, album, or playlist do you mean, and what problem are you seeing?",
+      "label_source_id": "129759",
+      "similarity": 0.2447,
+      "evidence_ids": []
+    }
+  },
+  {
+    "customer_tweet_id": "558603",
+    "conversation_id": "558602",
+    "customer_text": "@SpotifyCares No you didn't but it's fine because I figured it out on my own 🙄",
+    "expected_intent": "product_feedback",
+    "expected_action": "auto_handle",
+    "label_uncertain": false,
+    "prediction": {
+      "status": "ok",
+      "system": "simple",
+      "intent": "account_access_security",
+      "action": "escalate",
+      "reason": "Use the intent and action of the nearest training example.",
+      "reply": "Please contact official Spotify support for further review. I can't investigate your account here.",
+      "label_source_id": "492399",
+      "similarity": 0.1909,
+      "evidence_ids": []
+    }
+  },
+  {
+    "customer_tweet_id": "129759",
+    "conversation_id": "129758",
+    "customer_text": "@115888 @7460 please fix this",
+    "expected_intent": "music_library_catalog",
+    "expected_action": "auto_handle",
+    "label_uncertain": false,
+    "prediction": {
+      "status": "ok",
+      "system": "simple",
+      "intent": "music_library_catalog",
+      "action": "auto_handle",
+      "reason": "Use the intent and action of the nearest training example.",
+      "reply": "Which song, album, or playlist do you mean, and what problem are you seeing?",
+      "label_source_id": "2295016",
+      "similarity": 0.2488,
+      "evidence_ids": []
+    }
+  },
+  {
+    "customer_tweet_id": "2621323",
+    "conversation_id": "2621322",
+    "customer_text": "@SpotifyCares my account is about to be discontinued and I can’t update my payment plan. It won’t continue through.",
+    "expected_intent": "billing_payments",
+    "expected_action": "escalate",
+    "label_uncertain": false,
+    "prediction": {
+      "status": "ok",
+      "system": "simple",
+      "intent": "billing_payments",
+      "action": "auto_handle",
+      "reason": "Use the intent and action of the nearest training example.",
+      "reply": "Could you describe the payment problem? Please don't share card details.",
+      "label_source_id": "2618570",
+      "similarity": 0.213,
+      "evidence_ids": []
+    }
+  },
+  {
+    "customer_tweet_id": "1214635",
+    "conversation_id": "1214634",
+    "customer_text": "@SpotifyCares hey, this is keep happening https://t.co/L5La6b6eNR",
+    "expected_intent": "other_unclear",
+    "expected_action": "auto_handle",
+    "label_uncertain": false,
+    "prediction": {
+      "status": "ok",
+      "system": "simple",
+      "intent": "other_unclear",
+      "action": "auto_handle",
+      "reason": "Use the intent and action of the nearest training example.",
+      "reply": "Could you explain what you need help with?",
+      "label_source_id": "1820351",
+      "similarity": 0.1253,
+      "evidence_ids": []
+    }
+  },
+  {
+    "customer_tweet_id": "1086259",
+    "conversation_id": "1086258",
+    "customer_text": "@SpotifyCares we all need Spotify in South Africa before 2018 starts!! 😒💁🏽‍♂️",
+    "expected_intent": "product_feedback",
+    "expected_action": "auto_handle",
+    "label_uncertain": false,
+    "prediction": {
+      "status": "ok",
+      "system": "simple",
+      "intent": "account_access_security",
+      "action": "escalate",
+      "reason": "Use the intent and action of the nearest training example.",
+      "reply": "Please contact official Spotify support for further review. I can't investigate your account here.",
+      "label_source_id": "466062",
+      "similarity": 0.2048,
+      "evidence_ids": []
+    }
+  },
+  {
+    "customer_tweet_id": "994547",
+    "conversation_id": "994546",
+    "customer_text": "Ooh.. Kindly correct the artist of this album. It should be\n@355579 \n@115888 @SpotifyCares https://t.co/4TiBqmP2wB",
+    "expected_intent": "music_library_catalog",
+    "expected_action": "escalate",
+    "label_uncertain": false,
+    "prediction": {
+      "status": "ok",
+      "system": "simple",
+      "intent": "billing_payments",
+      "action": "escalate",
+      "reason": "Use the intent and action of the nearest training example.",
+      "reply": "Please contact official Spotify support for further review. I can't investigate your account here.",
+      "label_source_id": "883640",
+      "similarity": 0.1718,
+      "evidence_ids": []
+    }
+  },
+  {
+    "customer_tweet_id": "637764",
+    "conversation_id": "637763",
+    "customer_text": "@188 Hey! @28762 is a great creditable, spotify verified artist who isn't verified on Facebook yet! How can you guys change this??!",
+    "expected_intent": "other_unclear",
+    "expected_action": "auto_handle",
+    "label_uncertain": false,
+    "prediction": {
+      "status": "ok",
+      "system": "simple",
+      "intent": "account_access_security",
+      "action": "escalate",
+      "reason": "Use the intent and action of the nearest training example.",
+      "reply": "Please contact official Spotify support for further review. I can't investigate your account here.",
+      "label_source_id": "2707755",
+      "similarity": 0.2565,
+      "evidence_ids": []
+    }
+  },
+  {
+    "customer_tweet_id": "2609440",
+    "conversation_id": "2609439",
+    "customer_text": "@SpotifyCares Alright. (:",
+    "expected_intent": "music_library_catalog",
+    "expected_action": "auto_handle",
+    "label_uncertain": true,
+    "prediction": {
+      "status": "ok",
+      "system": "simple",
+      "intent": "music_library_catalog",
+      "action": "escalate",
+      "reason": "Use the intent and action of the nearest training example.",
+      "reply": "Please contact official Spotify support for further review. I can't investigate your account here.",
+      "label_source_id": "994547",
+      "similarity": 0.1123,
+      "evidence_ids": []
+    }
+  },
+  {
+    "customer_tweet_id": "521809",
+    "conversation_id": "521808",
+    "customer_text": "@SpotifyCares https://t.co/tx6dxazoeF",
+    "expected_intent": "music_library_catalog",
+    "expected_action": "escalate",
+    "label_uncertain": false,
+    "prediction": {
+      "status": "ok",
+      "system": "simple",
+      "intent": "music_library_catalog",
+      "action": "auto_handle",
+      "reason": "Use the intent and action of the nearest training example.",
+      "reply": "Which song, album, or playlist do you mean, and what problem are you seeing?",
+      "label_source_id": "1222870",
+      "similarity": 0.191,
+      "evidence_ids": []
+    }
+  },
+  {
+    "customer_tweet_id": "2407027",
+    "conversation_id": "2407026",
+    "customer_text": "@SpotifyCares my account with username pandusetiagama can not access...",
+    "expected_intent": "account_access_security",
+    "expected_action": "auto_handle",
+    "label_uncertain": false,
+    "prediction": {
+      "status": "ok",
+      "system": "simple",
+      "intent": "praise_thanks",
+      "action": "auto_handle",
+      "reason": "Use the intent and action of the nearest training example.",
+      "reply": "Thanks for the kind words. Glad to hear from you!",
+      "label_source_id": "2485974",
+      "similarity": 0.2025,
+      "evidence_ids": []
+    }
+  },
+  {
+    "customer_tweet_id": "2618570",
+    "conversation_id": "2618569",
+    "customer_text": "@115888 Yo Spotify y’all tried charging my card and it didn’t go through. I have $9.27 and some pocket lint will that suffice for this month",
+    "expected_intent": "billing_payments",
+    "expected_action": "auto_handle",
+    "label_uncertain": true,
+    "prediction": {
+      "status": "ok",
+      "system": "simple",
+      "intent": "billing_payments",
+      "action": "escalate",
+      "reason": "Use the intent and action of the nearest training example.",
+      "reply": "Please contact official Spotify support for further review. I can't investigate your account here.",
+      "label_source_id": "2045210",
+      "similarity": 0.2444,
+      "evidence_ids": []
+    }
+  },
+  {
+    "customer_tweet_id": "2045210",
+    "conversation_id": "2045209",
+    "customer_text": "@115888 I'm a student but yet I'm still being charged $10 and some change a month just for Spotify premium? Yikes. Get it together.",
+    "expected_intent": "billing_payments",
+    "expected_action": "escalate",
+    "label_uncertain": false,
+    "prediction": {
+      "status": "ok",
+      "system": "simple",
+      "intent": "billing_payments",
+      "action": "escalate",
+      "reason": "Use the intent and action of the nearest training example.",
+      "reply": "Please contact official Spotify support for further review. I can't investigate your account here.",
+      "label_source_id": "883640",
+      "similarity": 0.3683,
+      "evidence_ids": []
+    }
+  },
+  {
+    "customer_tweet_id": "466062",
+    "conversation_id": "466061",
+    "customer_text": "@SpotifyCares Not helpful. I found this twitter handle on the website. Whoever is getting in ie changing the password before we can. Changed email PW. Need more support or to stop paying for premium.",
+    "expected_intent": "account_access_security",
+    "expected_action": "escalate",
+    "label_uncertain": false,
+    "prediction": {
+      "status": "ok",
+      "system": "simple",
+      "intent": "account_access_security",
+      "action": "escalate",
+      "reason": "Use the intent and action of the nearest training example.",
+      "reply": "Please contact official Spotify support for further review. I can't investigate your account here.",
+      "label_source_id": "492399",
+      "similarity": 0.2279,
+      "evidence_ids": []
+    }
+  },
+  {
+    "customer_tweet_id": "2165520",
+    "conversation_id": "2165519",
+    "customer_text": "@115888 five times now ihve requested a new password, you've not emailed once. Yet happily take a monthly premium from me, on your website it seems to be a very common issue.",
+    "expected_intent": "account_access_security",
+    "expected_action": "escalate",
+    "label_uncertain": false,
+    "prediction": {
+      "status": "ok",
+      "system": "simple",
+      "intent": "account_access_security",
+      "action": "escalate",
+      "reason": "Use the intent and action of the nearest training example.",
+      "reply": "Please contact official Spotify support for further review. I can't investigate your account here.",
+      "label_source_id": "466062",
+      "similarity": 0.2206,
+      "evidence_ids": []
+    }
+  },
+  {
+    "customer_tweet_id": "1818096",
+    "conversation_id": "1818095",
+    "customer_text": "@115888 please contact me. I can't sign into on account and can't find any way of contacting you directly for help!",
+    "expected_intent": "account_access_security",
+    "expected_action": "auto_handle",
+    "label_uncertain": false,
+    "prediction": {
+      "status": "ok",
+      "system": "simple",
+      "intent": "account_access_security",
+      "action": "escalate",
+      "reason": "Use the intent and action of the nearest training example.",
+      "reply": "Please contact official Spotify support for further review. I can't investigate your account here.",
+      "label_source_id": "466062",
+      "similarity": 0.1788,
+      "evidence_ids": []
+    }
+  },
+  {
+    "customer_tweet_id": "160520",
+    "conversation_id": "160518",
+    "customer_text": "@SpotifyCares No. It has been this way for the past month if not a little longer.",
+    "expected_intent": "app_device_issues",
+    "expected_action": "escalate",
+    "label_uncertain": false,
+    "prediction": {
+      "status": "ok",
+      "system": "simple",
+      "intent": "app_device_issues",
+      "action": "auto_handle",
+      "reason": "Use the intent and action of the nearest training example.",
+      "reply": "What device and app version are you using, and what goes wrong?",
+      "label_source_id": "2312983",
+      "similarity": 0.2451,
+      "evidence_ids": []
+    }
+  },
+  {
+    "customer_tweet_id": "152230",
+    "conversation_id": "152229",
+    "customer_text": "@spotifycares why do i have a 3333 offline song limit on my spotify?",
+    "expected_intent": "playback_offline",
+    "expected_action": "auto_handle",
+    "label_uncertain": false,
+    "prediction": {
+      "status": "ok",
+      "system": "simple",
+      "intent": "product_feedback",
+      "action": "auto_handle",
+      "reason": "Use the intent and action of the nearest training example.",
+      "reply": "Thanks for sharing your suggestion.",
+      "label_source_id": "516749",
+      "similarity": 0.2373,
+      "evidence_ids": []
+    }
+  },
+  {
+    "customer_tweet_id": "492399",
+    "conversation_id": "492397",
+    "customer_text": "@SpotifyCares hi I forgot my Spotify password and I have went to reset it a couple of times I did 2 earlier at midday and 1 a couple of minutes ago and none of the emails I'm supposed to get are not coming through",
+    "expected_intent": "account_access_security",
+    "expected_action": "escalate",
+    "label_uncertain": false,
+    "prediction": {
+      "status": "ok",
+      "system": "simple",
+      "intent": "account_access_security",
+      "action": "escalate",
+      "reason": "Use the intent and action of the nearest training example.",
+      "reply": "Please contact official Spotify support for further review. I can't investigate your account here.",
+      "label_source_id": "466062",
+      "similarity": 0.2546,
+      "evidence_ids": []
+    }
+  },
+  {
+    "customer_tweet_id": "970840",
+    "conversation_id": "970838",
+    "customer_text": "@115888 you know what would be a cool addition? Actually being able to read the old liner notes somehow #wink #dooeet",
+    "expected_intent": "product_feedback",
+    "expected_action": "auto_handle",
+    "label_uncertain": false,
+    "prediction": {
+      "status": "ok",
+      "system": "simple",
+      "intent": "other_unclear",
+      "action": "escalate",
+      "reason": "Use the intent and action of the nearest training example.",
+      "reply": "Please contact official Spotify support for further review. I can't investigate your account here.",
+      "label_source_id": "2497517",
+      "similarity": 0.2492,
+      "evidence_ids": []
+    }
+  },
+  {
+    "customer_tweet_id": "1033340",
+    "conversation_id": "1033339",
+    "customer_text": "@SpotifyCares help me I lost my Hulu privileges and my bank account when negative cuz y’all overcharged me  the regular price not Student.😭",
+    "expected_intent": "billing_payments",
+    "expected_action": "escalate",
+    "label_uncertain": false,
+    "prediction": {
+      "status": "ok",
+      "system": "simple",
+      "intent": "billing_payments",
+      "action": "escalate",
+      "reason": "Use the intent and action of the nearest training example.",
+      "reply": "Please contact official Spotify support for further review. I can't investigate your account here.",
+      "label_source_id": "883640",
+      "similarity": 0.3172,
+      "evidence_ids": []
+    }
+  },
+  {
+    "customer_tweet_id": "1970195",
+    "conversation_id": "1970192",
+    "customer_text": "@115888 FIX YOUR SHIT. I can’t fucking skip a song without my fucking music turning off you pieces of shit.",
+    "expected_intent": "playback_offline",
+    "expected_action": "auto_handle",
+    "label_uncertain": false,
+    "prediction": {
+      "status": "ok",
+      "system": "simple",
+      "intent": "playback_offline",
+      "action": "auto_handle",
+      "reason": "Use the intent and action of the nearest training example.",
+      "reply": "What device are you using, and what happens during playback or downloading?",
+      "label_source_id": "1815095",
+      "similarity": 0.2032,
+      "evidence_ids": []
+    }
+  },
+  {
+    "customer_tweet_id": "2203732",
+    "conversation_id": "2203731",
+    "customer_text": "Someone has access to my Spotify and is trolling me by only playing Lil Uzi Vert",
+    "expected_intent": "account_access_security",
+    "expected_action": "escalate",
+    "label_uncertain": false,
+    "prediction": {
+      "status": "ok",
+      "system": "simple",
+      "intent": "app_device_issues",
+      "action": "auto_handle",
+      "reason": "Use the intent and action of the nearest training example.",
+      "reply": "What device and app version are you using, and what goes wrong?",
+      "label_source_id": "2312983",
+      "similarity": 0.195,
+      "evidence_ids": []
+    }
+  },
+  {
+    "customer_tweet_id": "2073652",
+    "conversation_id": "138283",
+    "customer_text": "@115888 i hope this will be okay now...for now https://t.co/jGjVL3041q",
+    "expected_intent": "subscription_plans",
+    "expected_action": "auto_handle",
+    "label_uncertain": true,
+    "prediction": {
+      "status": "ok",
+      "system": "simple",
+      "intent": "billing_payments",
+      "action": "auto_handle",
+      "reason": "Use the intent and action of the nearest training example.",
+      "reply": "Could you describe the payment problem? Please don't share card details.",
+      "label_source_id": "2618570",
+      "similarity": 0.2167,
+      "evidence_ids": []
+    }
+  },
+  {
+    "customer_tweet_id": "2070332",
+    "conversation_id": "2070331",
+    "customer_text": "@SpotifyCares Hi, if I purchase a £10 giftcard (I pay £5 a month for Spotify prem), will it last me 2 mnths or will it take the whole £10?",
+    "expected_intent": "billing_payments",
+    "expected_action": "auto_handle",
+    "label_uncertain": false,
+    "prediction": {
+      "status": "ok",
+      "system": "simple",
+      "intent": "billing_payments",
+      "action": "auto_handle",
+      "reason": "Use the intent and action of the nearest training example.",
+      "reply": "Could you describe the payment problem? Please don't share card details.",
+      "label_source_id": "2618570",
+      "similarity": 0.2626,
+      "evidence_ids": []
+    }
+  },
+  {
+    "customer_tweet_id": "883640",
+    "conversation_id": "883639",
+    "customer_text": "@SpotifyCares Why did my Student account automatically change to premium? I was charged full price. Can I get this corrected?",
+    "expected_intent": "billing_payments",
+    "expected_action": "escalate",
+    "label_uncertain": false,
+    "prediction": {
+      "status": "ok",
+      "system": "simple",
+      "intent": "billing_payments",
+      "action": "escalate",
+      "reason": "Use the intent and action of the nearest training example.",
+      "reply": "Please contact official Spotify support for further review. I can't investigate your account here.",
+      "label_source_id": "2045210",
+      "similarity": 0.4001,
+      "evidence_ids": []
+    }
+  },
+  {
+    "customer_tweet_id": "2550016",
+    "conversation_id": "2550015",
+    "customer_text": "@SpotifyCares please fix the missing TWICE's songs in malaysia region !! Today is their comeback some more sigh",
+    "expected_intent": "music_library_catalog",
+    "expected_action": "auto_handle",
+    "label_uncertain": false,
+    "prediction": {
+      "status": "ok",
+      "system": "simple",
+      "intent": "music_library_catalog",
+      "action": "auto_handle",
+      "reason": "Use the intent and action of the nearest training example.",
+      "reply": "Which song, album, or playlist do you mean, and what problem are you seeing?",
+      "label_source_id": "129759",
+      "similarity": 0.2589,
+      "evidence_ids": []
+    }
+  },
+  {
+    "customer_tweet_id": "2312983",
+    "conversation_id": "2312982",
+    "customer_text": "Why is @SpotifyCares playing the same shit on both @5525 and my iPhone since iOS 11? I cast a song, and I can’t modify my queue or pause, or anything after the first song. Spotify on Chromcast has been a flaming pile of garbage lately.",
+    "expected_intent": "app_device_issues",
+    "expected_action": "auto_handle",
+    "label_uncertain": false,
+    "prediction": {
+      "status": "ok",
+      "system": "simple",
+      "intent": "app_device_issues",
+      "action": "escalate",
+      "reason": "Use the intent and action of the nearest training example.",
+      "reply": "Please contact official Spotify support for further review. I can't investigate your account here.",
+      "label_source_id": "160520",
+      "similarity": 0.2358,
+      "evidence_ids": []
+    }
+  },
+  {
+    "customer_tweet_id": "2497517",
+    "conversation_id": "2497516",
+    "customer_text": "@SpotifyCares hi hello are you guys gonna actually ever reply",
+    "expected_intent": "other_unclear",
+    "expected_action": "escalate",
+    "label_uncertain": false,
+    "prediction": {
+      "status": "ok",
+      "system": "simple",
+      "intent": "product_feedback",
+      "action": "auto_handle",
+      "reason": "Use the intent and action of the nearest training example.",
+      "reply": "Thanks for sharing your suggestion.",
+      "label_source_id": "970840",
+      "similarity": 0.1978,
+      "evidence_ids": []
+    }
+  },
+  {
+    "customer_tweet_id": "2044710",
+    "conversation_id": "2044709",
+    "customer_text": "@115888 @SpotifyCares I'm unable to join my family premium account despite accepting the invite- can you help!?",
+    "expected_intent": "subscription_plans",
+    "expected_action": "escalate",
+    "label_uncertain": false,
+    "prediction": {
+      "status": "ok",
+      "system": "simple",
+      "intent": "account_access_security",
+      "action": "auto_handle",
+      "reason": "Use the intent and action of the nearest training example.",
+      "reply": "What happens when you try to access your account? Please describe the error without sharing your password.",
+      "label_source_id": "1818096",
+      "similarity": 0.2074,
+      "evidence_ids": []
+    }
+  },
+  {
+    "customer_tweet_id": "1815095",
+    "conversation_id": "1815094",
+    "customer_text": "@115888 @SpotifyCares",
+    "expected_intent": "playback_offline",
+    "expected_action": "auto_handle",
+    "label_uncertain": false,
+    "prediction": {
+      "status": "ok",
+      "system": "simple",
+      "intent": "product_feedback",
+      "action": "auto_handle",
+      "reason": "Use the intent and action of the nearest training example.",
+      "reply": "Thanks for sharing your suggestion.",
+      "label_source_id": "516749",
+      "similarity": 0.2454,
+      "evidence_ids": []
+    }
+  },
+  {
+    "customer_tweet_id": "979818",
+    "conversation_id": "979808",
+    "customer_text": "@SpotifyCares Not really, I click on a song and it just stays stuck. If I'm playing another song it stops and nothing plays afterwards. https://t.co/9A4bg9w2PX",
+    "expected_intent": "playback_offline",
+    "expected_action": "escalate",
+    "label_uncertain": false,
+    "prediction": {
+      "status": "ok",
+      "system": "simple",
+      "intent": "app_device_issues",
+      "action": "auto_handle",
+      "reason": "Use the intent and action of the nearest training example.",
+      "reply": "What device and app version are you using, and what goes wrong?",
+      "label_source_id": "2312983",
+      "similarity": 0.2164,
+      "evidence_ids": []
+    }
+  },
+  {
+    "customer_tweet_id": "1867431",
+    "conversation_id": "1867430",
+    "customer_text": "WHY WOULD @115888 REMOVE BUY IT BY LIL UZI!? WHYYYYY",
+    "expected_intent": "music_library_catalog",
+    "expected_action": "auto_handle",
+    "label_uncertain": false,
+    "prediction": {
+      "status": "ok",
+      "system": "simple",
+      "intent": "account_access_security",
+      "action": "escalate",
+      "reason": "Use the intent and action of the nearest training example.",
+      "reply": "Please contact official Spotify support for further review. I can't investigate your account here.",
+      "label_source_id": "2707755",
+      "similarity": 0.2604,
+      "evidence_ids": []
+    }
+  },
+  {
+    "customer_tweet_id": "2161282",
+    "conversation_id": "2161281",
+    "customer_text": "@SpotifyCares Any eta yet? :)",
+    "expected_intent": "subscription_plans",
+    "expected_action": "auto_handle",
+    "label_uncertain": false,
+    "prediction": {
+      "status": "ok",
+      "system": "simple",
+      "intent": "music_library_catalog",
+      "action": "auto_handle",
+      "reason": "Use the intent and action of the nearest training example.",
+      "reply": "Which song, album, or playlist do you mean, and what problem are you seeing?",
+      "label_source_id": "704807",
+      "similarity": 0.2019,
+      "evidence_ids": []
+    }
+  },
+  {
+    "customer_tweet_id": "1222870",
+    "conversation_id": "1222869",
+    "customer_text": "A MF SONG. I PERSONALLY LIKE ANNA'S VERSION BUT THEY DIDNT PUT IT IN SPOTIFY SMH https://t.co/3g7E3sF6Yy",
+    "expected_intent": "music_library_catalog",
+    "expected_action": "auto_handle",
+    "label_uncertain": false,
+    "prediction": {
+      "status": "ok",
+      "system": "simple",
+      "intent": "music_library_catalog",
+      "action": "escalate",
+      "reason": "Use the intent and action of the nearest training example.",
+      "reply": "Please contact official Spotify support for further review. I can't investigate your account here.",
+      "label_source_id": "521809",
+      "similarity": 0.1808,
+      "evidence_ids": []
+    }
+  },
+  {
+    "customer_tweet_id": "2857507",
+    "conversation_id": "2857506",
+    "customer_text": "@SpotifyCares how can i update mu email address",
+    "expected_intent": "account_access_security",
+    "expected_action": "auto_handle",
+    "label_uncertain": false,
+    "prediction": {
+      "status": "ok",
+      "system": "simple",
+      "intent": "billing_payments",
+      "action": "escalate",
+      "reason": "Use the intent and action of the nearest training example.",
+      "reply": "Please contact official Spotify support for further review. I can't investigate your account here.",
+      "label_source_id": "2621323",
+      "similarity": 0.186,
+      "evidence_ids": []
+    }
+  },
+  {
+    "customer_tweet_id": "44404",
+    "conversation_id": "44403",
+    "customer_text": "@SpotifyCares My laptop runs on Windows 10 and my Spotify is the latest update",
+    "expected_intent": "music_library_catalog",
+    "expected_action": "escalate",
+    "label_uncertain": false,
+    "prediction": {
+      "status": "ok",
+      "system": "simple",
+      "intent": "other_unclear",
+      "action": "auto_handle",
+      "reason": "Use the intent and action of the nearest training example.",
+      "reply": "Could you explain what you need help with?",
+      "label_source_id": "1820351",
+      "similarity": 0.2498,
+      "evidence_ids": []
+    }
+  },
+  {
+    "customer_tweet_id": "2691955",
+    "conversation_id": "2691954",
+    "customer_text": "@115888 I get the advertisers but why telling me i can now listen advertisers free you idiots @115888",
+    "expected_intent": "product_feedback",
+    "expected_action": "auto_handle",
+    "label_uncertain": true,
+    "prediction": {
+      "status": "ok",
+      "system": "simple",
+      "intent": "account_access_security",
+      "action": "escalate",
+      "reason": "Use the intent and action of the nearest training example.",
+      "reply": "Please contact official Spotify support for further review. I can't investigate your account here.",
+      "label_source_id": "2203732",
+      "similarity": 0.1772,
+      "evidence_ids": []
+    }
+  },
+  {
+    "customer_tweet_id": "2848283",
+    "conversation_id": "2848282",
+    "customer_text": "@115888 launch in UAE imminent? #help",
+    "expected_intent": "subscription_plans",
+    "expected_action": "auto_handle",
+    "label_uncertain": false,
+    "prediction": {
+      "status": "ok",
+      "system": "simple",
+      "intent": "product_feedback",
+      "action": "auto_handle",
+      "reason": "Use the intent and action of the nearest training example.",
+      "reply": "Thanks for sharing your suggestion.",
+      "label_source_id": "558603",
+      "similarity": 0.1066,
+      "evidence_ids": []
+    }
+  },
+  {
+    "customer_tweet_id": "704807",
+    "conversation_id": "704805",
+    "customer_text": "@SpotifyCares I’ve been waiting for almost 10 years",
+    "expected_intent": "music_library_catalog",
+    "expected_action": "auto_handle",
+    "label_uncertain": false,
+    "prediction": {
+      "status": "ok",
+      "system": "simple",
+      "intent": "music_library_catalog",
+      "action": "auto_handle",
+      "reason": "Use the intent and action of the nearest training example.",
+      "reply": "Which song, album, or playlist do you mean, and what problem are you seeing?",
+      "label_source_id": "488809",
+      "similarity": 0.1994,
+      "evidence_ids": []
+    }
+  },
+  {
+    "customer_tweet_id": "2485974",
+    "conversation_id": "2485973",
+    "customer_text": "@115888 I just wanted to thank the really nice employee that helped me out last night with the problems I had with my account. His/Her name was Alfeo M, and they seriously need a raise. Thank you!",
+    "expected_intent": "praise_thanks",
+    "expected_action": "auto_handle",
+    "label_uncertain": false,
+    "prediction": {
+      "status": "ok",
+      "system": "simple",
+      "intent": "music_library_catalog",
+      "action": "auto_handle",
+      "reason": "Use the intent and action of the nearest training example.",
+      "reply": "Which song, album, or playlist do you mean, and what problem are you seeing?",
+      "label_source_id": "2295016",
+      "similarity": 0.2061,
+      "evidence_ids": []
+    }
+  },
+  {
+    "customer_tweet_id": "1820351",
+    "conversation_id": "1820350",
+    "customer_text": "Is anyone else having this problem? @115888 https://t.co/FbngkK4QOh",
+    "expected_intent": "other_unclear",
+    "expected_action": "auto_handle",
+    "label_uncertain": false,
+    "prediction": {
+      "status": "ok",
+      "system": "simple",
+      "intent": "music_library_catalog",
+      "action": "escalate",
+      "reason": "Use the intent and action of the nearest training example.",
+      "reply": "Please contact official Spotify support for further review. I can't investigate your account here.",
+      "label_source_id": "44404",
+      "similarity": 0.2603,
+      "evidence_ids": []
+    }
+  },
+  {
+    "customer_tweet_id": "1532330",
+    "conversation_id": "1532329",
+    "customer_text": "@SpotifyCares Thanks ^^",
+    "expected_intent": "praise_thanks",
+    "expected_action": "auto_handle",
+    "label_uncertain": false,
+    "prediction": {
+      "status": "ok",
+      "system": "simple",
+      "intent": "subscription_plans",
+      "action": "auto_handle",
+      "reason": "Use the intent and action of the nearest training example.",
+      "reply": "Which plan are you using, and what happens when you try?",
+      "label_source_id": "2073652",
+      "similarity": 0.311,
+      "evidence_ids": []
+    }
+  },
+  {
+    "customer_tweet_id": "1222450",
+    "conversation_id": "1222449",
+    "customer_text": "@SpotifyCares \nI’m confused, if I have premium.\nI know I don’t own, but I wanted to feel like it.\nWhat is the maximum &amp; why?\nThanks https://t.co/giMLpiIqN6",
+    "expected_intent": "other_unclear",
+    "expected_action": "auto_handle",
+    "label_uncertain": false,
+    "prediction": {
+      "status": "ok",
+      "system": "simple",
+      "intent": "subscription_plans",
+      "action": "auto_handle",
+      "reason": "Use the intent and action of the nearest training example.",
+      "reply": "Which plan are you using, and what happens when you try?",
+      "label_source_id": "2073652",
+      "similarity": 0.1869,
+      "evidence_ids": []
+    }
+  },
+  {
+    "customer_tweet_id": "689727",
+    "conversation_id": "689726",
+    "customer_text": "@115888 are you developing an app for Apple Watch Series 3 to use away from the phone?",
+    "expected_intent": "product_feedback",
+    "expected_action": "auto_handle",
+    "label_uncertain": false,
+    "prediction": {
+      "status": "ok",
+      "system": "simple",
+      "intent": "subscription_plans",
+      "action": "auto_handle",
+      "reason": "Use the intent and action of the nearest training example.",
+      "reply": "Which plan are you using, and what happens when you try?",
+      "label_source_id": "2161282",
+      "similarity": 0.1501,
+      "evidence_ids": []
+    }
+  },
+  {
+    "customer_tweet_id": "962319",
+    "conversation_id": "962318",
+    "customer_text": "@SpotifyCares Cheers TB, please do!",
+    "expected_intent": "praise_thanks",
+    "expected_action": "auto_handle",
+    "label_uncertain": false,
+    "prediction": {
+      "status": "ok",
+      "system": "simple",
+      "intent": "account_access_security",
+      "action": "escalate",
+      "reason": "Use the intent and action of the nearest training example.",
+      "reply": "Please contact official Spotify support for further review. I can't investigate your account here.",
+      "label_source_id": "466062",
+      "similarity": 0.2202,
+      "evidence_ids": []
+    }
+  },
+  {
+    "customer_tweet_id": "2707755",
+    "conversation_id": "2707754",
+    "customer_text": "@SpotifyCares Remove Facebook account from __email__",
+    "expected_intent": "account_access_security",
+    "expected_action": "escalate",
+    "label_uncertain": false,
+    "prediction": {
+      "status": "ok",
+      "system": "simple",
+      "intent": "music_library_catalog",
+      "action": "auto_handle",
+      "reason": "Use the intent and action of the nearest training example.",
+      "reply": "Which song, album, or playlist do you mean, and what problem are you seeing?",
+      "label_source_id": "1867431",
+      "similarity": 0.2314,
+      "evidence_ids": []
+    }
+  },
+  {
+    "customer_tweet_id": "1517566",
+    "conversation_id": "1517565",
+    "customer_text": "@SpotifyCares Answer my DM! Urgent, thanks.",
+    "expected_intent": "other_unclear",
+    "expected_action": "escalate",
+    "label_uncertain": false,
+    "prediction": {
+      "status": "ok",
+      "system": "simple",
+      "intent": "subscription_plans",
+      "action": "auto_handle",
+      "reason": "Use the intent and action of the nearest training example.",
+      "reply": "Which plan are you using, and what happens when you try?",
+      "label_source_id": "2073652",
+      "similarity": 0.1766,
+      "evidence_ids": []
+    }
+  },
+  {
+    "customer_tweet_id": "516749",
+    "conversation_id": "516748",
+    "customer_text": "Why do you limit the albums that we save, understand the limit for downloaded ones, it really seems unnecessary when thinking about the price we pay monthly @115888",
+    "expected_intent": "product_feedback",
+    "expected_action": "auto_handle",
+    "label_uncertain": false,
+    "prediction": {
+      "status": "ok",
+      "system": "simple",
+      "intent": "playback_offline",
+      "action": "auto_handle",
+      "reason": "Use the intent and action of the nearest training example.",
+      "reply": "What device are you using, and what happens during playback or downloading?",
+      "label_source_id": "1815095",
+      "similarity": 0.2738,
+      "evidence_ids": []
+    }
+  },
+  {
+    "customer_tweet_id": "488809",
+    "conversation_id": "488808",
+    "customer_text": "@SpotifyCares will we be getting a Top Songs of 2017 this year? 😇 https://t.co/7OsmYIA7Es",
+    "expected_intent": "music_library_catalog",
+    "expected_action": "auto_handle",
+    "label_uncertain": false,
+    "prediction": {
+      "status": "ok",
+      "system": "simple",
+      "intent": "playback_offline",
+      "action": "auto_handle",
+      "reason": "Use the intent and action of the nearest training example.",
+      "reply": "What device are you using, and what happens during playback or downloading?",
+      "label_source_id": "1815095",
+      "similarity": 0.1918,
+      "evidence_ids": []
+    }
+  }
+]

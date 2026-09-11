@@ -1,0 +1,448 @@
+[
+  {
+    "conversation_id": "2555549",
+    "customer_tweet_id": "2555550",
+    "split": "test",
+    "prior_context": [],
+    "linked_context_incomplete": false,
+    "customer_text": "@SpotifyCares  I am having issues logging on.",
+    "intent": "account_access_security",
+    "expected_action": "auto_handle",
+    "action_reason": "They report a login problem with no details.",
+    "required_reply_points": [
+      "Ask for the error and device without asking for a password."
+    ],
+    "forbidden_claims": [
+      "Claim the account was checked or changed",
+      "Request passwords or account secrets"
+    ],
+    "uncertain": false,
+    "annotation_note": ""
+  },
+  {
+    "conversation_id": "1409886",
+    "customer_tweet_id": "1409888",
+    "split": "test",
+    "prior_context": [],
+    "linked_context_incomplete": false,
+    "customer_text": ".@SpotifyCares Not having feature to restore accidentally removed songs from playlists is just pure laziness. Subscription canceled!",
+    "intent": "product_feedback",
+    "expected_action": "auto_handle",
+    "action_reason": "They criticize the lack of undo for removed playlist songs and say they cancelled.",
+    "required_reply_points": [
+      "Acknowledge the missing recovery feature without claiming to restore songs or verify cancellation."
+    ],
+    "forbidden_claims": [
+      "Promise the suggestion will be built or forwarded",
+      "Claim knowledge of an unpublished product roadmap"
+    ],
+    "uncertain": false,
+    "annotation_note": ""
+  },
+  {
+    "conversation_id": "948047",
+    "customer_tweet_id": "948048",
+    "split": "test",
+    "prior_context": [],
+    "linked_context_incomplete": false,
+    "customer_text": "@SpotifyCares Autoplay is not available on OSX, correct?",
+    "intent": "app_device_issues",
+    "expected_action": "auto_handle",
+    "action_reason": "They ask whether a playback feature is available on a platform.",
+    "required_reply_points": [
+      "Ask for the app version and avoid treating old platform behavior as current policy."
+    ],
+    "forbidden_claims": [
+      "Claim a fix is available or give a release date without evidence",
+      "Claim to have inspected a linked screenshot"
+    ],
+    "uncertain": false,
+    "annotation_note": ""
+  },
+  {
+    "conversation_id": "2322455",
+    "customer_tweet_id": "2322457",
+    "split": "test",
+    "prior_context": [],
+    "linked_context_incomplete": false,
+    "customer_text": "@115888 hey I’m just trying to sign up for Spotify premium using my student nus card but i can only find the option for uni days? Help🙈",
+    "intent": "subscription_plans",
+    "expected_action": "auto_handle",
+    "action_reason": "They ask how student verification works when their preferred option is absent.",
+    "required_reply_points": [
+      "Direct them to verified eligibility guidance without promising their card will be accepted."
+    ],
+    "forbidden_claims": [
+      "Claim the subscription was checked or changed",
+      "Promise eligibility, activation, or an unverified offer"
+    ],
+    "uncertain": false,
+    "annotation_note": ""
+  },
+  {
+    "conversation_id": "1959705",
+    "customer_tweet_id": "1959706",
+    "split": "test",
+    "prior_context": [],
+    "linked_context_incomplete": false,
+    "customer_text": "@115888 are we ever going to get hi fi quality lossless audio like @1122 gives you #Flac",
+    "intent": "product_feedback",
+    "expected_action": "auto_handle",
+    "action_reason": "They request lossless audio and ask about future availability.",
+    "required_reply_points": [
+      "Acknowledge the audio-quality request without inventing a roadmap."
+    ],
+    "forbidden_claims": [
+      "Promise the suggestion will be built or forwarded",
+      "Claim knowledge of an unpublished product roadmap"
+    ],
+    "uncertain": false,
+    "annotation_note": ""
+  },
+  {
+    "conversation_id": "1780054",
+    "customer_tweet_id": "1780055",
+    "split": "test",
+    "prior_context": [],
+    "linked_context_incomplete": false,
+    "customer_text": "i’ve logged out of spotify which i pay for and i don’t know my password FFS",
+    "intent": "account_access_security",
+    "expected_action": "auto_handle",
+    "action_reason": "They forgot their password without reporting failed recovery attempts.",
+    "required_reply_points": [
+      "Recommend the official password recovery process without asking for the password."
+    ],
+    "forbidden_claims": [
+      "Claim the account was checked or changed",
+      "Request passwords or account secrets"
+    ],
+    "uncertain": false,
+    "annotation_note": ""
+  },
+  {
+    "conversation_id": "2304464",
+    "customer_tweet_id": "2304468",
+    "split": "test",
+    "prior_context": [
+      {
+        "tweet_id": "2304466",
+        "role": "customer",
+        "text": "@SpotifyCares #canTResetPassword"
+      },
+      {
+        "tweet_id": "2304464",
+        "role": "support",
+        "text": "@668633 Hi Dino, help's arrived! Can you DM us your account's email address? We'll take a look backstage /DV https://t.co/ldFdZRiNAt"
+      },
+      {
+        "tweet_id": "2304465",
+        "role": "customer",
+        "text": "@SpotifyCares It’s all set#Help #AtLast"
+      },
+      {
+        "tweet_id": "2304467",
+        "role": "support",
+        "text": "@668633 That's great to hear. Just to be sure, does everything look good on your end? /DV"
+      }
+    ],
+    "linked_context_incomplete": false,
+    "customer_text": "@SpotifyCares Thanks https://t.co/3UO1otuQi6",
+    "intent": "praise_thanks",
+    "expected_action": "auto_handle",
+    "action_reason": "Earlier context confirms access was restored and they now offer thanks.",
+    "required_reply_points": [
+      "Briefly acknowledge their thanks without relying on the linked image."
+    ],
+    "forbidden_claims": [
+      "Claim we personally fixed the earlier problem",
+      "Promise the same outcome or response time in future"
+    ],
+    "uncertain": false,
+    "annotation_note": ""
+  },
+  {
+    "conversation_id": "1883268",
+    "customer_tweet_id": "1883269",
+    "split": "test",
+    "prior_context": [],
+    "linked_context_incomplete": false,
+    "customer_text": "@115888 Hey! I'm trying to add a family member to my account, but it's giving me an error: \"600 - Oops something went wrong.\" Can you help?",
+    "intent": "subscription_plans",
+    "expected_action": "auto_handle",
+    "action_reason": "A Family invitation produces error 600, with no recovery attempts described.",
+    "required_reply_points": [
+      "Ask where the error appears and suggest official support if the invitation still fails."
+    ],
+    "forbidden_claims": [
+      "Claim the subscription was checked or changed",
+      "Promise eligibility, activation, or an unverified offer"
+    ],
+    "uncertain": false,
+    "annotation_note": ""
+  },
+  {
+    "conversation_id": "649924",
+    "customer_tweet_id": "649925",
+    "split": "test",
+    "prior_context": [],
+    "linked_context_incomplete": false,
+    "customer_text": "@SpotifyCares I am trying to add information to my account. But when I press save changes, it gives me a warning that my email is already in use and doesn't save the changes.",
+    "intent": "account_access_security",
+    "expected_action": "escalate",
+    "action_reason": "Saving account changes fails because the email is already in use.",
+    "required_reply_points": [
+      "Recommend account support to check the conflict without speculating about another account."
+    ],
+    "forbidden_claims": [
+      "Claim the account was checked or changed",
+      "Request passwords or account secrets",
+      "Claim a human handoff has already happened"
+    ],
+    "uncertain": false,
+    "annotation_note": ""
+  },
+  {
+    "conversation_id": "1163233",
+    "customer_tweet_id": "1163234",
+    "split": "test",
+    "prior_context": [],
+    "linked_context_incomplete": false,
+    "customer_text": "@SpotifyCares https://t.co/RnZG0F0uyK",
+    "intent": "other_unclear",
+    "expected_action": "auto_handle",
+    "action_reason": "There is only a link and no usable description.",
+    "required_reply_points": [
+      "Ask what they need help with and what the link shows."
+    ],
+    "forbidden_claims": [
+      "Guess the missing issue or linked content",
+      "Claim access to private messages or support case status"
+    ],
+    "uncertain": false,
+    "annotation_note": ""
+  },
+  {
+    "conversation_id": "637770",
+    "customer_tweet_id": "637771",
+    "split": "test",
+    "prior_context": [],
+    "linked_context_incomplete": false,
+    "customer_text": "Querido diário, nesta tarde minha conta do Spotify foi roubada, eu fiquei desesperado, achei um link que me levou a um chat com o suporte e lá ele me ajudou a recuperar a conta. Agora está tudo de volta ao normal e eu tenho que trabalhar.",
+    "intent": "praise_thanks",
+    "expected_action": "auto_handle",
+    "action_reason": "They say in Portuguese that support recovered the stolen account and things are normal again.",
+    "required_reply_points": [
+      "Acknowledge the reported recovery in Portuguese without claiming to verify account security."
+    ],
+    "forbidden_claims": [
+      "Claim we personally fixed the earlier problem",
+      "Promise the same outcome or response time in future"
+    ],
+    "uncertain": false,
+    "annotation_note": ""
+  },
+  {
+    "conversation_id": "1093716",
+    "customer_tweet_id": "1093717",
+    "split": "test",
+    "prior_context": [],
+    "linked_context_incomplete": false,
+    "customer_text": "Yo @115888 is there a way of searching for albums by genre and release date? I.e all “indie” records released in 2000 @SpotifyCares",
+    "intent": "music_library_catalog",
+    "expected_action": "auto_handle",
+    "action_reason": "They ask how to find albums using genre and release date.",
+    "required_reply_points": [
+      "Clarify the search goal and use only supported search instructions, not invented filters."
+    ],
+    "forbidden_claims": [
+      "Invent a licensing reason, release date, or catalog correction",
+      "Claim to have opened a link or checked live availability"
+    ],
+    "uncertain": false,
+    "annotation_note": ""
+  },
+  {
+    "conversation_id": "2629098",
+    "customer_tweet_id": "2629104",
+    "split": "test",
+    "prior_context": [],
+    "linked_context_incomplete": false,
+    "customer_text": "Anyone know if there's a way to see on @115888 the exact date an album was released? All I can find is the year.",
+    "intent": "music_library_catalog",
+    "expected_action": "auto_handle",
+    "action_reason": "They want an album's exact release date rather than only the year.",
+    "required_reply_points": [
+      "Acknowledge the request and avoid inventing a date or an app feature."
+    ],
+    "forbidden_claims": [
+      "Invent a licensing reason, release date, or catalog correction",
+      "Claim to have opened a link or checked live availability"
+    ],
+    "uncertain": false,
+    "annotation_note": ""
+  },
+  {
+    "conversation_id": "2070359",
+    "customer_tweet_id": "2070361",
+    "split": "test",
+    "prior_context": [],
+    "linked_context_incomplete": false,
+    "customer_text": "@160408 any reason why I can't login with my FB credentials anymore? Haven't changed anything but I can't get in! #plshelp",
+    "intent": "account_access_security",
+    "expected_action": "auto_handle",
+    "action_reason": "Facebook sign-in fails but there is no confirmed compromise or failed recovery history.",
+    "required_reply_points": [
+      "Ask for the error and suggest official sign-in help without requesting Facebook credentials."
+    ],
+    "forbidden_claims": [
+      "Claim the account was checked or changed",
+      "Request passwords or account secrets"
+    ],
+    "uncertain": false,
+    "annotation_note": ""
+  },
+  {
+    "conversation_id": "2037694",
+    "customer_tweet_id": "2037695",
+    "split": "test",
+    "prior_context": [],
+    "linked_context_incomplete": false,
+    "customer_text": "@115888  just want you to know that I’m leaving you. Someone better has come along who doesn’t charge me 4 times. @115948 I’m yours now",
+    "intent": "billing_payments",
+    "expected_action": "escalate",
+    "action_reason": "They report four charges while saying they will leave the service.",
+    "required_reply_points": [
+      "Acknowledge the disputed charges and recommend a billing review."
+    ],
+    "forbidden_claims": [
+      "Promise a refund, discount, or successful payment",
+      "Request card details or gift-card codes",
+      "Claim a human handoff has already happened"
+    ],
+    "uncertain": false,
+    "annotation_note": ""
+  },
+  {
+    "conversation_id": "1161830",
+    "customer_tweet_id": "1161831",
+    "split": "test",
+    "prior_context": [],
+    "linked_context_incomplete": false,
+    "customer_text": "@SpotifyCares when you are going to launch Spotify service in India??",
+    "intent": "subscription_plans",
+    "expected_action": "auto_handle",
+    "action_reason": "They ask when service will launch in India.",
+    "required_reply_points": [
+      "Explain that a launch date cannot be verified from the available information."
+    ],
+    "forbidden_claims": [
+      "Claim the subscription was checked or changed",
+      "Promise eligibility, activation, or an unverified offer"
+    ],
+    "uncertain": false,
+    "annotation_note": ""
+  },
+  {
+    "conversation_id": "2637105",
+    "customer_tweet_id": "2637106",
+    "split": "test",
+    "prior_context": [],
+    "linked_context_incomplete": false,
+    "customer_text": "@115888 why when I try to update my payment method it freezes. If I lose my music I’m gonna be pissed.",
+    "intent": "billing_payments",
+    "expected_action": "auto_handle",
+    "action_reason": "The payment-update page freezes before the change completes.",
+    "required_reply_points": [
+      "Ask which browser or device is affected without asking for card details."
+    ],
+    "forbidden_claims": [
+      "Promise a refund, discount, or successful payment",
+      "Request card details or gift-card codes"
+    ],
+    "uncertain": false,
+    "annotation_note": ""
+  },
+  {
+    "conversation_id": "2141800",
+    "customer_tweet_id": "2141801",
+    "split": "test",
+    "prior_context": [],
+    "linked_context_incomplete": false,
+    "customer_text": "@SpotifyCares I just received a confirmation request for an account. I did not sign up for Spotify. My email is __email__.",
+    "intent": "account_access_security",
+    "expected_action": "escalate",
+    "action_reason": "They received an account confirmation for a signup they say they did not make.",
+    "required_reply_points": [
+      "Recommend official security support without confirming who created the account."
+    ],
+    "forbidden_claims": [
+      "Claim the account was checked or changed",
+      "Request passwords or account secrets",
+      "Claim a human handoff has already happened"
+    ],
+    "uncertain": false,
+    "annotation_note": ""
+  },
+  {
+    "conversation_id": "1830850",
+    "customer_tweet_id": "1830851",
+    "split": "test",
+    "prior_context": [],
+    "linked_context_incomplete": false,
+    "customer_text": "@SpotifyCares is there seriously no apple watch app? Is it in the works??",
+    "intent": "product_feedback",
+    "expected_action": "auto_handle",
+    "action_reason": "They ask about an Apple Watch app and future development.",
+    "required_reply_points": [
+      "Acknowledge the request without claiming knowledge of the roadmap."
+    ],
+    "forbidden_claims": [
+      "Promise the suggestion will be built or forwarded",
+      "Claim knowledge of an unpublished product roadmap"
+    ],
+    "uncertain": false,
+    "annotation_note": ""
+  },
+  {
+    "conversation_id": "2139047",
+    "customer_tweet_id": "2139048",
+    "split": "test",
+    "prior_context": [
+      {
+        "tweet_id": "2139052",
+        "role": "customer",
+        "text": "@116230 @115888 app takes very long to load properly on win 10. Needs to be a lot lighter and faster."
+      },
+      {
+        "tweet_id": "2139051",
+        "role": "support",
+        "text": "@124332 Hi Thomas, the cavalry's here! Does logging out, restarting your device, and logging back into Spotify help? Keep us posted /JI"
+      },
+      {
+        "tweet_id": "2139049",
+        "role": "customer",
+        "text": "@SpotifyCares I am talking about your desktop app for windows 10. It is really slow. Not restarting my comp for an app."
+      },
+      {
+        "tweet_id": "2139047",
+        "role": "support",
+        "text": "@124332 We completely understand. Is this happening on any other devices as well? We'll keep an eye out for your reply /JI"
+      }
+    ],
+    "linked_context_incomplete": false,
+    "customer_text": "@SpotifyCares No. It happened again. Taking ages to load and finally my computer seized up. I am removing your win 10 app. There is something wrong with it.",
+    "intent": "app_device_issues",
+    "expected_action": "escalate",
+    "action_reason": "The Windows app repeatedly hangs and reportedly freezes the computer.",
+    "required_reply_points": [
+      "Recommend technical investigation and respect their decision to remove the app."
+    ],
+    "forbidden_claims": [
+      "Claim a fix is available or give a release date without evidence",
+      "Claim to have inspected a linked screenshot",
+      "Claim a human handoff has already happened"
+    ],
+    "uncertain": false,
+    "annotation_note": ""
+  }
+]

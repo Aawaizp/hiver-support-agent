@@ -1,0 +1,499 @@
+[
+  {
+    "conversation_id": "2295641",
+    "customer_tweet_id": "2295642",
+    "split": "test",
+    "prior_context": [],
+    "linked_context_incomplete": false,
+    "customer_text": "@SpotifyCares Nothing changed, so we’ll call it an early Christmas miracle and wash our hands of it. Strange as hell, tho.",
+    "intent": "other_unclear",
+    "expected_action": "auto_handle",
+    "action_reason": "They seem to describe a spontaneous improvement, but the issue is not visible.",
+    "required_reply_points": [
+      "Ask whether everything is working now instead of guessing what was fixed."
+    ],
+    "forbidden_claims": [
+      "Guess the missing issue or linked content",
+      "Claim access to private messages or support case status"
+    ],
+    "uncertain": true,
+    "annotation_note": "Review this interpretation against the visible context."
+  },
+  {
+    "conversation_id": "2456271",
+    "customer_tweet_id": "2456272",
+    "split": "test",
+    "prior_context": [],
+    "linked_context_incomplete": false,
+    "customer_text": "@117168 why won’t you take my money and just accept my card info 😭",
+    "intent": "billing_payments",
+    "expected_action": "auto_handle",
+    "action_reason": "They report a rejected card without giving the error or prior attempts.",
+    "required_reply_points": [
+      "Ask for the non-sensitive error text and recommend billing support if it persists."
+    ],
+    "forbidden_claims": [
+      "Promise a refund, discount, or successful payment",
+      "Request card details or gift-card codes"
+    ],
+    "uncertain": false,
+    "annotation_note": ""
+  },
+  {
+    "conversation_id": "2064046",
+    "customer_tweet_id": "2064047",
+    "split": "test",
+    "prior_context": [
+      {
+        "tweet_id": "2064048",
+        "role": "customer",
+        "text": "Felt the urge for some Gn’R. Where is “Yesterdays” @115888 ?? https://t.co/E4aTxMtFE2"
+      }
+    ],
+    "linked_context_incomplete": false,
+    "customer_text": "@115888 You didn’t think PV Middle Schools #1 Gn’R fanwould notice?? Tried to smoke one past the wrong guy.",
+    "intent": "music_library_catalog",
+    "expected_action": "auto_handle",
+    "action_reason": "The earlier context identifies a missing Guns N' Roses song.",
+    "required_reply_points": [
+      "Acknowledge the missing song without claiming it was deliberately removed."
+    ],
+    "forbidden_claims": [
+      "Invent a licensing reason, release date, or catalog correction",
+      "Claim to have opened a link or checked live availability"
+    ],
+    "uncertain": false,
+    "annotation_note": ""
+  },
+  {
+    "conversation_id": "975189",
+    "customer_tweet_id": "975190",
+    "split": "test",
+    "prior_context": [],
+    "linked_context_incomplete": false,
+    "customer_text": "I got a new phone and my premium does not transfer over @SpotifyCares",
+    "intent": "subscription_plans",
+    "expected_action": "auto_handle",
+    "action_reason": "Premium is missing after moving to a new phone, with no checks described yet.",
+    "required_reply_points": [
+      "Suggest checking the sign-in method matches the existing subscription without asking for credentials."
+    ],
+    "forbidden_claims": [
+      "Claim the subscription was checked or changed",
+      "Promise eligibility, activation, or an unverified offer"
+    ],
+    "uncertain": false,
+    "annotation_note": ""
+  },
+  {
+    "conversation_id": "2440996",
+    "customer_tweet_id": "2440998",
+    "split": "test",
+    "prior_context": [],
+    "linked_context_incomplete": false,
+    "customer_text": "Yo @115888 why is there a download limit!? I pay y’all every month and should be able to download as much music as my phones storage allows.. #FIXTHIS",
+    "intent": "playback_offline",
+    "expected_action": "auto_handle",
+    "action_reason": "They question the download limit rather than reporting a payment error.",
+    "required_reply_points": [
+      "Acknowledge the limit concern and avoid quoting an unverified current limit."
+    ],
+    "forbidden_claims": [
+      "Guarantee a troubleshooting step will work",
+      "Claim a bug or outage is confirmed without evidence"
+    ],
+    "uncertain": false,
+    "annotation_note": ""
+  },
+  {
+    "conversation_id": "1465426",
+    "customer_tweet_id": "1465427",
+    "split": "test",
+    "prior_context": [
+      {
+        "tweet_id": "1465432",
+        "role": "customer",
+        "text": "does anyone else think it's ridiculous (relatively speaking) that it's impossible to see your global play history in @115888 ?"
+      },
+      {
+        "tweet_id": "1465431",
+        "role": "customer",
+        "text": "@115888 i mean music brings so much joy, and it's incredibly frustrating to try and recall a song that you happened upon a while ago but cant find"
+      },
+      {
+        "tweet_id": "1465430",
+        "role": "customer",
+        "text": "@115888 i really can't imagine that this is a particularly difficult thing to do. and forget \"ad free\" etc perks of being a paid member."
+      },
+      {
+        "tweet_id": "1465429",
+        "role": "customer",
+        "text": "@115888 if i weren't a paying user i'd find \"listen history\" to be right up there w/ offline playlists. seems like a pretty glaring missing feature"
+      },
+      {
+        "tweet_id": "1465428",
+        "role": "support",
+        "text": "@164926 Hi Albert! In the bottom right of the desktop app, you can select Queue, and head to the History tab for a list of recently played songs /TY"
+      }
+    ],
+    "linked_context_incomplete": false,
+    "customer_text": "@SpotifyCares Doesn't go back far enough and is device specific which is even more frustrating",
+    "intent": "product_feedback",
+    "expected_action": "auto_handle",
+    "action_reason": "They want longer listening history shared across devices.",
+    "required_reply_points": [
+      "Acknowledge those two requirements instead of repeating the history instructions already rejected."
+    ],
+    "forbidden_claims": [
+      "Promise the suggestion will be built or forwarded",
+      "Claim knowledge of an unpublished product roadmap"
+    ],
+    "uncertain": false,
+    "annotation_note": ""
+  },
+  {
+    "conversation_id": "2929793",
+    "customer_tweet_id": "2929794",
+    "split": "test",
+    "prior_context": [
+      {
+        "tweet_id": "2929795",
+        "role": "customer",
+        "text": "@117153 I'm having some issues these last few days/weeks, when I'm listening an album some songs don't seem to be available, instead of the duration of those songs I get 'NaN' and the music stops playing when reaching a song like that."
+      },
+      {
+        "tweet_id": "2929793",
+        "role": "support",
+        "text": "@810482 Hey Steven! The cavalry's here. Can you let us know your device's make/model, operating system, and exact Spotify version? We'll see what we can suggest /KB"
+      }
+    ],
+    "linked_context_incomplete": false,
+    "customer_text": "@SpotifyCares Hi, i’m using an IMac (mid 2011 version) with macOS High Sierra and Spotify version 1.0.68.407.g6864aaaf",
+    "intent": "playback_offline",
+    "expected_action": "auto_handle",
+    "action_reason": "They provide system details for tracks that display NaN and stop playback.",
+    "required_reply_points": [
+      "Use the supplied versions and ask whether the same tracks fail on another device."
+    ],
+    "forbidden_claims": [
+      "Guarantee a troubleshooting step will work",
+      "Claim a bug or outage is confirmed without evidence"
+    ],
+    "uncertain": false,
+    "annotation_note": ""
+  },
+  {
+    "conversation_id": "2725156",
+    "customer_tweet_id": "2725157",
+    "split": "test",
+    "prior_context": [
+      {
+        "tweet_id": "2725159",
+        "role": "customer",
+        "text": "@SpotifyCares Getting clicking and popping sounds on Spotify Premium (1.0.67.582.g19436fa3) Playback, reinstalled, Hardware Acceleration off, High Quality streaming off, 3 X spotify.exe? (PCSpec: https://t.co/oLFEccpXcX) https://t.co/DRmjvxyTJa"
+      },
+      {
+        "tweet_id": "2725156",
+        "role": "support",
+        "text": "@764290 Hey Nick! What's the exact Spotify version you're using? Does logging out &gt; restarting your device &gt; logging back in help? /AY"
+      }
+    ],
+    "linked_context_incomplete": false,
+    "customer_text": "@SpotifyCares Its a Window10 PC, I've tried everything, forums, the lot, now considering ditching my subscription",
+    "intent": "playback_offline",
+    "expected_action": "escalate",
+    "action_reason": "Clicking and popping persist after multiple troubleshooting attempts.",
+    "required_reply_points": [
+      "Recommend technical support and avoid repeating the failed reinstall and audio settings changes."
+    ],
+    "forbidden_claims": [
+      "Guarantee a troubleshooting step will work",
+      "Claim a bug or outage is confirmed without evidence",
+      "Claim a human handoff has already happened"
+    ],
+    "uncertain": false,
+    "annotation_note": ""
+  },
+  {
+    "conversation_id": "2751292",
+    "customer_tweet_id": "2751293",
+    "split": "test",
+    "prior_context": [],
+    "linked_context_incomplete": false,
+    "customer_text": "@SpotifyCares I have an iPhone 7 Plus 11.1.2. It seems the Spotify app has logged me out and will not let me log back in. When I press on “log in” nothing happens. Have you guys seen this before?",
+    "intent": "app_device_issues",
+    "expected_action": "auto_handle",
+    "action_reason": "The login button does nothing, which points to an interface symptom rather than a confirmed account lock.",
+    "required_reply_points": [
+      "Ask for the app version and whether the button reacts after reopening the app."
+    ],
+    "forbidden_claims": [
+      "Claim a fix is available or give a release date without evidence",
+      "Claim to have inspected a linked screenshot"
+    ],
+    "uncertain": false,
+    "annotation_note": ""
+  },
+  {
+    "conversation_id": "302342",
+    "customer_tweet_id": "302343",
+    "split": "test",
+    "prior_context": [
+      {
+        "tweet_id": "302344",
+        "role": "customer",
+        "text": "capite adesso perché la vita è una merda? https://t.co/4sCntVt0gZ"
+      }
+    ],
+    "linked_context_incomplete": false,
+    "customer_text": "@ spotify see u in court sweaty :)",
+    "intent": "other_unclear",
+    "expected_action": "escalate",
+    "action_reason": "They mention court, but the underlying complaint is unavailable.",
+    "required_reply_points": [
+      "Acknowledge the complaint and recommend human support without making legal claims."
+    ],
+    "forbidden_claims": [
+      "Guess the missing issue or linked content",
+      "Claim access to private messages or support case status",
+      "Claim a human handoff has already happened"
+    ],
+    "uncertain": true,
+    "annotation_note": "Review this interpretation against the visible context."
+  },
+  {
+    "conversation_id": "1023906",
+    "customer_tweet_id": "1023907",
+    "split": "test",
+    "prior_context": [],
+    "linked_context_incomplete": false,
+    "customer_text": "@115888 Why don't you have a UWP app yet?  As a Premium member, I think it's the least you can do.",
+    "intent": "product_feedback",
+    "expected_action": "auto_handle",
+    "action_reason": "They request a UWP app.",
+    "required_reply_points": [
+      "Acknowledge the platform request without promising development."
+    ],
+    "forbidden_claims": [
+      "Promise the suggestion will be built or forwarded",
+      "Claim knowledge of an unpublished product roadmap"
+    ],
+    "uncertain": false,
+    "annotation_note": ""
+  },
+  {
+    "conversation_id": "2899858",
+    "customer_tweet_id": "2899859",
+    "split": "test",
+    "prior_context": [],
+    "linked_context_incomplete": false,
+    "customer_text": ".@115888 can you make shuffle stop sucking? thanks boo 😗",
+    "intent": "playback_offline",
+    "expected_action": "auto_handle",
+    "action_reason": "They complain about shuffle without describing the behavior.",
+    "required_reply_points": [
+      "Ask what shuffle is doing and which device they use."
+    ],
+    "forbidden_claims": [
+      "Guarantee a troubleshooting step will work",
+      "Claim a bug or outage is confirmed without evidence"
+    ],
+    "uncertain": false,
+    "annotation_note": ""
+  },
+  {
+    "conversation_id": "160552",
+    "customer_tweet_id": "160553",
+    "split": "test",
+    "prior_context": [],
+    "linked_context_incomplete": false,
+    "customer_text": "@115888 you mean to tell me I pay 10 dollars a month for you to have only 3 RBD songs? I’m heartbroken https://t.co/siBTlHyYfA",
+    "intent": "music_library_catalog",
+    "expected_action": "auto_handle",
+    "action_reason": "They object to the small number of songs available from an artist.",
+    "required_reply_points": [
+      "Acknowledge the missing RBD music without treating the subscription price as a billing dispute."
+    ],
+    "forbidden_claims": [
+      "Invent a licensing reason, release date, or catalog correction",
+      "Claim to have opened a link or checked live availability"
+    ],
+    "uncertain": false,
+    "annotation_note": ""
+  },
+  {
+    "conversation_id": "2844575",
+    "customer_tweet_id": "2844576",
+    "split": "test",
+    "prior_context": [],
+    "linked_context_incomplete": false,
+    "customer_text": "@SpotifyCares hi! I haven’t had an email reminder about Spotify charging my student account the full £9.99 and they have, help I can’t afford it",
+    "intent": "billing_payments",
+    "expected_action": "escalate",
+    "action_reason": "They report an unexpected full-price charge on a student account.",
+    "required_reply_points": [
+      "Acknowledge the financial concern and recommend a billing review without promising a refund."
+    ],
+    "forbidden_claims": [
+      "Promise a refund, discount, or successful payment",
+      "Request card details or gift-card codes",
+      "Claim a human handoff has already happened"
+    ],
+    "uncertain": false,
+    "annotation_note": ""
+  },
+  {
+    "conversation_id": "1413932",
+    "customer_tweet_id": "1413934",
+    "split": "test",
+    "prior_context": [
+      {
+        "tweet_id": "1413936",
+        "role": "customer",
+        "text": "Really inconvenient that @115888 doesn't have any means of direct contact so you can't get an immediate response."
+      },
+      {
+        "tweet_id": "1413935",
+        "role": "support",
+        "text": "@448600 2: Could you DM us your account's email address? We'll take a look under the hood /KB https://t.co/ldFdZRiNAt"
+      }
+    ],
+    "linked_context_incomplete": false,
+    "customer_text": "@SpotifyCares Thanks, but I changed the pw three more times and it finally worked.",
+    "intent": "praise_thanks",
+    "expected_action": "auto_handle",
+    "action_reason": "They say the password change finally worked and thank support.",
+    "required_reply_points": [
+      "Acknowledge restored access without claiming to have read a private message."
+    ],
+    "forbidden_claims": [
+      "Claim we personally fixed the earlier problem",
+      "Promise the same outcome or response time in future"
+    ],
+    "uncertain": false,
+    "annotation_note": ""
+  },
+  {
+    "conversation_id": "1788489",
+    "customer_tweet_id": "1788490",
+    "split": "test",
+    "prior_context": [],
+    "linked_context_incomplete": false,
+    "customer_text": "@SpotifyCares Got 60-day post-groove trial started today. What happens if we want to switch to a family plan?",
+    "intent": "subscription_plans",
+    "expected_action": "auto_handle",
+    "action_reason": "They ask how switching to Family affects an existing trial.",
+    "required_reply_points": [
+      "Recommend checking the trial and plan-switch terms without guaranteeing remaining trial time."
+    ],
+    "forbidden_claims": [
+      "Claim the subscription was checked or changed",
+      "Promise eligibility, activation, or an unverified offer"
+    ],
+    "uncertain": false,
+    "annotation_note": ""
+  },
+  {
+    "conversation_id": "1182764",
+    "customer_tweet_id": "1182765",
+    "split": "test",
+    "prior_context": [
+      {
+        "tweet_id": "1182768",
+        "role": "customer",
+        "text": "The irony of @115888 denying my student discount , when they’re. Emailing. My. University. Email.  \n🔍 https://t.co/VeG1YMWSSR"
+      },
+      {
+        "tweet_id": "1182767",
+        "role": "support",
+        "text": "@398135 Hi Anna. For your security, we'd recommend deleting your post with the screenshot as it contains sensitive info. You can DM us instead /NY https://t.co/ldFdZRiNAt"
+      }
+    ],
+    "linked_context_incomplete": false,
+    "customer_text": "@SpotifyCares I’d love to know how my email is sensitive information.",
+    "intent": "account_access_security",
+    "expected_action": "auto_handle",
+    "action_reason": "They ask why publishing an email address can expose personal information.",
+    "required_reply_points": [
+      "Explain the privacy concern calmly without repeating the address or claiming a breach occurred."
+    ],
+    "forbidden_claims": [
+      "Claim the account was checked or changed",
+      "Request passwords or account secrets"
+    ],
+    "uncertain": false,
+    "annotation_note": ""
+  },
+  {
+    "conversation_id": "363462",
+    "customer_tweet_id": "363463",
+    "split": "test",
+    "prior_context": [
+      {
+        "tweet_id": "363464",
+        "role": "customer",
+        "text": "@115888 feature suggestion: all spirit connect devices on same Wi-Fi...simacast. let me listen to same song across network of devices"
+      }
+    ],
+    "linked_context_incomplete": false,
+    "customer_text": "@115888 Say, my Samsung TV, my chrome cast audio, my shield TV. As I have a large house w multiple devices. My neighbors would thank u 4 lower vol 😂",
+    "intent": "product_feedback",
+    "expected_action": "auto_handle",
+    "action_reason": "They expand a request for synchronized playback across several devices.",
+    "required_reply_points": [
+      "Acknowledge the multi-device playback request without promising it is supported."
+    ],
+    "forbidden_claims": [
+      "Promise the suggestion will be built or forwarded",
+      "Claim knowledge of an unpublished product roadmap"
+    ],
+    "uncertain": false,
+    "annotation_note": ""
+  },
+  {
+    "conversation_id": "937556",
+    "customer_tweet_id": "937558",
+    "split": "test",
+    "prior_context": [],
+    "linked_context_incomplete": false,
+    "customer_text": "@SpotifyCares more locks screen options on Samsung Gs8. Like a full screen album art and controls being the first thing when awake phone.",
+    "intent": "product_feedback",
+    "expected_action": "auto_handle",
+    "action_reason": "They request different lock-screen controls and artwork.",
+    "required_reply_points": [
+      "Acknowledge the desired lock-screen options without promising an update."
+    ],
+    "forbidden_claims": [
+      "Promise the suggestion will be built or forwarded",
+      "Claim knowledge of an unpublished product roadmap"
+    ],
+    "uncertain": false,
+    "annotation_note": ""
+  },
+  {
+    "conversation_id": "2079986",
+    "customer_tweet_id": "2079987",
+    "split": "test",
+    "prior_context": [
+      {
+        "tweet_id": "2079988",
+        "role": "customer",
+        "text": "@SpotifyCares I made a twitter specifically to get help with login on my account and I'm not really sure how this works haha."
+      }
+    ],
+    "linked_context_incomplete": false,
+    "customer_text": "@SpotifyCares recently and my login info has been saved on my old phone for years. its a premium account",
+    "intent": "account_access_security",
+    "expected_action": "auto_handle",
+    "action_reason": "They need help signing in after relying on saved login details on an old phone.",
+    "required_reply_points": [
+      "Ask which sign-in method they used and direct them to official recovery if needed."
+    ],
+    "forbidden_claims": [
+      "Claim the account was checked or changed",
+      "Request passwords or account secrets"
+    ],
+    "uncertain": false,
+    "annotation_note": ""
+  }
+]
